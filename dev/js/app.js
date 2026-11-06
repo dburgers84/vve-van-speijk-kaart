@@ -277,15 +277,29 @@ function wirePanel(){
   Array.prototype.forEach.call(panel.querySelectorAll('[data-gal]'),function(b){b.onclick=function(){openLB(+b.getAttribute('data-gal'),+b.getAttribute('data-i'));};});
   var mb=panel.querySelector('[data-melden]');if(mb)mb.onclick=function(){melden();};
 }
+function coreKey(f){
+  // Maisonnette-kern Schans 147–171: 1e (147-153) en 2e (165-171) = één liftkoker
+  var p=f.portaal||'';
+  if(/Schans 147-153|Schans 165-171/.test(p)) return 'Trappenhuis Schans 147–171';
+  return p||f.id.replace(/^(BG|\d+)-/,'core-').replace(/-(LIFT|TRAP)\d*$/,'');
+}
+function countCores(type){
+  var seen={}, n=0;
+  D.features.forEach(function(f){ if(f.type!==type)return; var k=coreKey(f); if(!seen[k]){seen[k]=1;n++;} });
+  return n;
+}
 function summaryHtml(){
   var by={};D.units.forEach(function(u){by[u.straat]=(by[u.straat]||0)+1;});
   var cnt={};D.features.forEach(function(f){cnt[f.type]=(cnt[f.type]||0)+1;});
+  var nLift=countCores('lift'), nTrap=countCores('trap');
   var los=D.meldingen.filter(function(m){return m._pt==null;});
   return '<table>'+Object.keys(by).map(function(k){return row(k,by[k]+' woningen');}).join('')+row('Totaal',D.units.length+' woningen')+row('Bergingen',D.bergingen.length)+
-    ['lift','trap','meterkast','hydrofoor','sprinkler','fietsenberging','technisch'].map(function(t){return row(TYPES[t].label,cnt[t]||0);}).join('')+
+    row('Liften', nLift+' kokers')+
+    row('Trappen', nTrap+' kernen')+
+    ['meterkast','hydrofoor','sprinkler','fietsenberging','technisch'].map(function(t){return row(TYPES[t].label,cnt[t]||0);}).join('')+
     row('Twinq-meldingen met foto',D.meldingen.length+' ('+D.meldingen.reduce(function(a,m){return a+m.fotos.length;},0)+' foto’s)')+'</table>'+
     '<h4>Meldingen zonder vaste plek op de kaart</h4><ul>'+los.map(function(m){return '<li>'+link(m.id,'#'+m.verzoek)+' '+esc(m.onderwerp)+(m.locatie_toelichting?' <small>('+esc(m.locatie_toelichting)+')</small>':'')+'</li>';}).join('')+'</ul>'+
-    '<p><small>Fietsenbergingen heten op de tekening van 2006 “containerruimte”; ze zijn allemaal omgebouwd tot fietsenberging.</small></p>';
+    '<p><small>Fietsenbergingen heten op de tekening van 2006 “containerruimte”; ze zijn allemaal omgebouwd tot fietsenberging. Liften/trappen: unieke kokers/kernen (niet elk verdiepingsvlak).</small></p>';
 }
 /* ---------- lightbox ---------- */
 var lbState=null;
