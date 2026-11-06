@@ -1,0 +1,794 @@
+[
+ {
+  "id": "BG-ENT-K49",
+  "floor": 0,
+  "type": "entree",
+  "name": "Entree + trap + containerruimte (portaal Kiel 49/61/63)",
+  "poly": [
+   [
+    104,
+    21
+   ],
+   [
+    131,
+    21
+   ],
+   [
+    131,
+    96
+   ],
+   [
+    104,
+    96
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "BG"
+ },
+ {
+  "id": "BG-ENT-215",
+  "floor": 0,
+  "type": "entree",
+  "name": "Entree + trap + lift (Het Havenplein-zijde, onder index 215)",
+  "poly": [
+   [
+    294,
+    519
+   ],
+   [
+    337,
+    519
+   ],
+   [
+    337,
+    555
+   ],
+   [
+    294,
+    555
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "BG"
+ },
+ {
+  "id": "BG-TRP-208",
+  "floor": 0,
+  "type": "trap",
+  "name": "Trap + containerruimte (onder Kiel 46-50)",
+  "poly": [
+   [
+    405,
+    398
+   ],
+   [
+    451,
+    398
+   ],
+   [
+    451,
+    426
+   ],
+   [
+    405,
+    426
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "BG"
+ },
+ {
+  "id": "BG-ENT-198",
+  "floor": 0,
+  "type": "entree",
+  "name": "Entree + hal + trap + lift + containerruimte (onder Schans 143/145)",
+  "poly": [
+   [
+    380,
+    998
+   ],
+   [
+    426,
+    998
+   ],
+   [
+    426,
+    1062
+   ],
+   [
+    380,
+    1062
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "BG"
+ },
+ {
+  "id": "BG-ENT-OOST",
+  "floor": 0,
+  "type": "entree",
+  "name": "Entree + trap + lift + containerruimte, meterkasten, hydrofoor/sprinkler (onder Schans 75-99)",
+  "poly": [
+   [
+    766,
+    1001
+   ],
+   [
+    880,
+    1001
+   ],
+   [
+    880,
+    1080
+   ],
+   [
+    766,
+    1080
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "BG"
+ },
+ {
+  "id": "BG-NIET",
+  "floor": 0,
+  "type": "context",
+  "name": "\"Niet in de splitsing betrokken\" (gearceerd op tekening)",
+  "poly": [
+   [
+    216,
+    805
+   ],
+   [
+    380,
+    805
+   ],
+   [
+    380,
+    1069
+   ],
+   [
+    216,
+    1069
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "BG"
+ },
+ {
+  "id": "1-BRG-A",
+  "floor": 1,
+  "type": "berging",
+  "name": "Bergingen 276-295 (pad/bergingen)",
+  "poly": [
+   [
+    122,
+    122
+   ],
+   [
+    147,
+    122
+   ],
+   [
+    147,
+    362
+   ],
+   [
+    122,
+    362
+   ]
+  ],
+  "conf": "confirmed",
+  "range": [
+   276,
+   295
+  ],
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-BRG-B",
+  "floor": 1,
+  "type": "berging",
+  "name": "Bergingen 266-275",
+  "poly": [
+   [
+    235,
+    885
+   ],
+   [
+    287,
+    885
+   ],
+   [
+    287,
+    970
+   ],
+   [
+    235,
+    970
+   ]
+  ],
+  "conf": "confirmed",
+  "range": [
+   266,
+   275
+  ],
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-BRG-C",
+  "floor": 1,
+  "type": "berging",
+  "name": "Bergingen 296-314 (gang/bergingen)",
+  "poly": [
+   [
+    570,
+    439
+   ],
+   [
+    692,
+    439
+   ],
+   [
+    692,
+    490
+   ],
+   [
+    570,
+    490
+   ]
+  ],
+  "conf": "confirmed",
+  "range": [
+   296,
+   314
+  ],
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-BRG-D",
+  "floor": 1,
+  "type": "berging",
+  "name": "Bergingen 315-329 (gang/bergingen)",
+  "poly": [
+   [
+    673,
+    865
+   ],
+   [
+    771,
+    865
+   ],
+   [
+    771,
+    917
+   ],
+   [
+    673,
+    917
+   ]
+  ],
+  "conf": "confirmed",
+  "range": [
+   315,
+   329
+  ],
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-BRG-E",
+  "floor": 1,
+  "type": "berging",
+  "name": "Bergingen 330-356 (gang/bergingen)",
+  "poly": [
+   [
+    958,
+    899
+   ],
+   [
+    1019,
+    899
+   ],
+   [
+    1019,
+    917
+   ],
+   [
+    958,
+    917
+   ]
+  ],
+  "conf": "confirmed",
+  "range": [
+   330,
+   356
+  ],
+  "extra": [
+   [
+    1031,
+    869
+   ],
+   [
+    1125,
+    869
+   ],
+   [
+    1125,
+    917
+   ],
+   [
+    1031,
+    917
+   ]
+  ],
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-TRP-205",
+  "floor": 1,
+  "type": "lift",
+  "name": "Trappenhuis portaal Kiel 49/61/63",
+  "poly": [
+   [
+    110,
+    32
+   ],
+   [
+    127,
+    32
+   ],
+   [
+    127,
+    75
+   ],
+   [
+    110,
+    75
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-LIFT-215",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift + trap (bij 213-215)",
+  "poly": [
+   [
+    317,
+    548
+   ],
+   [
+    345,
+    548
+   ],
+   [
+    345,
+    570
+   ],
+   [
+    317,
+    570
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-LIFT-190",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift + trap (Schans 147-153)",
+  "poly": [
+   [
+    367,
+    767
+   ],
+   [
+    392,
+    767
+   ],
+   [
+    392,
+    860
+   ],
+   [
+    367,
+    860
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-LIFT-198",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift + trap (Schans 143/145)",
+  "poly": [
+   [
+    380,
+    1005
+   ],
+   [
+    398,
+    1005
+   ],
+   [
+    398,
+    1075
+   ],
+   [
+    380,
+    1075
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-LIFT-OOST",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift + trap (Schans 83-95 / 75-81)",
+  "poly": [
+   [
+    760,
+    1032
+   ],
+   [
+    821,
+    1032
+   ],
+   [
+    821,
+    1066
+   ],
+   [
+    760,
+    1066
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-DAK-W",
+  "floor": 1,
+  "type": "daktuin",
+  "name": "Daktuin / dakpad (west, langs Kiel 51-59)",
+  "poly": [
+   [
+    60,
+    389
+   ],
+   [
+    122,
+    389
+   ],
+   [
+    172,
+    630
+   ],
+   [
+    110,
+    630
+   ]
+  ],
+  "conf": "estimated",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-DAK-M",
+  "floor": 1,
+  "type": "daktuin",
+  "name": "Daktuin / dakpad (midden, tussen Schans 143-171 en Kiel)",
+  "poly": [
+   [
+    290,
+    870
+   ],
+   [
+    530,
+    870
+   ],
+   [
+    530,
+    975
+   ],
+   [
+    290,
+    975
+   ]
+  ],
+  "conf": "estimated",
+  "floor_name": "1e"
+ },
+ {
+  "id": "1-DAK-N",
+  "floor": 1,
+  "type": "daktuin",
+  "name": "Dak / dakpad (noord, bij Kiel 46-50)",
+  "poly": [
+   [
+    395,
+    440
+   ],
+   [
+    560,
+    440
+   ],
+   [
+    560,
+    545
+   ],
+   [
+    395,
+    545
+   ]
+  ],
+  "conf": "estimated",
+  "floor_name": "1e"
+ },
+ {
+  "id": "2-LIFT-K61",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift + trap portaal Kiel 49/61/63",
+  "poly": [
+   [
+    100,
+    33
+   ],
+   [
+    125,
+    33
+   ],
+   [
+    125,
+    78
+   ],
+   [
+    100,
+    78
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "2e"
+ },
+ {
+  "id": "2-LIFT-225",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift (bij Kiel 64)",
+  "poly": [
+   [
+    318,
+    548
+   ],
+   [
+    338,
+    548
+   ],
+   [
+    338,
+    560
+   ],
+   [
+    318,
+    560
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "2e"
+ },
+ {
+  "id": "2-LIFT-194",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift + trap (Schans 165-171)",
+  "poly": [
+   [
+    372,
+    787
+   ],
+   [
+    397,
+    787
+   ],
+   [
+    397,
+    860
+   ],
+   [
+    372,
+    860
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "2e"
+ },
+ {
+  "id": "2-LIFT-244",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift + trap (Schans 109/111)",
+  "poly": [
+   [
+    790,
+    1006
+   ],
+   [
+    818,
+    1006
+   ],
+   [
+    818,
+    1030
+   ],
+   [
+    790,
+    1030
+   ]
+  ],
+  "conf": "estimated",
+  "floor_name": "2e"
+ },
+ {
+  "id": "2-GAL-K",
+  "floor": 2,
+  "type": "galerij",
+  "name": "Galerij Kiel 64-84 (2e+3e)",
+  "poly": [
+   [
+    299,
+    540
+   ],
+   [
+    618,
+    540
+   ],
+   [
+    618,
+    548
+   ],
+   [
+    299,
+    548
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "2e"
+ },
+ {
+  "id": "2-GAL-S",
+  "floor": 2,
+  "type": "galerij",
+  "name": "Galerij Schans 115-129",
+  "poly": [
+   [
+    620,
+    760
+   ],
+   [
+    630,
+    760
+   ],
+   [
+    630,
+    952
+   ],
+   [
+    620,
+    952
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "2e"
+ },
+ {
+  "id": "2-GAL-O",
+  "floor": 2,
+  "type": "galerij",
+  "name": "Galerij Schans 97-113 / 131-137",
+  "poly": [
+   [
+    550,
+    995
+   ],
+   [
+    1160,
+    995
+   ],
+   [
+    1160,
+    1003
+   ],
+   [
+    550,
+    1003
+   ]
+  ],
+  "conf": "confirmed",
+  "floor_name": "2e"
+ },
+ {
+  "id": "3-GAL-O",
+  "floor": 3,
+  "type": "galerij",
+  "name": "Galerij Schans 131-141 (3e)",
+  "poly": [
+   [
+    759,
+    1003
+   ],
+   [
+    1170,
+    1003
+   ],
+   [
+    1170,
+    1012
+   ],
+   [
+    759,
+    1012
+   ]
+  ],
+  "conf": "estimated",
+  "floor_name": "3e"
+ },
+ {
+  "id": "CTX-Schans51",
+  "floor": 0,
+  "type": "aldi",
+  "name": "Aldi (Schans 51)",
+  "point": [
+   347.4,
+   1087.6
+  ],
+  "conf": "bag_point",
+  "info": "BAG winkelfunctie, 1294 m², bouwjaar 2006, pand 0303100000584907",
+  "bron": "PDOK BAG WFS 2026-11-06; aldi.nl/supermarkt/dronten/de-schans-51"
+ },
+ {
+  "id": "CTX-DeBinnenloop10",
+  "floor": 0,
+  "type": "winkel",
+  "name": "Jumbo (De Binnenloop 10)",
+  "point": [
+   542.1,
+   1031.1
+  ],
+  "conf": "bag_point",
+  "info": "BAG winkelfunctie, 1760 m², bouwjaar 2006, pand 0303100000584908",
+  "bron": "PDOK BAG WFS 2026-11-06; openingstijden.nl / supermarktenoverzicht.nl"
+ },
+ {
+  "id": "CTX-DeKajuit1",
+  "floor": 0,
+  "type": "winkel",
+  "name": "Vomar (De Kajuit 1)",
+  "point": [
+   1075.7,
+   949.6
+  ],
+  "conf": "bag_point",
+  "info": "BAG winkelfunctie, 1280 m², bouwjaar 2006, pand 0303100000584908",
+  "bron": "PDOK BAG WFS 2026-11-06; openingstijden.nl / supermarktenoverzicht.nl"
+ },
+ {
+  "id": "CTX-HetHavenplein16",
+  "floor": 0,
+  "type": "winkel",
+  "name": "Bedrijfsruimte Het Havenplein 16",
+  "point": [
+   559.6,
+   624.2
+  ],
+  "conf": "bag_point",
+  "info": "BAG winkelfunctie, 1608 m², bouwjaar 1963, pand 0303100000597116",
+  "bron": "PDOK BAG WFS 2026-11-06; openingstijden.nl / supermarktenoverzicht.nl"
+ }
+]

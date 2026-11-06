@@ -1,0 +1,7724 @@
+{
+ "meta": {
+  "titel": "VvE Van Speijk – Suydersee Veste, Dronten",
+  "peildatum": "2026-11-06",
+  "georef": {
+   "methode": "Gelijkvormigheidstransformatie (schaal+rotatie+spiegeling+verschuiving) RD→tekening, robuust gefit op 85 BAG-adrespunten; gecontroleerd met BAG-pandcontouren",
+   "mediane_afwijking_m": 7.7,
+   "eenheden_per_meter": 6.083,
+   "opmerking": "BAG-adrespunten liggen vaak bij de portiek/entree i.p.v. midden in de woning; daardoor ~8 m mediane afwijking. Pandcontouren vallen visueel binnen enkele meters op de tekening.",
+   "transform": {
+    "mirror": true,
+    "zr": -0.4366073504218918,
+    "zi": -6.06737295199777,
+    "tr": 3137315.808246119,
+    "ti": 856920.3421918835
+   }
+  },
+  "viewbox": [
+   30,
+   0,
+   1300,
+   1132
+  ],
+  "floors": [
+   {
+    "n": 0,
+    "naam": "BG",
+    "titel": "Begane grond",
+    "img": "img/plan_bg.jpg"
+   },
+   {
+    "n": 1,
+    "naam": "1e",
+    "titel": "1e verdieping",
+    "img": "img/plan_1e.jpg"
+   },
+   {
+    "n": 2,
+    "naam": "2e",
+    "titel": "2e verdieping",
+    "img": "img/plan_2e.jpg"
+   },
+   {
+    "n": 3,
+    "naam": "3e",
+    "titel": "3e verdieping",
+    "img": "img/plan_3e.jpg"
+   },
+   {
+    "n": 4,
+    "naam": "4e",
+    "titel": "4e verdieping / dak",
+    "img": "img/plan_4e.jpg"
+   }
+  ],
+  "gps": {
+   "walk_photos": 38,
+   "walk_with_gps": 0,
+   "images_scanned": 865,
+   "images_with_valid_gps_unique": 3,
+   "note": "Wandelfoto’s (06-11-2026) bevatten geen EXIF/GPS (metadata gestript bij upload). Alleen 3 unieke Twinq-bijlagen (iPhone) hebben bruikbare GPS; 8 andere Twinq-foto’s hebben lege (NaN) GPS-velden."
+  }
+ },
+ "units": [
+  {
+   "id": "S173",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 173,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 173",
+   "index_nieuw": 181,
+   "index_oud": 3,
+   "bouwnr": 1,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 286,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635472",
+    "nummeraanduiding_id": "0303200000635471",
+    "oppervlakte_m2": 70,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177388.584,
+     504261.783
+    ],
+    "wgs84": [
+     52.5255582,
+     5.7171022
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635472"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 70,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/173"
+   },
+   "geometry": {
+    "1": [
+     [
+      224,
+      717
+     ],
+     [
+      285,
+      717
+     ],
+     [
+      285,
+      797
+     ],
+     [
+      224,
+      797
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    322.3,
+    802.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/173 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S175",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 175,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 175",
+   "index_nieuw": 182,
+   "index_oud": 4,
+   "bouwnr": 2,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 287,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635474",
+    "nummeraanduiding_id": "0303200000635473",
+    "oppervlakte_m2": 70,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177391.833,
+     504268.569
+    ],
+    "wgs84": [
+     52.525619,
+     5.7171505
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635474"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 70,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/175"
+   },
+   "geometry": {
+    "1": [
+     [
+      225,
+      652
+     ],
+     [
+      287,
+      652
+     ],
+     [
+      287,
+      705
+     ],
+     [
+      225,
+      705
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    279.8,
+    785.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/175 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S177",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 177,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 177",
+   "index_nieuw": 183,
+   "index_oud": 5,
+   "bouwnr": 3,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 284,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635476",
+    "nummeraanduiding_id": "0303200000635475",
+    "oppervlakte_m2": 70,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177391.846,
+     504273.055
+    ],
+    "wgs84": [
+     52.5256593,
+     5.717151
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635476"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 73,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/177"
+   },
+   "geometry": {
+    "2": [
+     [
+      227,
+      700
+     ],
+     [
+      290,
+      700
+     ],
+     [
+      290,
+      760
+     ],
+     [
+      227,
+      760
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    252.5,
+    787.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/177 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S179",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 179,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 179",
+   "index_nieuw": 184,
+   "index_oud": 6,
+   "bouwnr": 4,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 285,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635478",
+    "nummeraanduiding_id": "0303200000635477",
+    "oppervlakte_m2": 70,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177399.576,
+     504272.866
+    ],
+    "wgs84": [
+     52.5256573,
+     5.7172649
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635478"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 76,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/179"
+   },
+   "geometry": {
+    "2": [
+     [
+      227,
+      647
+     ],
+     [
+      290,
+      647
+     ],
+     [
+      290,
+      700
+     ],
+     [
+      227,
+      700
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    250.3,
+    740.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/179 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K59",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 59,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 59",
+   "index_nieuw": 185,
+   "index_oud": 7,
+   "bouwnr": 5,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 288,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612330",
+    "nummeraanduiding_id": "0303200000612329",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177411.164,
+     504277.462
+    ],
+    "wgs84": [
+     52.5256982,
+     5.7174359
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612330"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 79,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/59"
+   },
+   "geometry": {
+    "1": [
+     [
+      162.1,
+      580
+     ],
+     [
+      263.6,
+      580
+     ],
+     [
+      275.0,
+      630
+     ],
+     [
+      172.5,
+      630
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    217.4,
+    671.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/59 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K57",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 57,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 57",
+   "index_nieuw": 186,
+   "index_oud": 8,
+   "bouwnr": 6,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 289,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612328",
+    "nummeraanduiding_id": "0303200000612327",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177421.059,
+     504278.453
+    ],
+    "wgs84": [
+     52.5257067,
+     5.7175818
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612328"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 79,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/57"
+   },
+   "geometry": {
+    "1": [
+     [
+      152.3,
+      532.5
+     ],
+     [
+      252.7,
+      532.5
+     ],
+     [
+      263.6,
+      580
+     ],
+     [
+      162.1,
+      580
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    207.0,
+    612.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/57 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K55",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 55,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 55",
+   "index_nieuw": 187,
+   "index_oud": 9,
+   "bouwnr": 7,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 290,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000638814",
+    "nummeraanduiding_id": "0303200000638813",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177431.019,
+     504279.625
+    ],
+    "wgs84": [
+     52.5257168,
+     5.7177287
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000638814"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 79,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/55"
+   },
+   "geometry": {
+    "1": [
+     [
+      142.4,
+      485
+     ],
+     [
+      241.9,
+      485
+     ],
+     [
+      252.7,
+      532.5
+     ],
+     [
+      152.3,
+      532.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    195.6,
+    552.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/55 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K53",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 53,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 53",
+   "index_nieuw": 188,
+   "index_oud": 10,
+   "bouwnr": 8,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 291,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612322",
+    "nummeraanduiding_id": "0303200000612321",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177441.364,
+     504280.539
+    ],
+    "wgs84": [
+     52.5257246,
+     5.7178812
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612322"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 79,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/53"
+   },
+   "geometry": {
+    "1": [
+     [
+      132.6,
+      437.5
+     ],
+     [
+      231.1,
+      437.5
+     ],
+     [
+      241.9,
+      485
+     ],
+     [
+      142.4,
+      485
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    185.5,
+    490.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/53 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K51",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 51,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 51",
+   "index_nieuw": 189,
+   "index_oud": 11,
+   "bouwnr": 9,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 292,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612318",
+    "nummeraanduiding_id": "0303200000612317",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177450.443,
+     504282.622
+    ],
+    "wgs84": [
+     52.5257429,
+     5.7180151
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612318"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Bovenwoning",
+    "verdieping_huispedia": "1e verdieping",
+    "woonopp_huispedia": 81,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/51"
+   },
+   "geometry": {
+    "1": [
+     [
+      122.5,
+      389
+     ],
+     [
+      220.0,
+      389
+     ],
+     [
+      231.1,
+      437.5
+     ],
+     [
+      132.6,
+      437.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    168.9,
+    435.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/51 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S153",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 153,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 153",
+   "index_nieuw": 190,
+   "index_oud": 12,
+   "bouwnr": 10,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 283,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636546",
+    "nummeraanduiding_id": "0303200000636545",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177383.3,
+     504259.165
+    ],
+    "wgs84": [
+     52.5255349,
+     5.7170242
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636546"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/153"
+   },
+   "geometry": {
+    "1": [
+     [
+      285,
+      815
+     ],
+     [
+      367,
+      815
+     ],
+     [
+      367,
+      865
+     ],
+     [
+      285,
+      865
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    340.5,
+    833.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/153 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S151",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 151,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 151",
+   "index_nieuw": 191,
+   "index_oud": 13,
+   "bouwnr": 11,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 281,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636544",
+    "nummeraanduiding_id": "0303200000636543",
+    "oppervlakte_m2": 101,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177382.713,
+     504253.39
+    ],
+    "wgs84": [
+     52.525483,
+     5.7170151
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636544"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 101,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/151"
+   },
+   "geometry": {
+    "1": [
+     [
+      285,
+      767
+     ],
+     [
+      367,
+      767
+     ],
+     [
+      367,
+      815
+     ],
+     [
+      285,
+      815
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    375.8,
+    834.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/151 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S149",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 149,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 149",
+   "index_nieuw": 192,
+   "index_oud": 14,
+   "bouwnr": 12,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 280,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636542",
+    "nummeraanduiding_id": "0303200000636541",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177381.303,
+     504249.181
+    ],
+    "wgs84": [
+     52.5254452,
+     5.7169941
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636542"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/149"
+   },
+   "geometry": {
+    "1": [
+     [
+      392,
+      767
+     ],
+     [
+      477,
+      767
+     ],
+     [
+      477,
+      815
+     ],
+     [
+      392,
+      815
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    402.0,
+    840.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/149 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S147",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 147,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 147",
+   "index_nieuw": 193,
+   "index_oud": 15,
+   "bouwnr": 13,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 282,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636540",
+    "nummeraanduiding_id": "0303200000636539",
+    "oppervlakte_m2": 83,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177380.583,
+     504244.943
+    ],
+    "wgs84": [
+     52.5254072,
+     5.7169832
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636540"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 87,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/147"
+   },
+   "geometry": {
+    "1": [
+     [
+      392,
+      815
+     ],
+     [
+      477,
+      815
+     ],
+     [
+      477,
+      867
+     ],
+     [
+      392,
+      867
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    428.0,
+    843.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/147 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S171",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 171,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 171",
+   "index_nieuw": 194,
+   "index_oud": 16,
+   "bouwnr": 14,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 279,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635070",
+    "nummeraanduiding_id": "0303200000635069",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177388.952,
+     504258.813
+    ],
+    "wgs84": [
+     52.5255315,
+     5.7171074
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635070"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/171"
+   },
+   "geometry": {
+    "2": [
+     [
+      290,
+      810
+     ],
+     [
+      372,
+      810
+     ],
+     [
+      372,
+      860
+     ],
+     [
+      290,
+      860
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    340.2,
+    798.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/171 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S169",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 169,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 169",
+   "index_nieuw": 195,
+   "index_oud": 17,
+   "bouwnr": 15,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 277,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635068",
+    "nummeraanduiding_id": "0303200000635067",
+    "oppervlakte_m2": 101,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177388.894,
+     504254.713
+    ],
+    "wgs84": [
+     52.5254946,
+     5.7171063
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635068"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 103,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/169"
+   },
+   "geometry": {
+    "2": [
+     [
+      290,
+      760
+     ],
+     [
+      372,
+      760
+     ],
+     [
+      372,
+      810
+     ],
+     [
+      290,
+      810
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    365.1,
+    797.1
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/169 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S167",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 167,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 167",
+   "index_nieuw": 196,
+   "index_oud": 18,
+   "bouwnr": 16,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 276,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635066",
+    "nummeraanduiding_id": "0303200000635065",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177388.204,
+     504248.316
+    ],
+    "wgs84": [
+     52.5254372,
+     5.7170957
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635066"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 93,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/167"
+   },
+   "geometry": {
+    "2": [
+     [
+      397,
+      760
+     ],
+     [
+      481,
+      760
+     ],
+     [
+      481,
+      810
+     ],
+     [
+      397,
+      810
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    404.2,
+    798.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/167 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S165",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 165,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 165",
+   "index_nieuw": 197,
+   "index_oud": 19,
+   "bouwnr": 17,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 278,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635064",
+    "nummeraanduiding_id": "0303200000635063",
+    "oppervlakte_m2": 83,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177387.691,
+     504244.137
+    ],
+    "wgs84": [
+     52.5253996,
+     5.7170878
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635064"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 86,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/165"
+   },
+   "geometry": {
+    "2": [
+     [
+      397,
+      810
+     ],
+     [
+      481,
+      810
+     ],
+     [
+      481,
+      860
+     ],
+     [
+      397,
+      860
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    429.8,
+    799.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/165 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S143",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 143,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 143",
+   "index_nieuw": 198,
+   "index_oud": 20,
+   "bouwnr": 18,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 272,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636536",
+    "nummeraanduiding_id": "0303200000636535",
+    "oppervlakte_m2": 84,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177342.103,
+     504247.967
+    ],
+    "wgs84": [
+     52.5254359,
+     5.7164164
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636536"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 88,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/143"
+   },
+   "geometry": {
+    "1": [
+     [
+      399,
+      1029
+     ],
+     [
+      473,
+      1029
+     ],
+     [
+      473,
+      1100
+     ],
+     [
+      399,
+      1100
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    426.5,
+    1078.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Huispedia noemt '2e verdieping', akte/huisnummering zegt 1e – akte aangehouden."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/143 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S145",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 145,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 145",
+   "index_nieuw": 199,
+   "index_oud": 21,
+   "bouwnr": 19,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 273,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636538",
+    "nummeraanduiding_id": "0303200000636537",
+    "oppervlakte_m2": 95,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177351.422,
+     504247.381
+    ],
+    "wgs84": [
+     52.5254303,
+     5.7165536
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636538"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 95,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/145"
+   },
+   "geometry": {
+    "1": [
+     [
+      399,
+      955
+     ],
+     [
+      473,
+      955
+     ],
+     [
+      473,
+      1029
+     ],
+     [
+      399,
+      1029
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    426.0,
+    1021.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/145 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S161",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 161,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 161",
+   "index_nieuw": 200,
+   "index_oud": 22,
+   "bouwnr": 20,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 268,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635060",
+    "nummeraanduiding_id": "0303200000635059",
+    "oppervlakte_m2": 84,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177361.514,
+     504246.615
+    ],
+    "wgs84": [
+     52.525423,
+     5.7167023
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635060"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 84,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/161"
+   },
+   "geometry": {
+    "2": [
+     [
+      408,
+      1020
+     ],
+     [
+      483,
+      1020
+     ],
+     [
+      483,
+      1094
+     ],
+     [
+      408,
+      1094
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    426.2,
+    959.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/161 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S163",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 163,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 163",
+   "index_nieuw": 201,
+   "index_oud": 23,
+   "bouwnr": 21,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 271,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635062",
+    "nummeraanduiding_id": "0303200000635061",
+    "oppervlakte_m2": 95,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177371.125,
+     504245.649
+    ],
+    "wgs84": [
+     52.5254139,
+     5.7168439
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635062"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 98,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/163"
+   },
+   "geometry": {
+    "2": [
+     [
+      408,
+      948
+     ],
+     [
+      483,
+      948
+     ],
+     [
+      483,
+      1020
+     ],
+     [
+      408,
+      1020
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    427.9,
+    900.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/163 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S155",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 155,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 155",
+   "index_nieuw": 202,
+   "index_oud": 24,
+   "bouwnr": 22,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 270,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636548",
+    "nummeraanduiding_id": "0303200000636547",
+    "oppervlakte_m2": 76,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177349.462,
+     504267.161
+    ],
+    "wgs84": [
+     52.5256081,
+     5.7165261
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636548"
+   },
+   "openbaar": {
+    "energielabel": null,
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 76,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/155"
+   },
+   "geometry": {
+    "1": [
+     [
+      328,
+      982
+     ],
+     [
+      378,
+      982
+     ],
+     [
+      378,
+      1100
+     ],
+     [
+      328,
+      1100
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    306.8,
+    1041.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/155 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S157",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 157,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 157",
+   "index_nieuw": 203,
+   "index_oud": 25,
+   "bouwnr": 23,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 267,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636550",
+    "nummeraanduiding_id": "0303200000636549",
+    "oppervlakte_m2": 76,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177349.653,
+     504272.479
+    ],
+    "wgs84": [
+     52.5256559,
+     5.7165293
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636550"
+   },
+   "openbaar": {
+    "energielabel": null,
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 76,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/157"
+   },
+   "geometry": {
+    "1": [
+     [
+      280,
+      982
+     ],
+     [
+      328,
+      982
+     ],
+     [
+      328,
+      1100
+     ],
+     [
+      280,
+      1100
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    274.4,
+    1042.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/157 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S159",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 159,
+   "postcode": "8254 KR",
+   "woonplaats": "Dronten",
+   "adres": "Schans 159",
+   "index_nieuw": 204,
+   "index_oud": 26,
+   "bouwnr": 24,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 266,
+    "etage": "1e",
+    "blok": "1-BRG-B"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000635058",
+    "nummeraanduiding_id": "0303200000635057",
+    "oppervlakte_m2": 76,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584907",
+    "rd": [
+     177356.325,
+     504269.806
+    ],
+    "wgs84": [
+     52.5256316,
+     5.7166274
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000635058"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Bovenwoning",
+    "verdieping_huispedia": "1e verdieping",
+    "woonopp_huispedia": 76,
+    "url": "https://huispedia.nl/dronten/8254kr/schans/159"
+   },
+   "geometry": {
+    "1": [
+     [
+      230,
+      982
+     ],
+     [
+      280,
+      982
+     ],
+     [
+      280,
+      1100
+     ],
+     [
+      230,
+      1100
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    287.8,
+    1001.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kr/schans/159 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K49",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 49,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 49",
+   "index_nieuw": 205,
+   "index_oud": 27,
+   "bouwnr": 25,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 293,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612314",
+    "nummeraanduiding_id": "0303200000612313",
+    "oppervlakte_m2": 93,
+    "bouwjaar": 1991,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586299",
+    "rd": [
+     177508.591,
+     504279.821
+    ],
+    "wgs84": [
+     52.5257153,
+     5.7188717
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612314"
+   },
+   "openbaar": {
+    "energielabel": "B",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 97,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/49"
+   },
+   "geometry": {
+    "1": [
+     [
+      127,
+      12
+     ],
+     [
+      200,
+      12
+     ],
+     [
+      200,
+      80
+     ],
+     [
+      127,
+      80
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    160.5,
+    81.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1991 is het bouwjaar van het hele BAG-pand 0303100000586299 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/49 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K61",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 61,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 61",
+   "index_nieuw": 206,
+   "index_oud": 28,
+   "bouwnr": 26,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 294,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612334",
+    "nummeraanduiding_id": "0303200000612333",
+    "oppervlakte_m2": 108,
+    "bouwjaar": 1991,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586299",
+    "rd": [
+     177507.711,
+     504276.139
+    ],
+    "wgs84": [
+     52.5256823,
+     5.7188585
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612334"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Bovenwoning",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 108,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/61"
+   },
+   "geometry": {
+    "2": [
+     [
+      127,
+      43
+     ],
+     [
+      282,
+      43
+     ],
+     [
+      282,
+      75
+     ],
+     [
+      127,
+      75
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    183.2,
+    85.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1991 is het bouwjaar van het hele BAG-pand 0303100000586299 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/61 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K63",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 63,
+   "postcode": "8254 KT",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 63",
+   "index_nieuw": 207,
+   "index_oud": 29,
+   "bouwnr": 27,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 295,
+    "etage": "1e",
+    "blok": "1-BRG-A"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612338",
+    "nummeraanduiding_id": "0303200000612337",
+    "oppervlakte_m2": 120,
+    "bouwjaar": 1991,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586299",
+    "rd": [
+     177504.574,
+     504278.675
+    ],
+    "wgs84": [
+     52.5257052,
+     5.7188124
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612338"
+   },
+   "openbaar": {
+    "energielabel": "B",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 120,
+    "url": "https://huispedia.nl/dronten/8254kt/de-kiel/63"
+   },
+   "geometry": {
+    "2": [
+     [
+      127,
+      12
+     ],
+     [
+      282,
+      12
+     ],
+     [
+      282,
+      43
+     ],
+     [
+      127,
+      43
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    169.2,
+    105.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1991 is het bouwjaar van het hele BAG-pand 0303100000586299 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kt/de-kiel/63 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K50",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 50,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 50",
+   "index_nieuw": 208,
+   "index_oud": 30,
+   "bouwnr": 28,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 311,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612316",
+    "nummeraanduiding_id": "0303200000612315",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177440.409,
+     504256.591
+    ],
+    "wgs84": [
+     52.5255094,
+     5.7178655
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612316"
+   },
+   "openbaar": {
+    "energielabel": "A+",
+    "soort_huispedia": "Bovenwoning",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 81,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/50"
+   },
+   "geometry": {
+    "1": [
+     [
+      280,
+      485
+     ],
+     [
+      377.5,
+      481.5
+     ],
+     [
+      390,
+      530
+     ],
+     [
+      297.5,
+      532.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    331.2,
+    485.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/50 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K48",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 48,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 48",
+   "index_nieuw": 209,
+   "index_oud": 31,
+   "bouwnr": 29,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 314,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612740",
+    "nummeraanduiding_id": "0303200000612739",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177443.554,
+     504257.075
+    ],
+    "wgs84": [
+     52.5255136,
+     5.7179118
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612740"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 79,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/48"
+   },
+   "geometry": {
+    "1": [
+     [
+      270,
+      438.5
+     ],
+     [
+      362.5,
+      435
+     ],
+     [
+      377.5,
+      481.5
+     ],
+     [
+      280,
+      485
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    326.9,
+    466.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/48 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K46",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 46,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 46",
+   "index_nieuw": 210,
+   "index_oud": 32,
+   "bouwnr": 30,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 300,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000641958",
+    "nummeraanduiding_id": "0303200000641957",
+    "oppervlakte_m2": 79,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177445.973,
+     504257.196
+    ],
+    "wgs84": [
+     52.5255146,
+     5.7179475
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000641958"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 82,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/46"
+   },
+   "geometry": {
+    "1": [
+     [
+      257.5,
+      389
+     ],
+     [
+      355,
+      395
+     ],
+     [
+      362.5,
+      435
+     ],
+     [
+      270,
+      438.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    325.1,
+    451.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/46 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K62",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 62,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 62",
+   "index_nieuw": 211,
+   "index_oud": 33,
+   "bouwnr": 31,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 312,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612336",
+    "nummeraanduiding_id": "0303200000612335",
+    "oppervlakte_m2": 76,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177433.235,
+     504218.982
+    ],
+    "wgs84": [
+     52.5251717,
+     5.7177572
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612336"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 76,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/62"
+   },
+   "geometry": {
+    "1": [
+     [
+      570,
+      575
+     ],
+     [
+      620,
+      575
+     ],
+     [
+      620,
+      632
+     ],
+     [
+      570,
+      632
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    562.5,
+    512.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/62 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K60",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 60,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 60",
+   "index_nieuw": 212,
+   "index_oud": 34,
+   "bouwnr": 32,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 304,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612332",
+    "nummeraanduiding_id": "0303200000612331",
+    "oppervlakte_m2": 89,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177435.227,
+     504224.792
+    ],
+    "wgs84": [
+     52.5252238,
+     5.717787
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612332"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 89,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/60"
+   },
+   "geometry": {
+    "1": [
+     [
+      500,
+      575
+     ],
+     [
+      570,
+      575
+     ],
+     [
+      570,
+      640
+     ],
+     [
+      500,
+      640
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    526.4,
+    502.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/60 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K56",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 56,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 56",
+   "index_nieuw": 213,
+   "index_oud": 35,
+   "bouwnr": 33,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 303,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612326",
+    "nummeraanduiding_id": "0303200000612325",
+    "oppervlakte_m2": 89,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177435.915,
+     504235.057
+    ],
+    "wgs84": [
+     52.525316,
+     5.7177978
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612326"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 89,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/56"
+   },
+   "geometry": {
+    "1": [
+     [
+      430,
+      555
+     ],
+     [
+      477,
+      555
+     ],
+     [
+      477,
+      632
+     ],
+     [
+      430,
+      632
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    463.8,
+    503.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/56 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K54",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 54,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 54",
+   "index_nieuw": 214,
+   "index_oud": 36,
+   "bouwnr": 34,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 302,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612324",
+    "nummeraanduiding_id": "0303200000612323",
+    "oppervlakte_m2": 76,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177437.91,
+     504241.468
+    ],
+    "wgs84": [
+     52.5253736,
+     5.7178276
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612324"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 76,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/54"
+   },
+   "geometry": {
+    "1": [
+     [
+      382,
+      555
+     ],
+     [
+      430,
+      555
+     ],
+     [
+      430,
+      632
+     ],
+     [
+      382,
+      632
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    424.1,
+    493.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/54 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K52",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 52,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 52",
+   "index_nieuw": 215,
+   "index_oud": 37,
+   "bouwnr": 35,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 301,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612320",
+    "nummeraanduiding_id": "0303200000612319",
+    "oppervlakte_m2": 100,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177437.506,
+     504256.349
+    ],
+    "wgs84": [
+     52.5255073,
+     5.7178227
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612320"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 101,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/52"
+   },
+   "geometry": {
+    "1": [
+     [
+      300,
+      555
+     ],
+     [
+      382,
+      555
+     ],
+     [
+      382,
+      632
+     ],
+     [
+      300,
+      632
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    334.0,
+    502.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/52 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K84",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 84,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 84",
+   "index_nieuw": 216,
+   "index_oud": 38,
+   "bouwnr": 36,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 310,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612358",
+    "nummeraanduiding_id": "0303200000612357",
+    "oppervlakte_m2": 59,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177422.523,
+     504213.418
+    ],
+    "wgs84": [
+     52.5251221,
+     5.717599
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612358"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 64,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/84"
+   },
+   "geometry": {
+    "2": [
+     [
+      595,
+      548
+     ],
+     [
+      618,
+      548
+     ],
+     [
+      618,
+      627
+     ],
+     [
+      595,
+      627
+     ]
+    ],
+    "3": [
+     [
+      593,
+      552
+     ],
+     [
+      617,
+      552
+     ],
+     [
+      617,
+      627
+     ],
+     [
+      593,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    601.0,
+    575.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/84 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K82",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 82,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 82",
+   "index_nieuw": 217,
+   "index_oud": 39,
+   "bouwnr": 37,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 307,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612356",
+    "nummeraanduiding_id": "0303200000612355",
+    "oppervlakte_m2": 59,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177423.699,
+     504219.791
+    ],
+    "wgs84": [
+     52.5251794,
+     5.7176168
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612356"
+   },
+   "openbaar": {
+    "energielabel": null,
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 59,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/82"
+   },
+   "geometry": {
+    "2": [
+     [
+      572,
+      548
+     ],
+     [
+      595,
+      548
+     ],
+     [
+      595,
+      627
+     ],
+     [
+      572,
+      627
+     ]
+    ],
+    "3": [
+     [
+      570,
+      552
+     ],
+     [
+      593,
+      552
+     ],
+     [
+      593,
+      627
+     ],
+     [
+      570,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    561.8,
+    570.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/82 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K80",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 80,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 80",
+   "index_nieuw": 218,
+   "index_oud": 40,
+   "bouwnr": 38,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 306,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612354",
+    "nummeraanduiding_id": "0303200000612353",
+    "oppervlakte_m2": 59,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177440.772,
+     504248.366
+    ],
+    "wgs84": [
+     52.5254355,
+     5.7178703
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612354"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 55,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/80"
+   },
+   "geometry": {
+    "2": [
+     [
+      549,
+      548
+     ],
+     [
+      572,
+      548
+     ],
+     [
+      572,
+      627
+     ],
+     [
+      549,
+      627
+     ]
+    ],
+    "3": [
+     [
+      546,
+      552
+     ],
+     [
+      570,
+      552
+     ],
+     [
+      570,
+      627
+     ],
+     [
+      546,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    381.0,
+    479.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/80 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K78",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 78,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 78",
+   "index_nieuw": 219,
+   "index_oud": 41,
+   "bouwnr": 39,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 305,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612352",
+    "nummeraanduiding_id": "0303200000612351",
+    "oppervlakte_m2": 72,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177424.795,
+     504225.238
+    ],
+    "wgs84": [
+     52.5252283,
+     5.7176333
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612352"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 72,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/78"
+   },
+   "geometry": {
+    "2": [
+     [
+      525,
+      548
+     ],
+     [
+      549,
+      548
+     ],
+     [
+      549,
+      627
+     ],
+     [
+      525,
+      627
+     ]
+    ],
+    "3": [
+     [
+      522.5,
+      552
+     ],
+     [
+      546,
+      552
+     ],
+     [
+      546,
+      627
+     ],
+     [
+      522.5,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    528.3,
+    566.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/78 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K74",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 74,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 74",
+   "index_nieuw": 220,
+   "index_oud": 42,
+   "bouwnr": 40,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 297,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612350",
+    "nummeraanduiding_id": "0303200000612349",
+    "oppervlakte_m2": 72,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177426.148,
+     504230.435
+    ],
+    "wgs84": [
+     52.5252749,
+     5.7176536
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612350"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 73,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/74"
+   },
+   "geometry": {
+    "2": [
+     [
+      454,
+      548
+     ],
+     [
+      479,
+      548
+     ],
+     [
+      479,
+      627
+     ],
+     [
+      454,
+      627
+     ]
+    ],
+    "3": [
+     [
+      451,
+      552
+     ],
+     [
+      475,
+      552
+     ],
+     [
+      475,
+      627
+     ],
+     [
+      451,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    496.1,
+    560.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/74 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K72",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 72,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 72",
+   "index_nieuw": 221,
+   "index_oud": 43,
+   "bouwnr": 41,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 296,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612348",
+    "nummeraanduiding_id": "0303200000612347",
+    "oppervlakte_m2": 59,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177427.142,
+     504235.813
+    ],
+    "wgs84": [
+     52.5253232,
+     5.7176686
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612348"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 54,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/72"
+   },
+   "geometry": {
+    "2": [
+     [
+      430,
+      548
+     ],
+     [
+      454,
+      548
+     ],
+     [
+      454,
+      627
+     ],
+     [
+      430,
+      627
+     ]
+    ],
+    "3": [
+     [
+      426,
+      552
+     ],
+     [
+      451,
+      552
+     ],
+     [
+      451,
+      627
+     ],
+     [
+      426,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    463.1,
+    556.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/72 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K70",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 70,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 70",
+   "index_nieuw": 222,
+   "index_oud": 44,
+   "bouwnr": 42,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 298,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612346",
+    "nummeraanduiding_id": "0303200000612345",
+    "oppervlakte_m2": 59,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177428.404,
+     504241.491
+    ],
+    "wgs84": [
+     52.5253742,
+     5.7176876
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612346"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": null,
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 68,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/70"
+   },
+   "geometry": {
+    "2": [
+     [
+      406,
+      548
+     ],
+     [
+      430,
+      548
+     ],
+     [
+      430,
+      627
+     ],
+     [
+      406,
+      627
+     ]
+    ],
+    "3": [
+     [
+      401,
+      552
+     ],
+     [
+      426,
+      552
+     ],
+     [
+      426,
+      627
+     ],
+     [
+      401,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    428.1,
+    551.6
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/70 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K68",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 68,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 68",
+   "index_nieuw": 223,
+   "index_oud": 45,
+   "bouwnr": 43,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 299,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612344",
+    "nummeraanduiding_id": "0303200000612343",
+    "oppervlakte_m2": 59,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177429.036,
+     504247.047
+    ],
+    "wgs84": [
+     52.5254241,
+     5.7176972
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612344"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 58,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/68"
+   },
+   "geometry": {
+    "2": [
+     [
+      382,
+      548
+     ],
+     [
+      406,
+      548
+     ],
+     [
+      406,
+      627
+     ],
+     [
+      382,
+      627
+     ]
+    ],
+    "3": [
+     [
+      380,
+      552
+     ],
+     [
+      401,
+      552
+     ],
+     [
+      401,
+      627
+     ],
+     [
+      380,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    394.1,
+    550.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/68 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K66",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 66,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 66",
+   "index_nieuw": 224,
+   "index_oud": 46,
+   "bouwnr": 44,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 309,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612342",
+    "nummeraanduiding_id": "0303200000612341",
+    "oppervlakte_m2": 44,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177429.724,
+     504253.352
+    ],
+    "wgs84": [
+     52.5254807,
+     5.7177078
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612342"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 55,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/66"
+   },
+   "geometry": {
+    "2": [
+     [
+      338,
+      548
+     ],
+     [
+      382,
+      548
+     ],
+     [
+      382,
+      627
+     ],
+     [
+      338,
+      627
+     ]
+    ],
+    "3": [
+     [
+      356,
+      552
+     ],
+     [
+      380,
+      552
+     ],
+     [
+      380,
+      627
+     ],
+     [
+      356,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    355.5,
+    548.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/66 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "K64",
+   "straat": "De Kiel",
+   "straat_officieel": "De Kiel",
+   "huisnr": 64,
+   "postcode": "8254 KW",
+   "woonplaats": "Dronten",
+   "adres": "De Kiel 64",
+   "index_nieuw": 225,
+   "index_oud": 47,
+   "bouwnr": 45,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 308,
+    "etage": "1e",
+    "blok": "1-BRG-C"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000612340",
+    "nummeraanduiding_id": "0303200000612339",
+    "oppervlakte_m2": 106,
+    "bouwjaar": 1963,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000597116",
+    "rd": [
+     177431.013,
+     504258.262
+    ],
+    "wgs84": [
+     52.5255248,
+     5.7177271
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000612340"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 103,
+    "url": "https://huispedia.nl/dronten/8254kw/de-kiel/64"
+   },
+   "geometry": {
+    "2": [
+     [
+      299,
+      548
+     ],
+     [
+      338,
+      548
+     ],
+     [
+      338,
+      627
+     ],
+     [
+      315,
+      627
+     ]
+    ],
+    "3": [
+     [
+      299,
+      552
+     ],
+     [
+      356,
+      552
+     ],
+     [
+      356,
+      627
+     ],
+     [
+      315,
+      627
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    325.2,
+    543.1
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e).",
+    "BAG-bouwjaar 1963 is het bouwjaar van het hele BAG-pand 0303100000597116 (met winkels eronder). Of de woonlaag later is gebouwd of verbouwd, blijkt niet uit BAG; sommige openbare sites noemen 2006. De splitsingsakte is van 2006/2007."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kw/de-kiel/64 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S89",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 89,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 89",
+   "index_nieuw": 226,
+   "index_oud": 48,
+   "bouwnr": 46,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 329,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634824",
+    "nummeraanduiding_id": "0303200000634823",
+    "oppervlakte_m2": 93,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177354.697,
+     504205.791
+    ],
+    "wgs84": [
+     52.5250564,
+     5.7165991
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634824"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 93,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/89"
+   },
+   "geometry": {
+    "1": [
+     [
+      530,
+      913
+     ],
+     [
+      628,
+      913
+     ],
+     [
+      628,
+      961
+     ],
+     [
+      530,
+      961
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    676.9,
+    983.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/89 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S91",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 91,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 91",
+   "index_nieuw": 227,
+   "index_oud": 49,
+   "bouwnr": 47,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 328,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636484",
+    "nummeraanduiding_id": "0303200000636483",
+    "oppervlakte_m2": 93,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177354.876,
+     504209.992
+    ],
+    "wgs84": [
+     52.5250941,
+     5.716602
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636484"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 93,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/91"
+   },
+   "geometry": {
+    "1": [
+     [
+      530,
+      865
+     ],
+     [
+      628,
+      865
+     ],
+     [
+      628,
+      913
+     ],
+     [
+      530,
+      913
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    651.3,
+    984.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/91 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S93",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 93,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 93",
+   "index_nieuw": 228,
+   "index_oud": 50,
+   "bouwnr": 48,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 321,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636486",
+    "nummeraanduiding_id": "0303200000636485",
+    "oppervlakte_m2": 93,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177355.02,
+     504214.176
+    ],
+    "wgs84": [
+     52.5251317,
+     5.7166044
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636486"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 95,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/93"
+   },
+   "geometry": {
+    "1": [
+     [
+      530,
+      818
+     ],
+     [
+      628,
+      818
+     ],
+     [
+      628,
+      865
+     ],
+     [
+      530,
+      865
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    625.8,
+    984.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/93 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S95",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 95,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 95",
+   "index_nieuw": 229,
+   "index_oud": 51,
+   "bouwnr": 49,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 320,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636488",
+    "nummeraanduiding_id": "0303200000636487",
+    "oppervlakte_m2": 93,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177355.504,
+     504217.402
+    ],
+    "wgs84": [
+     52.5251607,
+     5.7166118
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636488"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": "1e verdieping",
+    "woonopp_huispedia": 95,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/95"
+   },
+   "geometry": {
+    "1": [
+     [
+      530,
+      770
+     ],
+     [
+      628,
+      770
+     ],
+     [
+      628,
+      818
+     ],
+     [
+      530,
+      818
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    606.1,
+    983.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/95 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S115",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 115,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 115",
+   "index_nieuw": 230,
+   "index_oud": 52,
+   "bouwnr": 50,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 315,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636508",
+    "nummeraanduiding_id": "0303200000636507",
+    "oppervlakte_m2": 69,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177360.18,
+     504221.595
+    ],
+    "wgs84": [
+     52.5251982,
+     5.716681
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636508"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 69,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/115"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      927.5
+     ],
+     [
+      620,
+      927.5
+     ],
+     [
+      620,
+      952.5
+     ],
+     [
+      536,
+      952.5
+     ]
+    ],
+    "3": [
+     [
+      531,
+      932.5
+     ],
+     [
+      618,
+      932.5
+     ],
+     [
+      618,
+      957.5
+     ],
+     [
+      531,
+      957.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    578.6,
+    956.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/115 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S117",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 117,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 117",
+   "index_nieuw": 231,
+   "index_oud": 53,
+   "bouwnr": 51,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 316,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636510",
+    "nummeraanduiding_id": "0303200000636509",
+    "oppervlakte_m2": 66,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177360.342,
+     504183.536
+    ],
+    "wgs84": [
+     52.5248561,
+     5.7166808
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636510"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 66,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/117"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      902.5
+     ],
+     [
+      620,
+      902.5
+     ],
+     [
+      620,
+      927.5
+     ],
+     [
+      536,
+      927.5
+     ]
+    ],
+    "3": [
+     [
+      531,
+      907.5
+     ],
+     [
+      618,
+      907.5
+     ],
+     [
+      618,
+      932.5
+     ],
+     [
+      531,
+      932.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    809.4,
+    939.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/117 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S119",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 119,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 119",
+   "index_nieuw": 232,
+   "index_oud": 54,
+   "bouwnr": 52,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 317,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636512",
+    "nummeraanduiding_id": "0303200000636511",
+    "oppervlakte_m2": 66,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177360.826,
+     504188.535
+    ],
+    "wgs84": [
+     52.524901,
+     5.7166883
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636512"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 67,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/119"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      879
+     ],
+     [
+      620,
+      879
+     ],
+     [
+      620,
+      902.5
+     ],
+     [
+      536,
+      902.5
+     ]
+    ],
+    "3": [
+     [
+      531,
+      885
+     ],
+     [
+      618,
+      885
+     ],
+     [
+      618,
+      907.5
+     ],
+     [
+      531,
+      907.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    778.9,
+    938.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/119 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S121",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 121,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 121",
+   "index_nieuw": 233,
+   "index_oud": 55,
+   "bouwnr": 53,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 318,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636514",
+    "nummeraanduiding_id": "0303200000636513",
+    "oppervlakte_m2": 69,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177361.309,
+     504195.147
+    ],
+    "wgs84": [
+     52.5249604,
+     5.7166958
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636514"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 70,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/121"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      855
+     ],
+     [
+      620,
+      855
+     ],
+     [
+      620,
+      879
+     ],
+     [
+      536,
+      879
+     ]
+    ],
+    "3": [
+     [
+      531,
+      861.5
+     ],
+     [
+      618,
+      861.5
+     ],
+     [
+      618,
+      885
+     ],
+     [
+      531,
+      885
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    738.6,
+    938.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/121 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S123",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 123,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 123",
+   "index_nieuw": 234,
+   "index_oud": 56,
+   "bouwnr": 54,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 319,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636516",
+    "nummeraanduiding_id": "0303200000636515",
+    "oppervlakte_m2": 69,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177361.471,
+     504200.146
+    ],
+    "wgs84": [
+     52.5250054,
+     5.7166985
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636516"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 71,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/123"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      832.5
+     ],
+     [
+      620,
+      832.5
+     ],
+     [
+      620,
+      855
+     ],
+     [
+      536,
+      855
+     ]
+    ],
+    "3": [
+     [
+      531,
+      839
+     ],
+     [
+      618,
+      839
+     ],
+     [
+      618,
+      861.5
+     ],
+     [
+      531,
+      861.5
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    708.2,
+    939.6
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/123 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S125",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 125,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 125",
+   "index_nieuw": 235,
+   "index_oud": 57,
+   "bouwnr": 55,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 325,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636518",
+    "nummeraanduiding_id": "0303200000636517",
+    "oppervlakte_m2": 66,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177361.632,
+     504204.662
+    ],
+    "wgs84": [
+     52.5250459,
+     5.7167012
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636518"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 66,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/125"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      807.5
+     ],
+     [
+      620,
+      807.5
+     ],
+     [
+      620,
+      832.5
+     ],
+     [
+      536,
+      832.5
+     ]
+    ],
+    "3": [
+     [
+      531,
+      814
+     ],
+     [
+      618,
+      814
+     ],
+     [
+      618,
+      839
+     ],
+     [
+      531,
+      839
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    680.7,
+    940.6
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/125 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S127",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 127,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 127",
+   "index_nieuw": 236,
+   "index_oud": 58,
+   "bouwnr": 56,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 326,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636520",
+    "nummeraanduiding_id": "0303200000636519",
+    "oppervlakte_m2": 66,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177362.599,
+     504209.016
+    ],
+    "wgs84": [
+     52.525085,
+     5.7167158
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636520"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 66,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/127"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      782.5
+     ],
+     [
+      620,
+      782.5
+     ],
+     [
+      620,
+      807.5
+     ],
+     [
+      536,
+      807.5
+     ]
+    ],
+    "3": [
+     [
+      531,
+      789
+     ],
+     [
+      618,
+      789
+     ],
+     [
+      618,
+      814
+     ],
+     [
+      531,
+      814
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    653.8,
+    936.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/127 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S129",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 129,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 129",
+   "index_nieuw": 237,
+   "index_oud": 59,
+   "bouwnr": 57,
+   "etage_akte": "2e + 3e",
+   "etages": [
+    "2e",
+    "3e"
+   ],
+   "floors": [
+    2,
+    3
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 327,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636522",
+    "nummeraanduiding_id": "0303200000636521",
+    "oppervlakte_m2": 69,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177362.599,
+     504212.725
+    ],
+    "wgs84": [
+     52.5251183,
+     5.716716
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636522"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 70,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/129"
+   },
+   "geometry": {
+    "2": [
+     [
+      536,
+      760
+     ],
+     [
+      620,
+      760
+     ],
+     [
+      620,
+      782.5
+     ],
+     [
+      536,
+      782.5
+     ]
+    ],
+    "3": [
+     [
+      531,
+      764
+     ],
+     [
+      618,
+      764
+     ],
+     [
+      618,
+      789
+     ],
+     [
+      531,
+      789
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    631.3,
+    938.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 2e + 3e (akte: 2e + 3e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/129 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S83",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 83,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 83",
+   "index_nieuw": 238,
+   "index_oud": 60,
+   "bouwnr": 58,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 322,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634818",
+    "nummeraanduiding_id": "0303200000634817",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177352.923,
+     504190.148
+    ],
+    "wgs84": [
+     52.5249158,
+     5.7165719
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634818"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 88,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/83"
+   },
+   "geometry": {
+    "1": [
+     [
+      636,
+      979
+     ],
+     [
+      686,
+      979
+     ],
+     [
+      686,
+      1103
+     ],
+     [
+      636,
+      1103
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    772.6,
+    987.1
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/83 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S85",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 85,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 85",
+   "index_nieuw": 239,
+   "index_oud": 61,
+   "bouwnr": 59,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 324,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634820",
+    "nummeraanduiding_id": "0303200000634819",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177352.868,
+     504196.543
+    ],
+    "wgs84": [
+     52.5249733,
+     5.7165715
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634820"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/85"
+   },
+   "geometry": {
+    "1": [
+     [
+      589,
+      979
+     ],
+     [
+      636,
+      979
+     ],
+     [
+      636,
+      1103
+     ],
+     [
+      589,
+      1103
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    733.8,
+    990.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/85 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S87",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 87,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 87",
+   "index_nieuw": 240,
+   "index_oud": 62,
+   "bouwnr": 60,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 323,
+    "etage": "1e",
+    "blok": "1-BRG-D"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634822",
+    "nummeraanduiding_id": "0303200000634821",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177353.29,
+     504201.207
+    ],
+    "wgs84": [
+     52.5250152,
+     5.7165781
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634822"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 93,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/87"
+   },
+   "geometry": {
+    "1": [
+     [
+      541,
+      979
+     ],
+     [
+      589,
+      979
+     ],
+     [
+      589,
+      1103
+     ],
+     [
+      541,
+      1103
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    705.3,
+    989.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/87 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S109",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 109,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 109",
+   "index_nieuw": 241,
+   "index_oud": 63,
+   "bouwnr": 61,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 333,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636502",
+    "nummeraanduiding_id": "0303200000636501",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177359.374,
+     504208.855
+    ],
+    "wgs84": [
+     52.5250837,
+     5.7166682
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636502"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 82,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/109"
+   },
+   "geometry": {
+    "2": [
+     [
+      647,
+      1007
+     ],
+     [
+      696,
+      1007
+     ],
+     [
+      696,
+      1094
+     ],
+     [
+      647,
+      1094
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    656.2,
+    956.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/109 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S111",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 111,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 111",
+   "index_nieuw": 242,
+   "index_oud": 64,
+   "bouwnr": 62,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 332,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636504",
+    "nummeraanduiding_id": "0303200000636503",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177359.697,
+     504212.886
+    ],
+    "wgs84": [
+     52.5251199,
+     5.7166733
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636504"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 80,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/111"
+   },
+   "geometry": {
+    "2": [
+     [
+      599,
+      1007
+     ],
+     [
+      647,
+      1007
+     ],
+     [
+      647,
+      1094
+     ],
+     [
+      599,
+      1094
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    631.6,
+    956.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/111 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S113",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 113,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 113",
+   "index_nieuw": 243,
+   "index_oud": 65,
+   "bouwnr": 63,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 331,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636506",
+    "nummeraanduiding_id": "0303200000636505",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177359.858,
+     504216.273
+    ],
+    "wgs84": [
+     52.5251503,
+     5.7166759
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636506"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 83,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/113"
+   },
+   "geometry": {
+    "2": [
+     [
+      550,
+      1007
+     ],
+     [
+      599,
+      1007
+     ],
+     [
+      599,
+      1094
+     ],
+     [
+      550,
+      1094
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    611.0,
+    956.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/113 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S105",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 105,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 105",
+   "index_nieuw": 244,
+   "index_oud": 66,
+   "bouwnr": 64,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 335,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636498",
+    "nummeraanduiding_id": "0303200000636497",
+    "oppervlakte_m2": 86,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177345.707,
+     504187.389
+    ],
+    "wgs84": [
+     52.5248913,
+     5.7164654
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636498"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 86,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/105"
+   },
+   "geometry": {
+    "2": [
+     [
+      812,
+      1006
+     ],
+     [
+      862,
+      1006
+     ],
+     [
+      862,
+      1112
+     ],
+     [
+      812,
+      1112
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    792.4,
+    1029.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/105 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S107",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 107,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 107",
+   "index_nieuw": 245,
+   "index_oud": 67,
+   "bouwnr": 65,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 334,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636500",
+    "nummeraanduiding_id": "0303200000636499",
+    "oppervlakte_m2": 86,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177346.104,
+     504193.462
+    ],
+    "wgs84": [
+     52.5249459,
+     5.7164717
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636500"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": "2e verdieping",
+    "woonopp_huispedia": 89,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/107"
+   },
+   "geometry": {
+    "2": [
+     [
+      764,
+      1006
+     ],
+     [
+      812,
+      1006
+     ],
+     [
+      812,
+      1112
+     ],
+     [
+      764,
+      1112
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    755.4,
+    1030.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/107 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S139",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 139,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 139",
+   "index_nieuw": 246,
+   "index_oud": 68,
+   "bouwnr": 66,
+   "etage_akte": "3e",
+   "etages": [
+    "3e"
+   ],
+   "floors": [
+    3
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 349,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636532",
+    "nummeraanduiding_id": "0303200000636531",
+    "oppervlakte_m2": 86,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177337.621,
+     504188.355
+    ],
+    "wgs84": [
+     52.5249004,
+     5.7163463
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636532"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 86,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/139"
+   },
+   "geometry": {
+    "3": [
+     [
+      807.5,
+      1013
+     ],
+     [
+      856,
+      1013
+     ],
+     [
+      856,
+      1119
+     ],
+     [
+      807.5,
+      1119
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    790.1,
+    1079.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/139 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S141",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 141,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 141",
+   "index_nieuw": 247,
+   "index_oud": 69,
+   "bouwnr": 67,
+   "etage_akte": "3e",
+   "etages": [
+    "3e"
+   ],
+   "floors": [
+    3
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 348,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636534",
+    "nummeraanduiding_id": "0303200000636533",
+    "oppervlakte_m2": 86,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177338.312,
+     504194.164
+    ],
+    "wgs84": [
+     52.5249525,
+     5.7163569
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636534"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 89,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/141"
+   },
+   "geometry": {
+    "3": [
+     [
+      759,
+      1013
+     ],
+     [
+      807.5,
+      1013
+     ],
+     [
+      807.5,
+      1119
+     ],
+     [
+      759,
+      1119
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    754.6,
+    1077.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/141 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S75",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 75,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 75",
+   "index_nieuw": 248,
+   "index_oud": 70,
+   "bouwnr": 68,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 341,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634810",
+    "nummeraanduiding_id": "0303200000634809",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177343.714,
+     504147.531
+    ],
+    "wgs84": [
+     52.5245332,
+     5.7164334
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634810"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 91,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/75"
+   },
+   "geometry": {
+    "1": [
+     [
+      1053,
+      954
+     ],
+     [
+      1100,
+      954
+     ],
+     [
+      1100,
+      1102
+     ],
+     [
+      1053,
+      1102
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1035.1,
+    1024.4
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/75 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S77",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 77,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 77",
+   "index_nieuw": 249,
+   "index_oud": 71,
+   "bouwnr": 69,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 355,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634812",
+    "nummeraanduiding_id": "0303200000634811",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177344.419,
+     504151.694
+    ],
+    "wgs84": [
+     52.5245706,
+     5.716444
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634812"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 93,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/77"
+   },
+   "geometry": {
+    "1": [
+     [
+      1005,
+      954
+     ],
+     [
+      1053,
+      954
+     ],
+     [
+      1053,
+      1102
+     ],
+     [
+      1005,
+      1102
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1009.6,
+    1021.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/77 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S79",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 79,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 79",
+   "index_nieuw": 250,
+   "index_oud": 72,
+   "bouwnr": 70,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 342,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634814",
+    "nummeraanduiding_id": "0303200000634813",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177345.1,
+     504156.754
+    ],
+    "wgs84": [
+     52.524616,
+     5.7164544
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634814"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": "1e verdieping",
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/79"
+   },
+   "geometry": {
+    "1": [
+     [
+      958,
+      954
+     ],
+     [
+      1005,
+      954
+     ],
+     [
+      1005,
+      1102
+     ],
+     [
+      958,
+      1102
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    978.6,
+    1020.0
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/79 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S81",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 81,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 81",
+   "index_nieuw": 251,
+   "index_oud": 73,
+   "bouwnr": 71,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 356,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634816",
+    "nummeraanduiding_id": "0303200000634815",
+    "oppervlakte_m2": 88,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177345.693,
+     504161.498
+    ],
+    "wgs84": [
+     52.5246587,
+     5.7164635
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634816"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": null,
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 88,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/81"
+   },
+   "geometry": {
+    "1": [
+     [
+      910,
+      954
+     ],
+     [
+      958,
+      954
+     ],
+     [
+      958,
+      1102
+     ],
+     [
+      910,
+      1102
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    949.5,
+    1018.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/81 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S97",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 97,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 97",
+   "index_nieuw": 252,
+   "index_oud": 74,
+   "bouwnr": 72,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 347,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636490",
+    "nummeraanduiding_id": "0303200000636489",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177355.482,
+     504222.033
+    ],
+    "wgs84": [
+     52.5252023,
+     5.7166118
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636490"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 80,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/97"
+   },
+   "geometry": {
+    "2": [
+     [
+      1062,
+      1002
+     ],
+     [
+      1110,
+      1002
+     ],
+     [
+      1110,
+      1100
+     ],
+     [
+      1062,
+      1100
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    578.0,
+    985.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/97 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S99",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 99,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 99",
+   "index_nieuw": 253,
+   "index_oud": 75,
+   "bouwnr": 73,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 346,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636492",
+    "nummeraanduiding_id": "0303200000636491",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177356.794,
+     504184.503
+    ],
+    "wgs84": [
+     52.524865,
+     5.7166286
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636492"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 80,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/99"
+   },
+   "geometry": {
+    "2": [
+     [
+      1015,
+      1002
+     ],
+     [
+      1062,
+      1002
+     ],
+     [
+      1062,
+      1100
+     ],
+     [
+      1015,
+      1100
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    805.1,
+    961.2
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/99 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S101",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 101,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 101",
+   "index_nieuw": 254,
+   "index_oud": 76,
+   "bouwnr": 74,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 345,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636494",
+    "nummeraanduiding_id": "0303200000636493",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177342.961,
+     504163.487
+    ],
+    "wgs84": [
+     52.5246766,
+     5.7164234
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636494"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 81,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/101"
+   },
+   "geometry": {
+    "2": [
+     [
+      966,
+      1003
+     ],
+     [
+      1015,
+      1003
+     ],
+     [
+      1015,
+      1087
+     ],
+     [
+      966,
+      1087
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    938.7,
+    1035.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/101 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S103",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 103,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 103",
+   "index_nieuw": 255,
+   "index_oud": 77,
+   "bouwnr": 75,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 344,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636496",
+    "nummeraanduiding_id": "0303200000636495",
+    "oppervlakte_m2": 80,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177344.174,
+     504168.138
+    ],
+    "wgs84": [
+     52.5247184,
+     5.7164415
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636496"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Portiekflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 82,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/103"
+   },
+   "geometry": {
+    "2": [
+     [
+      916,
+      1003
+     ],
+     [
+      966,
+      1003
+     ],
+     [
+      966,
+      1087
+     ],
+     [
+      916,
+      1087
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    909.9,
+    1030.6
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/103 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S131",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 131,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 131",
+   "index_nieuw": 256,
+   "index_oud": 78,
+   "bouwnr": 76,
+   "etage_akte": "3e + 4e",
+   "etages": [
+    "3e",
+    "4e"
+   ],
+   "floors": [
+    3,
+    4
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 353,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636524",
+    "nummeraanduiding_id": "0303200000636523",
+    "oppervlakte_m2": 136,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177337.713,
+     504148.172
+    ],
+    "wgs84": [
+     52.5245392,
+     5.716345
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636524"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 136,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/131"
+   },
+   "geometry": {
+    "3": [
+     [
+      1056,
+      1013
+     ],
+     [
+      1104,
+      1013
+     ],
+     [
+      1104,
+      1094
+     ],
+     [
+      1056,
+      1094
+     ]
+    ],
+    "4": [
+     [
+      1062.5,
+      1001
+     ],
+     [
+      1111,
+      1001
+     ],
+     [
+      1111,
+      1085
+     ],
+     [
+      1062.5,
+      1085
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1033.9,
+    1061.1
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 3e + 4e (akte: 3e + 4e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/131 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S133",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 133,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 133",
+   "index_nieuw": 257,
+   "index_oud": 79,
+   "bouwnr": 77,
+   "etage_akte": "3e + 4e",
+   "etages": [
+    "3e",
+    "4e"
+   ],
+   "floors": [
+    3,
+    4
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 352,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636526",
+    "nummeraanduiding_id": "0303200000636525",
+    "oppervlakte_m2": 136,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177335.653,
+     504155.258
+    ],
+    "wgs84": [
+     52.524603,
+     5.7163151
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636526"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 132,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/133"
+   },
+   "geometry": {
+    "3": [
+     [
+      1009,
+      1013
+     ],
+     [
+      1056,
+      1013
+     ],
+     [
+      1056,
+      1094
+     ],
+     [
+      1009,
+      1094
+     ]
+    ],
+    "4": [
+     [
+      1015,
+      1001
+     ],
+     [
+      1062.5,
+      1001
+     ],
+     [
+      1062.5,
+      1085
+     ],
+     [
+      1015,
+      1085
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    991.8,
+    1076.7
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 3e + 4e (akte: 3e + 4e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/133 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S135",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 135,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 135",
+   "index_nieuw": 258,
+   "index_oud": 80,
+   "bouwnr": 78,
+   "etage_akte": "3e + 4e",
+   "etages": [
+    "3e",
+    "4e"
+   ],
+   "floors": [
+    3,
+    4
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 351,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636528",
+    "nummeraanduiding_id": "0303200000636527",
+    "oppervlakte_m2": 136,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177335.786,
+     504159.827
+    ],
+    "wgs84": [
+     52.524644,
+     5.7163174
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636528"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 136,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/135"
+   },
+   "geometry": {
+    "3": [
+     [
+      960,
+      1013
+     ],
+     [
+      1009,
+      1013
+     ],
+     [
+      1009,
+      1094
+     ],
+     [
+      960,
+      1094
+     ]
+    ],
+    "4": [
+     [
+      967.5,
+      1001
+     ],
+     [
+      1015,
+      1001
+     ],
+     [
+      1015,
+      1085
+     ],
+     [
+      967.5,
+      1085
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    964.0,
+    1077.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 3e + 4e (akte: 3e + 4e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/135 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S137",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 137,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 137",
+   "index_nieuw": 259,
+   "index_oud": 81,
+   "bouwnr": 79,
+   "etage_akte": "3e + 4e",
+   "etages": [
+    "3e",
+    "4e"
+   ],
+   "floors": [
+    3,
+    4
+   ],
+   "meerlaags": true,
+   "berging": {
+    "index": 350,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000636530",
+    "nummeraanduiding_id": "0303200000636529",
+    "oppervlakte_m2": 136,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000584908",
+    "rd": [
+     177336.344,
+     504164.429
+    ],
+    "wgs84": [
+     52.5246854,
+     5.7163259
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000636530"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Maisonnette",
+    "verdieping_huispedia": "3e verdieping",
+    "woonopp_huispedia": 129,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/137"
+   },
+   "geometry": {
+    "3": [
+     [
+      910,
+      1013
+     ],
+     [
+      960,
+      1013
+     ],
+     [
+      960,
+      1094
+     ],
+     [
+      910,
+      1094
+     ]
+    ],
+    "4": [
+     [
+      917.5,
+      1001
+     ],
+     [
+      967.5,
+      1001
+     ],
+     [
+      967.5,
+      1085
+     ],
+     [
+      917.5,
+      1085
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    935.8,
+    1076.5
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [
+    "Maisonnette/meerlaags: komt voor op 3e + 4e (akte: 3e + 4e)."
+   ],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/137 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S63",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 63,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 63",
+   "index_nieuw": 260,
+   "index_oud": 82,
+   "bouwnr": 122,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 354,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634798",
+    "nummeraanduiding_id": "0303200000634797",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586451",
+    "rd": [
+     177332.212,
+     504117.914
+    ],
+    "wgs84": [
+     52.5242675,
+     5.7162619
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634798"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": null,
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/63"
+   },
+   "geometry": {
+    "1": [
+     [
+      1196,
+      1002
+     ],
+     [
+      1230,
+      962
+     ],
+     [
+      1302.8,
+      1038
+     ],
+     [
+      1265.4,
+      1074
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1219.9,
+    1081.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/63 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S65",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 65,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 65",
+   "index_nieuw": 261,
+   "index_oud": 83,
+   "bouwnr": 123,
+   "etage_akte": "1e",
+   "etages": [
+    "1e"
+   ],
+   "floors": [
+    1
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 340,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634800",
+    "nummeraanduiding_id": "0303200000634799",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586451",
+    "rd": [
+     177337.693,
+     504120.923
+    ],
+    "wgs84": [
+     52.5242943,
+     5.7163429
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634800"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 93,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/65"
+   },
+   "geometry": {
+    "1": [
+     [
+      1162,
+      1042
+     ],
+     [
+      1196,
+      1002
+     ],
+     [
+      1265.4,
+      1074
+     ],
+     [
+      1228,
+      1110
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1199.2,
+    1049.3
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/65 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S67",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 67,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 67",
+   "index_nieuw": 262,
+   "index_oud": 84,
+   "bouwnr": 124,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 339,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634802",
+    "nummeraanduiding_id": "0303200000634801",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586451",
+    "rd": [
+     177341.425,
+     504116.632
+    ],
+    "wgs84": [
+     52.5242556,
+     5.7163976
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634802"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": null,
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/67"
+   },
+   "geometry": {
+    "2": [
+     [
+      1201.4,
+      976
+     ],
+     [
+      1238.8,
+      938.8
+     ],
+     [
+      1312,
+      1010
+     ],
+     [
+      1276,
+      1047.4
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1223.6,
+    1024.8
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/67 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S69",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 69,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 69",
+   "index_nieuw": 263,
+   "index_oud": 85,
+   "bouwnr": 125,
+   "etage_akte": "2e",
+   "etages": [
+    "2e"
+   ],
+   "floors": [
+    2
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 338,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634804",
+    "nummeraanduiding_id": "0303200000634803",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586451",
+    "rd": [
+     177336.242,
+     504112.926
+    ],
+    "wgs84": [
+     52.5242225,
+     5.716321
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634804"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": null,
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/69"
+   },
+   "geometry": {
+    "2": [
+     [
+      1164,
+      1013.2
+     ],
+     [
+      1201.4,
+      976
+     ],
+     [
+      1276,
+      1047.4
+     ],
+     [
+      1240,
+      1084.8
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1248.4,
+    1054.6
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/69 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S73",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 73,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 73",
+   "index_nieuw": 264,
+   "index_oud": 86,
+   "bouwnr": 126,
+   "etage_akte": "3e",
+   "etages": [
+    "3e"
+   ],
+   "floors": [
+    3
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 336,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634808",
+    "nummeraanduiding_id": "0303200000634807",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586451",
+    "rd": [
+     177341.441,
+     504119.315
+    ],
+    "wgs84": [
+     52.5242797,
+     5.716398
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634808"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": null,
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/73"
+   },
+   "geometry": {
+    "3": [
+     [
+      1195.6,
+      987.4
+     ],
+     [
+      1233.2,
+      950
+     ],
+     [
+      1308,
+      1024
+     ],
+     [
+      1271.4,
+      1060.4
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1207.3,
+    1025.9
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/73 (2026-11-06)"
+   ]
+  },
+  {
+   "id": "S71",
+   "straat": "Schans",
+   "straat_officieel": "Schans",
+   "huisnr": 71,
+   "postcode": "8254 KP",
+   "woonplaats": "Dronten",
+   "adres": "Schans 71",
+   "index_nieuw": 265,
+   "index_oud": 87,
+   "bouwnr": 127,
+   "etage_akte": "3e",
+   "etages": [
+    "3e"
+   ],
+   "floors": [
+    3
+   ],
+   "meerlaags": false,
+   "berging": {
+    "index": 337,
+    "etage": "1e",
+    "blok": "1-BRG-E"
+   },
+   "bag": {
+    "verblijfsobject_id": "0303010000634806",
+    "nummeraanduiding_id": "0303200000634805",
+    "oppervlakte_m2": 90,
+    "bouwjaar": 2006,
+    "gebruiksdoel": "woonfunctie",
+    "status": "Verblijfsobject in gebruik",
+    "pand_id": "0303100000586451",
+    "rd": [
+     177336.185,
+     504116.605
+    ],
+    "wgs84": [
+     52.5242556,
+     5.7163204
+    ],
+    "url": "https://bagviewer.kadaster.nl/lvbag/bag-viewer/?objectId=0303010000634806"
+   },
+   "openbaar": {
+    "energielabel": "A",
+    "soort_huispedia": "Galerijflat",
+    "verdieping_huispedia": null,
+    "woonopp_huispedia": 90,
+    "url": "https://huispedia.nl/dronten/8254kp/schans/71"
+   },
+   "geometry": {
+    "3": [
+     [
+      1158,
+      1024.8
+     ],
+     [
+      1195.6,
+      987.4
+     ],
+     [
+      1271.4,
+      1060.4
+     ],
+     [
+      1234.8,
+      1096.8
+     ]
+    ]
+   },
+   "bag_punt_plan": [
+    1226.1,
+    1056.6
+   ],
+   "placement": "confirmed",
+   "placement_toelichting": "Indexnummer afgelezen op splitsingstekening (akte 2006); contour handmatig overgetrokken (±1-3 m).",
+   "notes": [],
+   "bronnen": [
+    "twinq_fin/docs/plattegronden/1050_104418631_Huisnummering_+_bergingen.pdf",
+    "twinq_fin/docs/plattegronden/1050_96739052_Splitsingsakte_+_tekeningen.pdf (pag. 81-85)",
+    "PDOK BAG WFS v2_0 (verblijfsobject) 2026-11-06",
+    "PDOK Locatieserver v3_1 2026-11-06",
+    "https://huispedia.nl/dronten/8254kp/schans/71 (2026-11-06)"
+   ]
+  }
+ ]
+}
