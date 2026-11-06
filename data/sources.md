@@ -101,3 +101,9 @@ Op de kaart: **21 lift-polygonen** over deze 6 kokers. Geen lift bij portaal De 
 - Nieuw type **looppad** (gele stippellijn): o.a. pad west langs De Kiel 51-59, paden midden, gangen langs bergingen.
 - Trappen: trede-strepen in de SVG + label “Trap”.
 
+## UI/geometrie (06-11-2026, avond)
+| Wat | Detail |
+|---|---|
+| Daktuin N/M | Rechterranden ingekort: N tot x=505 (vóór pad naar bergingen), M tot x=485 (binnen contour). Pad N toegevoegd. |
+| Fietsenberging Aldi (BG-198) | L-vorm: containerruimte + ooststrip langs lift/hal met postkasten (tussendeur); hydrofoor-deur valt in de stalling. |
+| Icon handles | Meldingen, GPS/wandelfoto-dots, contextpunten en lift-X: `icon-fixed` met schaal `view.w/viewBox.w` zodat schermgrootte gelijk blijft bij zoom. |

@@ -43,11 +43,11 @@
    ],
    [
     125.2,
-    28.6
+    28.5
    ],
    [
     125.2,
-    38.6
+    38.5
    ],
    [
     104.2,
@@ -111,11 +111,11 @@
    ],
    [
     125.3,
-    50.6
+    50.5
    ],
    [
     125.5,
-    81.6
+    81.5
    ],
    [
     103.5,
@@ -246,11 +246,11 @@
   "name": "Lift",
   "poly": [
    [
-    320.0,
+    319.9,
     555.5
    ],
    [
-    338.0,
+    337.9,
     555.4
    ],
    [
@@ -349,7 +349,7 @@
   "poly": [
    [
     451.1,
-    386.9
+    386.8
    ],
    [
     459.1,
@@ -388,11 +388,11 @@
     387.9
    ],
    [
-    449.2,
+    449.1,
     404.9
    ],
    [
-    413.2,
+    413.1,
     405.0
    ]
   ],
@@ -516,15 +516,23 @@
   "id": "BG-198-FIETS",
   "floor": 0,
   "type": "fietsenberging",
-  "name": "Fietsenberging",
+  "name": "Fietsenberging (langs hal/lift)",
   "poly": [
    [
     412.4,
     1022.1
    ],
    [
-    432.4,
-    1022.0
+    482.4,
+    1021.7
+   ],
+   [
+    482.7,
+    1087.7
+   ],
+   [
+    432.7,
+    1088.0
    ],
    [
     432.5,
@@ -537,12 +545,12 @@
   ],
   "conf": "tekening",
   "portaal": "Portaal Schans 143/145 (naast Aldi)",
-  "info": "Voormalige containerruimte (zo genoemd op de splitsingstekening 2006), nu in gebruik als fietsenberging (opgave bewoner, 06-11-2026).",
-  "tekening_label": "containerruimte",
+  "info": "Voormalige containerruimte (zo genoemd op de splitsingstekening 2006), nu in gebruik als fietsenberging (opgave bewoner, 06-11-2026). Doorlopend langs de hal met postkasten en lift; tussendeur tussen containerruimte en stalling.",
+  "tekening_label": "containerruimte + fietsenstalling",
   "kind": "common",
   "type_label": "Fietsenberging",
   "floor_name": "BG",
-  "opp_m2": 12.4,
+  "opp_m2": 101.6,
   "nabij": [
    "S143",
    "S145"
@@ -587,7 +595,7 @@
   "id": "BG-198-HAL2",
   "floor": 0,
   "type": "entree",
-  "name": "Hal bij lift",
+  "name": "Hal bij lift (postkasten)",
   "poly": [
    [
     412.6,
@@ -667,11 +675,11 @@
     1059.7
    ],
    [
-    478.7,
+    478.6,
     1071.7
    ],
    [
-    466.7,
+    466.6,
     1071.8
    ]
   ],
@@ -830,11 +838,11 @@
     1049.1
    ],
    [
-    792.7,
+    792.6,
     1071.1
    ],
    [
-    768.7,
+    768.6,
     1071.2
    ]
   ],
@@ -854,11 +862,11 @@
   "name": "Entree",
   "poly": [
    [
-    768.7,
+    768.6,
     1071.2
    ],
    [
-    792.7,
+    792.6,
     1071.1
    ],
    [
@@ -1032,11 +1040,11 @@
     1062.7
    ],
    [
-    862.7,
+    862.6,
     1070.7
    ],
    [
-    850.7,
+    850.6,
     1070.8
    ]
   ],
@@ -2342,11 +2350,11 @@
     960.0
    ],
    [
-    520.0,
+    485.0,
     960.0
    ],
    [
-    520.0,
+    485.0,
     870.0
    ],
    [
@@ -2358,7 +2366,7 @@
   "kind": "common",
   "type_label": "Daktuin / dakpad",
   "floor_name": "1e",
-  "opp_m2": 535.1,
+  "opp_m2": 450.0,
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
@@ -2372,11 +2380,11 @@
     545.0
    ],
    [
-    560.0,
+    505.0,
     545.0
    ],
    [
-    560.0,
+    505.0,
     440.0
    ],
    [
@@ -2388,7 +2396,38 @@
   "kind": "common",
   "type_label": "Daktuin / dakpad",
   "floor_name": "1e",
-  "opp_m2": 468.2,
+  "opp_m2": 312.1,
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-PAD-N",
+  "floor": 1,
+  "type": "looppad",
+  "name": "Pad (noord, tussen dak en bergingen)",
+  "poly": [
+   [
+    505.0,
+    545.0
+   ],
+   [
+    570.0,
+    545.0
+   ],
+   [
+    569.6,
+    440.0
+   ],
+   [
+    505.0,
+    440.0
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Looppad / pad",
+  "floor_name": "1e",
+  "opp_m2": 184.4,
+  "nabij": [],
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {

@@ -40,9 +40,10 @@ P='Portaal Schans 143/145 (naast Aldi)'
 add('BG-198-HAL1',0,'entree','Hal',R(386,1017,410,1040),P)
 add('BG-198-TRAP',0,'trap','Trap naar 1e / daktuin',R(386,1040,410,1070),P)
 add('BG-198-ENT',0,'entree','Entree (hoofddeur naast Aldi, brievenbussen)',R(388,1070,410,1083),P)
-add('BG-198-FIETS',0,'fietsenberging','Fietsenberging',R(410,1017,430,1040),P,info=FIETS_NOTE,tekening_label='containerruimte')
+# Fietsenberging: containerruimte (binnenkern) + doorlopend langs oostzijde van lift/hal met postkasten (tussendeur bij y≈1040)
+add('BG-198-FIETS',0,'fietsenberging','Fietsenberging (langs hal/lift)',[[410,1017],[480,1017],[480,1083],[430,1083],[430,1040],[410,1040]],P,info=FIETS_NOTE+' Doorlopend langs de hal met postkasten en lift; tussendeur tussen containerruimte en stalling.',tekening_label='containerruimte + fietsenstalling')
 add('BG-198-LIFT',0,'lift','Lift',R(411,1040,422,1058),P)
-add('BG-198-HAL2',0,'entree','Hal bij lift',R(410,1058,430,1083),P)
+add('BG-198-HAL2',0,'entree','Hal bij lift (postkasten)',R(410,1058,430,1083),P)
 add('BG-198-MK',0,'meterkast','Flatkast (KPN & UPC)',R(392,1083,404,1091),P,info='Op de tekening aangeduid onder de entree; exacte plek te bevestigen.')
 add('BG-198-HYD-W',0,'hydrofoor','Hydrofoor-deur (gezien op wandeling)',R(464,1055,476,1067),P,conf='geschat',
     info='Grijze dubbele deur met ventilatieroosters, gefotografeerd in de fietsenstalling (wandelfoto 04). Staat niet op de splitsingstekening bij dit portaal; positie geschat. Te bevestigen.')
@@ -105,8 +106,9 @@ add('1-PAD-W',1,'looppad','Pad langs De Kiel 51-59 (west)',[[118,389],[132,389],
 add('1-DAK-W',1,'daktuin','Dak west (langs De Kiel 51-59)',R(55,389,118,630),conf='tekening')
 add('1-PAD-M',1,'looppad','Pad tussen daken (midden, bij Schans 143-171)',R(350,900,370,960),conf='tekening')
 add('1-PAD-M2',1,'looppad','Pad langs dak (midden, zuid)',R(300,960,520,975),conf='tekening')
-add('1-DAK-M',1,'daktuin','Dak / daktuin midden (tussen Schans en De Kiel)',R(300,870,520,960),conf='tekening')
-add('1-DAK-N',1,'daktuin','Dak / dakpad (noord, bij De Kiel 46-50)',R(395,440,560,545),conf='tekening')
+add('1-DAK-M',1,'daktuin','Dak / daktuin midden (tussen Schans en De Kiel)',R(300,870,485,960),conf='tekening')  # rechterrand ingekort t.o.v. gebouwcontour
+add('1-DAK-N',1,'daktuin','Dak / dakpad (noord, bij De Kiel 46-50)',R(395,440,505,545),conf='tekening')  # stopt vóór pad naar bergingen 305+
+add('1-PAD-N',1,'looppad','Pad (noord, tussen dak en bergingen)',R(505,440,570,545),conf='tekening')
 add('1-GANG-C',1,'looppad','Gang bergingen 296-314',R(570,457,690,466))
 add('1-GANG-D',1,'looppad','Gang bergingen 315-329',R(671,882,752,893))
 add('1-GANG-E',1,'looppad','Gang bergingen 330-356',R(944,883,1080,891))
