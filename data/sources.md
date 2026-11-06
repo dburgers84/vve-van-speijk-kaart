@@ -32,3 +32,23 @@ Gelijkvormigheidstransformatie (schaal, rotatie, spiegeling, verschuiving), robu
 
 ## Aanvulling: De Rede
 BAG heeft **De Rede 59–141 (oneven, 8254 KB)**: 42 woningen in dezelfde panden (o.a. 0303100000586451). Dat zijn er precies zoveel als het gat in de bouwnummers van de huisnummerlijst (bouwnr. 80–121). Ze staan **niet** in de huisnummering van VvE Van Speijk en zitten dus niet in `units.json`. Waarschijnlijk is dit een andere VvE of een ander deel van de Suydersee Veste; dat is niet nagegaan.
+
+## Versie 2 (06-11-2026): SVG opnieuw opgebouwd
+| Wat | Bron | Methode |
+|---|---|---|
+| Liften, trappen, entrees/hallen, meterkasten (GEM/flatkast/CVZ/E-kast/gaskasten/mk), hydrofoor, sprinklerruimte, LS/trafo, schachten | Splitsingstekening akte 2006 pag. 81–85 | Met de hand overgetrokken op een rooster van 10 eenheden (`build/crop.py`) → `build/features.py` |
+| Fietsenbergingen | Tekening (label “containerruimte”) + opgave bewoner 06-11-2026 | Alle containerruimtes zijn omgebouwd tot fietsenberging; het tekeninglabel staat in `tekening_label` |
+| 91 bergingvakjes | Tekening pag. 82 (nummers afgelezen) + huisnummerlijst (bergingsindex → woning) | Per rij gelijk verdeeld; volgorde zoals op de tekening |
+| Daken 2e–4e | Tekening pag. 83–85 | Overgetrokken op het overzicht (±1–2 m) |
+| Gebouwcontour | BG/1e: BAG-panden (complex); 2e–4e: unie van woningen/kernen/daken (shapely) | `build/build_v2.py` |
+| Twinq-meldingen met foto’s | `/workspace/twinq/requests.json` + `twinq/attachments/<verzoek>/` | 24 meldingen / 41 foto’s opgenomen, 6 meldingen (interieur woning) en schermafbeeldingen niet; contactgegevens verwijderd; koppeling met de hand op basis van adres of omschrijving (`LINK` in `build/build_meldingen.py`) |
+| GPS-foto’s | EXIF van 3 Twinq-foto’s | Ongewijzigd, standaard zichtbaar (bewoner bevestigt de posities) |
+
+### Open punten v2
+- **Hydrofoor bij portaal Schans 143/145 (naast de Aldi):** wandelfoto 04 toont een “deur hydrofoor in de fietsenstalling”. Op de tekening staan de hydrofoor en de sprinklerruimte alleen bij **portaal Schans 75-99 (oost)**. Bij de Aldi staat nu een *geschatte* hydrofoor-deur (`BG-198-HYD-W`). Graag ter plekke bevestigen.
+- **Liften op 3e/4e** en de lift/trap van portaal De Kiel 49/61/63 op de 2e zijn *afgeleid* (doorgetrokken), niet afzonderlijk op de tekening gecontroleerd.
+- **Bergingvakjes** zijn per rij gelijk verdeeld; de werkelijke maten kunnen afwijken. Bergingen 313 en een paar andere hebben geen eigenaar in de huisnummerlijst.
+- **Daktuin- en dakpadzones** op de 1e zijn nog geschat (uit de vorige versie).
+- **9 meldingen zonder vaste plek** (lift niet genoemd, “hal naar de lift”, gevel algemeen, enz.). Ze staan in het startpaneel.
+- Trappen en liften van bedrijfsruimten (Aldi/winkels) zijn niet getekend.
+- Wandelfoto’s: de positie blijft geschat (geen EXIF).

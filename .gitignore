@@ -1,3 +1,3 @@
-photos/
-build/
+build/raw/
+__pycache__/
 .DS_Store
