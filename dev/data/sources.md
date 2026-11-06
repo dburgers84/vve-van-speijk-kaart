@@ -52,3 +52,10 @@ BAG heeft **De Rede 59–141 (oneven, 8254 KB)**: 42 woningen in dezelfde panden
 - **9 meldingen zonder vaste plek** (lift niet genoemd, “hal naar de lift”, gevel algemeen, enz.). Ze staan in het startpaneel.
 - Trappen en liften van bedrijfsruimten (Aldi/winkels) zijn niet getekend.
 - Wandelfoto’s: de positie blijft geschat (geen EXIF).
+
+## Contour-correctie (06-11-2026, feedback preview)
+| Wat | Detail |
+|---|---|
+| Probleem | Complexcontour (uit BAG-panden) stond ~1,8° gedraaid t.o.v. de handgetekende units/ruimtes; op 2e–4e ontbrak de complexcontour (alleen losse dak-/woningfragmenten). |
+| Oplossing | BAG-ringen in `build/build_v2.py` roteren met **−1,76°** rond het zwaartepunt van de units (BG+1e) en verschuiven met **(+2, −6)** tekeningeenheden. Dezelfde complexvoetafdruk (tekening + gecorrigeerde BAG) wordt op **alle** verdiepingen (BG–4e) als contour getoond. Bronbestand `data/bag_panden_plan.json` blijft ongecorrigeerd; correctie gebeurt bij elke build. |
+| Labels | Alle openbare/gemeenschappelijke ruimtes krijgen een zichtbaar label (o.a. galerij/gang/hal, HF, Spr., Lift, Trap, MK, Fietsen, Daktuin). |
