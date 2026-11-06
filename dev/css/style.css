@@ -74,7 +74,7 @@ header.vve-top h1 small{font-weight:400;color:var(--muted);font-size:.8rem;margi
 .route{fill:none;stroke:#c0392b;stroke-width:1.6;stroke-dasharray:5 4;opacity:.7;pointer-events:none}
 .ph{cursor:pointer}.ph.walk .dot{fill:#fff;stroke:#c0392b;stroke-width:1.8}.ph.sel .dot{stroke:#d10000;stroke-width:3}
 .ph.gps .dot{fill:#1d6fe0;stroke:#fff;stroke-width:1.8}.ph.gps .dir{stroke:#1d6fe0;stroke-width:2.5}
-.ph .acc{fill:#1d6fe0;fill-opacity:.1;stroke:#1d6fe0;stroke-opacity:.55;stroke-dasharray:3 2;pointer-events:none}
+.g-gps .acc,.acc{fill:#1d6fe0;fill-opacity:.1;stroke:#1d6fe0;stroke-opacity:.55;stroke-dasharray:3 2;pointer-events:none}
 .meld{cursor:pointer}.meld .pin{fill:#e67e22;stroke:#fff;stroke-width:1.2}.meld.sel .pin{fill:#d10000}
 .meld .pin-t{fill:#fff;font-weight:800;text-anchor:middle;dominant-baseline:central;pointer-events:none}
 .vve-legend{max-height:calc(100% - 1.2rem);overflow:auto}
