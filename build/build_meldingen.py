@@ -44,8 +44,8 @@ def clean(s):
     s=re.sub(r'\s+',' ',s).strip()
     return s[:400]+('…' if len(s)>400 else '')
 def onderw(det,L):
-    o=clean(det.get('Onderwerp') or L.get('Onderwerp'))
-    if len(o)==40 and not o.endswith(('.','!','?')):
+    raw=det.get('Onderwerp') or L.get('Onderwerp') or ''; o=clean(raw)
+    if len(raw)==40 and not o.endswith(('.','!','?')):
         t=clean(det.get('Toelichting')); o=(t.split('. ')[0])[:90]
     return o
 req={x['verzoeknummer']:x for x in json.load(open(f'{TW}/requests.json'))}
