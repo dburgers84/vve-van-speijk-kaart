@@ -46,9 +46,9 @@ BAG heeft **De Rede 59–141 (oneven, 8254 KB)**: 42 woningen in dezelfde panden
 
 ### Open punten v2
 - **Hydrofoor bij portaal Schans 143/145 (naast de Aldi):** wandelfoto 04 toont een “deur hydrofoor in de fietsenstalling”. Op de tekening staan de hydrofoor en de sprinklerruimte alleen bij **portaal Schans 75-99 (oost)**. Bij de Aldi staat nu een *geschatte* hydrofoor-deur (`BG-198-HYD-W`). Graag ter plekke bevestigen.
-- **Liften op 3e/4e** en de lift/trap van portaal De Kiel 49/61/63 op de 2e zijn *afgeleid* (doorgetrokken), niet afzonderlijk op de tekening gecontroleerd.
+- Liften/trappen gecontroleerd op tekening inclusief hoek Schans 139/141 (lift X + trap op 1e–3e). Havenplein 4e = “dak lifthuis”.
 - **Bergingvakjes** zijn per rij gelijk verdeeld; de werkelijke maten kunnen afwijken. Bergingen 313 en een paar andere hebben geen eigenaar in de huisnummerlijst.
-- **Daktuin- en dakpadzones** op de 1e zijn nog geschat (uit de vorige versie).
+- Daktuin-/dakpadzones op de 1e zijn hertekend naar “dak”/“pad” op de tekening en geclipt tegen woningen; kleine restafwijking mogelijk.
 - **9 meldingen zonder vaste plek** (lift niet genoemd, “hal naar de lift”, gevel algemeen, enz.). Ze staan in het startpaneel.
 - Trappen en liften van bedrijfsruimten (Aldi/winkels) zijn niet getekend.
 - Wandelfoto’s: de positie blijft geschat (geen EXIF).
@@ -63,6 +63,41 @@ BAG heeft **De Rede 59–141 (oneven, 8254 KB)**: 42 woningen in dezelfde panden
 ## BG-uitlijning + tekening-control (06-11-2026)
 | Wat | Detail |
 |---|---|
-| BG fijn-align | Alle BG-features en BG-unitpolygonen: **−0,25°** (met de klok mee) rond BG-zwaartepunt + verschuiving **(+1,0, +5,0)** tekeningeenheden (≈ **+0,7 / +3,3 px** bij schaal 1,5). Gemeten aan scanwanden portaal Oost/Aldi (feature-randen stonden ~3–6 eenheden te hoog). |
+| BG fijn-align | Alle BG-features en BG-unitpolygonen: **−0,25°** (met de klok mee) rond BG-zwaartepunt + verschuiving **(+1,2, +4,5)** tekeningeenheden (≈ **+0,8 / +3,0 px** bij schaal 1,5), rotatie **−0,30°**. Gemeten aan scanwanden portaal Oost/Aldi (feature-randen stonden ~3–6 eenheden te hoog). |
 | BAG-contour | Licht bijgesteld naar **−1,85° / tx +1,5 / ty −5** (was −1,76° / +2 / −6). |
 | UI | Duidelijke control **“Originele tekening”**: knop rechtsboven bij zoom + checkbox + dekkingsschuif linksonder (altijd zichtbaar, niet alleen in ingeklapte legenda). Per verdieping `img/plan_{bg,1e,2e,3e,4e}.jpg` (akte 2006 pag. 81–85). |
+
+## Liften en trappen – telling (akte 2006, pag. 81–85)
+
+### Liften: **6 unieke kokers** (niet “18”)
+De eerdere “18 liften” telde elk verdiepingsvlak apart. Correct is het aantal **liftkokers**:
+
+| # | Portaal / kern | Verdiepingen op tekening | IDs |
+|---|---|---|---|
+| 1 | De Kiel 49/61/63 | BG, 1e, 2e | BG-K49-LIFT, 1-K49-LIFT, 2-K61-LIFT |
+| 2 | Het Havenplein (De Kiel 64-84 / Schans 177-179) | BG, 1e, 2e, 3e, 4e (dak lifthuis) | BG-215-LIFT … 4-225-LIFT |
+| 3 | Schans 147–171 (maisonnette-kern) | 1e (bij 147-153) + 2e (bij 165-171) | 1-190-LIFT, 2-194-LIFT |
+| 4 | Schans 143/145 (naast Aldi) | BG, 1e, 2e | BG-198-LIFT, 1-198-LIFT, 2-200-LIFT |
+| 5 | Schans 75-99 (oost) | BG, 1e, 2e, 3e, 4e | BG-OOST-LIFT … 4-246-LIFT |
+| 6 | Schans 139/141 (hoek, diagonaal) | 1e, 2e, 3e | 1-260-LIFT, 2-262-LIFT, 3-264-LIFT |
+
+Op de kaart: **21 lift-polygonen** over deze 6 kokers. Geen lift bij portaal De Kiel 46-62 (noord). Eerdere “18 liften” telde polygonen/verdiepingen i.p.v. kokers én miste de hoeklift.
+
+### Trappen: **9 unieke kernen**, 24 verdiepingsvlakken
+| # | Kern | Verdiepingen | Opmerking |
+|---|---|---|---|
+| 1 | De Kiel 49/61/63 | BG, 1e, 2e | |
+| 2 | Het Havenplein | BG, 1e, 2e | 2e: trap/vide naast lift toegevoegd |
+| 3 | De Kiel 46-62 (noord) | BG | alleen BG op tekening |
+| 4 | Schans 143/145 (Aldi) | BG, 1e (×2), 2e | op 1e: trappenhuis + trap vanaf entree |
+| 5 | Schans 75-99 (oost) | BG (×2), 1e (×2), 2e, 3e | trappenhuis + entree-trap |
+| 6 | Schans 147–171 | 1e, 2e | bij liftkern |
+| 7 | Schans 173/175 | 1e | trap naar daktuin |
+| 8 | Schans 177/179 | 2e | |
+| 9 | Schans 139/141 (hoek) | 1e, 2e, 3e | diagonaal trappenhuis (+ lift) |
+
+### Overlaps / looppaden (06-11-2026)
+- Daktuinen, galerijen, looppaden en dakzones worden in `build_v2.py` geclipt tegen woningen, bergingen en vaste solids (lift/trap/entree/…).
+- Nieuw type **looppad** (gele stippellijn): o.a. pad west langs De Kiel 51-59, paden midden, gangen langs bergingen.
+- Trappen: trede-strepen in de SVG + label “Trap”.
+

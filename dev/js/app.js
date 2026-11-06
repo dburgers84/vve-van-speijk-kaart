@@ -10,7 +10,7 @@ var root=document.getElementById('vve-app'); if(!root){root=document.createEleme
 var base=(root.getAttribute('data-base')||'');
 var VB=D.meta.viewbox, FN={0:'BG',1:'1e',2:'2e',3:'3e',4:'4e'};
 var TYPES={};D.meta.types.forEach(function(t){TYPES[t.id]=t;});
-var COMMON_TYPES=['lift','trap','entree','galerij','meterkast','hydrofoor','sprinkler','technisch','fietsenberging','daktuin','niet-vve'];
+var COMMON_TYPES=['lift','trap','entree','galerij','looppad','meterkast','hydrofoor','sprinkler','technisch','fietsenberging','daktuin','niet-vve'];
 var state={floor:+(root.getAttribute('data-floor')||1),sel:null,refOpacity:.35,
   layers:{woningen:true,labels:true,common:true,bergingen:true,daken:true,walk:true,route:true,gps:true,meldingen:true,panden:false,ref:false},
   types:{},view:{x:VB[0],y:VB[1],w:VB[2],h:VB[3]}};
@@ -137,7 +137,7 @@ function relSel(id){if(!state.sel)return false;var s=state.sel;
   if(s.kind==='unit'){var b=bergByIndex[s.obj.berging.index];return b&&b.id===id;}
   if(s.kind==='berging')return s.obj.eigenaar===id; if(s.kind==='blok')return byId[id]&&byId[id].kind==='berging'&&byId[id].obj.blok===s.id;return false;}
 function text(g,x,y,t,cls,size){var e=sv('text',{x:x,y:y,'class':cls,'font-size':size},g);e.textContent=t;return e;}
-var SHORT={lift:'Lift',trap:'Trap',entree:'Entree',meterkast:'MK',hydrofoor:'HF',sprinkler:'Sprinkler',technisch:'Techn.',fietsenberging:'Fietsen',galerij:'Galerij',daktuin:'Daktuin',dak:'Dak','niet-vve':'Niet VvE'};
+var SHORT={lift:'Lift',trap:'Trap',entree:'Entree',meterkast:'MK',hydrofoor:'HF',sprinkler:'Sprinkler',technisch:'Techn.',fietsenberging:'Fietsen',galerij:'Galerij',looppad:'Pad',daktuin:'Daktuin',dak:'Dak','niet-vve':'Niet VvE'};
 function commonLabel(c){
   var t=SHORT[c.type]; if(t==null)t='';
   if(c.type==='galerij'){var n=(c.name||'').toLowerCase();
@@ -146,6 +146,7 @@ function commonLabel(c){
   if(c.type==='entree'){var n=(c.name||'').toLowerCase(); if(n.indexOf('hal')>=0)t='Hal';}
   if(c.type==='hydrofoor')t='HF';
   if(c.type==='sprinkler')t='Spr.';
+  if(c.type==='looppad'){var n=(c.name||'').toLowerCase(); t=(n.indexOf('gang')>=0)?'Gang':'Pad';}
   return t;}
 function render(){
   Object.keys(G).forEach(function(k){clear(G[k]);});
@@ -166,12 +167,16 @@ function render(){
   // daken + gemeenschappelijk
   D.features.filter(function(c){return c.floor===f;}).forEach(function(c){
     if(c.type==='dak'){if(!state.layers.daken)return;}else{if(!state.layers.common||!state.types[c.type])return;}
-    var g=(c.type==='dak'||c.type==='daktuin'||c.type==='niet-vve'||c.type==='galerij')?G.dak:G.feat;
+    var g=(c.type==='dak'||c.type==='daktuin'||c.type==='niet-vve'||c.type==='galerij'||c.type==='looppad')?G.dak:G.feat;
     var p=sv('polygon',{points:pts(c.poly),'class':'c-poly t-'+c.type+(c.conf!=='tekening'?' conf-'+c.conf:'')+(isSel(c.id)?' sel':'')+(relSel(c.id)?' rel':'')},g);
     p.style.setProperty('--c',TYPES[c.type].kleur);
     sv('title',{text:c.name+(c.portaal?' – '+c.portaal:'')},p);onTap(p,function(){select(c.id,true);},c.name);
     var b=bbox(c.poly),w=b[2]-b[0],h=b[3]-b[1],cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2;
     if(c.type==='lift'){sv('path',{d:'M'+b[0]+','+b[1]+'L'+b[2]+','+b[3]+'M'+b[2]+','+b[1]+'L'+b[0]+','+b[3],'class':'lift-x'},G.sym);}
+    if(c.type==='trap'){ // trede-strepen voor herkenbaarheid
+      var vert=h>=w, n=Math.max(3, Math.floor((vert?h:w)/4.5)), d='';
+      for(var i=1;i<n;i++){var t=i/n; if(vert){var yy=b[1]+h*t; d+='M'+b[0]+','+yy+'L'+b[2]+','+yy;} else {var xx=b[0]+w*t; d+='M'+xx+','+b[1]+'L'+xx+','+b[3];}}
+      sv('path',{d:d,'class':'trap-treads'},G.sym);}
     if(state.layers.labels&&c.type!=='dak'){var t=commonLabel(c); if(t){
       var s=Math.min(8,Math.max(3.2,Math.min(w,h)/(c.type==='meterkast'?2.0:2.8)));
       // altijd label tonen voor openbare ruimtes; bij te smal: draaien of iets verkleinen
