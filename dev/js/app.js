@@ -109,7 +109,14 @@ function buildLegend(){
 }
 
 /* ---------- view ---------- */
-function applyView(){var v=state.view;svg.setAttribute('viewBox',[v.x,v.y,v.w,v.h].join(' '));}
+function iconScale(){return Math.max(0.15, Math.min(2.5, state.view.w/VB[2]));}
+function applyView(){var v=state.view;svg.setAttribute('viewBox',[v.x,v.y,v.w,v.h].join(' '));
+  var s=iconScale();
+  Array.prototype.forEach.call(svg.querySelectorAll('g.icon-fixed'),function(g){
+    g.setAttribute('transform','translate('+g.getAttribute('data-x')+','+g.getAttribute('data-y')+') scale('+s+')');
+  });
+}
+function iconAt(parent,x,y,cls){return sv('g',{'class':'icon-fixed'+(cls?' '+cls:''),'data-x':x,'data-y':y,transform:'translate('+x+','+y+') scale('+iconScale()+')'},parent);}
 function fitFloor(){var P=[];D.outlines[String(state.floor)].forEach(function(r){P=P.concat(r);});if(!P.length){state.view={x:VB[0],y:VB[1],w:VB[2],h:VB[3]};}else{var b=bbox(P),m=30;state.view={x:b[0]-m,y:b[1]-m,w:b[2]-b[0]+2*m,h:b[3]-b[1]+2*m};}applyView();}
 function svgPoint(cx,cy){var m=svg.getScreenCTM();if(!m)return{x:0,y:0};var p=svg.createSVGPoint();p.x=cx;p.y=cy;return p.matrixTransform(m.inverse());}
 function zoomBy(f,cx,cy){var v=state.view;var c=(cx==null)?{x:v.x+v.w/2,y:v.y+v.h/2}:svgPoint(cx,cy);
@@ -172,7 +179,7 @@ function render(){
     p.style.setProperty('--c',TYPES[c.type].kleur);
     sv('title',{text:c.name+(c.portaal?' – '+c.portaal:'')},p);onTap(p,function(){select(c.id,true);},c.name);
     var b=bbox(c.poly),w=b[2]-b[0],h=b[3]-b[1],cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2;
-    if(c.type==='lift'){sv('path',{d:'M'+b[0]+','+b[1]+'L'+b[2]+','+b[3]+'M'+b[2]+','+b[1]+'L'+b[0]+','+b[3],'class':'lift-x'},G.sym);}
+    if(c.type==='lift'){var ig=iconAt(G.sym,cx,cy);sv('path',{d:'M-5,-5L5,5M5,-5L-5,5','class':'lift-x'},ig);}
     if(c.type==='trap'){ // trede-strepen voor herkenbaarheid
       var vert=h>=w, n=Math.max(3, Math.floor((vert?h:w)/4.5)), d='';
       for(var i=1;i<n;i++){var t=i/n; if(vert){var yy=b[1]+h*t; d+='M'+b[0]+','+yy+'L'+b[2]+','+yy;} else {var xx=b[0]+w*t; d+='M'+xx+','+b[1]+'L'+xx+','+b[3];}}
@@ -197,21 +204,23 @@ function render(){
       var e=text(G.lbl,c[0],c[1],uLabel(u),'u-lbl',s);if(h>w*1.6&&w<s*2.6)e.setAttribute('transform','rotate(-90 '+c[0]+' '+c[1]+')');
       if(u.meerlaags)text(G.lbl,c[0],c[1]+s*.95,u.etages.join('+'),'u-lbl2',s*.55);}
   });
-  if(f===0&&state.layers.labels)D.context.forEach(function(c){var g=sv('g',{'class':'ctx'},G.ctx);sv('circle',{cx:c.point[0],cy:c.point[1],r:5,'class':'ctx-pt '+c.type},g);
-    text(g,c.point[0]+8,c.point[1]+4,c.name,'ctx-lbl',11);onTap(g,function(){select(c.id,true);},c.name);});
+  if(f===0&&state.layers.labels)D.context.forEach(function(c){var g=iconAt(G.ctx,c.point[0],c.point[1],'ctx');sv('circle',{cx:0,cy:0,r:5,'class':'ctx-pt '+c.type},g);
+    text(g,8,4,c.name,'ctx-lbl',11);onTap(g,function(){select(c.id,true);},c.name);});
   // wandelfoto's + route
   var walk=D.photos.filter(function(p){return !p.gps&&p.floor===f;});
   if(state.layers.route&&walk.length>1)sv('polyline',{points:pts(walk.map(function(p){return p.point;})),'class':'route'},G.route);
-  if(state.layers.walk)walk.forEach(function(p){var g=sv('g',{'class':'ph walk'+(isSel(p.id)?' sel':'')},G.walk);
-    sv('circle',{cx:p.point[0],cy:p.point[1],r:4.2,'class':'dot'},g);sv('title',{text:p.label+' (positie geschat)'},g);onTap(g,function(){select(p.id,true);},p.label);});
+  if(state.layers.walk)walk.forEach(function(p){var g=iconAt(G.walk,p.point[0],p.point[1],'ph walk'+(isSel(p.id)?' sel':''));
+    sv('circle',{cx:0,cy:0,r:4.2,'class':'dot'},g);sv('title',{text:p.label+' (positie geschat)'},g);onTap(g,function(){select(p.id,true);},p.label);});
   // GPS-foto's (straatniveau: getoond op BG en 1e)
-  if(state.layers.gps&&f<=1)D.photos.filter(function(p){return p.gps;}).forEach(function(p){var g=sv('g',{'class':'ph gps'+(isSel(p.id)?' sel':'')},G.gps);
-    if(p.radius_plan)sv('circle',{cx:p.point[0],cy:p.point[1],r:p.radius_plan,'class':'acc'},g);
-    if(p.richting_graden!=null){var a=dirToPlan(p.richting_graden);sv('line',{x1:p.point[0],y1:p.point[1],x2:p.point[0]+Math.cos(a)*20,y2:p.point[1]+Math.sin(a)*20,'class':'dir'},g);}
-    sv('circle',{cx:p.point[0],cy:p.point[1],r:5,'class':'dot'},g);sv('title',{text:p.label+' (GPS ±'+p.nauwkeurigheid_m+' m)'},g);onTap(g,function(){select(p.id,true);},p.label);});
+  if(state.layers.gps&&f<=1)D.photos.filter(function(p){return p.gps;}).forEach(function(p){
+    if(p.radius_plan)sv('circle',{cx:p.point[0],cy:p.point[1],r:p.radius_plan,'class':'acc'},G.gps);
+    var g=iconAt(G.gps,p.point[0],p.point[1],'ph gps'+(isSel(p.id)?' sel':''));
+    if(p.richting_graden!=null){var a=dirToPlan(p.richting_graden);sv('line',{x1:0,y1:0,x2:Math.cos(a)*20,y2:Math.sin(a)*20,'class':'dir'},g);}
+    sv('circle',{cx:0,cy:0,r:5,'class':'dot'},g);sv('title',{text:p.label+' (GPS ±'+p.nauwkeurigheid_m+' m)'},g);onTap(g,function(){select(p.id,true);},p.label);});
   // meldingen
-  if(state.layers.meldingen)D.meldingen.forEach(function(m){if(m._floor!==f||!m._pt)return;var g=sv('g',{'class':'meld'+(isSel(m.id)?' sel':'')},G.meld);
-    var x=m._pt[0],y=m._pt[1];sv('path',{d:'M'+x+','+y+'l-6,-11a7,7 0 1,1 12,0z','class':'pin'},g);text(g,x,y-14.5,'!','pin-t',8);
+  if(state.layers.meldingen)D.meldingen.forEach(function(m){if(m._floor!==f||!m._pt)return;
+    var x=m._pt[0],y=m._pt[1];var g=iconAt(G.meld,x,y,'meld'+(isSel(m.id)?' sel':''));
+    sv('path',{d:'M0,0l-6,-11a7,7 0 1,1 12,0z','class':'pin'},g);text(g,0,-14.5,'!','pin-t',8);
     sv('title',{text:'Melding '+m.verzoek+': '+m.onderwerp},g);onTap(g,function(){select(m.id,true);},'Melding '+m.verzoek);});
   buildPanel();
 }
