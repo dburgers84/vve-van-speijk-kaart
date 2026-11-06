@@ -107,3 +107,8 @@ Op de kaart: **21 lift-polygonen** over deze 6 kokers. Geen lift bij portaal De 
 | Daktuin N/M | Rechterranden ingekort: N tot x=505 (vóór pad naar bergingen), M tot x=485 (binnen contour). Pad N toegevoegd. |
 | Fietsenberging Aldi (BG-198) | L-vorm: containerruimte + ooststrip langs lift/hal met postkasten (tussendeur); hydrofoor-deur valt in de stalling. |
 | Icon handles | Meldingen, GPS/wandelfoto-dots, contextpunten en lift-X: `icon-fixed` met schaal `view.w/viewBox.w` zodat schermgrootte gelijk blijft bij zoom. |
+
+### Contour 1e: geen daktuin/looppad in gevel (06-11-2026)
+- `complex_foot` en `outlines[fl]` nemen **geen** `daktuin` of `looppad` meer mee als positieve massa.
+- Bovendien worden daktuin/looppad **uitgesneden** (`difference`) uit de floor-outline, omdat BAG-complex die open dakzones anders als gevulde voetafdruk meeneemt (uitsteeksel bij `1-DAK-N`/`1-PAD-N` en oostzijde `1-DAK-M`).
+- GPS-nauwkeurigheidscirkels: CSS-selector `.ph .acc` → `.g-gps .acc` (cirkel is sibling onder `G.gps`, niet child van `.ph`).

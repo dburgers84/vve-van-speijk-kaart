@@ -159,8 +159,9 @@ for p in panden:
 bag_complex=unary_union([poly(r) for p in panden if p.get('complex') for r in p['rings']])
 
 # Complexvoetafdruk (BG+1e, tekening + gecorrigeerde BAG) – op ALLE verdiepingen tonen
+# Daktuinen/looppaden (dakpaden) tellen niet mee: die mogen de gevelcontour niet uitsteken.
 base_parts=[g for (uid,f),g in upoly.items() if f in (0,1)]
-base_parts+=[poly(f['poly']) for f in FE.F if f['floor'] in (0,1) and f['type'] not in ('daktuin',)]
+base_parts+=[poly(f['poly']) for f in FE.F if f['floor'] in (0,1) and f['type'] not in ('daktuin','looppad')]
 base_parts+=[poly(b['poly']) for b in FE.BERG]
 base_parts+=[bag_complex]
 complex_foot=unary_union([p.buffer(2.5,join_style=2) for p in base_parts]).buffer(-1.5,join_style=2)
@@ -168,12 +169,17 @@ complex_foot=unary_union([p.buffer(2.5,join_style=2) for p in base_parts]).buffe
 outlines={}
 for fl in range(5):
     parts=[g for (uid,f),g in upoly.items() if f==fl]
-    parts+=[poly(f['poly']) for f in FE.F if f['floor']==fl and f['type'] not in ('daktuin',)]
+    parts+=[poly(f['poly']) for f in FE.F if f['floor']==fl and f['type'] not in ('daktuin','looppad')]
     parts+=[poly(b['poly']) for b in FE.BERG if b['floor']==fl]
     parts+=[poly(d['poly']) for d in daken if d['floor']==fl]
     # complexvoetafdruk altijd meenemen (niet opnieuw bufferen); floor-delen licht bufferen
     extras=[p.buffer(2.5,join_style=2) for p in parts]
     m=unary_union(extras+[complex_foot]).buffer(-1.5,join_style=2) if extras else complex_foot
+    # BAG/complex vult soms open dakzones; snijd daktuin/looppad uit de gevelcontour
+    carve=[poly(f['poly']) for f in FE.F if f['floor']==fl and f['type'] in ('daktuin','looppad')]
+    if carve:
+        cut=unary_union([c.buffer(0.8,join_style=2) for c in carve])
+        m=m.difference(cut)
     outlines[str(fl)]=rings(m)
 meta.setdefault('georef',{})['bag_contour_correctie']=BAG_CORR
 meta['georef']['bg_tekening_correctie']=BG_ALIGN
