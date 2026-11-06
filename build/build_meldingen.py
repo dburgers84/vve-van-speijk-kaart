@@ -45,8 +45,9 @@ def clean(s):
     return s[:400]+('…' if len(s)>400 else '')
 def onderw(det,L):
     raw=det.get('Onderwerp') or L.get('Onderwerp') or ''; o=clean(raw)
-    if len(raw)==40 and not o.endswith(('.','!','?')):
-        t=clean(det.get('Toelichting')); o=(t.split('. ')[0])[:90]
+    t=clean(det.get('Toelichting'))
+    if len(t)>len(o)+5 and t.startswith(o):  # Twinq kapt onderwerp af op 40 tekens
+        o=(t.split('. ')[0])[:90]
     return o
 req={x['verzoeknummer']:x for x in json.load(open(f'{TW}/requests.json'))}
 od=os.path.join(R,'img/meldingen'); os.makedirs(od+'/t',exist_ok=True)
