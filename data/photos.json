@@ -695,7 +695,7 @@
   "label": "Twinq melding 384979 – Lamp defect tussen Schans 117 & 119",
   "tijd": "2026:05:19 22:15:00",
   "gps": true,
-  "positie": "GPS (EXIF)",
+  "positie": "GPS (EXIF) – bevestigd door bewoner",
   "lat": 52.5250167,
   "lon": 5.7167972,
   "rd": [
@@ -706,9 +706,8 @@
   "nauwkeurigheid_m": 15.0,
   "radius_plan": 91.0,
   "nauwkeurigheid": "GPS horizontale fout ±15 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
-  "gps_status": "onnauwkeurig",
-  "gps_afstand_object_m": 13.0,
-  "gps_toelichting": "GPS ±15 m; 13 m van het genoemde adres (S117, S119). Te onnauwkeurig of te ver van het genoemde object: standaard verborgen."
+  "gps_status": "GPS (Twinq-meldingsfoto)",
+  "melding": "M384979"
  },
  {
   "id": "GPS_IMG_6071",
@@ -722,7 +721,7 @@
   "label": "Twinq melding 350105 – Gevelschade Aldi / Schans 159",
   "tijd": "2025:08:24 18:13:03",
   "gps": true,
-  "positie": "GPS (EXIF)",
+  "positie": "GPS (EXIF) – bevestigd door bewoner",
   "lat": 52.5257611,
   "lon": 5.7164028,
   "rd": [
@@ -733,9 +732,8 @@
   "nauwkeurigheid_m": 4.7,
   "radius_plan": 28.9,
   "nauwkeurigheid": "GPS horizontale fout ±5 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
-  "gps_status": "bruikbaar",
-  "gps_afstand_object_m": 3.5,
-  "gps_toelichting": "GPS ±5 m; 4 m van het genoemde adres (S159). Binnen de foutmarge."
+  "gps_status": "GPS (Twinq-meldingsfoto)",
+  "melding": "M350105"
  },
  {
   "id": "GPS_IMG_6072",
@@ -749,7 +747,7 @@
   "label": "Twinq melding 350105 – Gevelschade Aldi / Schans 159",
   "tijd": "2025:08:24 18:10:19",
   "gps": true,
-  "positie": "GPS (EXIF)",
+  "positie": "GPS (EXIF) – bevestigd door bewoner",
   "lat": 52.5257417,
   "lon": 5.716475,
   "rd": [
@@ -760,8 +758,7 @@
   "nauwkeurigheid_m": 13.6,
   "radius_plan": 83.0,
   "nauwkeurigheid": "GPS horizontale fout ±14 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
-  "gps_status": "onnauwkeurig",
-  "gps_afstand_object_m": 1.7,
-  "gps_toelichting": "GPS ±14 m; 2 m van het genoemde adres (S159). Te onnauwkeurig of te ver van het genoemde object: standaard verborgen."
+  "gps_status": "GPS (Twinq-meldingsfoto)",
+  "melding": "M350105"
  }
 ]
