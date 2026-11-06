@@ -1,0 +1,693 @@
+[
+ {
+  "id": "M331409",
+  "verzoek": "331409",
+  "datum": "04-03-2025",
+  "onderwerp": "Het lift plaatje in de lift zit los",
+  "omschrijving": "Het lift plaatje in de lift zit los. De lift is niet kapot. Foto is bijgevoegd. Je stapt nu telkens voor je gevoel in het niets.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "LIFT ST MVGM - Lift Storing - Kone BV",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "Lift niet genoemd; welke lift is onbekend.",
+  "fotos": [
+   {
+    "src": "img/meldingen/331409_1.jpg",
+    "thumb": "img/meldingen/t/331409_1.jpg",
+    "orig": "twinq/attachments/331409/250203174-20250228_104202.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 331409 (MVGM-portaal)"
+ },
+ {
+  "id": "M336642",
+  "verzoek": "336642",
+  "datum": "15-04-2025",
+  "onderwerp": "Lekkage hal",
+  "omschrijving": "De Kiel 64 en 66 15-4-25 lekkage ontstaan na regenval in de hal voor De Kiel 64 en 66. Zie bijgevoegde foto’s.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "DAKONDERH MVGM - Dakonderhoud - Bramer Flevoland",
+  "units": [
+   "K64",
+   "K66"
+  ],
+  "features": [
+   "2-GAL-K"
+  ],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/336642_1.jpg",
+    "thumb": "img/meldingen/t/336642_1.jpg",
+    "orig": "twinq/attachments/336642/1f53031e-c323-4997-b33d-88226b255e81.jpeg"
+   },
+   {
+    "src": "img/meldingen/336642_2.jpg",
+    "thumb": "img/meldingen/t/336642_2.jpg",
+    "orig": "twinq/attachments/336642/cfb92244-3ce1-4b1c-9b75-d9e2d55b7913.jpeg"
+   }
+  ],
+  "bron": "Twinq verzoek 336642 (MVGM-portaal)"
+ },
+ {
+  "id": "M338725",
+  "verzoek": "338725",
+  "datum": "10-05-2025",
+  "onderwerp": "Ik dien een verzoek in om iets aan de zware deur te doen van het algemene fietsenhok aan d",
+  "omschrijving": "Ik dien een verzoek in om iets aan de zware deur te doen van het algemene fietsenhok aan de Schans. De dranger lichter afstellen of een haakje zodat je de deur kan open houden om je fiets er makkelijker in of uit te zetten. Het is een heel gehannes. Zeker ook voor ouderen of mensen met een lichamelijke beperking zoals ik met mijn versleten rug. Nog mooier zou zijn om ook deze deur automatisch open…",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "DEURDRANG MVGM - (Automatische) deurdranger/deuropener - Bramer Flevoland",
+  "units": [],
+  "features": [
+   "BG-198-FIETS"
+  ],
+  "bergingen": [],
+  "locatie": "afgeleid",
+  "locatie_toelichting": "\"Algemene fietsenhok aan de Schans\" (naast de Aldi, zie ook verzoek 328961).",
+  "fotos": [
+   {
+    "src": "img/meldingen/338725_1.jpg",
+    "thumb": "img/meldingen/t/338725_1.jpg",
+    "orig": "twinq/attachments/338725/20250505_111536.jpg"
+   },
+   {
+    "src": "img/meldingen/338725_2.jpg",
+    "thumb": "img/meldingen/t/338725_2.jpg",
+    "orig": "twinq/attachments/338725/20250505_203852.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 338725 (MVGM-portaal)"
+ },
+ {
+  "id": "M345967",
+  "verzoek": "345967",
+  "datum": "07-07-2025",
+  "onderwerp": "Elektrische deurdranger beschadigd",
+  "omschrijving": "Bij de toegangsdeur aan de Schans (ingang naast de Aldi) is de pas geplaatste elektrische deurdranger gedeeltelijk losgeraakt. Een van de twee bevestigingsschroeven waarmee de dranger aan de deur is gemonteerd, is volledig uit de deur getrokken. De dranger hangt momenteel met nog slechts een enkele schroef aan de deur. (zie bijgevoegde foto's)",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "DEURDRANG MVGM - (Automatische) deurdranger/deuropener - Bramer Flevoland",
+  "units": [],
+  "features": [
+   "BG-198-ENT"
+  ],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/345967_1.jpg",
+    "thumb": "img/meldingen/t/345967_1.jpg",
+    "orig": "twinq/attachments/345967/20250707_194159.jpg"
+   },
+   {
+    "src": "img/meldingen/345967_2.jpg",
+    "thumb": "img/meldingen/t/345967_2.jpg",
+    "orig": "twinq/attachments/345967/20250707_194202.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 345967 (MVGM-portaal)"
+ },
+ {
+  "id": "M350105",
+  "verzoek": "350105",
+  "datum": "24-08-2025",
+  "onderwerp": "Gevelschade Aldi / Schans 159",
+  "omschrijving": "Er is weer gevelschade ontstaan bij de Aldi. Ditmaal tot aan de bovenliggende woning, Schans 159. Zie foto's. Ook binnen de woning is lichte schade te zien. Graag hoor ik of hiervoor verzekering van de VvE moet worden geraadpleegd of eigen verzekering.",
+  "type": "Onderhoud",
+  "status": "Afgewezen/geannuleerd",
+  "opdracht": "-",
+  "units": [
+   "S159"
+  ],
+  "features": [
+   "BG-NIET"
+  ],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/350105_1.jpg",
+    "thumb": "img/meldingen/t/350105_1.jpg",
+    "orig": "twinq/attachments/350105/IMG_6070.jpg"
+   },
+   {
+    "src": "img/meldingen/350105_2.jpg",
+    "thumb": "img/meldingen/t/350105_2.jpg",
+    "orig": "twinq/attachments/350105/IMG_6071.JPG"
+   },
+   {
+    "src": "img/meldingen/350105_3.jpg",
+    "thumb": "img/meldingen/t/350105_3.jpg",
+    "orig": "twinq/attachments/350105/IMG_6072.JPG"
+   }
+  ],
+  "bron": "Twinq verzoek 350105 (MVGM-portaal)"
+ },
+ {
+  "id": "M355378",
+  "verzoek": "355378",
+  "datum": "01-10-2025",
+  "onderwerp": "Lekkage hal liftuitgang Kiel 64",
+  "omschrijving": "Toename lekkage langs de muur naast uitgang lift tegenover De Kiel 64. Muur is vochtig en stucwerk laat los. Word nu steeds erger door hefige regenbuien.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [
+   "K64",
+   "K66"
+  ],
+  "features": [
+   "2-225-LIFT"
+  ],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/355378_1.jpg",
+    "thumb": "img/meldingen/t/355378_1.jpg",
+    "orig": "twinq/attachments/355378/F5B74B9E-AE37-4BFF-989A-B2707C7EF869.JPG"
+   },
+   {
+    "src": "img/meldingen/355378_2.jpg",
+    "thumb": "img/meldingen/t/355378_2.jpg",
+    "orig": "twinq/attachments/355378/F69586BD-407E-4B6D-87C1-335A4C95AF00.JPG"
+   }
+  ],
+  "bron": "Twinq verzoek 355378 (MVGM-portaal)"
+ },
+ {
+  "id": "M355380",
+  "verzoek": "355380",
+  "datum": "01-10-2025",
+  "onderwerp": "Iemand attendeerde ons erop dat de brandslang bij de Kiel 64/66 al geruim 3 jaar niet meer",
+  "omschrijving": "Iemand attendeerde ons erop dat de brandslang bij de Kiel 64/66 al geruim 3 jaar niet meer gecontroleerd/onderhouden zijn.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "BLUSMIDDEL MVGM - Blusmiddelen - Ansul BV",
+  "units": [
+   "K64",
+   "K66"
+  ],
+  "features": [
+   "2-GAL-K"
+  ],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/355380_1.jpg",
+    "thumb": "img/meldingen/t/355380_1.jpg",
+    "orig": "twinq/attachments/355380/2F167352-CA24-427E-B005-20C2C3AD3E21.JPG"
+   },
+   {
+    "src": "img/meldingen/355380_2.jpg",
+    "thumb": "img/meldingen/t/355380_2.jpg",
+    "orig": "twinq/attachments/355380/5024E9D8-52A9-447B-B2F8-C2B92E6779EA.JPG"
+   }
+  ],
+  "bron": "Twinq verzoek 355380 (MVGM-portaal)"
+ },
+ {
+  "id": "M370740",
+  "verzoek": "370740",
+  "datum": "21-01-2026",
+  "onderwerp": "Schade aan muur entree",
+  "omschrijving": "Een hoekprofiel naast de entreedeur (de Kiel zijde) is losgekomen en heeft stucwerk meegetrokken, zie ook foto's. Graag herstel inplannen en uitvoeren.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "\"Entreedeur aan de Kiel-zijde\": welk portaal is niet vermeld.",
+  "fotos": [
+   {
+    "src": "img/meldingen/370740_1.jpg",
+    "thumb": "img/meldingen/t/370740_1.jpg",
+    "orig": "twinq/attachments/370740/7.jpg"
+   },
+   {
+    "src": "img/meldingen/370740_2.jpg",
+    "thumb": "img/meldingen/t/370740_2.jpg",
+    "orig": "twinq/attachments/370740/8.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 370740 (MVGM-portaal)"
+ },
+ {
+  "id": "M373842",
+  "verzoek": "373842",
+  "datum": "10-02-2026",
+  "onderwerp": "Buitenlamp de kiel 59 Dronten",
+  "omschrijving": "De lantaarn bij de kiel 59 Dronten is kapot. Het is daar erg donker",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "VERLICHTIN MVGM - Verlichting (reparatie) - NooterSchreuder Technische Installaties",
+  "units": [
+   "K59"
+  ],
+  "features": [],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/373842_1.jpg",
+    "thumb": "img/meldingen/t/373842_1.jpg",
+    "orig": "twinq/attachments/373842/Buitenlamp De Kiel 59 - 1.jpg"
+   },
+   {
+    "src": "img/meldingen/373842_2.jpg",
+    "thumb": "img/meldingen/t/373842_2.jpg",
+    "orig": "twinq/attachments/373842/Buitenlamp De Kiel 59.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 373842 (MVGM-portaal)"
+ },
+ {
+  "id": "M376467",
+  "verzoek": "376467",
+  "datum": "26-02-2026",
+  "onderwerp": "Vervangen verlichting in de hal",
+  "omschrijving": "Er is 1 tl verlichting die niet meer aan is. Het gaat om de verlichting in de hal naar de lift toe.",
+  "type": "Onderhoud",
+  "status": "Opdracht verstrekt",
+  "opdracht": "VERLICHTIN MVGM - Verlichting (reparatie) - NooterSchreuder Technische Installaties",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "\"Hal naar de lift\": portaal niet vermeld.",
+  "fotos": [
+   {
+    "src": "img/meldingen/376467_1.jpg",
+    "thumb": "img/meldingen/t/376467_1.jpg",
+    "orig": "twinq/attachments/376467/tl.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 376467 (MVGM-portaal)"
+ },
+ {
+  "id": "M376722",
+  "verzoek": "376722",
+  "datum": "01-03-2026",
+  "onderwerp": "Oprijplaat schuurtjes schans 121-129",
+  "omschrijving": "Gelieve één oprijplaat te bestellen voor de schuurtjes aan de Schans. Breedte 80 a 90 cm. Hoogte 15 cm max 16 cm. Zie bijgaande foto voor een voorbeeld. Kosten mogen ten laste van de post \"bestuurstaken dagelijks onderhoud\" zoals besproken in de bestuursvergadering van 4 feb jl. Alvast bedankt!",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [
+   "S121",
+   "S123",
+   "S125",
+   "S127",
+   "S129"
+  ],
+  "features": [
+   "1-BRG-D"
+  ],
+  "bergingen": [],
+  "locatie": "afgeleid",
+  "locatie_toelichting": "Schuurtjes Schans 121-129 = bergingenblok 315-329 (1e verd.).",
+  "fotos": [
+   {
+    "src": "img/meldingen/376722_1.jpg",
+    "thumb": "img/meldingen/t/376722_1.jpg",
+    "orig": "twinq/attachments/376722/Oprijplaat schuurtjes.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 376722 (MVGM-portaal)"
+ },
+ {
+  "id": "M376723",
+  "verzoek": "376723",
+  "datum": "01-03-2026",
+  "onderwerp": "Voegen Schans oneven bijwerken",
+  "omschrijving": "Gelieve opdracht te verstrekken om de voegen te laten repareren waar nodig bij de oneven nummers aan de Schans. Met name kleine reparaties langs deurposten en kozijnen in de kleur antraciet/donkergrijs. Zie foto's voor voorbeelden. Gelieve de werkzaamheden uit te laten voeren alvorens het schilderwerk plaatsvindt. Noodzakelijk om te laten repareren aangezien wespen zich zomers graag in deze scheur…",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "Gevel Schans oneven nummers (algemeen).",
+  "fotos": [
+   {
+    "src": "img/meldingen/376723_1.jpg",
+    "thumb": "img/meldingen/t/376723_1.jpg",
+    "orig": "twinq/attachments/376723/17723724366061266240760074385069.jpg"
+   },
+   {
+    "src": "img/meldingen/376723_2.jpg",
+    "thumb": "img/meldingen/t/376723_2.jpg",
+    "orig": "twinq/attachments/376723/17723724717901784768274381974888.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 376723 (MVGM-portaal)"
+ },
+ {
+  "id": "M379378",
+  "verzoek": "379378",
+  "datum": "24-03-2026",
+  "onderwerp": "Opruimen achtergelaten rommel",
+  "omschrijving": "Graag verzamelen en afvoeren van achtergelaten spullen tegen uurtarief/meerprijs.",
+  "type": "Onderhoud",
+  "status": "Opdracht verstrekt",
+  "opdracht": "SCHOONMAAK MVGM - Schoonmaakwerk - Kalshoven Specialistische reinigingen bv",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/379378_1.jpg",
+    "thumb": "img/meldingen/t/379378_1.jpg",
+    "orig": "twinq/attachments/379378/1.jpg"
+   },
+   {
+    "src": "img/meldingen/379378_2.jpg",
+    "thumb": "img/meldingen/t/379378_2.jpg",
+    "orig": "twinq/attachments/379378/2.jpg"
+   },
+   {
+    "src": "img/meldingen/379378_3.jpg",
+    "thumb": "img/meldingen/t/379378_3.jpg",
+    "orig": "twinq/attachments/379378/3.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 379378 (MVGM-portaal)"
+ },
+ {
+  "id": "M379492",
+  "verzoek": "379492",
+  "datum": "24-03-2026",
+  "onderwerp": "Scheur in pilaar balkon",
+  "omschrijving": "In de pilaar zit een grote scheur. Zie foto's. Weten niet hoe lang er in zit, wel prettig te weten of het geen kwaad kan.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "Balkon/woning niet vermeld.",
+  "fotos": [
+   {
+    "src": "img/meldingen/379492_1.jpg",
+    "thumb": "img/meldingen/t/379492_1.jpg",
+    "orig": "twinq/attachments/379492/1000043612.jpg"
+   },
+   {
+    "src": "img/meldingen/379492_2.jpg",
+    "thumb": "img/meldingen/t/379492_2.jpg",
+    "orig": "twinq/attachments/379492/1000043613.jpg"
+   },
+   {
+    "src": "img/meldingen/379492_3.jpg",
+    "thumb": "img/meldingen/t/379492_3.jpg",
+    "orig": "twinq/attachments/379492/1000043614.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 379492 (MVGM-portaal)"
+ },
+ {
+  "id": "M379622",
+  "verzoek": "379622",
+  "datum": "26-03-2026",
+  "onderwerp": "Afvoeren pui/deur",
+  "omschrijving": "In de bergruimte op de begane grond (naast de Moellies) staat een pui/deur die kan worden afgevoerd.",
+  "type": "Onderhoud",
+  "status": "Opdracht verstrekt",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "Bergruimte BG naast \"de Moellies\"; niet op de tekening gevonden.",
+  "fotos": [
+   {
+    "src": "img/meldingen/379622_1.jpg",
+    "thumb": "img/meldingen/t/379622_1.jpg",
+    "orig": "twinq/attachments/379622/1.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 379622 (MVGM-portaal)"
+ },
+ {
+  "id": "M381810",
+  "verzoek": "381810",
+  "datum": "15-04-2026",
+  "onderwerp": "losse vloertegels",
+  "omschrijving": "In de hal, waar de trap en de lift zitten, bij nummer 163 zijn de vloertegels losgeraakt. Graag dit repareren voor er mensen over struikelen.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "TEGELWERK MVGM - Tegelwerk (wand en vloer) - Bramer Flevoland",
+  "units": [
+   "S163"
+  ],
+  "features": [
+   "2-200-TRAP",
+   "2-200-LIFT"
+  ],
+  "bergingen": [],
+  "locatie": "afgeleid",
+  "locatie_toelichting": "\"Hal waar trap en lift zitten, bij nummer 163\".",
+  "fotos": [
+   {
+    "src": "img/meldingen/381810_1.jpg",
+    "thumb": "img/meldingen/t/381810_1.jpg",
+    "orig": "twinq/attachments/381810/WhatsApp Image 2026-04-15 at 16.44.06 (1).jpeg"
+   }
+  ],
+  "bron": "Twinq verzoek 381810 (MVGM-portaal)"
+ },
+ {
+  "id": "M384107",
+  "verzoek": "384107",
+  "datum": "08-05-2026",
+  "onderwerp": "Bergingdeur gaat niet meer open",
+  "omschrijving": "Sleutel is eruit maar de deur blijft klemmen. Er moet iemand komen net als verleden keer. Deur koet weer afgeschaafd worden.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "KBO MVGM - Klein bouwkundig onderhoud - Bramer Flevoland",
+  "units": [
+   "S79"
+  ],
+  "features": [],
+  "bergingen": [
+   "BRG-342"
+  ],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/384107_1.jpg",
+    "thumb": "img/meldingen/t/384107_1.jpg",
+    "orig": "twinq/attachments/384107/berging deur.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 384107 (MVGM-portaal)"
+ },
+ {
+  "id": "M384979",
+  "verzoek": "384979",
+  "datum": "19-05-2026",
+  "onderwerp": "De lamp tussen de appartementen aan de Schans 117 & 119 is defect",
+  "omschrijving": "De lamp tussen de appartementen aan de Schans 117 & 119 is defect",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "VERLICHTIN MVGM - Verlichting (reparatie) - NooterSchreuder Technische Installaties",
+  "units": [
+   "S117",
+   "S119"
+  ],
+  "features": [],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/384979_1.jpg",
+    "thumb": "img/meldingen/t/384979_1.jpg",
+    "orig": "twinq/attachments/384979/IMG_8612.jpeg"
+   }
+  ],
+  "bron": "Twinq verzoek 384979 (MVGM-portaal)"
+ },
+ {
+  "id": "M389161",
+  "verzoek": "389161",
+  "datum": "28-06-2026",
+  "onderwerp": "Wateroverlast hoofdingang",
+  "omschrijving": "In de hal van de hoofdingang is erg veel water aanwezig. Waarschijnlijk afkomstig van een lekkage. Iedereen loopt er doorheen wat zeker nier bevoordelijk is voor de hygiene. Graag de oorzaak achterhalen en repararen om dit voor de toekomst te voorkomen.",
+  "type": "Onderhoud",
+  "status": "Opdracht verstrekt",
+  "opdracht": "SCHOONMAAK MVGM - Schoonmaakwerk - Kalshoven Specialistische reinigingen bv",
+  "units": [],
+  "features": [
+   "BG-198-ENT",
+   "BG-198-HAL1"
+  ],
+  "bergingen": [],
+  "locatie": "afgeleid",
+  "locatie_toelichting": "\"Hoofdingang\": aangenomen Schans naast de Aldi.",
+  "fotos": [
+   {
+    "src": "img/meldingen/389161_1.jpg",
+    "thumb": "img/meldingen/t/389161_1.jpg",
+    "orig": "twinq/attachments/389161/20260628_185753.jpg"
+   },
+   {
+    "src": "img/meldingen/389161_2.jpg",
+    "thumb": "img/meldingen/t/389161_2.jpg",
+    "orig": "twinq/attachments/389161/20260628_185813.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 389161 (MVGM-portaal)"
+ },
+ {
+  "id": "M389162",
+  "verzoek": "389162",
+  "datum": "28-06-2026",
+  "onderwerp": "Liftkeuring over datum",
+  "omschrijving": "In de lift is een keuringssticker aanwezig die inmiddels een jaar is verstreken. Zou kunnen betekenen dat de juiste sticker is vergeten of dat de keuring niet is uitgevoerd. Gaarne controleren wat hier juist is en zo nodig actie uitzetten.",
+  "type": "Onderhoud",
+  "status": "Afgewezen/geannuleerd",
+  "opdracht": "-",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "Welke lift is niet vermeld.",
+  "fotos": [
+   {
+    "src": "img/meldingen/389162_1.jpg",
+    "thumb": "img/meldingen/t/389162_1.jpg",
+    "orig": "twinq/attachments/389162/20260627_140553.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 389162 (MVGM-portaal)"
+ },
+ {
+  "id": "M392912",
+  "verzoek": "392912",
+  "datum": "03-08-2026",
+  "onderwerp": "Verlichting centrale hal voor de lift",
+  "omschrijving": "2 van de 4 TL verlichting in de centrale hal , Schans , op de begane grond voor de lift ingang zijn defect.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "VERLICHTIN MVGM - Verlichting (reparatie) - NooterSchreuder Technische Installaties",
+  "units": [],
+  "features": [
+   "BG-198-HAL2"
+  ],
+  "bergingen": [],
+  "locatie": "afgeleid",
+  "locatie_toelichting": "\"Centrale hal, Schans, BG, voor de lift\": aangenomen portaal naast de Aldi.",
+  "fotos": [
+   {
+    "src": "img/meldingen/392912_1.jpg",
+    "thumb": "img/meldingen/t/392912_1.jpg",
+    "orig": "twinq/attachments/392912/20260803_094551.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 392912 (MVGM-portaal)"
+ },
+ {
+  "id": "M392913",
+  "verzoek": "392913",
+  "datum": "03-08-2026",
+  "onderwerp": "Deurscharnier defect",
+  "omschrijving": "Van de toegangsdeur voor de lift op de 3de verdieping , Schans , is de onderste deel van het scharnier voor de helft weg en de andere helft is verbogen.",
+  "type": "Onderhoud",
+  "status": "Afgesloten",
+  "opdracht": "LIFT ST MVGM - Lift Storing - Kone BV 392913-2 HANG SLUIT MVGM - Hang en sluitwerk - Bramer Flevoland",
+  "units": [],
+  "features": [
+   "3-246-LIFT"
+  ],
+  "bergingen": [],
+  "locatie": "afgeleid",
+  "locatie_toelichting": "\"Toegangsdeur lift 3e verdieping, Schans\": enige Schans-lift op de 3e in de tekening.",
+  "fotos": [
+   {
+    "src": "img/meldingen/392913_1.jpg",
+    "thumb": "img/meldingen/t/392913_1.jpg",
+    "orig": "twinq/attachments/392913/20260803_094718.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 392913 (MVGM-portaal)"
+ },
+ {
+  "id": "M396038",
+  "verzoek": "396038",
+  "datum": "06-09-2026",
+  "onderwerp": "lamp bij nood trap ijzeren",
+  "omschrijving": "goedeavond ik zag dat er een nieuwe lam is opgehangen maar helaas doet die het niet kan deze gemaakt worden afgelopen zaterdag avond is hier dance villange dronten op het haven plein en ik zag op de beelden dat er mensen via de ijzeren trap gingen die hier niet wonenen kan er ook plaat werk langs heen komen als het lastige is om hier op het binnen terein te komen de klink bij de beneden deur is al…",
+  "type": "Onderhoud",
+  "status": "Opdracht verstrekt",
+  "opdracht": "DIVERSEN MVGM - Diversen - Bramer Flevoland",
+  "units": [],
+  "features": [],
+  "bergingen": [],
+  "locatie": null,
+  "locatie_toelichting": "IJzeren noodtrap De Kiel (straat Het Diep); staat niet als VvE-ruimte op de tekening.",
+  "fotos": [
+   {
+    "src": "img/meldingen/396038_1.jpg",
+    "thumb": "img/meldingen/t/396038_1.jpg",
+    "orig": "twinq/attachments/396038/de kiel trap .jpeg"
+   }
+  ],
+  "bron": "Twinq verzoek 396038 (MVGM-portaal)"
+ },
+ {
+  "id": "M402058",
+  "verzoek": "402058",
+  "datum": "31-10-2026",
+  "onderwerp": "Glas boven tussendeur kapot",
+  "omschrijving": "Drie weken geleden is de schilder met zijn ladder door het glas boven de tussendeur bij de hoofdingang aan de Schans (naast de Aldi) gevallen. Ik had van een medebewoner begrepen dat al was toegezegd dat deze zou worden vervangen. Echter zie ik geen reparatieverzoek/opdracht in het portaal. De schilder heeft de losse stukken glas met tape provisorisch afgeplakt, de kans dat dit op korte termijn lo…",
+  "type": "Onderhoud",
+  "status": "Afgewezen/geannuleerd",
+  "opdracht": "-",
+  "units": [],
+  "features": [
+   "BG-198-ENT"
+  ],
+  "bergingen": [],
+  "locatie": "adres",
+  "locatie_toelichting": null,
+  "fotos": [
+   {
+    "src": "img/meldingen/402058_1.jpg",
+    "thumb": "img/meldingen/t/402058_1.jpg",
+    "orig": "twinq/attachments/402058/20261031_152217.jpg"
+   },
+   {
+    "src": "img/meldingen/402058_2.jpg",
+    "thumb": "img/meldingen/t/402058_2.jpg",
+    "orig": "twinq/attachments/402058/20261031_152229.jpg"
+   },
+   {
+    "src": "img/meldingen/402058_3.jpg",
+    "thumb": "img/meldingen/t/402058_3.jpg",
+    "orig": "twinq/attachments/402058/20261031_152244.jpg"
+   }
+  ],
+  "bron": "Twinq verzoek 402058 (MVGM-portaal)"
+ }
+]
