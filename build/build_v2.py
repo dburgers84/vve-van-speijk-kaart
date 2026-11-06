@@ -24,6 +24,25 @@ TYPES=[  # volgorde = legenda
 TYPE_LABEL={t:l for t,l,_ in TYPES}
 
 def poly(P): return Polygon(P).buffer(0)
+
+# BG fijn-uitlijning t.o.v. splitsingstekening (akte 2006 pag. 81):
+# gemeten aan portaal-Oost/Aldi: feature-randen stonden ~3–6 tekeningeenheden te hoog
+# t.o.v. de scanwanden; lichte clockwise-rotatie (~0,25°) voor rest-scheefstand.
+# Positieve shapely-rotatie = CCW → hier −0,25° (= 0,25° met de klok mee).
+from shapely.affinity import rotate as shp_rotate, translate as shp_translate
+_bg_pts=[pt for f in FE.F if f['floor']==0 for pt in f['poly']]
+_bg_pivot=(sum(p[0] for p in _bg_pts)/len(_bg_pts), sum(p[1] for p in _bg_pts)/len(_bg_pts))
+BG_ALIGN={'rot_deg':-0.25,'tx':1.0,'ty':5.0,'pivot':[round(_bg_pivot[0],2),round(_bg_pivot[1],2)],
+          'note':'BG-features/units +1,0 x / +5,0 y tekeningeenheden (~0,7 / 3,3 px@1,5) en −0,25° (klok mee) t.o.v. scan pag. 81'}
+def _bg_corr_pts(P):
+    g=shp_translate(shp_rotate(Polygon(P), BG_ALIGN['rot_deg'], origin=_bg_pivot), BG_ALIGN['tx'], BG_ALIGN['ty'])
+    return [[round(x,1),round(y,1)] for x,y in g.exterior.coords][:-1]
+for f in FE.F:
+    if f['floor']==0: f['poly']=_bg_corr_pts(f['poly'])
+for u in units:
+    if '0' in u['geometry']: u['geometry']['0']=_bg_corr_pts(u['geometry']['0'])
+print('BG align', BG_ALIGN)
+
 upoly={}
 for u in units:
     for f,P in u['geometry'].items(): upoly[(u['id'],int(f))]=poly(P)
@@ -82,11 +101,10 @@ def rings(geom):
 # BAG-pandcontouren staan ~1,8° scheef t.o.v. de handgetekende units (georef-rest).
 # Corrigeer met een kleine rotatie+verschuiving rond het zwaartepunt van de units,
 # zodat contour en ingetekende delen uitlijnen. Zelfde correctie op panden[] voor de BAG-laag.
-from shapely.affinity import rotate as shp_rotate, translate as shp_translate
 _units01=unary_union([g for (uid,f),g in upoly.items() if f in (0,1)])
 _pivot=_units01.centroid
-BAG_CORR={'rot_deg':-1.76,'tx':2.0,'ty':-6.0,'pivot':[round(_pivot.x,2),round(_pivot.y,2)],
-          'note':'BAG-ringen ~1,8° gedraaid t.o.v. splitsingstekening; gecorrigeerd voor contour/BAG-laag'}
+BAG_CORR={'rot_deg':-1.85,'tx':1.5,'ty':-5.0,'pivot':[round(_pivot.x,2),round(_pivot.y,2)],
+          'note':'BAG-ringen ~1,8° gedraaid t.o.v. splitsingstekening; fijn-afgesteld voor BG (−1,85° / +1,5 / −5)'}
 def _bag_corr(geom):
     return shp_translate(shp_rotate(geom, BAG_CORR['rot_deg'], origin=(_pivot.x,_pivot.y)), BAG_CORR['tx'], BAG_CORR['ty'])
 for p in panden:
@@ -111,6 +129,7 @@ for fl in range(5):
     m=unary_union(extras+[complex_foot]).buffer(-1.5,join_style=2) if extras else complex_foot
     outlines[str(fl)]=rings(m)
 meta.setdefault('georef',{})['bag_contour_correctie']=BAG_CORR
+meta['georef']['bg_tekening_correctie']=BG_ALIGN
 print('BAG contour correctie', BAG_CORR, 'outlines', {k:len(v) for k,v in outlines.items()})
 
 # ---- GPS: Twinq-meldingsfoto's met EXIF-GPS blijven zichtbaar (opgave bewoner: posities kloppen)

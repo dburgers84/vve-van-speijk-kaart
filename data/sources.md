@@ -59,3 +59,10 @@ BAG heeft **De Rede 59–141 (oneven, 8254 KB)**: 42 woningen in dezelfde panden
 | Probleem | Complexcontour (uit BAG-panden) stond ~1,8° gedraaid t.o.v. de handgetekende units/ruimtes; op 2e–4e ontbrak de complexcontour (alleen losse dak-/woningfragmenten). |
 | Oplossing | BAG-ringen in `build/build_v2.py` roteren met **−1,76°** rond het zwaartepunt van de units (BG+1e) en verschuiven met **(+2, −6)** tekeningeenheden. Dezelfde complexvoetafdruk (tekening + gecorrigeerde BAG) wordt op **alle** verdiepingen (BG–4e) als contour getoond. Bronbestand `data/bag_panden_plan.json` blijft ongecorrigeerd; correctie gebeurt bij elke build. |
 | Labels | Alle openbare/gemeenschappelijke ruimtes krijgen een zichtbaar label (o.a. galerij/gang/hal, HF, Spr., Lift, Trap, MK, Fietsen, Daktuin). |
+
+## BG-uitlijning + tekening-control (06-11-2026)
+| Wat | Detail |
+|---|---|
+| BG fijn-align | Alle BG-features en BG-unitpolygonen: **−0,25°** (met de klok mee) rond BG-zwaartepunt + verschuiving **(+1,0, +5,0)** tekeningeenheden (≈ **+0,7 / +3,3 px** bij schaal 1,5). Gemeten aan scanwanden portaal Oost/Aldi (feature-randen stonden ~3–6 eenheden te hoog). |
+| BAG-contour | Licht bijgesteld naar **−1,85° / tx +1,5 / ty −5** (was −1,76° / +2 / −6). |
+| UI | Duidelijke control **“Originele tekening”**: knop rechtsboven bij zoom + checkbox + dekkingsschuif linksonder (altijd zichtbaar, niet alleen in ingeklapte legenda). Per verdieping `img/plan_{bg,1e,2e,3e,4e}.jpg` (akte 2006 pag. 81–85). |

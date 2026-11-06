@@ -67,6 +67,10 @@ var G={};['ref','pand','outline','dak','berg','units','feat','sym','lbl','ctx','
 var badge=el('div',{'class':'vve-floorbadge'},wrap);
 var zoom=el('div',{'class':'vve-zoom'},wrap);
 [['+','Inzoomen',function(){zoomBy(1/1.4);}],['−','Uitzoomen',function(){zoomBy(1.4);}],['⤢','Passend maken',function(){fitFloor();}]].forEach(function(z){var b=el('button',{title:z[1],'aria-label':z[1],text:z[0]},zoom);b.onclick=z[2];});
+var refBtn=el('button',{'class':'vve-refbtn',title:'Originele tekening (splitsingstekening) als achtergrond aan/uit','aria-label':'Originele tekening aan of uit',html:'<span class="ref-ico" aria-hidden="true">▣</span><span class="ref-txt">Tekening</span>'},zoom);
+function syncRefBtn(){refBtn.classList.toggle('on',!!state.layers.ref);refBtn.setAttribute('aria-pressed',state.layers.ref?'true':'false');}
+refBtn.onclick=function(){state.layers.ref=!state.layers.ref;syncRefBtn();render();buildLegend();};
+syncRefBtn();
 var legend=el('div',{'class':'vve-legend'},wrap);
 var panel=el('aside',{'class':'vve-panel empty'},main);
 el('div',{'class':'vve-foot',html:'Schematische SVG-plattegrond, overgetrokken van de splitsingstekening (akte 2006) + huisnummerlijst; geen maatvoering. BAG via PDOK (Kadaster), peildatum '+esc(D.meta.peildatum)+'. Foto’s: wandeling 06-11-2026 en Twinq-meldingen. Zie data/sources.md.'},root);
@@ -75,6 +79,17 @@ var lb=el('div',{'class':'vve-lightbox',hidden:''},document.body);
 /* ---------- legenda & lagen ---------- */
 function buildLegend(){
   legend.innerHTML='';
+  // Altijd zichtbaar: originele tekening aan/uit + dekking
+  var refBox=el('div',{'class':'vve-refbox'},legend);
+  el('div',{'class':'ref-title',text:'Originele tekening'},refBox);
+  var refLab=el('label',{'class':'row ref-toggle'},refBox);
+  var refCb=el('input',{type:'checkbox'},refLab); refCb.checked=!!state.layers.ref;
+  el('span',{text:'Scan splitsingstekening (akte 2006) als achtergrond'},refLab);
+  refCb.onchange=function(){state.layers.ref=refCb.checked;syncRefBtn();render();};
+  var op=el('label',{'class':'row ref-op'},refBox);el('span',{text:'Dekking'},op);var r=el('input',{type:'range',min:'0.1',max:'0.9',step:'0.05'},op);r.value=state.refOpacity;
+  r.oninput=function(){state.refOpacity=+r.value;var im=G.ref.querySelector('image');if(im)im.setAttribute('opacity',r.value);};
+  el('div',{'class':'ref-hint',text:'Per verdieping de juiste pagina (BG–4e / pag. 81–85).'},refBox);
+
   var d=el('details',(window.innerWidth>1800&&window.innerHeight>1000?{open:''}:{}),legend); el('summary',{text:'Legenda & lagen'},d);
   var sw=function(t){var s=el('span',{'class':'sw sw-'+t});s.style.background=TYPES[t]?TYPES[t].kleur:'#ccc';return s;};
   el('h4',{text:'Woningen'},d);
@@ -85,11 +100,9 @@ function buildLegend(){
     cb.onchange=function(){state.types[t]=cb.checked;render();};});
   el('h4',{text:'Lagen'},d);
   [['woningen','Woningen'],['labels','Huisnummers & labels'],['common','Gemeenschappelijke ruimten'],['bergingen','Bergingen (1e verd.)'],['daken','Daken'],
-   ['meldingen','Twinq-meldingen met foto’s'],['gps','GPS-foto’s (Twinq)'],['walk','Wandelfoto’s (positie geschat)'],['route','Looproute wandeling'],['panden','BAG-pandcontouren'],['ref','Referentie: scan splitsingstekening']].forEach(function(l){
+   ['meldingen','Twinq-meldingen met foto’s'],['gps','GPS-foto’s (Twinq)'],['walk','Wandelfoto’s (positie geschat)'],['route','Looproute wandeling'],['panden','BAG-pandcontouren']].forEach(function(l){
     var lab=el('label',{},d); var cb=el('input',{type:'checkbox'},lab); cb.checked=state.layers[l[0]]; el('span',{text:l[1]},lab);
     cb.onchange=function(){state.layers[l[0]]=cb.checked;render();};});
-  var op=el('label',{'class':'row'},d);el('span',{text:'Dekking scan'},op);var r=el('input',{type:'range',min:'0.1',max:'0.9',step:'0.05'},op);r.value=state.refOpacity;
-  r.oninput=function(){state.refOpacity=+r.value;var im=G.ref.querySelector('image');if(im)im.setAttribute('opacity',r.value);};
   el('div',{'class':'row',html:'<span class="mk mk-meld">!</span><span>Melding met foto (Twinq)</span>'},d);
   el('div',{'class':'row',html:'<span class="mk mk-gps"></span><span>GPS-foto (cirkel = GPS-nauwkeurigheid)</span>'},d);
   el('div',{'class':'row',html:'<span class="mk mk-walk"></span><span>Wandelfoto (positie geschat ±5–15 m)</span>'},d);
@@ -140,7 +153,12 @@ function render(){
   Array.prototype.forEach.call(floorsEl.children,function(b){var a=+b.getAttribute('data-f')===f;b.classList.toggle('active',a);b.setAttribute('aria-selected',a);});
   var nU=D.units.filter(function(u){return u.floors.indexOf(f)>=0;});
   badge.textContent=F.titel+' · '+nU.length+' woning'+(nU.length===1?'':'en')+(f===0?' · entrees, liften, meterkasten, techniek':'');
-  if(state.layers.ref){var im=sv('image',{x:VB[0],y:VB[1],width:VB[2],height:VB[3],preserveAspectRatio:'none',opacity:state.refOpacity},G.ref);im.setAttribute('href',base+F.img);}
+  if(state.layers.ref){
+    var im=sv('image',{x:VB[0],y:VB[1],width:VB[2],height:VB[3],preserveAspectRatio:'none',opacity:state.refOpacity,'aria-label':'Originele tekening '+F.naam},G.ref);
+    im.setAttribute('href',base+F.img);
+    im.setAttributeNS('http://www.w3.org/1999/xlink','href',base+F.img);
+    sv('title',{text:'Splitsingstekening '+F.naam+' (akte 2006)'},im);
+  }
   if(state.layers.panden)D.panden.forEach(function(p){p.rings.forEach(function(r){sv('polygon',{points:pts(r),'class':'pand'+(p.complex?' complex':'')},G.pand);});});
   // gebouwcontour (overgetrokken + BAG)
   var d='';(D.outlines[String(f)]||[]).forEach(function(r){d+='M'+r.map(function(p){return p[0]+','+p[1];}).join('L')+'Z';});
