@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 0 1300 1132" font-family="Arial,sans-serif">
+<title>VvE Van Speijk – 4e (schematisch, akte 2006)</title><rect x="30" y="0" width="1300" height="1132" fill="#f7f7f4"/>
+<path fill="#ffffff" stroke="#1d2330" stroke-width="2.2" fill-rule="evenodd" d="M1236.0,931.8 L1162.2,996.6 L1236.0,1065.2 L1307.3,996.6Z M916.5,1000.0 L916.5,1086.0 L1112.0,1086.0 L1112.0,1000.0Z M1101.2,252.9 L905.0,252.9 L905.0,341.2 L1101.2,341.2Z M762.8,1001.9 L762.8,1108.0 L863.8,1108.0 L863.8,1001.9Z M297.8,544.9 L318.6,623.1 L622.6,623.1 L622.6,544.9Z M534.3,758.2 L534.3,949.3 L622.6,949.3 L622.6,758.2Z M494.4,81.5 L464.4,81.5 L464.4,117.8 L494.4,117.8Z M406.0,944.8 L406.0,1100.4 L485.5,1100.4 L485.5,944.8Z M285.4,756.9 L285.4,860.5 L481.7,860.5 L481.7,756.9Z"/>
+<polygon id="4-DAK-1" points="465.4,82.5 493.4,82.5 493.4,116.8 465.4,116.8" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-2" points="906.0,253.9 1100.2,253.9 1100.2,340.2 906.0,340.2" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-3" points="299.1,545.9 621.6,545.9 621.6,622.1 319.4,622.1" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-4" points="286.4,757.9 480.7,757.9 480.7,859.5 286.4,859.5" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-5" points="535.3,759.2 621.6,759.2 621.6,948.3 535.3,948.3" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-6" points="407.0,945.8 484.5,945.8 484.5,1099.4 407.0,1099.4" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-7" points="763.8,1002.9 862.8,1002.9 862.8,1107.0 763.8,1107.0" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-DAK-8" points="1236.0,933.1 1305.8,996.6 1236.0,1063.8 1163.7,996.6" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="4-246-LIFT" points="800,1015 810,1015 810,1038 800,1038" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Liftopbouw (dak)</title></polygon>
+<polygon id="4-225-LIFT" points="318,550 338,550 338,565 318,565" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Liftopbouw (dak)</title></polygon>
+<polygon id="S131" points="1062.5,1001 1111,1001 1111,1085 1062.5,1085" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 131</title></polygon>
+<text x="1086.8" y="1043.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">131</text>
+<polygon id="S133" points="1015,1001 1062.5,1001 1062.5,1085 1015,1085" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 133</title></polygon>
+<text x="1038.8" y="1043.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">133</text>
+<polygon id="S135" points="967.5,1001 1015,1001 1015,1085 967.5,1085" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 135</title></polygon>
+<text x="991.2" y="1043.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">135</text>
+<polygon id="S137" points="917.5,1001 967.5,1001 967.5,1085 917.5,1085" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 137</title></polygon>
+<text x="942.5" y="1043.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">137</text>
+</svg>

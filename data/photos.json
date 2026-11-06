@@ -13,8 +13,9 @@
   "notitie": "Links glazen hoofdeur naast Aldi-bord; rechts solid deur fietsenstalling naast brievenbussen; intercom op tussenpijler; witte feestverlichting op gevel.",
   "tijd": "2026-11-06T11:35:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "02_fietsenstalling",
@@ -30,8 +31,9 @@
   "notitie": "Smalle gang, betonnen plafond; ≥3 lange buislampen; voorste uit, verderop aan; wit rond plafondapparaat (sensor?); fietsen achterin.",
   "tijd": "2026-11-06T11:35:51",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "03a_fiets_rest",
@@ -47,8 +49,9 @@
   "notitie": "Meerdere vakken: lange buislampen aan; onafgewerkte gips; deur naar binnenruimte; schuin plafond met 1 buis; rollcontainer/pallets. Zone met meerdere armaturen.",
   "tijd": "2026-11-06T11:37:43",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "03b_fiets_rest",
@@ -64,8 +67,9 @@
   "notitie": "Meerdere vakken: lange buislampen aan; onafgewerkte gips; deur naar binnenruimte; schuin plafond met 1 buis; rollcontainer/pallets. Zone met meerdere armaturen.",
   "tijd": "2026-11-06T11:37:43",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "03c_fiets_rest",
@@ -81,8 +85,9 @@
   "notitie": "Meerdere vakken: lange buislampen aan; onafgewerkte gips; deur naar binnenruimte; schuin plafond met 1 buis; rollcontainer/pallets. Zone met meerdere armaturen.",
   "tijd": "2026-11-06T11:37:43",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "04_deur_hydrofoor",
@@ -98,8 +103,9 @@
   "notitie": "Grijze dubbele deuren met 4 ventilatieroosters; schuin plafond; rollcontainer. Anker voor FIETS-S t.o.v. hydrofoor.",
   "tijd": "2026-11-06T11:38:14",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "05a_entree_brievenbussen",
@@ -115,8 +121,9 @@
   "notitie": "Één TL-buis in entree brievenbussen/lift (correctie gebruiker); systeemplafond; liftdeuren grijs.",
   "tijd": "2026-11-06T11:43:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "05b_lift",
@@ -132,8 +139,9 @@
   "notitie": "Één TL-buis in entree brievenbussen/lift (correctie gebruiker); systeemplafond; liftdeuren grijs.",
   "tijd": "2026-11-06T11:43:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "06_entree_schemersensor",
@@ -149,8 +157,9 @@
   "notitie": "Wit sensordoosje hoog op rode baksteen met kabel; schemersensor. Kapot bovenraam met tape. Feestverlichting.",
   "tijd": "2026-11-06T11:44:35",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "07a_trap",
@@ -166,8 +175,9 @@
   "notitie": "Betonnen trap; 3 ronde witte bulkhead rechts op baksteen, 1 links; blauwe leuning rechts; fietsgoot links.",
   "tijd": "2026-11-06T11:45:44",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "07b_trap",
@@ -183,8 +193,9 @@
   "notitie": "Betonnen trap; 3 ronde witte bulkhead rechts op baksteen, 1 links; blauwe leuning rechts; fietsgoot links.",
   "tijd": "2026-11-06T11:45:44",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "08a_daktuin",
@@ -200,8 +211,9 @@
   "notitie": "Bulkhead rechts =zelfde als bovenste traparmatuur; ≥2 lantaarnpalen op pad; gevel-bulkheads zichtbaar.",
   "tijd": "2026-11-06T11:47:41",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "08b_daktuin",
@@ -217,8 +229,9 @@
   "notitie": "Bulkhead rechts =zelfde als bovenste traparmatuur; ≥2 lantaarnpalen op pad; gevel-bulkheads zichtbaar.",
   "tijd": "2026-11-06T11:47:41",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "09_hal_lift_1e",
@@ -234,8 +247,9 @@
   "notitie": "4 TL-armaturen; trap met blauwe leuning; systeemplafond.",
   "tijd": "2026-11-06T11:48:29",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "10_hal_lift_2e",
@@ -251,8 +265,9 @@
   "notitie": "4 TL-armaturen; trap blauwe leuning.",
   "tijd": "2026-11-06T11:49:25",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "11a_daktuin",
@@ -268,8 +283,9 @@
   "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
   "tijd": "2026-11-06T11:53:23",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "11b_daktuin",
@@ -285,8 +301,9 @@
   "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
   "tijd": "2026-11-06T11:53:23",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "11c_daktuin",
@@ -302,8 +319,9 @@
   "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
   "tijd": "2026-11-06T11:53:23",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "11d_daktuin",
@@ -319,8 +337,9 @@
   "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
   "tijd": "2026-11-06T11:53:23",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "11e_daktuin",
@@ -336,8 +355,9 @@
   "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
   "tijd": "2026-11-06T11:53:23",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "12a_pad",
@@ -353,8 +373,9 @@
   "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
   "tijd": "2026-11-06T11:55:39",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "12b_pad",
@@ -370,8 +391,9 @@
   "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
   "tijd": "2026-11-06T11:55:39",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "12c_pad",
@@ -387,8 +409,9 @@
   "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
   "tijd": "2026-11-06T11:55:39",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "12d_pad",
@@ -404,8 +427,9 @@
   "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
   "tijd": "2026-11-06T11:55:39",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "12e_pad",
@@ -421,8 +445,9 @@
   "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
   "tijd": "2026-11-06T11:55:39",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "13a_schans175",
@@ -438,8 +463,9 @@
   "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
   "tijd": "2026-11-06T11:57:07",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "13b_schans173",
@@ -455,8 +481,9 @@
   "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
   "tijd": "2026-11-06T11:57:07",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "13c_trap_dak",
@@ -472,8 +499,9 @@
   "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
   "tijd": "2026-11-06T11:57:07",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "13d_trap",
@@ -489,8 +517,9 @@
   "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
   "tijd": "2026-11-06T11:57:07",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "14a_pad",
@@ -506,8 +535,9 @@
   "notitie": "Pad + grind; terrassen met privacyglas; bulkhead/sensor op gevel.",
   "tijd": "2026-11-06T11:58:14",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "14b_gevel",
@@ -523,8 +553,9 @@
   "notitie": "Pad + grind; terrassen met privacyglas; bulkhead/sensor op gevel.",
   "tijd": "2026-11-06T11:58:14",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "14c_gevel55",
@@ -540,8 +571,9 @@
   "notitie": "Pad + grind; terrassen met privacyglas; bulkhead/sensor op gevel.",
   "tijd": "2026-11-06T11:58:14",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "15a_k51",
@@ -557,8 +589,9 @@
   "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
   "tijd": "2026-11-06T12:00:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "15b_pad",
@@ -574,8 +607,9 @@
   "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
   "tijd": "2026-11-06T12:00:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "15c_hout",
@@ -591,8 +625,9 @@
   "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
   "tijd": "2026-11-06T12:00:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "15d_173_179",
@@ -608,8 +643,9 @@
   "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
   "tijd": "2026-11-06T12:00:02",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "16a_ingang",
@@ -625,8 +661,9 @@
   "notitie": "Bulkhead bij deur; gang 1 TL.",
   "tijd": "2026-11-06T12:05:24",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "16b_gang",
@@ -642,8 +679,9 @@
   "notitie": "Bulkhead bij deur; gang 1 TL.",
   "tijd": "2026-11-06T12:05:24",
   "gps": false,
-  "positie": "geschat",
-  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m"
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
  },
  {
   "id": "GPS_IMG_8612",
@@ -667,7 +705,10 @@
   "richting_graden": 24.9,
   "nauwkeurigheid_m": 15.0,
   "radius_plan": 91.0,
-  "nauwkeurigheid": "GPS horizontale fout ±15 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend"
+  "nauwkeurigheid": "GPS horizontale fout ±15 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
+  "gps_status": "onnauwkeurig",
+  "gps_afstand_object_m": 13.0,
+  "gps_toelichting": "GPS ±15 m; 13 m van het genoemde adres (S117, S119). Te onnauwkeurig of te ver van het genoemde object: standaard verborgen."
  },
  {
   "id": "GPS_IMG_6071",
@@ -691,7 +732,10 @@
   "richting_graden": 353.9,
   "nauwkeurigheid_m": 4.7,
   "radius_plan": 28.9,
-  "nauwkeurigheid": "GPS horizontale fout ±5 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend"
+  "nauwkeurigheid": "GPS horizontale fout ±5 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
+  "gps_status": "bruikbaar",
+  "gps_afstand_object_m": 3.5,
+  "gps_toelichting": "GPS ±5 m; 4 m van het genoemde adres (S159). Binnen de foutmarge."
  },
  {
   "id": "GPS_IMG_6072",
@@ -715,6 +759,9 @@
   "richting_graden": 329.5,
   "nauwkeurigheid_m": 13.6,
   "radius_plan": 83.0,
-  "nauwkeurigheid": "GPS horizontale fout ±14 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend"
+  "nauwkeurigheid": "GPS horizontale fout ±14 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
+  "gps_status": "onnauwkeurig",
+  "gps_afstand_object_m": 1.7,
+  "gps_toelichting": "GPS ±14 m; 2 m van het genoemde adres (S159). Te onnauwkeurig of te ver van het genoemde object: standaard verborgen."
  }
 ]

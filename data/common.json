@@ -1,139 +1,1127 @@
 [
  {
-  "id": "BG-ENT-K49",
+  "id": "BG-K49-MK",
   "floor": 0,
-  "type": "entree",
-  "name": "Entree + trap + containerruimte (portaal Kiel 49/61/63)",
+  "type": "meterkast",
+  "name": "Meterkast (flatkast, KPN/UPC)",
   "poly": [
    [
-    104,
-    21
+    101,
+    22
    ],
    [
-    131,
-    21
+    107,
+    22
    ],
    [
-    131,
-    96
+    107,
+    31
    ],
    [
-    104,
-    96
+    101,
+    31
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "BG"
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 1.5,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
  {
-  "id": "BG-ENT-215",
+  "id": "BG-K49-ENT",
   "floor": 0,
   "type": "entree",
-  "name": "Entree + trap + lift (Het Havenplein-zijde, onder index 215)",
+  "name": "Entree",
   "poly": [
    [
-    294,
-    519
+    107,
+    22
    ],
    [
-    337,
-    519
+    128,
+    22
    ],
    [
-    337,
-    555
+    128,
+    32
    ],
    [
-    294,
-    555
+    107,
+    32
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "BG"
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 5.7,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
  {
-  "id": "BG-TRP-208",
+  "id": "BG-K49-LIFT",
+  "floor": 0,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    106,
+    32
+   ],
+   [
+    122,
+    32
+   ],
+   [
+    122,
+    44
+   ],
+   [
+    106,
+    44
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "BG",
+  "opp_m2": 5.2,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-K49-TRAP",
   "floor": 0,
   "type": "trap",
-  "name": "Trap + containerruimte (onder Kiel 46-50)",
+  "name": "Trappenhuis",
   "poly": [
    [
-    405,
-    398
+    106,
+    44
    ],
    [
-    451,
-    398
+    128,
+    44
    ],
    [
-    451,
-    426
+    128,
+    75
    ],
    [
-    405,
-    426
+    106,
+    75
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "BG"
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "BG",
+  "opp_m2": 18.4,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
  {
-  "id": "BG-ENT-198",
+  "id": "BG-K49-FIETS",
   "floor": 0,
-  "type": "entree",
-  "name": "Entree + hal + trap + lift + containerruimte (onder Schans 143/145)",
+  "type": "fietsenberging",
+  "name": "Fietsenberging",
   "poly": [
    [
-    380,
-    998
+    104,
+    78
    ],
    [
-    426,
-    998
+    130,
+    78
    ],
    [
-    426,
-    1062
+    130,
+    98
    ],
    [
-    380,
-    1062
+    104,
+    98
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "BG"
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "info": "Voormalige containerruimte (zo genoemd op de splitsingstekening 2006), nu in gebruik als fietsenberging (opgave bewoner, 06-11-2026).",
+  "tekening_label": "containerruimte",
+  "kind": "common",
+  "type_label": "Fietsenberging",
+  "floor_name": "BG",
+  "opp_m2": 14.1,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
  {
-  "id": "BG-ENT-OOST",
+  "id": "BG-215-ENT",
   "floor": 0,
   "type": "entree",
-  "name": "Entree + trap + lift + containerruimte, meterkasten, hydrofoor/sprinkler (onder Schans 75-99)",
+  "name": "Entree",
+  "poly": [
+   [
+    296,
+    525
+   ],
+   [
+    320,
+    525
+   ],
+   [
+    320,
+    548
+   ],
+   [
+    304,
+    548
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 12.4,
+  "nabij": [
+   "K50",
+   "K52"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-215-TRAP",
+  "floor": 0,
+  "type": "trap",
+  "name": "Trap",
+  "poly": [
+   [
+    320,
+    525
+   ],
+   [
+    338,
+    525
+   ],
+   [
+    338,
+    548
+   ],
+   [
+    320,
+    548
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "BG",
+  "opp_m2": 11.2,
+  "nabij": [
+   "K50",
+   "K52"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-215-LIFT",
+  "floor": 0,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    320,
+    550
+   ],
+   [
+    338,
+    550
+   ],
+   [
+    338,
+    560
+   ],
+   [
+    320,
+    560
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "BG",
+  "opp_m2": 4.9,
+  "nabij": [
+   "K52"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-215-MK",
+  "floor": 0,
+  "type": "meterkast",
+  "name": "Meterkasten (GEM gemeenschappelijk, flatkast, CVZ-kast; KPN/UPC/water)",
+  "poly": [
+   [
+    320,
+    562
+   ],
+   [
+    340,
+    562
+   ],
+   [
+    340,
+    573
+   ],
+   [
+    320,
+    573
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 5.9,
+  "nabij": [
+   "K52"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-208-FIETS",
+  "floor": 0,
+  "type": "fietsenberging",
+  "name": "Fietsenberging",
+  "poly": [
+   [
+    414,
+    403
+   ],
+   [
+    450,
+    403
+   ],
+   [
+    450,
+    430
+   ],
+   [
+    414,
+    430
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 46-62 (noord)",
+  "info": "Voormalige containerruimte (zo genoemd op de splitsingstekening 2006), nu in gebruik als fietsenberging (opgave bewoner, 06-11-2026).",
+  "tekening_label": "containerruimte",
+  "kind": "common",
+  "type_label": "Fietsenberging",
+  "floor_name": "BG",
+  "opp_m2": 26.3,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-208-TRAP",
+  "floor": 0,
+  "type": "trap",
+  "name": "Trap",
+  "poly": [
+   [
+    452,
+    382
+   ],
+   [
+    460,
+    382
+   ],
+   [
+    460,
+    428
+   ],
+   [
+    452,
+    428
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 46-62 (noord)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "BG",
+  "opp_m2": 9.9,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-208-TECH",
+  "floor": 0,
+  "type": "technisch",
+  "name": "LS-ruimte + trafo (netbeheerder)",
+  "poly": [
+   [
+    414,
+    383
+   ],
+   [
+    450,
+    383
+   ],
+   [
+    450,
+    400
+   ],
+   [
+    414,
+    400
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 46-62 (noord)",
+  "info": "Laagspanning- en trafo-ruimte; waarschijnlijk van de netbeheerder, niet van de VvE.",
+  "kind": "common",
+  "type_label": "Technisch (trafo/LS/schacht)",
+  "floor_name": "BG",
+  "opp_m2": 16.5,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-HAL1",
+  "floor": 0,
+  "type": "entree",
+  "name": "Hal",
+  "poly": [
+   [
+    386,
+    1017
+   ],
+   [
+    410,
+    1017
+   ],
+   [
+    410,
+    1040
+   ],
+   [
+    386,
+    1040
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 14.9,
+  "nabij": [
+   "S143",
+   "S145",
+   "S155"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-TRAP",
+  "floor": 0,
+  "type": "trap",
+  "name": "Trap naar 1e / daktuin",
+  "poly": [
+   [
+    386,
+    1040
+   ],
+   [
+    410,
+    1040
+   ],
+   [
+    410,
+    1070
+   ],
+   [
+    386,
+    1070
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "BG",
+  "opp_m2": 19.5,
+  "nabij": [
+   "S143",
+   "S155",
+   "S145"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-ENT",
+  "floor": 0,
+  "type": "entree",
+  "name": "Entree (hoofddeur naast Aldi, brievenbussen)",
+  "poly": [
+   [
+    388,
+    1070
+   ],
+   [
+    410,
+    1070
+   ],
+   [
+    410,
+    1083
+   ],
+   [
+    388,
+    1083
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 7.7,
+  "nabij": [
+   "S143",
+   "S155"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-FIETS",
+  "floor": 0,
+  "type": "fietsenberging",
+  "name": "Fietsenberging",
+  "poly": [
+   [
+    410,
+    1017
+   ],
+   [
+    430,
+    1017
+   ],
+   [
+    430,
+    1040
+   ],
+   [
+    410,
+    1040
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "info": "Voormalige containerruimte (zo genoemd op de splitsingstekening 2006), nu in gebruik als fietsenberging (opgave bewoner, 06-11-2026).",
+  "tekening_label": "containerruimte",
+  "kind": "common",
+  "type_label": "Fietsenberging",
+  "floor_name": "BG",
+  "opp_m2": 12.4,
+  "nabij": [
+   "S143",
+   "S145"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-LIFT",
+  "floor": 0,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    411,
+    1040
+   ],
+   [
+    422,
+    1040
+   ],
+   [
+    422,
+    1058
+   ],
+   [
+    411,
+    1058
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "BG",
+  "opp_m2": 5.4,
+  "nabij": [
+   "S143",
+   "S145"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-HAL2",
+  "floor": 0,
+  "type": "entree",
+  "name": "Hal bij lift",
+  "poly": [
+   [
+    410,
+    1058
+   ],
+   [
+    430,
+    1058
+   ],
+   [
+    430,
+    1083
+   ],
+   [
+    410,
+    1083
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 13.5,
+  "nabij": [
+   "S143"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-MK",
+  "floor": 0,
+  "type": "meterkast",
+  "name": "Flatkast (KPN & UPC)",
+  "poly": [
+   [
+    392,
+    1083
+   ],
+   [
+    404,
+    1083
+   ],
+   [
+    404,
+    1091
+   ],
+   [
+    392,
+    1091
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "info": "Op de tekening aangeduid onder de entree; exacte plek te bevestigen.",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 2.6,
+  "nabij": [
+   "S143",
+   "S155"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-198-HYD-W",
+  "floor": 0,
+  "type": "hydrofoor",
+  "name": "Hydrofoor-deur (gezien op wandeling)",
+  "poly": [
+   [
+    464,
+    1055
+   ],
+   [
+    476,
+    1055
+   ],
+   [
+    476,
+    1067
+   ],
+   [
+    464,
+    1067
+   ]
+  ],
+  "conf": "geschat",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "info": "Grijze dubbele deur met ventilatieroosters, gefotografeerd in de fietsenstalling (wandelfoto 04). Staat niet op de splitsingstekening bij dit portaal; positie geschat. Te bevestigen.",
+  "kind": "common",
+  "type_label": "Hydrofoor",
+  "floor_name": "BG",
+  "opp_m2": 3.9,
+  "nabij": [
+   "S143"
+  ],
+  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
+ },
+ {
+  "id": "BG-OOST-MK1",
+  "floor": 0,
+  "type": "meterkast",
+  "name": "Meterkasten (flatkast + CVZ-kast)",
   "poly": [
    [
     766,
-    1001
+    1013
    ],
    [
-    880,
-    1001
+    790,
+    1013
    ],
    [
-    880,
-    1080
+    790,
+    1046
    ],
    [
     766,
-    1080
+    1046
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "BG"
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 21.4,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-MK2",
+  "floor": 0,
+  "type": "meterkast",
+  "name": "Gemeenschappelijke meterkast (GEM; KPN/UPC/EV)",
+  "poly": [
+   [
+    790,
+    1013
+   ],
+   [
+    800,
+    1013
+   ],
+   [
+    800,
+    1036
+   ],
+   [
+    790,
+    1036
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 6.2,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-LIFT",
+  "floor": 0,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    801,
+    1013
+   ],
+   [
+    811,
+    1013
+   ],
+   [
+    811,
+    1034
+   ],
+   [
+    801,
+    1034
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "BG",
+  "opp_m2": 5.7,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-TRAP1",
+  "floor": 0,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    812,
+    1001
+   ],
+   [
+    834,
+    1001
+   ],
+   [
+    834,
+    1036
+   ],
+   [
+    812,
+    1036
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "BG",
+  "opp_m2": 20.8,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-TRAP2",
+  "floor": 0,
+  "type": "trap",
+  "name": "Trap",
+  "poly": [
+   [
+    766,
+    1046
+   ],
+   [
+    790,
+    1046
+   ],
+   [
+    790,
+    1068
+   ],
+   [
+    766,
+    1068
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "BG",
+  "opp_m2": 14.3,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-ENT",
+  "floor": 0,
+  "type": "entree",
+  "name": "Entree",
+  "poly": [
+   [
+    766,
+    1068
+   ],
+   [
+    790,
+    1068
+   ],
+   [
+    790,
+    1082
+   ],
+   [
+    766,
+    1082
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 9.1,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-HAL",
+  "floor": 0,
+  "type": "entree",
+  "name": "Hal",
+  "poly": [
+   [
+    790,
+    1036
+   ],
+   [
+    812,
+    1036
+   ],
+   [
+    812,
+    1082
+   ],
+   [
+    790,
+    1082
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Entree / hal",
+  "floor_name": "BG",
+  "opp_m2": 27.3,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-FIETS",
+  "floor": 0,
+  "type": "fietsenberging",
+  "name": "Fietsenberging",
+  "poly": [
+   [
+    812,
+    1036
+   ],
+   [
+    836,
+    1036
+   ],
+   [
+    836,
+    1065
+   ],
+   [
+    848,
+    1065
+   ],
+   [
+    848,
+    1082
+   ],
+   [
+    812,
+    1082
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "info": "Voormalige containerruimte (zo genoemd op de splitsingstekening 2006), nu in gebruik als fietsenberging (opgave bewoner, 06-11-2026).",
+  "tekening_label": "containerruimte",
+  "kind": "common",
+  "type_label": "Fietsenberging",
+  "floor_name": "BG",
+  "opp_m2": 35.3,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-SPR",
+  "floor": 0,
+  "type": "sprinkler",
+  "name": "Sprinklerruimte",
+  "poly": [
+   [
+    836,
+    1038
+   ],
+   [
+    860,
+    1038
+   ],
+   [
+    860,
+    1052
+   ],
+   [
+    836,
+    1052
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Sprinklerruimte",
+  "floor_name": "BG",
+  "opp_m2": 9.1,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-HYD",
+  "floor": 0,
+  "type": "hydrofoor",
+  "name": "Hydrofoor",
+  "poly": [
+   [
+    848,
+    1052
+   ],
+   [
+    860,
+    1052
+   ],
+   [
+    860,
+    1060
+   ],
+   [
+    848,
+    1060
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Hydrofoor",
+  "floor_name": "BG",
+  "opp_m2": 2.6,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-EK",
+  "floor": 0,
+  "type": "meterkast",
+  "name": "E-kast",
+  "poly": [
+   [
+    848,
+    1060
+   ],
+   [
+    860,
+    1060
+   ],
+   [
+    860,
+    1068
+   ],
+   [
+    848,
+    1068
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 2.6,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-GAS",
+  "floor": 0,
+  "type": "meterkast",
+  "name": "Gaskasten",
+  "poly": [
+   [
+    836,
+    1076
+   ],
+   [
+    858,
+    1076
+   ],
+   [
+    858,
+    1082
+   ],
+   [
+    836,
+    1082
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "BG",
+  "opp_m2": 3.6,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "BG-OOST-TECH",
+  "floor": 0,
+  "type": "technisch",
+  "name": "LS-ruimte + trafo (netbeheerder)",
+  "poly": [
+   [
+    843,
+    1006
+   ],
+   [
+    860,
+    1006
+   ],
+   [
+    860,
+    1038
+   ],
+   [
+    843,
+    1038
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "info": "Laagspanning- en trafo-ruimte; waarschijnlijk van de netbeheerder, niet van de VvE.",
+  "kind": "common",
+  "type_label": "Technisch (trafo/LS/schacht)",
+  "floor_name": "BG",
+  "opp_m2": 14.7,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
  {
   "id": "BG-NIET",
   "floor": 0,
-  "type": "context",
-  "name": "\"Niet in de splitsing betrokken\" (gearceerd op tekening)",
+  "type": "niet-vve",
+  "name": "Niet in de splitsing betrokken (gearceerd op tekening)",
   "poly": [
    [
     216,
@@ -152,193 +1140,97 @@
     1069
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "BG"
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Niet in de splitsing",
+  "floor_name": "BG",
+  "opp_m2": 1170.1,
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
  {
-  "id": "1-BRG-A",
-  "floor": 1,
-  "type": "berging",
-  "name": "Bergingen 276-295 (pad/bergingen)",
-  "poly": [
-   [
-    122,
-    122
-   ],
-   [
-    147,
-    122
-   ],
-   [
-    147,
-    362
-   ],
-   [
-    122,
-    362
-   ]
-  ],
-  "conf": "confirmed",
-  "range": [
-   276,
-   295
-  ],
-  "floor_name": "1e"
- },
- {
-  "id": "1-BRG-B",
-  "floor": 1,
-  "type": "berging",
-  "name": "Bergingen 266-275",
-  "poly": [
-   [
-    235,
-    885
-   ],
-   [
-    287,
-    885
-   ],
-   [
-    287,
-    970
-   ],
-   [
-    235,
-    970
-   ]
-  ],
-  "conf": "confirmed",
-  "range": [
-   266,
-   275
-  ],
-  "floor_name": "1e"
- },
- {
-  "id": "1-BRG-C",
-  "floor": 1,
-  "type": "berging",
-  "name": "Bergingen 296-314 (gang/bergingen)",
-  "poly": [
-   [
-    570,
-    439
-   ],
-   [
-    692,
-    439
-   ],
-   [
-    692,
-    490
-   ],
-   [
-    570,
-    490
-   ]
-  ],
-  "conf": "confirmed",
-  "range": [
-   296,
-   314
-  ],
-  "floor_name": "1e"
- },
- {
-  "id": "1-BRG-D",
-  "floor": 1,
-  "type": "berging",
-  "name": "Bergingen 315-329 (gang/bergingen)",
-  "poly": [
-   [
-    673,
-    865
-   ],
-   [
-    771,
-    865
-   ],
-   [
-    771,
-    917
-   ],
-   [
-    673,
-    917
-   ]
-  ],
-  "conf": "confirmed",
-  "range": [
-   315,
-   329
-  ],
-  "floor_name": "1e"
- },
- {
-  "id": "1-BRG-E",
-  "floor": 1,
-  "type": "berging",
-  "name": "Bergingen 330-356 (gang/bergingen)",
-  "poly": [
-   [
-    958,
-    899
-   ],
-   [
-    1019,
-    899
-   ],
-   [
-    1019,
-    917
-   ],
-   [
-    958,
-    917
-   ]
-  ],
-  "conf": "confirmed",
-  "range": [
-   330,
-   356
-  ],
-  "extra": [
-   [
-    1031,
-    869
-   ],
-   [
-    1125,
-    869
-   ],
-   [
-    1125,
-    917
-   ],
-   [
-    1031,
-    917
-   ]
-  ],
-  "floor_name": "1e"
- },
- {
-  "id": "1-TRP-205",
+  "id": "1-K49-LIFT",
   "floor": 1,
   "type": "lift",
-  "name": "Trappenhuis portaal Kiel 49/61/63",
+  "name": "Lift",
+  "poly": [
+   [
+    112,
+    34
+   ],
+   [
+    128,
+    34
+   ],
+   [
+    128,
+    46
+   ],
+   [
+    112,
+    46
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "1e",
+  "opp_m2": 5.2,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-K49-MK",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast",
+  "poly": [
+   [
+    128,
+    34
+   ],
+   [
+    136,
+    34
+   ],
+   [
+    136,
+    46
+   ],
+   [
+    128,
+    46
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 2.6,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-K49-TRAP",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trappenhuis",
   "poly": [
    [
     110,
-    32
+    47
    ],
    [
-    127,
-    32
+    128,
+    47
    ],
    [
-    127,
+    128,
     75
    ],
    [
@@ -346,125 +1238,925 @@
     75
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "1e"
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 13.6,
+  "nabij": [
+   "K49"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
-  "id": "1-LIFT-215",
+  "id": "1-PAD-A",
   "floor": 1,
-  "type": "lift",
-  "name": "Lift + trap (bij 213-215)",
+  "type": "galerij",
+  "name": "Pad langs bergingen 276-295",
   "poly": [
    [
-    317,
-    548
+    114,
+    96
    ],
    [
-    345,
-    548
+    124,
+    96
    ],
    [
-    345,
+    124,
+    362
+   ],
+   [
+    114,
+    362
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 71.9,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-215-LIFT",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    318,
+    553
+   ],
+   [
+    335,
+    553
+   ],
+   [
+    335,
     570
    ],
    [
-    317,
+    318,
     570
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "1e"
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "1e",
+  "opp_m2": 7.8,
+  "nabij": [
+   "K52"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
-  "id": "1-LIFT-190",
+  "id": "1-215-HAL",
+  "floor": 1,
+  "type": "galerij",
+  "name": "Hal / overloop",
+  "poly": [
+   [
+    300,
+    550
+   ],
+   [
+    318,
+    550
+   ],
+   [
+    318,
+    570
+   ],
+   [
+    300,
+    570
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 9.7,
+  "nabij": [
+   "K52"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-215-TRAP",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trap",
+  "poly": [
+   [
+    337,
+    536
+   ],
+   [
+    372,
+    536
+   ],
+   [
+    372,
+    550
+   ],
+   [
+    337,
+    550
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 13.2,
+  "nabij": [
+   "K50",
+   "K52",
+   "K54"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-190-LIFT",
   "floor": 1,
   "type": "lift",
-  "name": "Lift + trap (Schans 147-153)",
+  "name": "Lift",
   "poly": [
    [
     367,
-    767
+    805
    ],
    [
-    392,
-    767
+    380,
+    805
    ],
    [
-    392,
-    860
+    380,
+    818
    ],
    [
     367,
-    860
+    818
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "1e"
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "1e",
+  "opp_m2": 4.6,
+  "nabij": [
+   "S151",
+   "S153",
+   "S147",
+   "S149"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
-  "id": "1-LIFT-198",
+  "id": "1-190-HAL",
   "floor": 1,
-  "type": "lift",
-  "name": "Lift + trap (Schans 143/145)",
+  "type": "galerij",
+  "name": "Hal",
+  "poly": [
+   [
+    367,
+    818
+   ],
+   [
+    380,
+    818
+   ],
+   [
+    380,
+    865
+   ],
+   [
+    367,
+    865
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 16.5,
+  "nabij": [
+   "S153",
+   "S151",
+   "S147",
+   "S149"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-190-TRAP",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trap",
   "poly": [
    [
     380,
-    1005
+    795
    ],
+   [
+    392,
+    795
+   ],
+   [
+    392,
+    865
+   ],
+   [
+    380,
+    865
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 22.7,
+  "nabij": [
+   "S147",
+   "S149",
+   "S151",
+   "S153"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-190-MK1",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    361,
+    804
+   ],
+   [
+    367,
+    804
+   ],
+   [
+    367,
+    809
+   ],
+   [
+    361,
+    809
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 0.8,
+  "nabij": [
+   "S151",
+   "S153"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-190-MK2",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    361,
+    826
+   ],
+   [
+    367,
+    826
+   ],
+   [
+    367,
+    831
+   ],
+   [
+    361,
+    831
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 0.8,
+  "nabij": [
+   "S153",
+   "S151"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-190-MK3",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    392,
+    803
+   ],
+   [
+    398,
+    803
+   ],
+   [
+    398,
+    808
+   ],
+   [
+    392,
+    808
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 0.8,
+  "nabij": [
+   "S149",
+   "S147"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-190-MK4",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    392,
+    826
+   ],
+   [
+    398,
+    826
+   ],
+   [
+    398,
+    831
+   ],
+   [
+    392,
+    831
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 147-153",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 0.8,
+  "nabij": [
+   "S147",
+   "S149"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-198-TRAP1",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trappenhuis naar 2e",
+  "poly": [
    [
     398,
     1005
    ],
    [
+    424,
+    1005
+   ],
+   [
+    424,
+    1050
+   ],
+   [
     398,
-    1075
+    1050
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 31.6,
+  "nabij": [
+   "S143",
+   "S145"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-198-TRAP2",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trap vanaf entree (BG)",
+  "poly": [
+   [
+    380,
+    1050
+   ],
+   [
+    398,
+    1050
+   ],
+   [
+    398,
+    1062
    ],
    [
     380,
-    1075
+    1062
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "1e"
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 5.8,
+  "nabij": [
+   "S143",
+   "S155"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
-  "id": "1-LIFT-OOST",
+  "id": "1-198-LIFT",
   "floor": 1,
   "type": "lift",
-  "name": "Lift + trap (Schans 83-95 / 75-81)",
+  "name": "Lift",
+  "poly": [
+   [
+    400,
+    1052
+   ],
+   [
+    412,
+    1052
+   ],
+   [
+    412,
+    1070
+   ],
+   [
+    400,
+    1070
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "1e",
+  "opp_m2": 5.8,
+  "nabij": [
+   "S143"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-198-MK1",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    424,
+    1012
+   ],
+   [
+    430,
+    1012
+   ],
+   [
+    430,
+    1018
+   ],
+   [
+    424,
+    1018
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 1.0,
+  "nabij": [
+   "S145",
+   "S143"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-198-MK2",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    424,
+    1040
+   ],
+   [
+    430,
+    1040
+   ],
+   [
+    430,
+    1046
+   ],
+   [
+    424,
+    1046
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 1.0,
+  "nabij": [
+   "S143",
+   "S145"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-OOST-LIFT",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    790,
+    1032
+   ],
+   [
+    803,
+    1032
+   ],
+   [
+    803,
+    1052
+   ],
+   [
+    790,
+    1052
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "1e",
+  "opp_m2": 7.0,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-OOST-SCH",
+  "floor": 1,
+  "type": "technisch",
+  "name": "Schacht / vide",
+  "poly": [
+   [
+    780,
+    1032
+   ],
+   [
+    790,
+    1032
+   ],
+   [
+    790,
+    1052
+   ],
+   [
+    780,
+    1052
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Technisch (trafo/LS/schacht)",
+  "floor_name": "1e",
+  "opp_m2": 5.4,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-OOST-TRAP1",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    805,
+    1030
+   ],
+   [
+    822,
+    1030
+   ],
+   [
+    822,
+    1052
+   ],
+   [
+    805,
+    1052
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 10.1,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-OOST-TRAP2",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trap vanaf entree (BG)",
   "poly": [
    [
     760,
-    1032
+    1040
    ],
    [
-    821,
-    1032
+    778,
+    1040
    ],
    [
-    821,
-    1066
+    778,
+    1080
    ],
    [
     760,
-    1066
+    1080
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "1e"
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 19.5,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-182-TRAP",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trap naar daktuin",
+  "poly": [
+   [
+    245,
+    704
+   ],
+   [
+    268,
+    704
+   ],
+   [
+    268,
+    717
+   ],
+   [
+    245,
+    717
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Hal Schans 173/175",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 8.1,
+  "nabij": [
+   "S173",
+   "S175"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-182-MK1",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    249,
+    687
+   ],
+   [
+    254,
+    687
+   ],
+   [
+    254,
+    694
+   ],
+   [
+    249,
+    694
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Hal Schans 173/175",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 0.9,
+  "nabij": [
+   "S175"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-182-MK2",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    249,
+    733
+   ],
+   [
+    254,
+    733
+   ],
+   [
+    254,
+    740
+   ],
+   [
+    249,
+    740
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Hal Schans 173/175",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 0.9,
+  "nabij": [
+   "S173"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-260-TRAP",
+  "floor": 1,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    1190,
+    1018
+   ],
+   [
+    1210,
+    998
+   ],
+   [
+    1222,
+    1010
+   ],
+   [
+    1202,
+    1030
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "1e",
+  "opp_m2": 13.0,
+  "nabij": [
+   "S63",
+   "S65"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-260-MK1",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    1219,
+    1001
+   ],
+   [
+    1224,
+    996
+   ],
+   [
+    1229,
+    1001
+   ],
+   [
+    1224,
+    1006
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 1.4,
+  "nabij": [
+   "S63"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-260-MK2",
+  "floor": 1,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    1195,
+    1031
+   ],
+   [
+    1200,
+    1026
+   ],
+   [
+    1205,
+    1031
+   ],
+   [
+    1200,
+    1036
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "1e",
+  "opp_m2": 1.4,
+  "nabij": [
+   "S65",
+   "S63"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
   "id": "1-DAK-W",
   "floor": 1,
   "type": "daktuin",
-  "name": "Daktuin / dakpad (west, langs Kiel 51-59)",
+  "name": "Daktuin / dakpad (west, langs De Kiel 51-59)",
   "poly": [
    [
     60,
     389
    ],
    [
-    122,
+    172,
     389
    ],
    [
@@ -472,18 +2164,22 @@
     630
    ],
    [
-    110,
+    60,
     630
    ]
   ],
-  "conf": "estimated",
-  "floor_name": "1e"
+  "conf": "geschat",
+  "kind": "common",
+  "type_label": "Daktuin / dakpad",
+  "floor_name": "1e",
+  "opp_m2": 729.5,
+  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
  },
  {
   "id": "1-DAK-M",
   "floor": 1,
   "type": "daktuin",
-  "name": "Daktuin / dakpad (midden, tussen Schans 143-171 en Kiel)",
+  "name": "Daktuin (midden, tussen Schans 143-171 en De Kiel)",
   "poly": [
    [
     290,
@@ -502,14 +2198,18 @@
     975
    ]
   ],
-  "conf": "estimated",
-  "floor_name": "1e"
+  "conf": "geschat",
+  "kind": "common",
+  "type_label": "Daktuin / dakpad",
+  "floor_name": "1e",
+  "opp_m2": 681.0,
+  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
  },
  {
   "id": "1-DAK-N",
   "floor": 1,
   "type": "daktuin",
-  "name": "Dak / dakpad (noord, bij Kiel 46-50)",
+  "name": "Dak / dakpad (noord, bij De Kiel 46-50)",
   "poly": [
    [
     395,
@@ -528,118 +2228,949 @@
     545
    ]
   ],
-  "conf": "estimated",
-  "floor_name": "1e"
+  "conf": "geschat",
+  "kind": "common",
+  "type_label": "Daktuin / dakpad",
+  "floor_name": "1e",
+  "opp_m2": 468.2,
+  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
  },
  {
-  "id": "2-LIFT-K61",
+  "id": "1-GANG-C",
+  "floor": 1,
+  "type": "galerij",
+  "name": "Gang bergingen 296-314",
+  "poly": [
+   [
+    570,
+    457
+   ],
+   [
+    690,
+    457
+   ],
+   [
+    690,
+    466
+   ],
+   [
+    570,
+    466
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 29.2,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-GANG-D",
+  "floor": 1,
+  "type": "galerij",
+  "name": "Gang bergingen 315-329",
+  "poly": [
+   [
+    671,
+    882
+   ],
+   [
+    752,
+    882
+   ],
+   [
+    752,
+    893
+   ],
+   [
+    671,
+    893
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 24.1,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-GANG-E",
+  "floor": 1,
+  "type": "galerij",
+  "name": "Gang bergingen 330-356",
+  "poly": [
+   [
+    944,
+    883
+   ],
+   [
+    1080,
+    883
+   ],
+   [
+    1080,
+    891
+   ],
+   [
+    944,
+    891
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 29.4,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-GANG-B",
+  "floor": 1,
+  "type": "galerij",
+  "name": "Gang bergingen 266-275",
+  "poly": [
+   [
+    257,
+    883
+   ],
+   [
+    263,
+    883
+   ],
+   [
+    263,
+    970
+   ],
+   [
+    257,
+    970
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "1e",
+  "opp_m2": 14.1,
+  "nabij": [
+   "S159"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-K61-HAL",
   "floor": 2,
-  "type": "lift",
-  "name": "Lift + trap portaal Kiel 49/61/63",
+  "type": "galerij",
+  "name": "Overloop",
   "poly": [
    [
     100,
+    12
+   ],
+   [
+    130,
+    12
+   ],
+   [
+    130,
+    32
+   ],
+   [
+    100,
+    32
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "2e",
+  "opp_m2": 16.2,
+  "nabij": [
+   "K63",
+   "K61"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-K61-MK",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast",
+  "poly": [
+   [
+    120,
+    25
+   ],
+   [
+    127,
+    25
+   ],
+   [
+    127,
+    30
+   ],
+   [
+    120,
+    30
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 0.9,
+  "nabij": [
+   "K63",
+   "K61"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-K61-LIFT",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    106,
     33
    ],
    [
-    125,
+    122,
     33
+   ],
+   [
+    122,
+    45
+   ],
+   [
+    106,
+    45
+   ]
+  ],
+  "conf": "afgeleid",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "2e",
+  "opp_m2": 5.2,
+  "nabij": [
+   "K61",
+   "K63"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-K61-TRAP",
+  "floor": 2,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    106,
+    45
+   ],
+   [
+    125,
+    45
    ],
    [
     125,
     78
    ],
    [
-    100,
+    106,
     78
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "2e"
+  "conf": "afgeleid",
+  "portaal": "Portaal De Kiel 49/61/63",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 16.9,
+  "nabij": [
+   "K61",
+   "K63"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
-  "id": "2-LIFT-225",
+  "id": "2-225-LIFT",
   "floor": 2,
   "type": "lift",
-  "name": "Lift (bij Kiel 64)",
+  "name": "Lift",
   "poly": [
    [
     318,
-    548
+    550
    ],
    [
     338,
-    548
+    550
    ],
    [
     338,
-    560
+    565
    ],
    [
     318,
-    560
+    565
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "2e"
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "2e",
+  "opp_m2": 8.1,
+  "nabij": [
+   "K64",
+   "K66"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
-  "id": "2-LIFT-194",
+  "id": "2-183-TRAP",
   "floor": 2,
-  "type": "lift",
-  "name": "Lift + trap (Schans 165-171)",
+  "type": "trap",
+  "name": "Trap",
   "poly": [
    [
-    372,
-    787
+    250,
+    700
    ],
    [
-    397,
-    787
+    270,
+    700
    ],
    [
-    397,
-    860
+    270,
+    715
    ],
    [
-    372,
-    860
+    250,
+    715
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "2e"
+  "conf": "tekening",
+  "portaal": "Trap Schans 177/179",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 8.1,
+  "nabij": [
+   "S177",
+   "S179"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
-  "id": "2-LIFT-244",
+  "id": "2-183-MK1",
   "floor": 2,
-  "type": "lift",
-  "name": "Lift + trap (Schans 109/111)",
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
   "poly": [
    [
-    790,
+    241,
+    683
+   ],
+   [
+    247,
+    683
+   ],
+   [
+    247,
+    690
+   ],
+   [
+    241,
+    690
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trap Schans 177/179",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 1.1,
+  "nabij": [
+   "S179",
+   "S177"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-183-MK2",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    241,
+    727
+   ],
+   [
+    247,
+    727
+   ],
+   [
+    247,
+    735
+   ],
+   [
+    241,
+    735
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trap Schans 177/179",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 1.3,
+  "nabij": [
+   "S177"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-194-LIFT",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    373,
+    798
+   ],
+   [
+    385,
+    798
+   ],
+   [
+    385,
+    812
+   ],
+   [
+    373,
+    812
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 165-171",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "2e",
+  "opp_m2": 4.5,
+  "nabij": [
+   "S169",
+   "S171",
+   "S165",
+   "S167"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-194-TRAP",
+  "floor": 2,
+  "type": "trap",
+  "name": "Trap",
+  "poly": [
+   [
+    380,
+    815
+   ],
+   [
+    392,
+    815
+   ],
+   [
+    392,
+    855
+   ],
+   [
+    380,
+    855
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 165-171",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 13.0,
+  "nabij": [
+   "S165",
+   "S167",
+   "S171",
+   "S169"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-194-MK1",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    360,
+    795
+   ],
+   [
+    367,
+    795
+   ],
+   [
+    367,
+    800
+   ],
+   [
+    360,
+    800
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 165-171",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 0.9,
+  "nabij": [
+   "S169",
+   "S171"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-194-MK2",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    360,
+    818
+   ],
+   [
+    367,
+    818
+   ],
+   [
+    367,
+    823
+   ],
+   [
+    360,
+    823
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 165-171",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 0.9,
+  "nabij": [
+   "S171",
+   "S169"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-200-TRAP",
+  "floor": 2,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    408,
+    998
+   ],
+   [
+    434,
+    998
+   ],
+   [
+    434,
+    1043
+   ],
+   [
+    408,
+    1043
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 31.6,
+  "nabij": [
+   "S161",
+   "S163"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-200-LIFT",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    408,
+    1045
+   ],
+   [
+    422,
+    1045
+   ],
+   [
+    422,
+    1062
+   ],
+   [
+    408,
+    1062
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "2e",
+  "opp_m2": 6.4,
+  "nabij": [
+   "S161"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-200-MK1",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    432,
+    1003
+   ],
+   [
+    438,
+    1003
+   ],
+   [
+    438,
+    1008
+   ],
+   [
+    432,
+    1008
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 0.8,
+  "nabij": [
+   "S163",
+   "S161"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-200-MK2",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    432,
+    1036
+   ],
+   [
+    438,
+    1036
+   ],
+   [
+    438,
+    1041
+   ],
+   [
+    432,
+    1041
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 143/145 (naast Aldi)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 0.8,
+  "nabij": [
+   "S161"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-244-LIFT",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    800,
+    1015
+   ],
+   [
+    810,
+    1015
+   ],
+   [
+    810,
+    1038
+   ],
+   [
+    800,
+    1038
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "2e",
+  "opp_m2": 6.2,
+  "nabij": [
+   "S107",
+   "S105"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-244-SCH",
+  "floor": 2,
+  "type": "technisch",
+  "name": "Schacht",
+  "poly": [
+   [
+    793,
+    1018
+   ],
+   [
+    800,
+    1018
+   ],
+   [
+    800,
+    1040
+   ],
+   [
+    793,
+    1040
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Technisch (trafo/LS/schacht)",
+  "floor_name": "2e",
+  "opp_m2": 4.2,
+  "nabij": [
+   "S107",
+   "S105"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-244-MK",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast (mk)",
+  "poly": [
+   [
+    795,
+    1009
+   ],
+   [
+    802,
+    1009
+   ],
+   [
+    802,
+    1015
+   ],
+   [
+    795,
+    1015
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 1.1,
+  "nabij": [
+   "S107",
+   "S105"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-244-TRAP",
+  "floor": 2,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    812,
+    1004
+   ],
+   [
+    830,
+    1004
+   ],
+   [
+    830,
+    1040
+   ],
+   [
+    812,
+    1040
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 17.5,
+  "nabij": [
+   "S105",
+   "S107"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-262-TRAP",
+  "floor": 2,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    1200,
+    992
+   ],
+   [
+    1220,
+    972
+   ],
+   [
+    1233,
+    985
+   ],
+   [
+    1213,
+    1005
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 14.1,
+  "nabij": [
+   "S67",
+   "S69"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-262-MK1",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    1230,
+    979
+   ],
+   [
+    1235,
+    974
+   ],
+   [
+    1240,
+    979
+   ],
+   [
+    1235,
+    984
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 1.4,
+  "nabij": [
+   "S67"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-262-MK2",
+  "floor": 2,
+  "type": "meterkast",
+  "name": "Meterkast woning (mk)",
+  "poly": [
+   [
+    1204,
     1006
    ],
    [
-    818,
+    1209,
+    1001
+   ],
+   [
+    1214,
     1006
    ],
    [
-    818,
-    1030
-   ],
-   [
-    790,
-    1030
+    1209,
+    1011
    ]
   ],
-  "conf": "estimated",
-  "floor_name": "2e"
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Meterkast / E-kast / gaskast",
+  "floor_name": "2e",
+  "opp_m2": 1.4,
+  "nabij": [
+   "S69",
+   "S67"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
   "id": "2-GAL-K",
   "floor": 2,
   "type": "galerij",
-  "name": "Galerij Kiel 64-84 (2e+3e)",
+  "name": "Galerij De Kiel 64-84 (2e+3e)",
   "poly": [
    [
     299,
@@ -658,8 +3189,20 @@
     548
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "2e"
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "2e",
+  "opp_m2": 69.0,
+  "nabij": [
+   "K64",
+   "K66",
+   "K68",
+   "K70",
+   "K72",
+   "K74"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
   "id": "2-GAL-S",
@@ -684,8 +3227,20 @@
     952
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "2e"
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "2e",
+  "opp_m2": 51.9,
+  "nabij": [
+   "S115",
+   "S117",
+   "S119",
+   "S121",
+   "S123",
+   "S125"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
   "id": "2-GAL-O",
@@ -710,8 +3265,159 @@
     1003
    ]
   ],
-  "conf": "confirmed",
-  "floor_name": "2e"
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "2e",
+  "opp_m2": 131.9,
+  "nabij": [
+   "S101",
+   "S103",
+   "S97",
+   "S99",
+   "S105",
+   "S107"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "3-225-LIFT",
+  "floor": 3,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    318,
+    550
+   ],
+   [
+    338,
+    550
+   ],
+   [
+    338,
+    565
+   ],
+   [
+    318,
+    565
+   ]
+  ],
+  "conf": "afgeleid",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "3e",
+  "opp_m2": 8.1,
+  "nabij": [
+   "K64"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "3-246-LIFT",
+  "floor": 3,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    800,
+    1015
+   ],
+   [
+    810,
+    1015
+   ],
+   [
+    810,
+    1038
+   ],
+   [
+    800,
+    1038
+   ]
+  ],
+  "conf": "afgeleid",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "3e",
+  "opp_m2": 6.2,
+  "nabij": [
+   "S139",
+   "S141"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "3-246-TRAP",
+  "floor": 3,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    812,
+    1004
+   ],
+   [
+    830,
+    1004
+   ],
+   [
+    830,
+    1040
+   ],
+   [
+    812,
+    1040
+   ]
+  ],
+  "conf": "afgeleid",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "3e",
+  "opp_m2": 17.5,
+  "nabij": [
+   "S139",
+   "S141"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "3-264-TRAP",
+  "floor": 3,
+  "type": "trap",
+  "name": "Trappenhuis",
+  "poly": [
+   [
+    1200,
+    992
+   ],
+   [
+    1220,
+    972
+   ],
+   [
+    1233,
+    985
+   ],
+   [
+    1213,
+    1005
+   ]
+  ],
+  "conf": "afgeleid",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "3e",
+  "opp_m2": 14.1,
+  "nabij": [
+   "S71",
+   "S73"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
  },
  {
   "id": "3-GAL-O",
@@ -736,59 +3442,83 @@
     1012
    ]
   ],
-  "conf": "estimated",
-  "floor_name": "3e"
+  "conf": "geschat",
+  "kind": "common",
+  "type_label": "Galerij / gang / overloop",
+  "floor_name": "3e",
+  "opp_m2": 100.0,
+  "nabij": [
+   "S71",
+   "S131",
+   "S133",
+   "S135",
+   "S137",
+   "S139"
+  ],
+  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
  },
  {
-  "id": "CTX-Schans51",
-  "floor": 0,
-  "type": "aldi",
-  "name": "Aldi (Schans 51)",
-  "point": [
-   347.4,
-   1087.6
+  "id": "4-246-LIFT",
+  "floor": 4,
+  "type": "lift",
+  "name": "Liftopbouw (dak)",
+  "poly": [
+   [
+    800,
+    1015
+   ],
+   [
+    810,
+    1015
+   ],
+   [
+    810,
+    1038
+   ],
+   [
+    800,
+    1038
+   ]
   ],
-  "conf": "bag_point",
-  "info": "BAG winkelfunctie, 1294 m², bouwjaar 2006, pand 0303100000584907",
-  "bron": "PDOK BAG WFS 2026-11-06; aldi.nl/supermarkt/dronten/de-schans-51"
+  "conf": "afgeleid",
+  "portaal": "Portaal Schans 75-99 (oost)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "4e",
+  "opp_m2": 6.2,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 85; index 180 = gemeenschappelijk"
  },
  {
-  "id": "CTX-DeBinnenloop10",
-  "floor": 0,
-  "type": "winkel",
-  "name": "Jumbo (De Binnenloop 10)",
-  "point": [
-   542.1,
-   1031.1
+  "id": "4-225-LIFT",
+  "floor": 4,
+  "type": "lift",
+  "name": "Liftopbouw (dak)",
+  "poly": [
+   [
+    318,
+    550
+   ],
+   [
+    338,
+    550
+   ],
+   [
+    338,
+    565
+   ],
+   [
+    318,
+    565
+   ]
   ],
-  "conf": "bag_point",
-  "info": "BAG winkelfunctie, 1760 m², bouwjaar 2006, pand 0303100000584908",
-  "bron": "PDOK BAG WFS 2026-11-06; openingstijden.nl / supermarktenoverzicht.nl"
- },
- {
-  "id": "CTX-DeKajuit1",
-  "floor": 0,
-  "type": "winkel",
-  "name": "Vomar (De Kajuit 1)",
-  "point": [
-   1075.7,
-   949.6
-  ],
-  "conf": "bag_point",
-  "info": "BAG winkelfunctie, 1280 m², bouwjaar 2006, pand 0303100000584908",
-  "bron": "PDOK BAG WFS 2026-11-06; openingstijden.nl / supermarktenoverzicht.nl"
- },
- {
-  "id": "CTX-HetHavenplein16",
-  "floor": 0,
-  "type": "winkel",
-  "name": "Bedrijfsruimte Het Havenplein 16",
-  "point": [
-   559.6,
-   624.2
-  ],
-  "conf": "bag_point",
-  "info": "BAG winkelfunctie, 1608 m², bouwjaar 1963, pand 0303100000597116",
-  "bron": "PDOK BAG WFS 2026-11-06; openingstijden.nl / supermarktenoverzicht.nl"
+  "conf": "afgeleid",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "4e",
+  "opp_m2": 8.1,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 85; index 180 = gemeenschappelijk"
  }
 ]
