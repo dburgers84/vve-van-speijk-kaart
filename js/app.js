@@ -124,7 +124,16 @@ function relSel(id){if(!state.sel)return false;var s=state.sel;
   if(s.kind==='unit'){var b=bergByIndex[s.obj.berging.index];return b&&b.id===id;}
   if(s.kind==='berging')return s.obj.eigenaar===id; if(s.kind==='blok')return byId[id]&&byId[id].kind==='berging'&&byId[id].obj.blok===s.id;return false;}
 function text(g,x,y,t,cls,size){var e=sv('text',{x:x,y:y,'class':cls,'font-size':size},g);e.textContent=t;return e;}
-var SHORT={lift:'Lift',trap:'Trap',entree:'Entree',meterkast:'MK',hydrofoor:'Hydrofoor',sprinkler:'Sprinkler',technisch:'Techn.',fietsenberging:'Fietsen',galerij:'',daktuin:'Daktuin','niet-vve':'Niet VvE'};
+var SHORT={lift:'Lift',trap:'Trap',entree:'Entree',meterkast:'MK',hydrofoor:'HF',sprinkler:'Sprinkler',technisch:'Techn.',fietsenberging:'Fietsen',galerij:'Galerij',daktuin:'Daktuin',dak:'Dak','niet-vve':'Niet VvE'};
+function commonLabel(c){
+  var t=SHORT[c.type]; if(t==null)t='';
+  if(c.type==='galerij'){var n=(c.name||'').toLowerCase();
+    if(n.indexOf('gang')>=0)t='Gang'; else if(n.indexOf('pad')>=0)t='Pad';
+    else if(n.indexOf('hal')>=0||n.indexOf('overloop')>=0)t='Hal'; else t='Galerij';}
+  if(c.type==='entree'){var n=(c.name||'').toLowerCase(); if(n.indexOf('hal')>=0)t='Hal';}
+  if(c.type==='hydrofoor')t='HF';
+  if(c.type==='sprinkler')t='Spr.';
+  return t;}
 function render(){
   Object.keys(G).forEach(function(k){clear(G[k]);});
   var f=state.floor, F=D.meta.floors.filter(function(x){return x.n===f;})[0];
@@ -145,9 +154,11 @@ function render(){
     sv('title',{text:c.name+(c.portaal?' – '+c.portaal:'')},p);onTap(p,function(){select(c.id,true);},c.name);
     var b=bbox(c.poly),w=b[2]-b[0],h=b[3]-b[1],cx=(b[0]+b[2])/2,cy=(b[1]+b[3])/2;
     if(c.type==='lift'){sv('path',{d:'M'+b[0]+','+b[1]+'L'+b[2]+','+b[3]+'M'+b[2]+','+b[1]+'L'+b[0]+','+b[3],'class':'lift-x'},G.sym);}
-    if(state.layers.labels&&SHORT[c.type]){var s=Math.min(7,Math.max(3,Math.min(w,h)/(c.type==='meterkast'?2.2:3.2)));var t=SHORT[c.type];
-      if(t.length*s*.6>w&&h>w){var e=text(G.lbl,cx,cy,t,'c-lbl',s);e.setAttribute('transform','rotate(-90 '+cx+' '+cy+')');}
-      else if(t.length*s*.55<=w+2||c.type==='meterkast')text(G.lbl,cx,cy,t,'c-lbl',s);}
+    if(state.layers.labels&&c.type!=='dak'){var t=commonLabel(c); if(t){
+      var s=Math.min(8,Math.max(3.2,Math.min(w,h)/(c.type==='meterkast'?2.0:2.8)));
+      // altijd label tonen voor openbare ruimtes; bij te smal: draaien of iets verkleinen
+      if(t.length*s*.55>w+4 && h>w){var e=text(G.lbl,cx,cy,t,'c-lbl',s);e.setAttribute('transform','rotate(-90 '+cx+' '+cy+')');}
+      else { if(t.length*s*.55>w+6)s=Math.max(3,w/(t.length*.55)); text(G.lbl,cx,cy,t,'c-lbl',s);} }}
   });
   // bergingen
   if(f===1&&state.layers.bergingen){

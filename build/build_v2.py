@@ -78,17 +78,40 @@ def rings(geom):
         for h in g.interiors:
             if Polygon(h).area>60: out.append([[round(x,1),round(y,1)] for x,y in h.coords][:-1])
     return out
+
+# BAG-pandcontouren staan ~1,8° scheef t.o.v. de handgetekende units (georef-rest).
+# Corrigeer met een kleine rotatie+verschuiving rond het zwaartepunt van de units,
+# zodat contour en ingetekende delen uitlijnen. Zelfde correctie op panden[] voor de BAG-laag.
+from shapely.affinity import rotate as shp_rotate, translate as shp_translate
+_units01=unary_union([g for (uid,f),g in upoly.items() if f in (0,1)])
+_pivot=_units01.centroid
+BAG_CORR={'rot_deg':-1.76,'tx':2.0,'ty':-6.0,'pivot':[round(_pivot.x,2),round(_pivot.y,2)],
+          'note':'BAG-ringen ~1,8° gedraaid t.o.v. splitsingstekening; gecorrigeerd voor contour/BAG-laag'}
+def _bag_corr(geom):
+    return shp_translate(shp_rotate(geom, BAG_CORR['rot_deg'], origin=(_pivot.x,_pivot.y)), BAG_CORR['tx'], BAG_CORR['ty'])
+for p in panden:
+    p['rings']=[[[round(x,1),round(y,1)] for x,y in _bag_corr(poly(r)).exterior.coords][:-1] for r in p['rings']]
+bag_complex=unary_union([poly(r) for p in panden if p.get('complex') for r in p['rings']])
+
+# Complexvoetafdruk (BG+1e, tekening + gecorrigeerde BAG) – op ALLE verdiepingen tonen
+base_parts=[g for (uid,f),g in upoly.items() if f in (0,1)]
+base_parts+=[poly(f['poly']) for f in FE.F if f['floor'] in (0,1) and f['type'] not in ('daktuin',)]
+base_parts+=[poly(b['poly']) for b in FE.BERG]
+base_parts+=[bag_complex]
+complex_foot=unary_union([p.buffer(2.5,join_style=2) for p in base_parts]).buffer(-1.5,join_style=2)
+
 outlines={}
 for fl in range(5):
     parts=[g for (uid,f),g in upoly.items() if f==fl]
-    parts+= [poly(f['poly']) for f in FE.F if f['floor']==fl and f['type'] not in ('daktuin',)]
-    parts+= [poly(b['poly']) for b in FE.BERG if b['floor']==fl]
-    if fl<=1:
-        parts+=[poly(r) for p in panden if p['complex'] for r in p['rings']]
-    else:
-        parts+=[poly(d['poly']) for d in daken if d['floor']==fl]
-    m=unary_union([p.buffer(2.5,join_style=2) for p in parts]).buffer(-1.5,join_style=2)
+    parts+=[poly(f['poly']) for f in FE.F if f['floor']==fl and f['type'] not in ('daktuin',)]
+    parts+=[poly(b['poly']) for b in FE.BERG if b['floor']==fl]
+    parts+=[poly(d['poly']) for d in daken if d['floor']==fl]
+    # complexvoetafdruk altijd meenemen (niet opnieuw bufferen); floor-delen licht bufferen
+    extras=[p.buffer(2.5,join_style=2) for p in parts]
+    m=unary_union(extras+[complex_foot]).buffer(-1.5,join_style=2) if extras else complex_foot
     outlines[str(fl)]=rings(m)
+meta.setdefault('georef',{})['bag_contour_correctie']=BAG_CORR
+print('BAG contour correctie', BAG_CORR, 'outlines', {k:len(v) for k,v in outlines.items()})
 
 # ---- GPS: Twinq-meldingsfoto's met EXIF-GPS blijven zichtbaar (opgave bewoner: posities kloppen)
 MREF={'GPS_IMG_8612':'M384979','GPS_IMG_6071':'M350105','GPS_IMG_6072':'M350105'}
@@ -123,9 +146,19 @@ for fl in range(5):
     vb=meta['viewbox']; o=[f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{" ".join(map(str,vb))}" font-family="Arial,sans-serif">',
        f'<title>VvE Van Speijk – {FN[fl]} (schematisch, akte 2006)</title><rect x="{vb[0]}" y="{vb[1]}" width="{vb[2]}" height="{vb[3]}" fill="#f7f7f4"/>']
     o.append('<path fill="#ffffff" stroke="#1d2330" stroke-width="2.2" fill-rule="evenodd" d="'+' '.join('M'+' L'.join('%s,%s'%(x,y) for x,y in r)+'Z' for r in outlines[str(fl)])+'"/>')
+    SHORT={'lift':'Lift','trap':'Trap','entree':'Entree','meterkast':'MK','hydrofoor':'HF','sprinkler':'Spr.','technisch':'Techn.','fietsenberging':'Fietsen','galerij':'Galerij','daktuin':'Daktuin','niet-vve':'Niet VvE'}
     for d in daken+feats:
         if d['floor']!=fl: continue
         o.append(f'<polygon id="{d["id"]}" points="{pts(d["poly"])}" fill="{col[d["type"]]}" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>{esc(d["name"])}</title></polygon>')
+        if d['type']=='dak': continue
+        t=SHORT.get(d['type'],'')
+        if d['type']=='galerij':
+            n=d['name'].lower(); t='Gang' if 'gang' in n else ('Pad' if 'pad' in n else ('Hal' if 'hal' in n or 'overloop' in n else 'Galerij'))
+        if d['type']=='entree' and 'hal' in d['name'].lower(): t='Hal'
+        if not t: continue
+        g=Polygon(d['poly']).representative_point(); bb=Polygon(d['poly']).bounds
+        w,h=bb[2]-bb[0],bb[3]-bb[1]; s=min(8,max(3.2,min(w,h)/2.8))
+        o.append(f'<text x="{g.x:.1f}" y="{g.y:.1f}" font-size="{s:.1f}" font-weight="700" text-anchor="middle" dominant-baseline="central" fill="#111" stroke="#fff" stroke-width="1.2" paint-order="stroke">{esc(t)}</text>')
     if fl==1:
         for b in berg: o.append(f'<polygon id="{b["id"]}" points="{pts(b["poly"])}" fill="{col["berging"]}" stroke="#6b4f2a" stroke-width="0.5"><title>{b["name"]}</title></polygon>')
     for u in units:
