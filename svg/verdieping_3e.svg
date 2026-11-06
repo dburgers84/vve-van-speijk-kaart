@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 0 1300 1132" font-family="Arial,sans-serif">
+<title>VvE Van Speijk – 3e (schematisch, akte 2006)</title><rect x="30" y="0" width="1300" height="1132" fill="#f7f7f4"/>
+<path fill="#ffffff" stroke="#1d2330" stroke-width="2.2" fill-rule="evenodd" d="M1233.2,948.6 L1171.0,1010.5 L1171.0,1002.0 L758.0,1002.0 L758.0,1120.0 L857.0,1120.0 L857.0,1013.0 L909.0,1013.0 L909.0,1095.0 L1105.0,1095.0 L1105.0,1013.0 L1168.4,1013.0 L1156.6,1024.8 L1234.8,1098.2 L1309.4,1024.0Z M540.6,1100.4 L691.1,1100.4 L691.1,1012.1 L540.6,1012.1Z M521.5,551.0 L521.5,628.0 L613.0,628.0 L613.0,763.0 L530.0,763.0 L530.0,958.5 L619.0,958.5 L619.0,769.0 L646.7,769.0 L646.7,621.1 L618.0,621.1 L618.0,551.0Z M222.0,766.5 L282.9,766.5 L282.9,866.8 L477.9,866.8 L477.9,763.2 L284.9,763.2 L284.9,650.3 L222.0,650.3Z M397.2,1100.4 L477.9,1100.4 L477.9,948.6 L397.2,948.6Z M297.8,551.0 L314.2,628.0 L476.0,628.0 L476.0,551.0 L339.0,551.0 L339.0,549.0 L317.0,549.0 L317.0,551.0Z M98.8,77.2 L282.4,77.2 L282.4,11.7 L98.8,11.7Z"/>
+<polygon id="3-DAK-1" points="99.8,12.7 281.4,12.7 281.4,76.2 99.8,76.2" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="3-DAK-2" points="223.0,651.3 283.9,651.3 283.9,765.5 223.0,765.5" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="3-DAK-3" points="283.9,764.2 476.9,764.2 476.9,865.8 283.9,865.8" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="3-DAK-4" points="398.2,949.6 476.9,949.6 476.9,1099.4 398.2,1099.4" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="3-DAK-5" points="541.6,1013.1 690.1,1013.1 690.1,1099.4 541.6,1099.4" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="3-DAK-6" points="614.0,622.1 645.7,622.1 645.7,768.0 614.0,768.0" fill="#d5d8dc" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak (indicatieve installatiezone)</title></polygon>
+<polygon id="3-225-LIFT" points="318,550 338,550 338,565 318,565" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="3-246-LIFT" points="800,1015 810,1015 810,1038 800,1038" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="3-246-TRAP" points="812,1004 830,1004 830,1040 812,1040" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trappenhuis</title></polygon>
+<polygon id="3-264-TRAP" points="1200,992 1220,972 1233,985 1213,1005" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trappenhuis</title></polygon>
+<polygon id="3-GAL-O" points="759,1003 1170,1003 1170,1012 759,1012" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Galerij Schans 131-141 (3e)</title></polygon>
+<polygon id="K84" points="593,552 617,552 617,627 593,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 84</title></polygon>
+<text x="605.0" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K84</text>
+<polygon id="K82" points="570,552 593,552 593,627 570,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 82</title></polygon>
+<text x="581.5" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K82</text>
+<polygon id="K80" points="546,552 570,552 570,627 546,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 80</title></polygon>
+<text x="558.0" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K80</text>
+<polygon id="K78" points="522.5,552 546,552 546,627 522.5,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 78</title></polygon>
+<text x="534.2" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K78</text>
+<polygon id="K74" points="451,552 475,552 475,627 451,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 74</title></polygon>
+<text x="463.0" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K74</text>
+<polygon id="K72" points="426,552 451,552 451,627 426,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 72</title></polygon>
+<text x="438.5" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K72</text>
+<polygon id="K70" points="401,552 426,552 426,627 401,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 70</title></polygon>
+<text x="413.5" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K70</text>
+<polygon id="K68" points="380,552 401,552 401,627 380,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 68</title></polygon>
+<text x="390.5" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K68</text>
+<polygon id="K66" points="356,552 380,552 380,627 356,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 66</title></polygon>
+<text x="368.0" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K66</text>
+<polygon id="K64" points="299,552 356,552 356,627 315,627" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 64</title></polygon>
+<text x="331.5" y="589.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K64</text>
+<polygon id="S115" points="531,932.5 618,932.5 618,957.5 531,957.5" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 115</title></polygon>
+<text x="574.5" y="945.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">115</text>
+<polygon id="S117" points="531,907.5 618,907.5 618,932.5 531,932.5" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 117</title></polygon>
+<text x="574.5" y="920.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">117</text>
+<polygon id="S119" points="531,885 618,885 618,907.5 531,907.5" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 119</title></polygon>
+<text x="574.5" y="896.2" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">119</text>
+<polygon id="S121" points="531,861.5 618,861.5 618,885 531,885" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 121</title></polygon>
+<text x="574.5" y="873.2" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">121</text>
+<polygon id="S123" points="531,839 618,839 618,861.5 531,861.5" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 123</title></polygon>
+<text x="574.5" y="850.2" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">123</text>
+<polygon id="S125" points="531,814 618,814 618,839 531,839" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 125</title></polygon>
+<text x="574.5" y="826.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">125</text>
+<polygon id="S127" points="531,789 618,789 618,814 531,814" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 127</title></polygon>
+<text x="574.5" y="801.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">127</text>
+<polygon id="S129" points="531,764 618,764 618,789 531,789" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 129</title></polygon>
+<text x="574.5" y="776.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">129</text>
+<polygon id="S139" points="807.5,1013 856,1013 856,1119 807.5,1119" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 139</title></polygon>
+<text x="831.8" y="1066.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">139</text>
+<polygon id="S141" points="759,1013 807.5,1013 807.5,1119 759,1119" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 141</title></polygon>
+<text x="783.2" y="1066.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">141</text>
+<polygon id="S131" points="1056,1013 1104,1013 1104,1094 1056,1094" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 131</title></polygon>
+<text x="1080.0" y="1053.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">131</text>
+<polygon id="S133" points="1009,1013 1056,1013 1056,1094 1009,1094" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 133</title></polygon>
+<text x="1032.5" y="1053.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">133</text>
+<polygon id="S135" points="960,1013 1009,1013 1009,1094 960,1094" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 135</title></polygon>
+<text x="984.5" y="1053.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">135</text>
+<polygon id="S137" points="910,1013 960,1013 960,1094 910,1094" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 137</title></polygon>
+<text x="935.0" y="1053.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">137</text>
+<polygon id="S73" points="1195.6,987.4 1233.2,950 1308,1024 1271.4,1060.4" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 73</title></polygon>
+<text x="1252.1" y="1005.7" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">73</text>
+<polygon id="S71" points="1158,1024.8 1195.6,987.4 1271.4,1060.4 1234.8,1096.8" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 71</title></polygon>
+<text x="1215.0" y="1042.6" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">71</text>
+</svg>

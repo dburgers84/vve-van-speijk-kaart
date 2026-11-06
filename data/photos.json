@@ -1,0 +1,767 @@
+[
+ {
+  "id": "01_ingang_aldi",
+  "file": "photos/01_ingang_aldi.jpg",
+  "floor": 0,
+  "point": [
+   403,
+   1070
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 1,
+  "label": "Ingang Aldi: hoofdentree + deur fietsenstalling",
+  "notitie": "Links glazen hoofdeur naast Aldi-bord; rechts solid deur fietsenstalling naast brievenbussen; intercom op tussenpijler; witte feestverlichting op gevel.",
+  "tijd": "2026-11-06T11:35:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "02_fietsenstalling",
+  "file": "photos/02_fietsenstalling.jpg",
+  "floor": 0,
+  "point": [
+   440,
+   1020
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 2,
+  "label": "Fietsenstalling (gang)",
+  "notitie": "Smalle gang, betonnen plafond; ≥3 lange buislampen; voorste uit, verderop aan; wit rond plafondapparaat (sensor?); fietsen achterin.",
+  "tijd": "2026-11-06T11:35:51",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "03a_fiets_rest",
+  "file": "photos/03a_fiets_rest.jpg",
+  "floor": 0,
+  "point": [
+   452,
+   1030
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 3,
+  "label": "Rest fietsenstalling",
+  "notitie": "Meerdere vakken: lange buislampen aan; onafgewerkte gips; deur naar binnenruimte; schuin plafond met 1 buis; rollcontainer/pallets. Zone met meerdere armaturen.",
+  "tijd": "2026-11-06T11:37:43",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "03b_fiets_rest",
+  "file": "photos/03b_fiets_rest.jpg",
+  "floor": 0,
+  "point": [
+   462,
+   1040
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 3,
+  "label": "Rest fietsenstalling",
+  "notitie": "Meerdere vakken: lange buislampen aan; onafgewerkte gips; deur naar binnenruimte; schuin plafond met 1 buis; rollcontainer/pallets. Zone met meerdere armaturen.",
+  "tijd": "2026-11-06T11:37:43",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "03c_fiets_rest",
+  "file": "photos/03c_fiets_rest.jpg",
+  "floor": 0,
+  "point": [
+   472,
+   1050
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 3,
+  "label": "Rest fietsenstalling",
+  "notitie": "Meerdere vakken: lange buislampen aan; onafgewerkte gips; deur naar binnenruimte; schuin plafond met 1 buis; rollcontainer/pallets. Zone met meerdere armaturen.",
+  "tijd": "2026-11-06T11:37:43",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "04_deur_hydrofoor",
+  "file": "photos/04_deur_hydrofoor.jpg",
+  "floor": 0,
+  "point": [
+   470,
+   1062
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 4,
+  "label": "Deur hydrofoor in fietsenstalling",
+  "notitie": "Grijze dubbele deuren met 4 ventilatieroosters; schuin plafond; rollcontainer. Anker voor FIETS-S t.o.v. hydrofoor.",
+  "tijd": "2026-11-06T11:38:14",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "05a_entree_brievenbussen",
+  "file": "photos/05a_entree_brievenbussen.jpg",
+  "floor": 0,
+  "point": [
+   403,
+   1040
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 5,
+  "label": "Entree brievenbussen en lift (naast fietsenstalling)",
+  "notitie": "Één TL-buis in entree brievenbussen/lift (correctie gebruiker); systeemplafond; liftdeuren grijs.",
+  "tijd": "2026-11-06T11:43:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "05b_lift",
+  "file": "photos/05b_lift.jpg",
+  "floor": 0,
+  "point": [
+   412,
+   1030
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 5,
+  "label": "Entree brievenbussen en lift (naast fietsenstalling)",
+  "notitie": "Één TL-buis in entree brievenbussen/lift (correctie gebruiker); systeemplafond; liftdeuren grijs.",
+  "tijd": "2026-11-06T11:43:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "06_entree_schemersensor",
+  "file": "photos/06_entree_schemersensor.jpg",
+  "floor": 0,
+  "point": [
+   392,
+   1072
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 6,
+  "label": "Entree naast Aldi met schemersensor",
+  "notitie": "Wit sensordoosje hoog op rode baksteen met kabel; schemersensor. Kapot bovenraam met tape. Feestverlichting.",
+  "tijd": "2026-11-06T11:44:35",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "07a_trap",
+  "file": "photos/07a_trap.jpg",
+  "floor": 1,
+  "point": [
+   388,
+   1010
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 7,
+  "label": "Trapopgang entree",
+  "notitie": "Betonnen trap; 3 ronde witte bulkhead rechts op baksteen, 1 links; blauwe leuning rechts; fietsgoot links.",
+  "tijd": "2026-11-06T11:45:44",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "07b_trap",
+  "file": "photos/07b_trap.jpg",
+  "floor": 1,
+  "point": [
+   396,
+   1016
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 7,
+  "label": "Trapopgang entree",
+  "notitie": "Betonnen trap; 3 ronde witte bulkhead rechts op baksteen, 1 links; blauwe leuning rechts; fietsgoot links.",
+  "tijd": "2026-11-06T11:45:44",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "08a_daktuin",
+  "file": "photos/08a_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   395,
+   960
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 8,
+  "label": "Overzicht daktuin bovenaan trap",
+  "notitie": "Bulkhead rechts =zelfde als bovenste traparmatuur; ≥2 lantaarnpalen op pad; gevel-bulkheads zichtbaar.",
+  "tijd": "2026-11-06T11:47:41",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "08b_daktuin",
+  "file": "photos/08b_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   405,
+   950
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 8,
+  "label": "Overzicht daktuin bovenaan trap",
+  "notitie": "Bulkhead rechts =zelfde als bovenste traparmatuur; ≥2 lantaarnpalen op pad; gevel-bulkheads zichtbaar.",
+  "tijd": "2026-11-06T11:47:41",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "09_hal_lift_1e",
+  "file": "photos/09_hal_lift_1e.jpg",
+  "floor": 1,
+  "point": [
+   388,
+   1045
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 9,
+  "label": "Hal uitgang lift 1e verdieping",
+  "notitie": "4 TL-armaturen; trap met blauwe leuning; systeemplafond.",
+  "tijd": "2026-11-06T11:48:29",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "10_hal_lift_2e",
+  "file": "photos/10_hal_lift_2e.jpg",
+  "floor": 2,
+  "point": [
+   418,
+   1035
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 10,
+  "label": "Hal uitgang lift 2e",
+  "notitie": "4 TL-armaturen; trap blauwe leuning.",
+  "tijd": "2026-11-06T11:49:25",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "11a_daktuin",
+  "file": "photos/11a_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   330,
+   930
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 11,
+  "label": "Terug daktuin overzicht",
+  "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
+  "tijd": "2026-11-06T11:53:23",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "11b_daktuin",
+  "file": "photos/11b_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   345,
+   920
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 11,
+  "label": "Terug daktuin overzicht",
+  "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
+  "tijd": "2026-11-06T11:53:23",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "11c_daktuin",
+  "file": "photos/11c_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   360,
+   930
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 11,
+  "label": "Terug daktuin overzicht",
+  "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
+  "tijd": "2026-11-06T11:53:23",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "11d_daktuin",
+  "file": "photos/11d_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   375,
+   920
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 11,
+  "label": "Terug daktuin overzicht",
+  "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
+  "tijd": "2026-11-06T11:53:23",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "11e_daktuin",
+  "file": "photos/11e_daktuin.jpg",
+  "floor": 1,
+  "point": [
+   320,
+   915
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 11,
+  "label": "Terug daktuin overzicht",
+  "notitie": "Grinddak; pad; ≥2 lantaarnpalen; bulkheads op baksteen en houten volume; gevelentrees.",
+  "tijd": "2026-11-06T11:53:23",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "12a_pad",
+  "file": "photos/12a_pad.jpg",
+  "floor": 1,
+  "point": [
+   300,
+   890
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 12,
+  "label": "Dakpad daktuin → Kiel oneven",
+  "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
+  "tijd": "2026-11-06T11:55:39",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "12b_pad",
+  "file": "photos/12b_pad.jpg",
+  "floor": 1,
+  "point": [
+   260,
+   875
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 12,
+  "label": "Dakpad daktuin → Kiel oneven",
+  "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
+  "tijd": "2026-11-06T11:55:39",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "12c_pad",
+  "file": "photos/12c_pad.jpg",
+  "floor": 1,
+  "point": [
+   225,
+   840
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 12,
+  "label": "Dakpad daktuin → Kiel oneven",
+  "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
+  "tijd": "2026-11-06T11:55:39",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "12d_pad",
+  "file": "photos/12d_pad.jpg",
+  "floor": 1,
+  "point": [
+   215,
+   800
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 12,
+  "label": "Dakpad daktuin → Kiel oneven",
+  "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
+  "tijd": "2026-11-06T11:55:39",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "12e_pad",
+  "file": "photos/12e_pad.jpg",
+  "floor": 1,
+  "point": [
+   210,
+   765
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 12,
+  "label": "Dakpad daktuin → Kiel oneven",
+  "notitie": "Pad + grind; lantaarnpalen; bulkhead bij deur/raam; gevel.",
+  "tijd": "2026-11-06T11:55:39",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "13a_schans175",
+  "file": "photos/13a_schans175.jpg",
+  "floor": 1,
+  "point": [
+   262,
+   700
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 13,
+  "label": "Hal Schans 175/173 + trap daktuin",
+  "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
+  "tijd": "2026-11-06T11:57:07",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "13b_schans173",
+  "file": "photos/13b_schans173.jpg",
+  "floor": 1,
+  "point": [
+   262,
+   715
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 13,
+  "label": "Hal Schans 175/173 + trap daktuin",
+  "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
+  "tijd": "2026-11-06T11:57:07",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "13c_trap_dak",
+  "file": "photos/13c_trap_dak.jpg",
+  "floor": 1,
+  "point": [
+   250,
+   708
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 13,
+  "label": "Hal Schans 175/173 + trap daktuin",
+  "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
+  "tijd": "2026-11-06T11:57:07",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "13d_trap",
+  "file": "photos/13d_trap.jpg",
+  "floor": 1,
+  "point": [
+   244,
+   712
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 13,
+  "label": "Hal Schans 175/173 + trap daktuin",
+  "notitie": "Deuren 175 en 173; TL plafond; trap blauw naar buiten/daktuin; 1 TL + lichtkoepel.",
+  "tijd": "2026-11-06T11:57:07",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "14a_pad",
+  "file": "photos/14a_pad.jpg",
+  "floor": 1,
+  "point": [
+   150,
+   560
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 14,
+  "label": "Dakpad langs gevel richting Kiel (nr 55 zichtbaar)",
+  "notitie": "Pad + grind; terrassen met privacyglas; bulkhead/sensor op gevel.",
+  "tijd": "2026-11-06T11:58:14",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "14b_gevel",
+  "file": "photos/14b_gevel.jpg",
+  "floor": 1,
+  "point": [
+   140,
+   530
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 14,
+  "label": "Dakpad langs gevel richting Kiel (nr 55 zichtbaar)",
+  "notitie": "Pad + grind; terrassen met privacyglas; bulkhead/sensor op gevel.",
+  "tijd": "2026-11-06T11:58:14",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "14c_gevel55",
+  "file": "photos/14c_gevel55.jpg",
+  "floor": 1,
+  "point": [
+   128,
+   508
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 14,
+  "label": "Dakpad langs gevel richting Kiel (nr 55 zichtbaar)",
+  "notitie": "Pad + grind; terrassen met privacyglas; bulkhead/sensor op gevel.",
+  "tijd": "2026-11-06T11:58:14",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "15a_k51",
+  "file": "photos/15a_k51.jpg",
+  "floor": 1,
+  "point": [
+   112,
+   412
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 15,
+  "label": "Pad Kiel 51 / Schans 173-179",
+  "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
+  "tijd": "2026-11-06T12:00:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "15b_pad",
+  "file": "photos/15b_pad.jpg",
+  "floor": 1,
+  "point": [
+   118,
+   440
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 15,
+  "label": "Pad Kiel 51 / Schans 173-179",
+  "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
+  "tijd": "2026-11-06T12:00:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "15c_hout",
+  "file": "photos/15c_hout.jpg",
+  "floor": 1,
+  "point": [
+   205,
+   660
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 15,
+  "label": "Pad Kiel 51 / Schans 173-179",
+  "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
+  "tijd": "2026-11-06T12:00:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "15d_173_179",
+  "file": "photos/15d_173_179.jpg",
+  "floor": 1,
+  "point": [
+   218,
+   690
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 15,
+  "label": "Pad Kiel 51 / Schans 173-179",
+  "notitie": "Bulkhead bij 51; houten gevel met deuren 173/179 + armaturen.",
+  "tijd": "2026-11-06T12:00:02",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "16a_ingang",
+  "file": "photos/16a_ingang.jpg",
+  "floor": 1,
+  "point": [
+   240,
+   395
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 16,
+  "label": "Ingang wit gevel + gang TL",
+  "notitie": "Bulkhead bij deur; gang 1 TL.",
+  "tijd": "2026-11-06T12:05:24",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "16b_gang",
+  "file": "photos/16b_gang.jpg",
+  "floor": 1,
+  "point": [
+   250,
+   405
+  ],
+  "bron": "wandeling 06-11-2026 (wandeling_aldi_kiel/log.json)",
+  "stap": 16,
+  "label": "Ingang wit gevel + gang TL",
+  "notitie": "Bulkhead bij deur; gang 1 TL.",
+  "tijd": "2026-11-06T12:05:24",
+  "gps": false,
+  "positie": "geschat (route-log)",
+  "nauwkeurigheid": "geschat uit route-log + plattegrond; geen GPS in EXIF (foto zonder metadata ontvangen) – ca. ±5-15 m",
+  "gps_status": "geen"
+ },
+ {
+  "id": "GPS_IMG_8612",
+  "file": "photos/GPS_IMG_8612.jpg",
+  "floor": 0,
+  "point": [
+   698.9,
+   900.6
+  ],
+  "bron": "twinq/attachments/384979/IMG_8612.jpeg",
+  "label": "Twinq melding 384979 – Lamp defect tussen Schans 117 & 119",
+  "tijd": "2026:05:19 22:15:00",
+  "gps": true,
+  "positie": "GPS (EXIF)",
+  "lat": 52.5250167,
+  "lon": 5.7167972,
+  "rd": [
+   177368.0,
+   504201.2
+  ],
+  "richting_graden": 24.9,
+  "nauwkeurigheid_m": 15.0,
+  "radius_plan": 91.0,
+  "nauwkeurigheid": "GPS horizontale fout ±15 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
+  "gps_status": "onnauwkeurig",
+  "gps_afstand_object_m": 13.0,
+  "gps_toelichting": "GPS ±15 m; 13 m van het genoemde adres (S117, S119). Te onnauwkeurig of te ver van het genoemde object: standaard verborgen."
+ },
+ {
+  "id": "GPS_IMG_6071",
+  "file": "photos/GPS_IMG_6071.jpg",
+  "floor": 0,
+  "point": [
+   208.9,
+   1101.4
+  ],
+  "bron": "twinq/attachments/350105/IMG_6071.JPG",
+  "label": "Twinq melding 350105 – Gevelschade Aldi / Schans 159",
+  "tijd": "2025:08:24 18:13:03",
+  "gps": true,
+  "positie": "GPS (EXIF)",
+  "lat": 52.5257611,
+  "lon": 5.7164028,
+  "rd": [
+   177340.8,
+   504283.9
+  ],
+  "richting_graden": 353.9,
+  "nauwkeurigheid_m": 4.7,
+  "radius_plan": 28.9,
+  "nauwkeurigheid": "GPS horizontale fout ±5 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
+  "gps_status": "bruikbaar",
+  "gps_afstand_object_m": 3.5,
+  "gps_toelichting": "GPS ±5 m; 4 m van het genoemde adres (S159). Binnen de foutmarge."
+ },
+ {
+  "id": "GPS_IMG_6072",
+  "file": "photos/GPS_IMG_6072.jpg",
+  "floor": 0,
+  "point": [
+   219.8,
+   1070.7
+  ],
+  "bron": "twinq/attachments/350105/IMG_6072.JPG",
+  "label": "Twinq melding 350105 – Gevelschade Aldi / Schans 159",
+  "tijd": "2025:08:24 18:10:19",
+  "gps": true,
+  "positie": "GPS (EXIF)",
+  "lat": 52.5257417,
+  "lon": 5.716475,
+  "rd": [
+   177345.7,
+   504281.8
+  ],
+  "richting_graden": 329.5,
+  "nauwkeurigheid_m": 13.6,
+  "radius_plan": 83.0,
+  "nauwkeurigheid": "GPS horizontale fout ±14 m (EXIF GPSHPositioningError); straatniveau, dus verdieping onbekend",
+  "gps_status": "onnauwkeurig",
+  "gps_afstand_object_m": 1.7,
+  "gps_toelichting": "GPS ±14 m; 2 m van het genoemde adres (S159). Te onnauwkeurig of te ver van het genoemde object: standaard verborgen."
+ }
+]

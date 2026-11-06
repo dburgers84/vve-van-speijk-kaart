@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 0 1300 1132" font-family="Arial,sans-serif">
+<title>VvE Van Speijk – 1e (schematisch, akte 2006)</title><rect x="30" y="0" width="1300" height="1132" fill="#f7f7f4"/>
+<path fill="#ffffff" stroke="#1d2330" stroke-width="2.2" fill-rule="evenodd" d="M1235.4,939.3 L1286.8,941.0 L1286.8,942.3 L1312.2,943.1 L1316.8,798.2 L1330.0,798.6 L1333.6,682.0 L1302.0,681.0 L1301.3,704.7 L1241.1,703.0 L1240.7,715.5 L1237.4,715.4 L1236.1,756.9 L1156.9,754.7 L1147.2,1079.1 L1194.2,1128.0 L1220.3,1103.5 L1228.0,1111.4 L1304.2,1038.0 L1262.7,994.7 L1263.9,957.1 L1234.8,956.1Z M100.8,55.3 L72.6,54.4 L65.2,61.2 L39.7,60.5 L15.8,35.3 L-53.9,101.0 L-60.1,302.8 L-45.3,303.3 L-46.0,322.8 L-60.7,322.3 L-60.9,330.4 L-63.0,330.3 L-62.8,342.1 L-58.3,347.2 L-53.4,348.4 L95.3,352.8 L97.9,258.2 L113.0,258.6 L113.0,363.0 L130.3,363.0 L129.8,379.4 L216.8,382.0 L225.1,108.5 L272.9,109.9 L264.4,383.4 L307.9,384.6 L308.6,360.2 L973.5,381.1 L968.0,555.0 L790.7,549.4 L792.5,493.4 L759.4,492.3 L734.4,466.1 L691.0,464.7 L691.0,437.0 L569.0,437.0 L569.0,460.9 L460.3,457.5 L461.7,413.9 L359.0,410.9 L355.8,394.0 L256.2,387.9 L269.0,438.7 L278.6,484.1 L296.8,533.5 L300.3,533.4 L303.9,549.0 L299.0,549.0 L299.0,633.0 L323.8,633.0 L326.3,643.8 L476.4,648.2 L476.1,657.5 L503.9,658.2 L504.2,649.0 L612.2,652.2 L610.8,698.1 L1118.3,713.8 L1119.7,672.1 L1122.1,672.2 L1142.0,79.8 L319.2,54.5 L319.5,45.0 L201.0,41.4 L201.0,11.0 L126.0,11.0 L126.0,33.0 L111.0,33.0 L111.0,46.0 L109.0,46.0 L109.0,49.9 L100.9,49.7Z M529.0,780.8 L527.1,780.8 L521.4,969.1 L534.1,969.5 L530.0,1106.3 L734.9,1112.7 L734.2,1135.6 L831.4,1138.5 L832.1,1115.6 L1071.3,1123.0 L1071.9,1103.0 L1101.0,1103.0 L1101.0,1078.3 L1107.1,1078.4 L1117.0,753.0 L609.5,737.3 L608.6,769.0 L529.0,769.0Z M121.3,388.0 L124.5,403.7 L114.3,403.4 L103.7,721.3 L223.0,724.6 L219.5,849.6 L202.6,848.9 L205.7,758.5 L149.1,756.7 L143.6,934.8 L235.0,937.5 L235.0,971.0 L237.7,971.0 L237.5,981.0 L229.0,981.0 L229.0,1101.0 L353.1,1101.0 L468.4,1104.3 L468.5,1101.0 L474.0,1101.0 L474.0,954.0 L473.0,954.0 L475.6,868.0 L478.0,868.0 L478.0,766.0 L391.0,766.0 L391.0,776.5 L368.0,775.8 L368.0,766.0 L296.1,766.0 L299.1,664.1 L288.0,664.1 L288.0,651.0 L284.0,651.0 L226.6,406.7 L225.1,406.7 L220.8,388.0Z"/>
+<polygon id="1-K49-LIFT" points="112,34 128,34 128,46 112,46" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="1-K49-MK" points="128,34 136,34 136,46 128,46" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast</title></polygon>
+<polygon id="1-K49-TRAP" points="110,47 128,47 128,75 110,75" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trappenhuis</title></polygon>
+<polygon id="1-PAD-A" points="114,96 124,96 124,362 114,362" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Pad langs bergingen 276-295</title></polygon>
+<polygon id="1-215-LIFT" points="318,553 335,553 335,570 318,570" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="1-215-HAL" points="300,550 318,550 318,570 300,570" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Hal / overloop</title></polygon>
+<polygon id="1-215-TRAP" points="337,536 372,536 372,550 337,550" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trap</title></polygon>
+<polygon id="1-190-LIFT" points="367,805 380,805 380,818 367,818" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="1-190-HAL" points="367,818 380,818 380,865 367,865" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Hal</title></polygon>
+<polygon id="1-190-TRAP" points="380,795 392,795 392,865 380,865" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trap</title></polygon>
+<polygon id="1-190-MK1" points="361,804 367,804 367,809 361,809" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-190-MK2" points="361,826 367,826 367,831 361,831" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-190-MK3" points="392,803 398,803 398,808 392,808" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-190-MK4" points="392,826 398,826 398,831 392,831" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-198-TRAP1" points="398,1005 424,1005 424,1050 398,1050" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trappenhuis naar 2e</title></polygon>
+<polygon id="1-198-TRAP2" points="380,1050 398,1050 398,1062 380,1062" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trap vanaf entree (BG)</title></polygon>
+<polygon id="1-198-LIFT" points="400,1052 412,1052 412,1070 400,1070" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="1-198-MK1" points="424,1012 430,1012 430,1018 424,1018" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-198-MK2" points="424,1040 430,1040 430,1046 424,1046" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-OOST-LIFT" points="790,1032 803,1032 803,1052 790,1052" fill="#8e44ad" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Lift</title></polygon>
+<polygon id="1-OOST-SCH" points="780,1032 790,1032 790,1052 780,1052" fill="#95a5a6" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Schacht / vide</title></polygon>
+<polygon id="1-OOST-TRAP1" points="805,1030 822,1030 822,1052 805,1052" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trappenhuis</title></polygon>
+<polygon id="1-OOST-TRAP2" points="760,1040 778,1040 778,1080 760,1080" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trap vanaf entree (BG)</title></polygon>
+<polygon id="1-182-TRAP" points="245,704 268,704 268,717 245,717" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trap naar daktuin</title></polygon>
+<polygon id="1-182-MK1" points="249,687 254,687 254,694 249,694" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-182-MK2" points="249,733 254,733 254,740 249,740" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-260-TRAP" points="1190,1018 1210,998 1222,1010 1202,1030" fill="#c39bd3" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Trappenhuis</title></polygon>
+<polygon id="1-260-MK1" points="1219,1001 1224,996 1229,1001 1224,1006" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-260-MK2" points="1195,1031 1200,1026 1205,1031 1200,1036" fill="#2c3e50" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Meterkast woning (mk)</title></polygon>
+<polygon id="1-DAK-W" points="60,389 172,389 172,630 60,630" fill="#6ab04c" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Daktuin / dakpad (west, langs De Kiel 51-59)</title></polygon>
+<polygon id="1-DAK-M" points="290,870 530,870 530,975 290,975" fill="#6ab04c" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Daktuin (midden, tussen Schans 143-171 en De Kiel)</title></polygon>
+<polygon id="1-DAK-N" points="395,440 560,440 560,545 395,545" fill="#6ab04c" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Dak / dakpad (noord, bij De Kiel 46-50)</title></polygon>
+<polygon id="1-GANG-C" points="570,457 690,457 690,466 570,466" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Gang bergingen 296-314</title></polygon>
+<polygon id="1-GANG-D" points="671,882 752,882 752,893 671,893" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Gang bergingen 315-329</title></polygon>
+<polygon id="1-GANG-E" points="944,883 1080,883 1080,891 944,891" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Gang bergingen 330-356</title></polygon>
+<polygon id="1-GANG-B" points="257,883 263,883 263,970 257,970" fill="#f4d03f" fill-opacity="0.55" stroke="#333" stroke-width="0.6"><title>Gang bergingen 266-275</title></polygon>
+<polygon id="BRG-295" points="124,120.0 150,120.0 150,132.1 124,132.1" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 295</title></polygon>
+<polygon id="BRG-294" points="124,132.1 150,132.1 150,144.2 124,144.2" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 294</title></polygon>
+<polygon id="BRG-293" points="124,144.2 150,144.2 150,156.3 124,156.3" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 293</title></polygon>
+<polygon id="BRG-292" points="124,156.3 150,156.3 150,168.4 124,168.4" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 292</title></polygon>
+<polygon id="BRG-291" points="124,168.4 150,168.4 150,180.5 124,180.5" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 291</title></polygon>
+<polygon id="BRG-290" points="124,180.5 150,180.5 150,192.6 124,192.6" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 290</title></polygon>
+<polygon id="BRG-289" points="124,192.6 150,192.6 150,204.7 124,204.7" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 289</title></polygon>
+<polygon id="BRG-288" points="124,204.7 150,204.7 150,216.8 124,216.8" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 288</title></polygon>
+<polygon id="BRG-287" points="124,216.8 150,216.8 150,228.9 124,228.9" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 287</title></polygon>
+<polygon id="BRG-286" points="124,228.9 150,228.9 150,241.0 124,241.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 286</title></polygon>
+<polygon id="BRG-285" points="124,241.0 150,241.0 150,253.1 124,253.1" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 285</title></polygon>
+<polygon id="BRG-284" points="124,253.1 150,253.1 150,265.2 124,265.2" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 284</title></polygon>
+<polygon id="BRG-283" points="124,265.2 150,265.2 150,277.3 124,277.3" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 283</title></polygon>
+<polygon id="BRG-282" points="124,277.3 150,277.3 150,289.4 124,289.4" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 282</title></polygon>
+<polygon id="BRG-281" points="124,289.4 150,289.4 150,301.5 124,301.5" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 281</title></polygon>
+<polygon id="BRG-280" points="124,301.5 150,301.5 150,313.6 124,313.6" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 280</title></polygon>
+<polygon id="BRG-279" points="124,313.6 150,313.6 150,325.7 124,325.7" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 279</title></polygon>
+<polygon id="BRG-278" points="124,325.7 150,325.7 150,337.8 124,337.8" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 278</title></polygon>
+<polygon id="BRG-277" points="124,337.8 150,337.8 150,349.9 124,349.9" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 277</title></polygon>
+<polygon id="BRG-276" points="124,349.9 150,349.9 150,362.0 124,362.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 276</title></polygon>
+<polygon id="BRG-269" points="236,895.0 257,895.0 257,907.0 236,907.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 269</title></polygon>
+<polygon id="BRG-268" points="236,932.0 257,932.0 257,944.7 236,944.7" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 268</title></polygon>
+<polygon id="BRG-267" points="236,944.7 257,944.7 257,957.3 236,957.3" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 267</title></polygon>
+<polygon id="BRG-266" points="236,957.3 257,957.3 257,970.0 236,970.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 266</title></polygon>
+<polygon id="BRG-275" points="263,895.0 285,895.0 285,907.5 263,907.5" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 275</title></polygon>
+<polygon id="BRG-274" points="263,907.5 285,907.5 285,920.0 263,920.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 274</title></polygon>
+<polygon id="BRG-273" points="263,920.0 285,920.0 285,932.5 263,932.5" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 273</title></polygon>
+<polygon id="BRG-272" points="263,932.5 285,932.5 285,945.0 263,945.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 272</title></polygon>
+<polygon id="BRG-271" points="263,945.0 285,945.0 285,957.5 263,957.5" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 271</title></polygon>
+<polygon id="BRG-270" points="263,957.5 285,957.5 285,970.0 263,970.0" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 270</title></polygon>
+<polygon id="BRG-305" points="570.0,438 582.0,438 582.0,457 570.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 305</title></polygon>
+<polygon id="BRG-296" points="582.0,438 594.0,438 594.0,457 582.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 296</title></polygon>
+<polygon id="BRG-297" points="594.0,438 606.0,438 606.0,457 594.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 297</title></polygon>
+<polygon id="BRG-298" points="606.0,438 618.0,438 618.0,457 606.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 298</title></polygon>
+<polygon id="BRG-299" points="618.0,438 630.0,438 630.0,457 618.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 299</title></polygon>
+<polygon id="BRG-300" points="630.0,438 642.0,438 642.0,457 630.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 300</title></polygon>
+<polygon id="BRG-301" points="642.0,438 654.0,438 654.0,457 642.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 301</title></polygon>
+<polygon id="BRG-302" points="654.0,438 666.0,438 666.0,457 654.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 302</title></polygon>
+<polygon id="BRG-303" points="666.0,438 678.0,438 678.0,457 666.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 303</title></polygon>
+<polygon id="BRG-304" points="678.0,438 690.0,438 690.0,457 678.0,457" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 304</title></polygon>
+<polygon id="BRG-314" points="570.0,466 582.0,466 582.0,489 570.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 314</title></polygon>
+<polygon id="BRG-306" points="582.0,466 594.0,466 594.0,489 582.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 306</title></polygon>
+<polygon id="BRG-307" points="594.0,466 606.0,466 606.0,489 594.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 307</title></polygon>
+<polygon id="BRG-308" points="606.0,466 618.0,466 618.0,489 606.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 308</title></polygon>
+<polygon id="BRG-309" points="618.0,466 630.0,466 630.0,489 618.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 309</title></polygon>
+<polygon id="BRG-310" points="630.0,466 642.0,466 642.0,489 630.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 310</title></polygon>
+<polygon id="BRG-311" points="642.0,466 654.0,466 654.0,489 642.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 311</title></polygon>
+<polygon id="BRG-312" points="666.0,466 678.0,466 678.0,489 666.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 312</title></polygon>
+<polygon id="BRG-313" points="678.0,466 690.0,466 690.0,489 678.0,489" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 313</title></polygon>
+<polygon id="BRG-322" points="671.0,865 681.1,865 681.1,882 671.0,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 322</title></polygon>
+<polygon id="BRG-323" points="681.1,865 691.2,865 691.2,882 681.1,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 323</title></polygon>
+<polygon id="BRG-324" points="691.2,865 701.4,865 701.4,882 691.2,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 324</title></polygon>
+<polygon id="BRG-325" points="701.4,865 711.5,865 711.5,882 701.4,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 325</title></polygon>
+<polygon id="BRG-326" points="711.5,865 721.6,865 721.6,882 711.5,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 326</title></polygon>
+<polygon id="BRG-327" points="721.6,865 731.8,865 731.8,882 721.6,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 327</title></polygon>
+<polygon id="BRG-328" points="731.8,865 741.9,865 741.9,882 731.8,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 328</title></polygon>
+<polygon id="BRG-329" points="741.9,865 752.0,865 752.0,882 741.9,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 329</title></polygon>
+<polygon id="BRG-315" points="671.0,893 681.1,893 681.1,915 671.0,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 315</title></polygon>
+<polygon id="BRG-316" points="681.1,893 691.3,893 691.3,915 681.1,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 316</title></polygon>
+<polygon id="BRG-317" points="691.3,893 701.4,893 701.4,915 691.3,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 317</title></polygon>
+<polygon id="BRG-318" points="701.4,893 711.6,893 711.6,915 701.4,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 318</title></polygon>
+<polygon id="BRG-319" points="711.6,893 721.7,893 721.7,915 711.6,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 319</title></polygon>
+<polygon id="BRG-320" points="721.7,893 731.9,893 731.9,915 721.7,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 320</title></polygon>
+<polygon id="BRG-321" points="731.9,893 742.0,893 742.0,915 731.9,915" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 321</title></polygon>
+<polygon id="BRG-343" points="944.0,865 953.7,865 953.7,882 944.0,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 343</title></polygon>
+<polygon id="BRG-344" points="953.7,865 963.4,865 963.4,882 953.7,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 344</title></polygon>
+<polygon id="BRG-345" points="963.4,865 973.1,865 973.1,882 963.4,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 345</title></polygon>
+<polygon id="BRG-346" points="973.1,865 982.9,865 982.9,882 973.1,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 346</title></polygon>
+<polygon id="BRG-347" points="982.9,865 992.6,865 992.6,882 982.9,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 347</title></polygon>
+<polygon id="BRG-348" points="992.6,865 1002.3,865 1002.3,882 992.6,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 348</title></polygon>
+<polygon id="BRG-349" points="1002.3,865 1012.0,865 1012.0,882 1002.3,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 349</title></polygon>
+<polygon id="BRG-350" points="1012.0,865 1021.7,865 1021.7,882 1012.0,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 350</title></polygon>
+<polygon id="BRG-351" points="1021.7,865 1031.4,865 1031.4,882 1021.7,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 351</title></polygon>
+<polygon id="BRG-352" points="1031.4,865 1041.1,865 1041.1,882 1031.4,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 352</title></polygon>
+<polygon id="BRG-353" points="1041.1,865 1050.9,865 1050.9,882 1041.1,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 353</title></polygon>
+<polygon id="BRG-354" points="1050.9,865 1060.6,865 1060.6,882 1050.9,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 354</title></polygon>
+<polygon id="BRG-355" points="1060.6,865 1070.3,865 1070.3,882 1060.6,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 355</title></polygon>
+<polygon id="BRG-356" points="1070.3,865 1080.0,865 1080.0,882 1070.3,882" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 356</title></polygon>
+<polygon id="BRG-330" points="944.0,891 953.8,891 953.8,910 944.0,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 330</title></polygon>
+<polygon id="BRG-331" points="953.8,891 963.6,891 963.6,910 953.8,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 331</title></polygon>
+<polygon id="BRG-332" points="963.6,891 973.4,891 973.4,910 963.6,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 332</title></polygon>
+<polygon id="BRG-333" points="973.4,891 983.2,891 983.2,910 973.4,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 333</title></polygon>
+<polygon id="BRG-334" points="983.2,891 993.0,891 993.0,910 983.2,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 334</title></polygon>
+<polygon id="BRG-335" points="1002.0,891 1011.8,891 1011.8,910 1002.0,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 335</title></polygon>
+<polygon id="BRG-336" points="1011.8,891 1021.5,891 1021.5,910 1011.8,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 336</title></polygon>
+<polygon id="BRG-337" points="1021.5,891 1031.2,891 1031.2,910 1021.5,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 337</title></polygon>
+<polygon id="BRG-338" points="1031.2,891 1041.0,891 1041.0,910 1031.2,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 338</title></polygon>
+<polygon id="BRG-339" points="1041.0,891 1050.8,891 1050.8,910 1041.0,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 339</title></polygon>
+<polygon id="BRG-340" points="1050.8,891 1060.5,891 1060.5,910 1050.8,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 340</title></polygon>
+<polygon id="BRG-341" points="1060.5,891 1070.2,891 1070.2,910 1060.5,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 341</title></polygon>
+<polygon id="BRG-342" points="1070.2,891 1080.0,891 1080.0,910 1070.2,910" fill="#c8a165" stroke="#6b4f2a" stroke-width="0.5"><title>Berging 342</title></polygon>
+<polygon id="S173" points="224,717 285,717 285,797 224,797" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 173</title></polygon>
+<text x="254.5" y="757.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">173</text>
+<polygon id="S175" points="225,652 287,652 287,705 225,705" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 175</title></polygon>
+<text x="256.0" y="678.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">175</text>
+<polygon id="K59" points="162.1,580 263.6,580 275.0,630 172.5,630" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 59</title></polygon>
+<text x="218.3" y="605.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K59</text>
+<polygon id="K57" points="152.3,532.5 252.7,532.5 263.6,580 162.1,580" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 57</title></polygon>
+<text x="207.7" y="556.2" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K57</text>
+<polygon id="K55" points="142.4,485 241.9,485 252.7,532.5 152.3,532.5" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 55</title></polygon>
+<text x="197.3" y="508.8" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K55</text>
+<polygon id="K53" points="132.6,437.5 231.1,437.5 241.9,485 142.4,485" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 53</title></polygon>
+<text x="187.0" y="461.2" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K53</text>
+<polygon id="K51" points="122.5,389 220.0,389 231.1,437.5 132.6,437.5" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 51</title></polygon>
+<text x="176.6" y="413.2" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K51</text>
+<polygon id="S153" points="285,815 367,815 367,865 285,865" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 153</title></polygon>
+<text x="326.0" y="840.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">153</text>
+<polygon id="S151" points="285,767 367,767 367,815 285,815" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 151</title></polygon>
+<text x="326.0" y="791.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">151</text>
+<polygon id="S149" points="392,767 477,767 477,815 392,815" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 149</title></polygon>
+<text x="434.5" y="791.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">149</text>
+<polygon id="S147" points="392,815 477,815 477,867 392,867" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 147</title></polygon>
+<text x="434.5" y="841.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">147</text>
+<polygon id="S143" points="399,1029 473,1029 473,1100 399,1100" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 143</title></polygon>
+<text x="436.0" y="1064.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">143</text>
+<polygon id="S145" points="399,955 473,955 473,1029 399,1029" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 145</title></polygon>
+<text x="436.0" y="992.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">145</text>
+<polygon id="S155" points="328,982 378,982 378,1100 328,1100" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 155</title></polygon>
+<text x="353.0" y="1041.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">155</text>
+<polygon id="S157" points="280,982 328,982 328,1100 280,1100" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 157</title></polygon>
+<text x="304.0" y="1041.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">157</text>
+<polygon id="S159" points="230,982 280,982 280,1100 230,1100" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 159</title></polygon>
+<text x="255.0" y="1041.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">159</text>
+<polygon id="K49" points="127,12 200,12 200,80 127,80" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 49</title></polygon>
+<text x="163.5" y="46.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K49</text>
+<polygon id="K50" points="280,485 377.5,481.5 390,530 297.5,532.5" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 50</title></polygon>
+<text x="336.2" y="507.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K50</text>
+<polygon id="K48" points="270,438.5 362.5,435 377.5,481.5 280,485" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 48</title></polygon>
+<text x="322.6" y="460.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K48</text>
+<polygon id="K46" points="257.5,389 355,395 362.5,435 270,438.5" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 46</title></polygon>
+<text x="311.4" y="415.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K46</text>
+<polygon id="K62" points="570,575 620,575 620,632 570,632" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 62</title></polygon>
+<text x="595.0" y="603.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K62</text>
+<polygon id="K60" points="500,575 570,575 570,640 500,640" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 60</title></polygon>
+<text x="535.0" y="607.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K60</text>
+<polygon id="K56" points="430,555 477,555 477,632 430,632" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 56</title></polygon>
+<text x="453.5" y="593.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K56</text>
+<polygon id="K54" points="382,555 430,555 430,632 382,632" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 54</title></polygon>
+<text x="406.0" y="593.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K54</text>
+<polygon id="K52" points="300,555 382,555 382,632 300,632" fill="#e0812b" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>De Kiel 52</title></polygon>
+<text x="341.0" y="593.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">K52</text>
+<polygon id="S89" points="530,913 628,913 628,961 530,961" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 89</title></polygon>
+<text x="579.0" y="937.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">89</text>
+<polygon id="S91" points="530,865 628,865 628,913 530,913" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 91</title></polygon>
+<text x="579.0" y="889.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">91</text>
+<polygon id="S93" points="530,818 628,818 628,865 530,865" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 93</title></polygon>
+<text x="579.0" y="841.5" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">93</text>
+<polygon id="S95" points="530,770 628,770 628,818 530,818" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 95</title></polygon>
+<text x="579.0" y="794.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">95</text>
+<polygon id="S83" points="636,979 686,979 686,1103 636,1103" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 83</title></polygon>
+<text x="661.0" y="1041.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">83</text>
+<polygon id="S85" points="589,979 636,979 636,1103 589,1103" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 85</title></polygon>
+<text x="612.5" y="1041.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">85</text>
+<polygon id="S87" points="541,979 589,979 589,1103 541,1103" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 87</title></polygon>
+<text x="565.0" y="1041.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">87</text>
+<polygon id="S75" points="1053,954 1100,954 1100,1102 1053,1102" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 75</title></polygon>
+<text x="1076.5" y="1028.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">75</text>
+<polygon id="S77" points="1005,954 1053,954 1053,1102 1005,1102" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 77</title></polygon>
+<text x="1029.0" y="1028.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">77</text>
+<polygon id="S79" points="958,954 1005,954 1005,1102 958,1102" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 79</title></polygon>
+<text x="981.5" y="1028.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">79</text>
+<polygon id="S81" points="910,954 958,954 958,1102 910,1102" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 81</title></polygon>
+<text x="934.0" y="1028.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">81</text>
+<polygon id="S63" points="1196,1002 1230,962 1302.8,1038 1265.4,1074" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 63</title></polygon>
+<text x="1249.5" y="1020.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">63</text>
+<polygon id="S65" points="1162,1042 1196,1002 1265.4,1074 1228,1110" fill="#2f7fd8" fill-opacity="0.45" stroke="#1d2330" stroke-width="1"><title>Schans 65</title></polygon>
+<text x="1213.8" y="1058.0" font-size="13" font-weight="700" text-anchor="middle" dominant-baseline="central">65</text>
+</svg>
