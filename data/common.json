@@ -6,20 +6,20 @@
   "name": "Meterkast (flatkast, KPN/UPC)",
   "poly": [
    [
-    98.7,
-    28.8
+    98.2,
+    28.7
    ],
    [
-    104.7,
-    28.8
+    104.2,
+    28.7
    ],
    [
-    104.7,
-    37.8
+    104.2,
+    37.7
    ],
    [
-    98.7,
-    37.8
+    98.2,
+    37.7
    ]
   ],
   "conf": "tekening",
@@ -38,20 +38,20 @@
   "name": "Entree",
   "poly": [
    [
-    104.7,
-    28.8
-   ],
-   [
-    125.7,
+    104.2,
     28.7
    ],
    [
-    125.7,
-    38.7
+    125.2,
+    28.6
    ],
    [
-    104.7,
-    38.8
+    125.2,
+    38.6
+   ],
+   [
+    104.2,
+    38.7
    ]
   ],
   "conf": "tekening",
@@ -72,20 +72,20 @@
   "name": "Lift",
   "poly": [
    [
-    103.7,
-    38.8
-   ],
-   [
-    119.7,
+    103.2,
     38.7
    ],
    [
-    119.8,
-    50.7
+    119.2,
+    38.6
    ],
    [
-    103.8,
-    50.8
+    119.3,
+    50.6
+   ],
+   [
+    103.3,
+    50.7
    ]
   ],
   "conf": "tekening",
@@ -106,20 +106,20 @@
   "name": "Trappenhuis",
   "poly": [
    [
-    103.8,
-    50.8
-   ],
-   [
-    125.8,
+    103.3,
     50.7
    ],
    [
-    125.9,
-    81.7
+    125.3,
+    50.6
    ],
    [
-    103.9,
-    81.8
+    125.5,
+    81.6
+   ],
+   [
+    103.5,
+    81.7
    ]
   ],
   "conf": "tekening",
@@ -140,20 +140,20 @@
   "name": "Fietsenberging",
   "poly": [
    [
-    101.9,
-    84.8
-   ],
-   [
-    127.9,
+    101.5,
     84.7
    ],
    [
-    128.0,
-    104.7
+    127.5,
+    84.5
    ],
    [
-    102.0,
-    104.8
+    127.6,
+    104.5
+   ],
+   [
+    101.6,
+    104.7
    ]
   ],
   "conf": "tekening",
@@ -176,20 +176,20 @@
   "name": "Entree",
   "poly": [
    [
-    295.9,
-    531.0
+    295.8,
+    530.7
+   ],
+   [
+    319.8,
+    530.5
    ],
    [
     319.9,
-    530.9
+    553.5
    ],
    [
-    320.0,
-    553.9
-   ],
-   [
-    304.0,
-    553.9
+    303.9,
+    553.6
    ]
   ],
   "conf": "tekening",
@@ -211,20 +211,20 @@
   "name": "Trap",
   "poly": [
    [
-    319.9,
-    530.9
+    319.8,
+    530.5
+   ],
+   [
+    337.8,
+    530.4
    ],
    [
     337.9,
-    530.8
+    553.4
    ],
    [
-    338.0,
-    553.8
-   ],
-   [
-    320.0,
-    553.9
+    319.9,
+    553.5
    ]
   ],
   "conf": "tekening",
@@ -247,19 +247,19 @@
   "poly": [
    [
     320.0,
-    555.9
+    555.5
    ],
    [
     338.0,
-    555.8
+    555.4
    ],
    [
     338.0,
-    565.8
+    565.4
    ],
    [
     320.0,
-    565.9
+    565.5
    ]
   ],
   "conf": "tekening",
@@ -281,19 +281,19 @@
   "poly": [
    [
     320.0,
-    567.9
+    567.5
    ],
    [
     340.0,
-    567.8
+    567.4
    ],
    [
     340.1,
-    578.8
+    578.4
    ],
    [
     320.1,
-    578.9
+    578.5
    ]
   ],
   "conf": "tekening",
@@ -314,20 +314,20 @@
   "name": "Fietsenberging",
   "poly": [
    [
-    413.3,
-    408.5
+    413.2,
+    408.0
+   ],
+   [
+    449.2,
+    407.9
    ],
    [
     449.3,
-    408.3
+    434.9
    ],
    [
-    449.4,
-    435.3
-   ],
-   [
-    413.4,
-    435.5
+    413.3,
+    435.0
    ]
   ],
   "conf": "tekening",
@@ -348,20 +348,20 @@
   "name": "Trap",
   "poly": [
    [
-    451.2,
-    387.3
+    451.1,
+    386.9
    ],
    [
-    459.2,
-    387.3
+    459.1,
+    386.8
    ],
    [
-    459.4,
-    433.3
+    459.3,
+    432.8
    ],
    [
-    451.4,
-    433.3
+    451.3,
+    432.8
    ]
   ],
   "conf": "tekening",
@@ -380,20 +380,20 @@
   "name": "LS-ruimte + trafo (netbeheerder)",
   "poly": [
    [
-    413.2,
-    388.5
+    413.1,
+    388.0
+   ],
+   [
+    449.1,
+    387.9
    ],
    [
     449.2,
-    388.3
+    404.9
    ],
    [
-    449.3,
-    405.3
-   ],
-   [
-    413.3,
-    405.5
+    413.2,
+    405.0
    ]
   ],
   "conf": "tekening",
@@ -413,20 +413,20 @@
   "name": "Hal",
   "poly": [
    [
-    388.0,
-    1022.6
+    388.4,
+    1022.2
    ],
    [
-    412.0,
-    1022.5
+    412.4,
+    1022.1
    ],
    [
-    412.1,
-    1045.5
+    412.5,
+    1045.1
    ],
    [
-    388.1,
-    1045.6
+    388.5,
+    1045.2
    ]
   ],
   "conf": "tekening",
@@ -449,20 +449,20 @@
   "name": "Trap naar 1e / daktuin",
   "poly": [
    [
-    388.1,
-    1045.6
+    388.5,
+    1045.2
    ],
    [
-    412.1,
-    1045.5
+    412.5,
+    1045.1
    ],
    [
-    412.2,
-    1075.5
+    412.7,
+    1075.1
    ],
    [
-    388.2,
-    1075.6
+    388.7,
+    1075.2
    ]
   ],
   "conf": "tekening",
@@ -484,20 +484,20 @@
   "name": "Entree (hoofddeur naast Aldi, brievenbussen)",
   "poly": [
    [
-    390.2,
-    1075.6
+    390.7,
+    1075.2
    ],
    [
-    412.2,
-    1075.5
+    412.7,
+    1075.1
    ],
    [
-    412.3,
-    1088.5
+    412.7,
+    1088.1
    ],
    [
-    390.3,
-    1088.6
+    390.7,
+    1088.2
    ]
   ],
   "conf": "tekening",
@@ -519,20 +519,20 @@
   "name": "Fietsenberging",
   "poly": [
    [
-    412.0,
-    1022.5
+    412.4,
+    1022.1
    ],
    [
-    432.0,
-    1022.4
+    432.4,
+    1022.0
    ],
    [
-    432.1,
-    1045.4
+    432.5,
+    1045.0
    ],
    [
-    412.1,
-    1045.5
+    412.5,
+    1045.1
    ]
   ],
   "conf": "tekening",
@@ -556,20 +556,20 @@
   "name": "Lift",
   "poly": [
    [
-    413.1,
-    1045.5
+    413.5,
+    1045.1
    ],
    [
-    424.1,
-    1045.4
+    424.5,
+    1045.0
    ],
    [
-    424.2,
-    1063.4
+    424.6,
+    1063.0
    ],
    [
-    413.2,
-    1063.5
+    413.6,
+    1063.1
    ]
   ],
   "conf": "tekening",
@@ -590,20 +590,20 @@
   "name": "Hal bij lift",
   "poly": [
    [
-    412.2,
-    1063.5
+    412.6,
+    1063.1
    ],
    [
-    432.2,
-    1063.4
+    432.6,
+    1063.0
    ],
    [
-    432.3,
-    1088.4
+    432.7,
+    1088.0
    ],
    [
-    412.3,
-    1088.5
+    412.7,
+    1088.1
    ]
   ],
   "conf": "tekening",
@@ -624,20 +624,20 @@
   "name": "Flatkast (KPN & UPC)",
   "poly": [
    [
-    394.3,
-    1088.5
+    394.7,
+    1088.2
    ],
    [
-    406.3,
-    1088.5
+    406.7,
+    1088.1
    ],
    [
-    406.3,
-    1096.5
+    406.8,
+    1096.1
    ],
    [
-    394.3,
-    1096.5
+    394.8,
+    1096.2
    ]
   ],
   "conf": "tekening",
@@ -659,20 +659,20 @@
   "name": "Hydrofoor-deur (gezien op wandeling)",
   "poly": [
    [
-    466.2,
-    1060.2
+    466.6,
+    1059.8
    ],
    [
-    478.2,
-    1060.2
+    478.6,
+    1059.7
    ],
    [
-    478.2,
-    1072.2
+    478.7,
+    1071.7
    ],
    [
-    466.2,
-    1072.2
+    466.7,
+    1071.8
    ]
   ],
   "conf": "geschat",
@@ -694,20 +694,20 @@
   "name": "Meterkasten (flatkast + CVZ-kast)",
   "poly": [
    [
-    768.0,
-    1016.9
+    768.4,
+    1016.2
    ],
    [
-    792.0,
-    1016.8
+    792.4,
+    1016.1
    ],
    [
-    792.1,
-    1049.8
+    792.5,
+    1049.1
    ],
    [
-    768.1,
-    1049.9
+    768.5,
+    1049.2
    ]
   ],
   "conf": "tekening",
@@ -726,20 +726,20 @@
   "name": "Gemeenschappelijke meterkast (GEM; KPN/UPC/EV)",
   "poly": [
    [
-    792.0,
-    1016.8
+    792.4,
+    1016.1
    ],
    [
-    802.0,
-    1016.8
+    802.4,
+    1016.0
    ],
    [
-    802.1,
-    1039.8
+    802.5,
+    1039.0
    ],
    [
-    792.1,
-    1039.8
+    792.5,
+    1039.1
    ]
   ],
   "conf": "tekening",
@@ -758,20 +758,20 @@
   "name": "Lift",
   "poly": [
    [
-    803.0,
-    1016.8
+    803.4,
+    1016.0
    ],
    [
-    813.0,
-    1016.7
+    813.4,
+    1016.0
    ],
    [
-    813.1,
-    1037.7
+    813.5,
+    1037.0
    ],
    [
-    803.1,
-    1037.8
+    803.5,
+    1037.0
    ]
   ],
   "conf": "tekening",
@@ -790,20 +790,20 @@
   "name": "Trappenhuis",
   "poly": [
    [
-    813.9,
-    1004.7
+    814.3,
+    1004.0
    ],
    [
-    835.9,
-    1004.6
+    836.3,
+    1003.8
    ],
    [
-    836.1,
-    1039.6
+    836.5,
+    1038.8
    ],
    [
-    814.1,
-    1039.7
+    814.5,
+    1039.0
    ]
   ],
   "conf": "tekening",
@@ -822,20 +822,20 @@
   "name": "Trap",
   "poly": [
    [
-    768.1,
-    1049.9
+    768.5,
+    1049.2
    ],
    [
-    792.1,
-    1049.8
+    792.5,
+    1049.1
    ],
    [
-    792.2,
-    1071.8
+    792.7,
+    1071.1
    ],
    [
-    768.2,
-    1071.9
+    768.7,
+    1071.2
    ]
   ],
   "conf": "tekening",
@@ -854,20 +854,20 @@
   "name": "Entree",
   "poly": [
    [
-    768.2,
-    1071.9
+    768.7,
+    1071.2
    ],
    [
-    792.2,
-    1071.8
+    792.7,
+    1071.1
    ],
    [
-    792.3,
-    1085.8
+    792.7,
+    1085.1
    ],
    [
-    768.3,
-    1085.9
+    768.7,
+    1085.2
    ]
   ],
   "conf": "tekening",
@@ -886,20 +886,20 @@
   "name": "Hal",
   "poly": [
    [
-    792.1,
-    1039.8
+    792.5,
+    1039.1
    ],
    [
-    814.1,
-    1039.7
+    814.5,
+    1039.0
    ],
    [
-    814.3,
-    1085.7
+    814.7,
+    1085.0
    ],
    [
-    792.3,
-    1085.8
+    792.7,
+    1085.1
    ]
   ],
   "conf": "tekening",
@@ -918,28 +918,28 @@
   "name": "Fietsenberging",
   "poly": [
    [
-    814.1,
-    1039.7
+    814.5,
+    1039.0
    ],
    [
-    838.1,
-    1039.6
+    838.5,
+    1038.8
    ],
    [
-    838.2,
-    1068.6
+    838.6,
+    1067.8
    ],
    [
-    850.2,
-    1068.6
+    850.6,
+    1067.8
    ],
    [
-    850.3,
-    1085.6
+    850.7,
+    1078.8
    ],
    [
-    814.3,
-    1085.7
+    814.7,
+    1079.0
    ]
   ],
   "conf": "tekening",
@@ -949,7 +949,7 @@
   "kind": "common",
   "type_label": "Fietsenberging",
   "floor_name": "BG",
-  "opp_m2": 35.3,
+  "opp_m2": 29.5,
   "nabij": [],
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 81; index 180 = gemeenschappelijk"
  },
@@ -960,20 +960,20 @@
   "name": "Sprinklerruimte",
   "poly": [
    [
-    838.1,
-    1041.6
+    838.5,
+    1040.8
    ],
    [
-    862.1,
-    1041.5
+    862.5,
+    1040.7
    ],
    [
-    862.1,
-    1055.5
+    862.6,
+    1054.7
    ],
    [
-    838.1,
-    1055.6
+    838.6,
+    1054.8
    ]
   ],
   "conf": "tekening",
@@ -992,20 +992,20 @@
   "name": "Hydrofoor",
   "poly": [
    [
-    850.1,
-    1055.6
+    850.6,
+    1054.8
    ],
    [
-    862.1,
-    1055.5
+    862.6,
+    1054.7
    ],
    [
-    862.2,
-    1063.5
+    862.6,
+    1062.7
    ],
    [
-    850.2,
-    1063.6
+    850.6,
+    1062.8
    ]
   ],
   "conf": "tekening",
@@ -1024,20 +1024,20 @@
   "name": "E-kast",
   "poly": [
    [
-    850.2,
-    1063.6
+    850.6,
+    1062.8
    ],
    [
-    862.2,
-    1063.5
+    862.6,
+    1062.7
    ],
    [
-    862.2,
-    1071.5
+    862.7,
+    1070.7
    ],
    [
-    850.2,
-    1071.6
+    850.7,
+    1070.8
    ]
   ],
   "conf": "tekening",
@@ -1056,20 +1056,20 @@
   "name": "Gaskasten",
   "poly": [
    [
-    838.3,
-    1079.6
+    838.7,
+    1078.8
    ],
    [
-    860.3,
-    1079.5
+    860.7,
+    1078.7
    ],
    [
-    860.3,
-    1085.5
+    860.7,
+    1084.7
    ],
    [
-    838.3,
-    1085.6
+    838.7,
+    1084.8
    ]
   ],
   "conf": "tekening",
@@ -1088,20 +1088,20 @@
   "name": "LS-ruimte + trafo (netbeheerder)",
   "poly": [
    [
-    844.9,
-    1009.6
+    845.3,
+    1008.8
    ],
    [
-    861.9,
-    1009.5
+    862.3,
+    1008.7
    ],
    [
-    862.1,
-    1041.5
+    862.5,
+    1040.7
    ],
    [
-    845.1,
-    1041.6
+    845.5,
+    1040.8
    ]
   ],
   "conf": "tekening",
@@ -1121,20 +1121,20 @@
   "name": "Niet in de splitsing betrokken (gearceerd op tekening)",
   "poly": [
    [
-    217.1,
-    811.3
+    217.3,
+    811.1
    ],
    [
-    381.1,
-    810.6
+    381.3,
+    810.2
    ],
    [
-    382.2,
-    1074.6
+    382.7,
+    1074.2
    ],
    [
-    218.2,
-    1075.3
+    218.7,
+    1075.1
    ]
   ],
   "conf": "tekening",
@@ -1247,38 +1247,6 @@
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
-  "id": "1-PAD-A",
-  "floor": 1,
-  "type": "galerij",
-  "name": "Pad langs bergingen 276-295",
-  "poly": [
-   [
-    114,
-    96
-   ],
-   [
-    124,
-    96
-   ],
-   [
-    124,
-    362
-   ],
-   [
-    114,
-    362
-   ]
-  ],
-  "conf": "tekening",
-  "portaal": "Portaal De Kiel 49/61/63",
-  "kind": "common",
-  "type_label": "Galerij / gang / overloop",
-  "floor_name": "1e",
-  "opp_m2": 71.9,
-  "nabij": [],
-  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
- },
- {
   "id": "1-215-LIFT",
   "floor": 1,
   "type": "lift",
@@ -1319,20 +1287,20 @@
   "name": "Hal / overloop",
   "poly": [
    [
-    300,
-    550
+    300.0,
+    554.6
    ],
    [
-    318,
-    550
+    317.6,
+    554.6
    ],
    [
-    318,
-    570
+    318.0,
+    550.0
    ],
    [
-    300,
-    570
+    300.0,
+    550.0
    ]
   ],
   "conf": "tekening",
@@ -1426,20 +1394,20 @@
   "name": "Hal",
   "poly": [
    [
-    367,
-    818
+    379.6,
+    865.0
    ],
    [
-    380,
-    818
+    379.6,
+    818.4
    ],
    [
-    380,
-    865
+    367.4,
+    818.4
    ],
    [
-    367,
-    865
+    367.4,
+    865.0
    ]
   ],
   "conf": "tekening",
@@ -2039,25 +2007,60 @@
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
+  "id": "1-260-LIFT",
+  "floor": 1,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    1188,
+    1008
+   ],
+   [
+    1201,
+    995
+   ],
+   [
+    1209,
+    1003
+   ],
+   [
+    1196,
+    1016
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "1e",
+  "opp_m2": 5.6,
+  "nabij": [
+   "S63",
+   "S65"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
   "id": "1-260-TRAP",
   "floor": 1,
   "type": "trap",
   "name": "Trappenhuis",
   "poly": [
    [
-    1190,
-    1018
+    1198,
+    1020
    ],
    [
-    1210,
-    998
+    1216,
+    1002
    ],
    [
-    1222,
-    1010
+    1226,
+    1012
    ],
    [
-    1202,
+    1208,
     1030
    ]
   ],
@@ -2066,7 +2069,7 @@
   "kind": "common",
   "type_label": "Trap / trappenhuis",
   "floor_name": "1e",
-  "opp_m2": 13.0,
+  "opp_m2": 9.7,
   "nabij": [
    "S63",
    "S65"
@@ -2143,64 +2146,220 @@
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
+  "id": "1-PAD-W",
+  "floor": 1,
+  "type": "looppad",
+  "name": "Pad langs De Kiel 51-59 (west)",
+  "poly": [
+   [
+    155.0,
+    630.0
+   ],
+   [
+    172.0,
+    630.0
+   ],
+   [
+    122.1,
+    389.0
+   ],
+   [
+    118.0,
+    389.0
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Looppad / pad",
+  "floor_name": "1e",
+  "opp_m2": 101.0,
+  "nabij": [
+   "K51",
+   "K53",
+   "K55",
+   "K57",
+   "K59"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
   "id": "1-DAK-W",
   "floor": 1,
   "type": "daktuin",
-  "name": "Daktuin / dakpad (west, langs De Kiel 51-59)",
+  "name": "Dak west (langs De Kiel 51-59)",
   "poly": [
    [
-    60,
-    389
+    55.0,
+    630.0
    ],
    [
-    172,
-    389
+    118.0,
+    630.0
    ],
    [
-    172,
-    630
+    118.0,
+    389.0
    ],
    [
-    60,
-    630
+    55.0,
+    389.0
    ]
   ],
-  "conf": "geschat",
+  "conf": "tekening",
   "kind": "common",
   "type_label": "Daktuin / dakpad",
   "floor_name": "1e",
-  "opp_m2": 729.5,
-  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
+  "opp_m2": 410.3,
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-PAD-M",
+  "floor": 1,
+  "type": "looppad",
+  "name": "Pad tussen daken (midden, bij Schans 143-171)",
+  "poly": [
+   [
+    350.0,
+    960.0
+   ],
+   [
+    370.0,
+    960.0
+   ],
+   [
+    370.0,
+    900.0
+   ],
+   [
+    350.0,
+    900.0
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Looppad / pad",
+  "floor_name": "1e",
+  "opp_m2": 32.4,
+  "nabij": [],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-PAD-M2",
+  "floor": 1,
+  "type": "looppad",
+  "name": "Pad langs dak (midden, zuid)",
+  "poly": [
+   [
+    300.0,
+    975.0
+   ],
+   [
+    398.6,
+    975.0
+   ],
+   [
+    398.6,
+    960.0
+   ],
+   [
+    300.0,
+    960.0
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Looppad / pad",
+  "floor_name": "1e",
+  "opp_m2": 89.2,
+  "nabij": [
+   "S145",
+   "S155",
+   "S157",
+   "S89"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk",
+  "poly_extra": [
+   [
+    [
+     520.0,
+     975.0
+    ],
+    [
+     520.0,
+     960.0
+    ],
+    [
+     473.4,
+     960.0
+    ],
+    [
+     473.4,
+     975.0
+    ]
+   ]
+  ]
  },
  {
   "id": "1-DAK-M",
   "floor": 1,
   "type": "daktuin",
-  "name": "Daktuin (midden, tussen Schans 143-171 en De Kiel)",
+  "name": "Dak / daktuin midden (tussen Schans en De Kiel)",
   "poly": [
    [
-    290,
-    870
+    300.0,
+    960.0
    ],
    [
-    530,
-    870
+    350.0,
+    960.0
    ],
    [
-    530,
-    975
+    350.0,
+    900.0
    ],
    [
-    290,
-    975
+    370.0,
+    900.0
+   ],
+   [
+    370.0,
+    960.0
+   ],
+   [
+    398.6,
+    960.0
+   ],
+   [
+    398.6,
+    954.6
+   ],
+   [
+    473.4,
+    954.6
+   ],
+   [
+    473.4,
+    960.0
+   ],
+   [
+    520.0,
+    960.0
+   ],
+   [
+    520.0,
+    870.0
+   ],
+   [
+    300.0,
+    870.0
    ]
   ],
-  "conf": "geschat",
+  "conf": "tekening",
   "kind": "common",
   "type_label": "Daktuin / dakpad",
   "floor_name": "1e",
-  "opp_m2": 681.0,
-  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
+  "opp_m2": 535.1,
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
   "id": "1-DAK-N",
@@ -2209,55 +2368,55 @@
   "name": "Dak / dakpad (noord, bij De Kiel 46-50)",
   "poly": [
    [
-    395,
-    440
+    395.0,
+    545.0
    ],
    [
-    560,
-    440
+    560.0,
+    545.0
    ],
    [
-    560,
-    545
+    560.0,
+    440.0
    ],
    [
-    395,
-    545
-   ]
-  ],
-  "conf": "geschat",
-  "kind": "common",
-  "type_label": "Daktuin / dakpad",
-  "floor_name": "1e",
-  "opp_m2": 468.2,
-  "bron": "Geschat: wandeling 06-11-2026 / opgave bewoner"
- },
- {
-  "id": "1-GANG-C",
-  "floor": 1,
-  "type": "galerij",
-  "name": "Gang bergingen 296-314",
-  "poly": [
-   [
-    570,
-    457
-   ],
-   [
-    690,
-    457
-   ],
-   [
-    690,
-    466
-   ],
-   [
-    570,
-    466
+    395.0,
+    440.0
    ]
   ],
   "conf": "tekening",
   "kind": "common",
-  "type_label": "Galerij / gang / overloop",
+  "type_label": "Daktuin / dakpad",
+  "floor_name": "1e",
+  "opp_m2": 468.2,
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-GANG-C",
+  "floor": 1,
+  "type": "looppad",
+  "name": "Gang bergingen 296-314",
+  "poly": [
+   [
+    570.0,
+    465.6
+   ],
+   [
+    690.0,
+    465.6
+   ],
+   [
+    690.0,
+    457.4
+   ],
+   [
+    570.0,
+    457.4
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Looppad / pad",
   "floor_name": "1e",
   "opp_m2": 29.2,
   "nabij": [],
@@ -2266,29 +2425,29 @@
  {
   "id": "1-GANG-D",
   "floor": 1,
-  "type": "galerij",
+  "type": "looppad",
   "name": "Gang bergingen 315-329",
   "poly": [
    [
-    671,
-    882
+    671.0,
+    892.6
    ],
    [
-    752,
-    882
+    752.0,
+    893.0
    ],
    [
-    752,
-    893
+    752.0,
+    882.4
    ],
    [
-    671,
-    893
+    671.0,
+    882.4
    ]
   ],
   "conf": "tekening",
   "kind": "common",
-  "type_label": "Galerij / gang / overloop",
+  "type_label": "Looppad / pad",
   "floor_name": "1e",
   "opp_m2": 24.1,
   "nabij": [],
@@ -2297,29 +2456,29 @@
  {
   "id": "1-GANG-E",
   "floor": 1,
-  "type": "galerij",
+  "type": "looppad",
   "name": "Gang bergingen 330-356",
   "poly": [
    [
-    944,
-    883
+    944.0,
+    890.6
    ],
    [
-    1080,
-    883
+    1080.0,
+    890.6
    ],
    [
-    1080,
-    891
+    1080.0,
+    883.0
    ],
    [
-    944,
-    891
+    944.0,
+    883.0
    ]
   ],
   "conf": "tekening",
   "kind": "common",
-  "type_label": "Galerij / gang / overloop",
+  "type_label": "Looppad / pad",
   "floor_name": "1e",
   "opp_m2": 29.4,
   "nabij": [],
@@ -2328,34 +2487,65 @@
  {
   "id": "1-GANG-B",
   "floor": 1,
-  "type": "galerij",
+  "type": "looppad",
   "name": "Gang bergingen 266-275",
   "poly": [
    [
-    257,
-    883
+    257.0,
+    883.0
    ],
    [
-    263,
-    883
+    257.4,
+    970.0
    ],
    [
-    263,
-    970
+    262.6,
+    970.0
    ],
    [
-    257,
-    970
+    263.0,
+    883.0
    ]
   ],
   "conf": "tekening",
   "kind": "common",
-  "type_label": "Galerij / gang / overloop",
+  "type_label": "Looppad / pad",
   "floor_name": "1e",
   "opp_m2": 14.1,
   "nabij": [
    "S159"
   ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "1-PAD-A",
+  "floor": 1,
+  "type": "looppad",
+  "name": "Pad langs bergingen 276-295",
+  "poly": [
+   [
+    114.0,
+    362.0
+   ],
+   [
+    123.6,
+    362.0
+   ],
+   [
+    124.0,
+    96.0
+   ],
+   [
+    114.0,
+    96.0
+   ]
+  ],
+  "conf": "tekening",
+  "kind": "common",
+  "type_label": "Looppad / pad",
+  "floor_name": "1e",
+  "opp_m2": 71.9,
+  "nabij": [],
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 82; index 180 = gemeenschappelijk"
  },
  {
@@ -2365,20 +2555,36 @@
   "name": "Overloop",
   "poly": [
    [
-    100,
-    12
+    100.0,
+    32.0
    ],
    [
-    130,
-    12
+    126.6,
+    32.0
    ],
    [
-    130,
-    32
+    126.6,
+    30.4
    ],
    [
-    100,
-    32
+    119.6,
+    30.4
+   ],
+   [
+    119.6,
+    24.6
+   ],
+   [
+    126.6,
+    24.6
+   ],
+   [
+    126.6,
+    12.0
+   ],
+   [
+    100.0,
+    12.0
    ]
   ],
   "conf": "tekening",
@@ -2451,7 +2657,7 @@
     45
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal De Kiel 49/61/63",
   "kind": "common",
   "type_label": "Lift",
@@ -2486,7 +2692,7 @@
     78
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal De Kiel 49/61/63",
   "kind": "common",
   "type_label": "Trap / trappenhuis",
@@ -2527,6 +2733,41 @@
   "type_label": "Lift",
   "floor_name": "2e",
   "opp_m2": 8.1,
+  "nabij": [
+   "K64",
+   "K66"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
+  "id": "2-225-TRAP",
+  "floor": 2,
+  "type": "trap",
+  "name": "Trap / vide bij lift",
+  "poly": [
+   [
+    338,
+    550
+   ],
+   [
+    355,
+    550
+   ],
+   [
+    355,
+    575
+   ],
+   [
+    338,
+    575
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
+  "kind": "common",
+  "type_label": "Trap / trappenhuis",
+  "floor_name": "2e",
+  "opp_m2": 11.5,
   "nabij": [
    "K64",
    "K66"
@@ -3060,26 +3301,61 @@
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
  },
  {
+  "id": "2-262-LIFT",
+  "floor": 2,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    1198,
+    982
+   ],
+   [
+    1211,
+    969
+   ],
+   [
+    1219,
+    977
+   ],
+   [
+    1206,
+    990
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "2e",
+  "opp_m2": 5.6,
+  "nabij": [
+   "S67",
+   "S69"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 83; index 180 = gemeenschappelijk"
+ },
+ {
   "id": "2-262-TRAP",
   "floor": 2,
   "type": "trap",
   "name": "Trappenhuis",
   "poly": [
    [
-    1200,
-    992
+    1208,
+    994
    ],
    [
-    1220,
-    972
+    1226,
+    976
    ],
    [
-    1233,
-    985
+    1236,
+    986
    ],
    [
-    1213,
-    1005
+    1218,
+    1004
    ]
   ],
   "conf": "tekening",
@@ -3087,7 +3363,7 @@
   "kind": "common",
   "type_label": "Trap / trappenhuis",
   "floor_name": "2e",
-  "opp_m2": 14.1,
+  "opp_m2": 9.7,
   "nabij": [
    "S67",
    "S69"
@@ -3170,20 +3446,20 @@
   "name": "Galerij De Kiel 64-84 (2e+3e)",
   "poly": [
    [
-    299,
-    540
+    299.0,
+    547.6
    ],
    [
-    618,
-    540
+    618.0,
+    547.6
    ],
    [
-    618,
-    548
+    618.0,
+    540.0
    ],
    [
-    299,
-    548
+    299.0,
+    540.0
    ]
   ],
   "conf": "tekening",
@@ -3208,20 +3484,20 @@
   "name": "Galerij Schans 115-129",
   "poly": [
    [
-    620,
-    760
+    630.0,
+    952.0
    ],
    [
-    630,
-    760
+    630.0,
+    760.0
    ],
    [
-    630,
-    952
+    620.4,
+    760.0
    ],
    [
-    620,
-    952
+    620.4,
+    952.0
    ]
   ],
   "conf": "tekening",
@@ -3246,20 +3522,40 @@
   "name": "Galerij Schans 97-113 / 131-137",
   "poly": [
    [
-    550,
-    995
+    550.0,
+    1003.0
    ],
    [
-    1160,
-    995
+    915.6,
+    1003.0
    ],
    [
-    1160,
-    1003
+    1014.6,
+    1002.6
    ],
    [
-    550,
-    1003
+    1014.6,
+    1001.6
+   ],
+   [
+    1110.4,
+    1001.6
+   ],
+   [
+    1110.4,
+    1003.0
+   ],
+   [
+    1160.0,
+    1003.0
+   ],
+   [
+    1160.0,
+    995.0
+   ],
+   [
+    550.0,
+    995.0
    ]
   ],
   "conf": "tekening",
@@ -3300,7 +3596,7 @@
     565
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
   "kind": "common",
   "type_label": "Lift",
@@ -3334,7 +3630,7 @@
     1038
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal Schans 75-99 (oost)",
   "kind": "common",
   "type_label": "Lift",
@@ -3369,7 +3665,7 @@
     1040
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal Schans 75-99 (oost)",
   "kind": "common",
   "type_label": "Trap / trappenhuis",
@@ -3382,37 +3678,72 @@
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
  },
  {
+  "id": "3-264-LIFT",
+  "floor": 3,
+  "type": "lift",
+  "name": "Lift",
+  "poly": [
+   [
+    1198,
+    982
+   ],
+   [
+    1211,
+    969
+   ],
+   [
+    1219,
+    977
+   ],
+   [
+    1206,
+    990
+   ]
+  ],
+  "conf": "tekening",
+  "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
+  "kind": "common",
+  "type_label": "Lift",
+  "floor_name": "3e",
+  "opp_m2": 5.6,
+  "nabij": [
+   "S73",
+   "S71"
+  ],
+  "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
+ },
+ {
   "id": "3-264-TRAP",
   "floor": 3,
   "type": "trap",
   "name": "Trappenhuis",
   "poly": [
    [
-    1200,
-    992
+    1208,
+    994
    ],
    [
-    1220,
-    972
+    1226,
+    976
    ],
    [
-    1233,
-    985
+    1236,
+    986
    ],
    [
-    1213,
-    1005
+    1218,
+    1004
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Trappenhuis Schans 139/141 (hoek, diagonaal)",
   "kind": "common",
   "type_label": "Trap / trappenhuis",
   "floor_name": "3e",
-  "opp_m2": 14.1,
+  "opp_m2": 9.7,
   "nabij": [
-   "S71",
-   "S73"
+   "S73",
+   "S71"
   ],
   "bron": "Splitsingstekening akte 2006 (W. Grandia BV), pag. 84; index 180 = gemeenschappelijk"
  },
@@ -3423,20 +3754,36 @@
   "name": "Galerij Schans 131-141 (3e)",
   "poly": [
    [
-    759,
-    1003
+    759.0,
+    1012.0
    ],
    [
-    1170,
-    1003
+    811.6,
+    1012.0
    ],
    [
-    1170,
-    1012
+    811.6,
+    1003.6
    ],
    [
-    759,
-    1012
+    830.4,
+    1003.6
+   ],
+   [
+    830.4,
+    1012.0
+   ],
+   [
+    1170.0,
+    1012.0
+   ],
+   [
+    1170.0,
+    1003.0
+   ],
+   [
+    759.0,
+    1003.0
    ]
   ],
   "conf": "geschat",
@@ -3458,7 +3805,7 @@
   "id": "4-246-LIFT",
   "floor": 4,
   "type": "lift",
-  "name": "Liftopbouw (dak)",
+  "name": "Liftopbouw / dak lifthuis",
   "poly": [
    [
     800,
@@ -3477,7 +3824,7 @@
     1038
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal Schans 75-99 (oost)",
   "kind": "common",
   "type_label": "Lift",
@@ -3490,7 +3837,7 @@
   "id": "4-225-LIFT",
   "floor": 4,
   "type": "lift",
-  "name": "Liftopbouw (dak)",
+  "name": "Dak lifthuis",
   "poly": [
    [
     318,
@@ -3509,7 +3856,7 @@
     565
    ]
   ],
-  "conf": "afgeleid",
+  "conf": "tekening",
   "portaal": "Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)",
   "kind": "common",
   "type_label": "Lift",

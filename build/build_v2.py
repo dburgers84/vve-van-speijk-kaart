@@ -17,7 +17,7 @@ FN={0:'BG',1:'1e',2:'2e',3:'3e',4:'4e'}
 TYPES=[  # volgorde = legenda
  ('woning-schans','Woning Schans','#2f7fd8'),('woning-kiel','Woning De Kiel','#e0812b'),
  ('lift','Lift','#8e44ad'),('trap','Trap / trappenhuis','#c39bd3'),('entree','Entree / hal','#e74c3c'),
- ('galerij','Galerij / gang / overloop','#f4d03f'),('meterkast','Meterkast / E-kast / gaskast','#2c3e50'),
+ ('galerij','Galerij / gang / overloop','#f4d03f'),('looppad','Looppad / pad','#f7c948'),('meterkast','Meterkast / E-kast / gaskast','#2c3e50'),
  ('hydrofoor','Hydrofoor','#00a3a3'),('sprinkler','Sprinklerruimte','#48b5e0'),('technisch','Technisch (trafo/LS/schacht)','#95a5a6'),
  ('fietsenberging','Fietsenberging','#27ae60'),('berging','Berging (privé, 1e verd.)','#c8a165'),
  ('daktuin','Daktuin / dakpad','#6ab04c'),('dak','Dak (installatiezone)','#d5d8dc'),('niet-vve','Niet in de splitsing','#9e9e9e')]
@@ -32,8 +32,8 @@ def poly(P): return Polygon(P).buffer(0)
 from shapely.affinity import rotate as shp_rotate, translate as shp_translate
 _bg_pts=[pt for f in FE.F if f['floor']==0 for pt in f['poly']]
 _bg_pivot=(sum(p[0] for p in _bg_pts)/len(_bg_pts), sum(p[1] for p in _bg_pts)/len(_bg_pts))
-BG_ALIGN={'rot_deg':-0.25,'tx':1.0,'ty':5.0,'pivot':[round(_bg_pivot[0],2),round(_bg_pivot[1],2)],
-          'note':'BG-features/units +1,0 x / +5,0 y tekeningeenheden (~0,7 / 3,3 px@1,5) en −0,25° (klok mee) t.o.v. scan pag. 81'}
+BG_ALIGN={'rot_deg':-0.30,'tx':1.2,'ty':4.5,'pivot':[round(_bg_pivot[0],2),round(_bg_pivot[1],2)],
+          'note':'BG-features/units +1,2 x / +4,5 y tekeningeenheden (~0,8 / 3,0 px@1,5) en −0,30° (klok mee) t.o.v. scan pag. 81'}
 def _bg_corr_pts(P):
     g=shp_translate(shp_rotate(Polygon(P), BG_ALIGN['rot_deg'], origin=_bg_pivot), BG_ALIGN['tx'], BG_ALIGN['ty'])
     return [[round(x,1),round(y,1)] for x,y in g.exterior.coords][:-1]
@@ -86,6 +86,53 @@ for fl,L in FE.DAK.items():
     for i,P in enumerate(L):
         daken.append(dict(id=f'{fl}-DAK-{i+1}',floor=fl,type='dak',kind='common',name='Dak (indicatieve installatiezone)',poly=P,conf='tekening',floor_name=FN[fl],
                           type_label=TYPE_LABEL['dak'],bron='Splitsingstekening akte 2006 pag. %d (overgetrokken, ±1 m)'%(81+fl)))
+
+# ---- overlap-clip: daktuin/galerij/looppad/dak mogen niet over woningen/bergingen/solids liggen
+SOLID={'lift','trap','entree','meterkast','hydrofoor','sprinkler','technisch','fietsenberging','niet-vve'}
+CLIP={'daktuin','galerij','looppad','dak'}
+def _rings_of(g):
+    out=[]
+    if g.is_empty: return out
+    gs=list(g.geoms) if isinstance(g,MultiPolygon) else [g]
+    for gg in gs:
+        if gg.area<8: continue
+        gg=gg.simplify(0.4)
+        if gg.is_empty or gg.area<8: continue
+        out.append([[round(x,1),round(y,1)] for x,y in gg.exterior.coords][:-1])
+    return out
+def _set_poly(d, rings):
+    if not rings:
+        d['poly']=[]; d['hidden']=True; return
+    # keep largest ring as primary poly; extras as poly_extra (renderer uses poly)
+    rings=sorted(rings, key=lambda r: Polygon(r).area, reverse=True)
+    d['poly']=rings[0]
+    if len(rings)>1: d['poly_extra']=rings[1:]
+clipped=0
+for fl in range(5):
+    solids=[g for (uid,f),g in upoly.items() if f==fl]
+    solids+=[poly(b['poly']) for b in berg if b.get('floor',1)==fl]
+    solids+=[poly(f['poly']) for f in feats if f['floor']==fl and f['type'] in SOLID and f.get('poly')]
+    if not solids: continue
+    solid_u=unary_union([s.buffer(0.4,join_style=2) for s in solids if s and not s.is_empty])
+    for f in feats+daken:
+        if f['floor']!=fl or f['type'] not in CLIP or not f.get('poly'): continue
+        g=poly(f['poly'])
+        if not g or g.is_empty: continue
+        # daktuin/dak also clip against looppad/galerij (pad heeft voorrang)
+        extra=[]
+        if f['type'] in ('daktuin','dak'):
+            extra=[poly(x['poly']) for x in feats if x['floor']==fl and x['type'] in ('looppad','galerij') and x.get('poly')]
+        cut=solid_u
+        if extra: cut=unary_union([cut]+extra)
+        ng=g.difference(cut)
+        rings=_rings_of(ng)
+        before=g.area; after=sum(Polygon(r).area for r in rings) if rings else 0
+        if after+1<before: clipped+=1
+        _set_poly(f, rings)
+# drop fully clipped
+feats[:]=[f for f in feats if f.get('poly')]
+daken[:]=[d for d in daken if d.get('poly')]
+print('overlap-clip: aangepaste vlakken', clipped, 'features', len(feats), 'daken', len(daken))
 
 def rings(geom):
     out=[]
@@ -190,5 +237,15 @@ for fl in range(5):
     open(os.path.join(R,'svg',f'verdieping_{FN[fl]}.svg'),'w').write('\n'.join(o))
 from collections import Counter
 print('features',Counter((f['floor'],f['type']) for f in feats))
+lifts=[f for f in feats if f['type']=='lift']; traps=[f for f in feats if f['type']=='trap']
+print('LIFTEN verdiepingsvlakken', len(lifts), 'TRAPPEN verdiepingsvlakken', len(traps))
+# unieke kokers bij benadering: portaal-groep
+from collections import defaultdict
+shafts=defaultdict(list)
+for f in lifts:
+    shafts[f.get('portaal') or f['id']].append(f'{FN[f["floor"]]}:{f["id"]}({f.get("conf","?")})')
+print('LIFTEN unieke portalen/kokers', len(shafts))
+for k,v in shafts.items(): print(' ', (k or '?')[:50], '->', ', '.join(v))
+
 print('bergingen',len(berg),'daken',len(daken),{k:len(v) for k,v in outlines.items()})
 print('meldingen',len(meldingen))

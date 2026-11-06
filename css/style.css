@@ -106,3 +106,8 @@ aside.vve-panel .vve-melden{margin:.7rem 0;width:100%;padding:.55rem;border:0;bo
 .vve-refbox .ref-title{font-weight:700;font-size:.82rem;margin-bottom:.2rem}
 .vve-refbox .ref-hint{color:var(--muted);font-size:.7rem;margin-top:.15rem}
 .vve-refbox .ref-toggle{font-weight:600}
+
+.c-poly.t-looppad{fill:#f7c948;fill-opacity:.75;stroke:#9a7d0a;stroke-width:1.1;stroke-dasharray:6 3}
+.c-poly.t-trap{stroke:#6c3483;stroke-width:1.1}
+.trap-treads{stroke:#5b2c6f;stroke-width:.55;fill:none;pointer-events:none;opacity:.85}
+.c-poly.t-galerij{stroke-width:.9}

@@ -55,7 +55,7 @@ add('BG-OOST-TRAP1',0,'trap','Trappenhuis',R(812,1001,834,1036),P)
 add('BG-OOST-TRAP2',0,'trap','Trap',R(766,1046,790,1068),P)
 add('BG-OOST-ENT',0,'entree','Entree',R(766,1068,790,1082),P)
 add('BG-OOST-HAL',0,'entree','Hal',R(790,1036,812,1082),P)
-add('BG-OOST-FIETS',0,'fietsenberging','Fietsenberging',[[812,1036],[836,1036],[836,1065],[848,1065],[848,1082],[812,1082]],P,info=FIETS_NOTE,tekening_label='containerruimte')
+add('BG-OOST-FIETS',0,'fietsenberging','Fietsenberging',[[812,1036],[836,1036],[836,1065],[848,1065],[848,1076],[812,1076]],P,info=FIETS_NOTE,tekening_label='containerruimte')
 add('BG-OOST-SPR',0,'sprinkler','Sprinklerruimte',R(836,1038,860,1052),P)
 add('BG-OOST-HYD',0,'hydrofoor','Hydrofoor',R(848,1052,860,1060),P)
 add('BG-OOST-EK',0,'meterkast','E-kast',R(848,1060,860,1068),P)
@@ -69,7 +69,6 @@ P='Portaal De Kiel 49/61/63'
 add('1-K49-LIFT',1,'lift','Lift',R(112,34,128,46),P)
 add('1-K49-MK',1,'meterkast','Meterkast',R(128,34,136,46),P)
 add('1-K49-TRAP',1,'trap','Trappenhuis',R(110,47,128,75),P)
-add('1-PAD-A',1,'galerij','Pad langs bergingen 276-295',R(114,96,124,362),P)
 P='Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)'
 add('1-215-LIFT',1,'lift','Lift',R(318,553,335,570),P)
 add('1-215-HAL',1,'galerij','Hal / overloop',R(300,550,318,570),P)
@@ -96,25 +95,33 @@ add('1-182-TRAP',1,'trap','Trap naar daktuin',R(245,704,268,717),P)
 add('1-182-MK1',1,'meterkast','Meterkast woning (mk)',R(249,687,254,694),P)
 add('1-182-MK2',1,'meterkast','Meterkast woning (mk)',R(249,733,254,740),P)
 P='Trappenhuis Schans 139/141 (hoek, diagonaal)'
-add('1-260-TRAP',1,'trap','Trappenhuis',[[1190,1018],[1210,998],[1222,1010],[1202,1030]],P)
+add('1-260-LIFT',1,'lift','Lift',[[1188,1008],[1201,995],[1209,1003],[1196,1016]],P)  # X-schacht op tekening
+add('1-260-TRAP',1,'trap','Trappenhuis',[[1198,1020],[1216,1002],[1226,1012],[1208,1030]],P)
 add('1-260-MK1',1,'meterkast','Meterkast woning (mk)',[[1219,1001],[1224,996],[1229,1001],[1224,1006]],P)
 add('1-260-MK2',1,'meterkast','Meterkast woning (mk)',[[1195,1031],[1200,1026],[1205,1031],[1200,1036]],P)
-add('1-DAK-W',1,'daktuin','Daktuin / dakpad (west, langs De Kiel 51-59)',R(60,389,172,630),conf='geschat')
-add('1-DAK-M',1,'daktuin','Daktuin (midden, tussen Schans 143-171 en De Kiel)',R(290,870,530,975),conf='geschat')
-add('1-DAK-N',1,'daktuin','Dak / dakpad (noord, bij De Kiel 46-50)',R(395,440,560,545),conf='geschat')
-add('1-GANG-C',1,'galerij','Gang bergingen 296-314',R(570,457,690,466))
-add('1-GANG-D',1,'galerij','Gang bergingen 315-329',R(671,882,752,893))
-add('1-GANG-E',1,'galerij','Gang bergingen 330-356',R(944,883,1080,891))
-add('1-GANG-B',1,'galerij','Gang bergingen 266-275',R(257,883,263,970))
+# Daktuinen/dak + looppaden (1e): op tekening als "dak" / "pad"; polygonen zo dat ze woningen niet bedekken
+# (build_v2.py clipt bovendien tegen woningen/bergingen/solids).
+add('1-PAD-W',1,'looppad','Pad langs De Kiel 51-59 (west)',[[118,389],[132,389],[172,630],[155,630]],conf='tekening')
+add('1-DAK-W',1,'daktuin','Dak west (langs De Kiel 51-59)',R(55,389,118,630),conf='tekening')
+add('1-PAD-M',1,'looppad','Pad tussen daken (midden, bij Schans 143-171)',R(350,900,370,960),conf='tekening')
+add('1-PAD-M2',1,'looppad','Pad langs dak (midden, zuid)',R(300,960,520,975),conf='tekening')
+add('1-DAK-M',1,'daktuin','Dak / daktuin midden (tussen Schans en De Kiel)',R(300,870,520,960),conf='tekening')
+add('1-DAK-N',1,'daktuin','Dak / dakpad (noord, bij De Kiel 46-50)',R(395,440,560,545),conf='tekening')
+add('1-GANG-C',1,'looppad','Gang bergingen 296-314',R(570,457,690,466))
+add('1-GANG-D',1,'looppad','Gang bergingen 315-329',R(671,882,752,893))
+add('1-GANG-E',1,'looppad','Gang bergingen 330-356',R(944,883,1080,891))
+add('1-GANG-B',1,'looppad','Gang bergingen 266-275',R(257,883,263,970))
+add('1-PAD-A',1,'looppad','Pad langs bergingen 276-295',R(114,96,124,362))  # was galerij; expliciet looppad
 
 # ------------------------------------------------------------------ 2e
 P='Portaal De Kiel 49/61/63'
 add('2-K61-HAL',2,'galerij','Overloop',R(100,12,130,32),P)
 add('2-K61-MK',2,'meterkast','Meterkast',R(120,25,127,30),P)
-add('2-K61-LIFT',2,'lift','Lift',R(106,33,122,45),P,conf='afgeleid')
-add('2-K61-TRAP',2,'trap','Trappenhuis',R(106,45,125,78),P,conf='afgeleid')
+add('2-K61-LIFT',2,'lift','Lift',R(106,33,122,45),P)  # op tekening 2e: label lift-mk
+add('2-K61-TRAP',2,'trap','Trappenhuis',R(106,45,125,78),P)  # op tekening 2e: label trap
 P='Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)'
 add('2-225-LIFT',2,'lift','Lift',R(318,550,338,565),P)
+add('2-225-TRAP',2,'trap','Trap / vide bij lift',R(338,550,355,575),P)
 P='Trap Schans 177/179'
 add('2-183-TRAP',2,'trap','Trap',R(250,700,270,715),P)
 add('2-183-MK1',2,'meterkast','Meterkast woning (mk)',R(241,683,247,690),P)
@@ -135,7 +142,8 @@ add('2-244-SCH',2,'technisch','Schacht',R(793,1018,800,1040),P)
 add('2-244-MK',2,'meterkast','Meterkast (mk)',R(795,1009,802,1015),P)
 add('2-244-TRAP',2,'trap','Trappenhuis',R(812,1004,830,1040),P)
 P='Trappenhuis Schans 139/141 (hoek, diagonaal)'
-add('2-262-TRAP',2,'trap','Trappenhuis',[[1200,992],[1220,972],[1233,985],[1213,1005]],P)
+add('2-262-LIFT',2,'lift','Lift',[[1198,982],[1211,969],[1219,977],[1206,990]],P)  # X-schacht op tekening
+add('2-262-TRAP',2,'trap','Trappenhuis',[[1208,994],[1226,976],[1236,986],[1218,1004]],P)
 add('2-262-MK1',2,'meterkast','Meterkast woning (mk)',[[1230,979],[1235,974],[1240,979],[1235,984]],P)
 add('2-262-MK2',2,'meterkast','Meterkast woning (mk)',[[1204,1006],[1209,1001],[1214,1006],[1209,1011]],P)
 add('2-GAL-K',2,'galerij','Galerij De Kiel 64-84 (2e+3e)',R(299,540,618,548))
@@ -143,15 +151,17 @@ add('2-GAL-S',2,'galerij','Galerij Schans 115-129',R(620,760,630,952))
 add('2-GAL-O',2,'galerij','Galerij Schans 97-113 / 131-137',R(550,995,1160,1003))
 
 # ------------------------------------------------------------------ 3e
-add('3-225-LIFT',3,'lift','Lift',R(318,550,338,565),'Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)',conf='afgeleid')
+add('3-225-LIFT',3,'lift','Lift',R(318,550,338,565),'Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)')  # schacht met X op tekening 3e
 P='Portaal Schans 75-99 (oost)'
-add('3-246-LIFT',3,'lift','Lift',R(800,1015,810,1038),P,conf='afgeleid')
-add('3-246-TRAP',3,'trap','Trappenhuis',R(812,1004,830,1040),P,conf='afgeleid')
-add('3-264-TRAP',3,'trap','Trappenhuis',[[1200,992],[1220,972],[1233,985],[1213,1005]],'Trappenhuis Schans 139/141 (hoek, diagonaal)',conf='afgeleid')
+add('3-246-LIFT',3,'lift','Lift',R(800,1015,810,1038),P)  # label lift op tekening 3e
+add('3-246-TRAP',3,'trap','Trappenhuis',R(812,1004,830,1040),P)  # label trap op tekening 3e
+P='Trappenhuis Schans 139/141 (hoek, diagonaal)'
+add('3-264-LIFT',3,'lift','Lift',[[1198,982],[1211,969],[1219,977],[1206,990]],P)  # X-schacht op tekening 3e
+add('3-264-TRAP',3,'trap','Trappenhuis',[[1208,994],[1226,976],[1236,986],[1218,1004]],P)
 add('3-GAL-O',3,'galerij','Galerij Schans 131-141 (3e)',R(759,1003,1170,1012),conf='geschat')
 # ------------------------------------------------------------------ 4e
-add('4-246-LIFT',4,'lift','Liftopbouw (dak)',R(800,1015,810,1038),'Portaal Schans 75-99 (oost)',conf='afgeleid')
-add('4-225-LIFT',4,'lift','Liftopbouw (dak)',R(318,550,338,565),'Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)',conf='afgeleid')
+add('4-246-LIFT',4,'lift','Liftopbouw / dak lifthuis',R(800,1015,810,1038),'Portaal Schans 75-99 (oost)')  # schacht/X + dakluik op tekening 4e
+add('4-225-LIFT',4,'lift','Dak lifthuis',R(318,550,338,565),'Portaal Het Havenplein (De Kiel 64-84 / Schans 177-179)')  # label "dak lifthuis" op tekening 4e
 
 # ------------------------------------------------------------------ bergingen (individuele cellen, 1e verdieping)
 BERG=[]
