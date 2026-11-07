@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""Kolomkandidaten: holle vierkanten (8-26 px) op de native bronscans; lokaal draaien (privébron).
+Gebruik: python3 model/tools/detect_columns.py 81 82 83 84 85   (scans in /workspace/vve-source-audit)
+Schrijft data/inventory/columns_auto_all.json (alleen size_px>=12; 8/10 px zijn vooral letters).
+Geheugen: ~3-4 GB piek per blad; ~2 min per blad.
+"""
 import cv2, numpy as np, json, sys
 from PIL import Image
 Image.MAX_IMAGE_PIXELS=None
@@ -41,4 +47,8 @@ if __name__=='__main__':
     res={}
     for p in map(int,sys.argv[1:]):
         res[p]=detect(p); print(p,len(res[p]),'isolated',sum(c['outside_ink_px']<10 for c in res[p]))
-    json.dump(res,open('cols3_all.json','w'))
+    import os
+    root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    out={"method":"tools/detect_columns.py (holle vierkanten); alleen size_px>=12","status":"auto_candidates_not_individually_reviewed",
+         "pages":{str(p):[x for x in v if x['size_px']>=12] for p,v in res.items()}}
+    json.dump(out,open(os.path.join(root,'data','inventory','columns_auto_all.json'),'w'))
