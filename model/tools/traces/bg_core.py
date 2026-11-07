@@ -55,7 +55,7 @@ SPACES = [
 
 # hedendaags gebruik (los van bronlabel)
 CURRENT_USE = {
-    "container": ("fietsenberging", "opgave bewoner 06-11-2026; zie data/sources.md (alle containerruimtes omgebouwd)", "probable"),
+    "container": ("fietsenberging", "Gebruiker (opgave 06-11-2026, data/sources.md): alle containerruimtes zijn omgebouwd tot fietsenberging", "user_confirmed"),
 }
 
 # bouwdetails (class 'element'): (key, kind, ring, note, certainty)

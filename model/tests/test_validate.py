@@ -31,17 +31,50 @@ class PilotDataset(unittest.TestCase):
 
     def test_no_fake_precision(self):
         d = load()
+        cal = d["calibrations"][0]
         for e in d["edges"]:
             dm = e["dimension"]
             self.assertIn(dm["status"], {"source", "derived", "unknown"})
             if dm["status"] == "unknown":
                 self.assertIsNone(dm["length_m"])
             if dm["status"] == "derived":
-                self.assertIsNone(dm["uncertainty_m"])
-                self.assertEqual(dm["uncertainty_status"], "unknown")
-        for c in d["calibrations"]:
-            self.assertEqual(c["status"], "nominal_unverified")
-            self.assertIsNone(c["uncertainty_m"])
+                # gecontroleerde kalibratie: altijd een onzekerheid, nooit 0
+                self.assertEqual(dm["uncertainty_status"], "estimated")
+                self.assertGreaterEqual(dm["uncertainty_m"], 0.01)
+                self.assertEqual(dm["calibration_ref"], cal["id"])
+            if dm["status"] == "source":
+                self.fail("geen bronmaten op de BG-tekening gevonden; 'source' mag niet voorkomen")
+
+    def test_calibration_from_main_plan_scale_bar_one_axis_only(self):
+        cal = load()["calibrations"][0]
+        self.assertEqual(cal["status"], "controls_checked_one_axis")
+        self.assertEqual(cal["axis_status"]["x"], "assumed_isotropic_not_independently_verified")
+        self.assertTrue(cal["axis_status"]["y"].startswith("checked"))
+        ids = {c["id"] for c in cal["control_points"]}
+        self.assertTrue({"bar_0m", "bar_10m", "ruler_0cm", "ruler_5cm"} <= ids)
+        ck = cal["checks"]
+        bar = 10.0 / (830.3 - 443.3)
+        self.assertAlmostEqual(ck["m_per_px_scale_bar_0_10m"], bar, places=5)
+        self.assertAlmostEqual(ck["m_per_px_ruler_x_1to200"], 2.0 / ((869.62 - 477.27) / 5), places=5)
+        # gekozen waarde ligt tussen de twee controles; onzekerheid dekt beide
+        lo, hi = sorted((ck["m_per_px_scale_bar_0_10m"], ck["m_per_px_ruler_x_1to200"]))
+        self.assertTrue(lo <= cal["m_per_px_y"] <= hi)
+        self.assertGreaterEqual(cal["m_per_px_y"] * (1 + cal["rel_uncertainty"]["y"]) + 1e-7, hi)
+        self.assertGreater(cal["rel_uncertainty"]["x"], cal["rel_uncertainty"]["y"])
+        self.assertIn("1:1000", cal["excludes"])
+
+    def test_lengths_use_adopted_scale(self):
+        import math
+        d = load()
+        cal = d["calibrations"][0]
+        V = {v["id"]: v for v in d["vertices"]}
+        e = next(e for e in d["edges"] if e["id"] == "e_bg_core_A_B")
+        (a, b) = e["v"]
+        L = math.hypot((V[b]["x_px"] - V[a]["x_px"]) * cal["m_per_px_x"], (V[b]["y_px"] - V[a]["y_px"]) * cal["m_per_px_y"])
+        self.assertAlmostEqual(e["dimension"]["length_m"], round(L, 2), places=2)
+        # ~1 % langer dan de oude nominale 0,0254 m/px
+        nominal = math.hypot((V[b]["x_px"] - V[a]["x_px"]) * 0.0254, (V[b]["y_px"] - V[a]["y_px"]) * 0.0254)
+        self.assertGreater(e["dimension"]["length_m"], nominal)
 
     def test_legal_memberships_are_evidenced_not_exact(self):
         d = load()
@@ -55,7 +88,61 @@ class PilotDataset(unittest.TestCase):
             self.assertTrue(m["evidence"]["note"])
         # alleen ruimtes met omcirkeld 180 krijgen 'probable' voor A-180
         prob = {m["object_id"] for m in claimed if m.get("right_id") == "A-180" and m["certainty"] == "probable"}
-        self.assertEqual(prob, {"obj_bg_core_trap180", "obj_bg_kiel_entree"})
+        self.assertEqual(prob, {"obj_bg_core_trap180", "obj_bg_kiel_entree", "obj_bg_seg_s039", "obj_bg_seg_s052", "obj_bg_seg_s061"})
+        labs = {l["id"]: l for l in d["labels"]}
+        O = {o["id"]: o for o in d["objects"]}
+        for oid in prob:
+            self.assertTrue(any(labs[i]["literal_text"] == "180" for i in O[oid]["label_ids"]), oid)
+        # A-179 'probable' alleen waar een 179-index in het vak staat
+        p179 = {m["object_id"] for m in claimed if m.get("right_id") == "A-179" and m["certainty"] == "probable"}
+        self.assertEqual(len(p179), 5)
+        for oid in p179:
+            self.assertTrue(any(labs[i]["literal_text"] == "179" for i in O[oid]["label_ids"]), oid)
+
+    def test_legal_splits_are_nested_not_disjoint(self):
+        d = load()
+        S = {s["id"]: s for s in d["legal_splits"]}
+        onder = S["ls_ondersplitsing_woningen"]
+        self.assertEqual(onder["parent_id"], "ls_hoofdsplitsing")
+        self.assertEqual(onder["nested_in_right"], "A-180")
+        self.assertIn("A-179", S["ls_hoofdsplitsing"]["scope"])
+        self.assertIn("A-180", S["ls_hoofdsplitsing"]["scope"])
+        self.assertTrue(any("A-2" in u for u in onder["unresolved"]))
+        H = {m["object_id"]: m for m in d["memberships"] if m["split_id"] == "ls_hoofdsplitsing"}
+        for m in d["memberships"]:
+            if m["split_id"] == "ls_ondersplitsing_woningen" and m["relation"] in ("common", "private"):
+                # binnen de ondersplitsing => in de hoofdsplitsing A-180 of nog onbekend, nooit A-179/uitgesloten
+                h = H[m["object_id"]]
+                self.assertIn(h["right_id"], ("A-180", None), m["object_id"])
+                self.assertNotEqual(h["relation"], "excluded")
+        for m in d["memberships"]:
+            if m["split_id"] == "ls_hoofdsplitsing" and m.get("right_id") == "A-179":
+                u = next(x for x in d["memberships"] if x["object_id"] == m["object_id"] and x["split_id"] == "ls_ondersplitsing_woningen")
+                self.assertIn(u["relation"], ("excluded", "unknown"))
+
+    def test_hatched_not_in_split(self):
+        d = load()
+        h = [o for o in d["objects"] if o["kind"] == "not_in_split_area"]
+        self.assertEqual(len(h), 2)
+        for o in h:
+            ms = [m for m in d["memberships"] if m["object_id"] == o["id"]]
+            self.assertTrue(all(m["relation"] == "excluded" for m in ms))
+
+    def test_broad_bg_coverage_and_honest_unresolved(self):
+        d = load()
+        cov = d["coverage"]
+        self.assertFalse(cov["complete"])
+        self.assertTrue(any("1e" in x for x in cov["not_traced"]))
+        spaces = [o for o in d["objects"] if o["class"] == "space"]
+        self.assertGreaterEqual(len(spaces), 90)
+        unres = [o for o in spaces if o["certainty"] == "unresolved"]
+        self.assertGreaterEqual(len(unres), 15)
+        for o in unres:
+            self.assertTrue(o["evidence"].get("note") or o["kind"].endswith("unresolved"), o["id"])
+        for o in spaces:
+            self.assertTrue(o["edge_ids"] and o["display_name"])
+        self.assertGreaterEqual(sum(o["kind"] == "wall_band" for o in d["objects"]), 30)
+        self.assertEqual(sum(o["kind"] == "service_corridor" for o in d["objects"]), 3)
 
     def test_private_raster_not_published(self):
         d = load()
@@ -93,6 +180,27 @@ class PilotDataset(unittest.TestCase):
         self.assertGreaterEqual(len(d["regions"]), 2)
         self.assertTrue(any(o["kind"] == "commercial_unit" for o in d["objects"]))
 
+    def test_columns_visually_reviewed(self):
+        d = load()
+        rev = json.load(open(os.path.join(ROOT, "data", "inventory", "columns_review_p81.json")))["verdicts"]
+        rejected = {(v["x"], v["y"]) for v in rev if v["verdict"] == "rejected"}
+        self.assertEqual(len(rejected), 10)
+        V = {v["id"]: v for v in d["vertices"]}
+        cols = [o for o in d["objects"] if o["kind"] == "column" and o["evidence"]["method"].startswith("auto_detect")]
+        self.assertGreaterEqual(len(cols), 240)
+        for o in cols:
+            self.assertEqual(o["review_status"], "reviewed")
+            r = o["geometry"]["rings"][0]
+            cx = round(sum(V[i]["x_px"] for i in r) / 4)
+            cy = round(sum(V[i]["y_px"] for i in r) / 4)
+            self.assertNotIn((cx, cy), rejected, o["id"])
+        self.assertEqual(sum(o["certainty"] == "uncertain" for o in cols), 12)
+
+    def test_no_treads_or_doors_invented(self):
+        d = load()
+        self.assertFalse(any("tread" in o["kind"] or "door" in o["kind"] for o in d["objects"]))
+        self.assertTrue(any("treden" in x for x in d["coverage"]["not_traced"]))
+
     def test_columns_and_details_are_clickable_elements(self):
         d = load()
         cols = [o for o in d["objects"] if o["kind"] == "column"]
@@ -105,11 +213,13 @@ class PilotDataset(unittest.TestCase):
     def test_source_label_and_current_use_separate(self):
         d = load()
         cont = [o for o in d["objects"] if o["kind"] == "container_room"]
-        self.assertEqual(len(cont), 2)
+        self.assertEqual(len(cont), 4)
         for o in cont:
             self.assertEqual(o["source_label_text"], "container-ruimte")
             self.assertEqual(o["current_use"]["value"], "fietsenberging")
-            self.assertNotEqual(o["current_use"]["certainty"], "source")
+            # gebruiker heeft bevestigd dat ALLE containerruimtes omgebouwd zijn: niet 'probable' o.b.v. oude tekst
+            self.assertEqual(o["current_use"]["certainty"], "user_confirmed")
+            self.assertIn("Gebruiker", o["current_use"]["source"])
 
     def test_no_door_claimed_without_leaf(self):
         d = load()
@@ -134,7 +244,25 @@ class NegativeCases(unittest.TestCase):
         self.edge("unknown")["dimension"]["length_m"] = 1.0
         self.assertTrue(any("unknown vereist length_m null" in m for m in errs(self.d)))
 
+    def test_derived_without_uncertainty_rejected(self):
+        dm = self.edge("derived")["dimension"]
+        dm["uncertainty_m"] = None
+        dm["uncertainty_status"] = "unknown"
+        self.assertTrue(any("gecontroleerde kalibratie vereist uncertainty_m" in m for m in errs(self.d)))
+
+    def test_too_small_uncertainty_rejected(self):
+        e = max(self.d["edges"], key=lambda e: e["length_px"] if e["dimension"]["status"] == "derived" else 0)
+        e["dimension"]["uncertainty_m"] = 0.0
+        self.assertTrue(any("kleiner dan schaalonzekerheid" in m for m in errs(self.d)))
+
+    def test_both_axes_checked_claim_rejected(self):
+        self.d["calibrations"][0]["axis_status"]["x"] = "checked_against_scale_bar_and_ruler"
+        self.assertTrue(any("beide assen" in m for m in errs(self.d)))
+
     def test_derived_with_invented_uncertainty_rejected(self):
+        self.d["calibrations"][0]["status"] = "nominal_unverified"
+        self.d["calibrations"][0].pop("rel_uncertainty")
+        self.d["calibrations"][0]["uncertainty_status"] = "unknown"
         dm = self.edge("derived")["dimension"]
         dm["uncertainty_m"] = 0.01
         dm["uncertainty_status"] = "estimated"

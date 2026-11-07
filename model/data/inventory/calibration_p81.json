@@ -1,0 +1,17 @@
+{
+ "page": 81,
+ "measured": "2026-11-07, Grok Bot (executor), op lokale scan page-81.png (7118x10099)",
+ "finding": "De schaalbalk 0-10 m staat linksboven BINNEN het kader van het hoofdplan, direct onder de tekst 'Begane grond / Schaal 1 a 200'. Ze hoort dus bij het hoofdplan (niet bij de situatie-inzet 1:1000 onderaan). Correctie op het eerdere bronrapport.",
+ "scale_bar": {"axis": "native y", "x_px": 80, "edge_0m_y_px": 443.3, "edge_10m_y_px": 830.3, "length_px": 387.0,
+               "segment_boundaries_y_px": [443.3, 523, 601, 680, 757, 830.3], "segments_px_per_2m": [78.5, 78.0, 79.0, 77.0, 74.5],
+               "m_per_px": 0.02584, "reading_tolerance_px_per_end": 1.5},
+ "cm_ruler": {"label": "IN CM", "axis": "native y", "x_px": 433, "ticks_y_px": {"0": 477.27, "1": 556.30, "2": 634.74, "3": 713.01, "4": null, "5": 869.62},
+              "px_per_cm": 78.47, "equivalent_dpi": 199.3, "m_per_px_at_1to200": 0.025488,
+              "note": "Tick 4 niet betrouwbaar gedetecteerd; 0-5 cm gebruikt. Liniaal = reproductiecontrole; positie verschilt per blad."},
+ "nominal": {"m_per_px": 0.0254, "basis": "1:200 x 200 dpi (oude aanname)"},
+ "comparison_pct_vs_nominal": {"scale_bar": 1.73, "ruler": 0.34},
+ "adopted": {"m_per_px": 0.0256636, "rel_uncertainty_y": 0.0069, "rel_uncertainty_x": 0.0157,
+             "x_axis": "NIET onafhankelijk gecontroleerd (balk en liniaal liggen beide langs native y); isotropie aangenomen, marge verruimd met de kolomstramien-anisotropie 0,88 % (x 295,6 px vs y 298,2 px; of het stramien vierkant is, is niet bekend)."},
+ "other_sheets": "Bladen 82-85 hebben elk een eigen balk 'Schaal 1 a 200' (0-10 m) + cm-liniaal, ook langs native y; nog niet gemeten.",
+ "not_used": "SITUATIE-inzet 1:1000"
+}
