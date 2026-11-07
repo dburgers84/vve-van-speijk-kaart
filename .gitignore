@@ -1,3 +1,6 @@
 build/raw/
 __pycache__/
 .DS_Store
+
+# lokale bronuitsneden (privé akte) nooit committen
+model/pilot/local/

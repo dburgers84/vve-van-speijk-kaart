@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pilot brontrace BG-kern – VvE Van Speijk (datamodel v2)</title>
+<style>
+ body{margin:0;font:14px/1.4 system-ui,sans-serif;display:flex;height:100vh;color:#222}
+ #side{width:340px;overflow:auto;padding:12px;border-right:1px solid #ddd;background:#fafafa}
+ #main{flex:1;position:relative;overflow:hidden;background:#fff}
+ svg{width:100%;height:100%;cursor:grab}
+ .sp{fill-opacity:.28;stroke:none;cursor:pointer}
+ .sp:hover,.sp.sel{fill-opacity:.55}
+ .ed{stroke-width:2.4;vector-effect:non-scaling-stroke;cursor:pointer}
+ .ed.ink_confirmed{stroke:#0a8a2a}.ed.partial_ink{stroke:#f08c00;stroke-dasharray:6 3}
+ .ed.not_applicable{stroke:#d0f;stroke-dasharray:2 3}
+ .ed.hl{stroke:#000;stroke-width:5}
+ .ln{fill:none;stroke:#1565c0;stroke-width:1.6;vector-effect:non-scaling-stroke;pointer-events:stroke;cursor:pointer}
+ .lbl{font-size:13px;fill:#111;pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:3px}
+ .vx{fill:#d00;r:2.5}
+ #pop{position:absolute;right:12px;top:12px;width:380px;max-height:85vh;overflow:auto;background:#fff;border:1px solid #bbb;box-shadow:0 4px 18px #0003;padding:10px 12px;display:none;border-radius:6px}
+ #pop table{border-collapse:collapse;width:100%;font-size:12px}#pop td,#pop th{border-bottom:1px solid #eee;padding:2px 4px;text-align:left}
+ .warn{background:#fff4e0;border:1px solid #f0c070;padding:6px 8px;border-radius:4px;font-size:12px}
+ .muted{color:#777;font-size:12px} fieldset{border:1px solid #ddd;margin:8px 0} button{cursor:pointer}
+ .badge{display:inline-block;padding:0 6px;border-radius:8px;font-size:11px;background:#eee}
+</style>
+</head>
+<body>
+<div id="side">
+ <h3 style="margin:0 0 6px">Pilot brontrace – BG gemeenschappelijke kern</h3>
+ <div class="warn">Onvolledige pilot. Alleen deze kern is overgetrokken uit de splitsingstekening (akte 2006, blad 01, p.81). Coördinaten: native scanpixels. Maten: <b>nominaal afgeleid</b> (1:200 @ 200 dpi), onzekerheid <b>onbekend</b>; geen bronmaten op de tekening gevonden.</div>
+ <fieldset><legend>Ondergrond (bron)</legend>
+  <label><input type="checkbox" id="bgOn" checked> Bronuitsnede tonen</label><br>
+  <input type="range" id="bgOp" min="0" max="1" step="0.05" value="0.6" style="width:100%">
+  <div class="muted" id="bgNote">Bronuitsnede staat alleen lokaal (<code>pilot/local/</code>, niet in de repo).</div>
+ </fieldset>
+ <fieldset><legend>Lagen</legend>
+  <label><input type="checkbox" id="lSp" checked> Ruimtes</label>
+  <label><input type="checkbox" id="lEd" checked> Zijden (maatstatus)</label>
+  <label><input type="checkbox" id="lLb" checked> Labels</label>
+  <label><input type="checkbox" id="lVx"> Vertices</label>
+ </fieldset>
+ <fieldset><legend>Juridische splitsingen</legend>
+  <label><input type="checkbox" disabled> Hoofdsplitsing</label><br>
+  <label><input type="checkbox" disabled> Ondersplitsing A-2</label><br>
+  <label><input type="checkbox" disabled> Beide</label>
+  <div class="muted" id="legalReason"></div>
+ </fieldset>
+ <div class="muted">Zijden: <span style="color:#0a8a2a">━ inkt bevestigd</span> · <span style="color:#f08c00">╍ deels inkt</span> · <span style="color:#d0f">┅ virtuele opening</span></div>
+ <h4>Objecten</h4><div id="list"></div>
+ <h4>Dekking</h4><div id="cov" class="muted"></div>
+</div>
+<div id="main">
+ <svg id="svg" xmlns="http://www.w3.org/2000/svg"><g id="vp"><image id="bg" preserveAspectRatio="none"/><g id="gSp"></g><g id="gEd"></g><g id="gLn"></g><g id="gLb"></g><g id="gVx" style="display:none"></g></g></svg>
+ <div id="pop"></div>
+</div>
+<script src="pilot_data.js"></script>
+<script>
+(function(){
+const D=window.PILOT_DATA, NS='http://www.w3.org/2000/svg';
+const V=Object.fromEntries(D.vertices.map(v=>[v.id,v])), E=Object.fromEntries(D.edges.map(e=>[e.id,e]));
+const L=Object.fromEntries(D.labels.map(l=>[l.id,l])), O=Object.fromEntries(D.objects.map(o=>[o.id,o]));
+const [x0,y0,x1,y1]=D.coverage.region_px, svg=document.getElementById('svg');
+let vb=[x0,y0,x1-x0,y1-y0]; const setVB=()=>svg.setAttribute('viewBox',vb.join(' ')); setVB();
+const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);p&&p.appendChild(n);return n};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// ondergrond
+const bg=document.getElementById('bg');
+Object.entries({x:x0,y:y0,width:x1-x0,height:y1-y0,href:'local/src_p81_bg_core_crop.png',opacity:.6}).forEach(([k,v])=>bg.setAttribute(k,v));
+bg.addEventListener('error',()=>{document.getElementById('bgNote').textContent='Bronuitsnede niet aanwezig (staat bewust niet in de publieke repo). Draai model/tools/build_pilot.py lokaal met de scan.';bg.style.display='none'});
+document.getElementById('bgOn').onchange=e=>bg.style.display=e.target.checked?'':'none';
+document.getElementById('bgOp').oninput=e=>bg.setAttribute('opacity',e.target.value);
+const col={stair:'#e53935',lift_shaft:'#1e64dc',unknown:'#9e9e9e',hall:'#43a047',entrance_hall:'#2e7d32',container_room:'#8d6e63',sprinkler_room:'#00acc1',transformer_room:'#fb8c00',low_voltage_room:'#f4511e',meter_cupboard_common:'#7b1fa2',gas_meter_cupboards:'#c0ca33'};
+const pts=ids=>ids.map(i=>V[i].x_px+','+V[i].y_px).join(' ');
+const spEl={};
+D.objects.forEach(o=>{
+ if(o.geometry.type==='Polygon'){
+  const d=o.geometry.rings.map(r=>'M'+r.map(i=>V[i].x_px+' '+V[i].y_px).join('L')+'Z').join('');
+  const p=el('path',{d,class:'sp','fill':col[o.kind]||'#4caf50','fill-rule':'evenodd'},document.getElementById('gSp'));
+  p.onclick=ev=>{ev.stopPropagation();show(o.id)}; spEl[o.id]=p;
+ } else if(o.geometry.type==='LineString'){
+  const p=el('polyline',{points:pts(o.geometry.vertices),class:'ln'},document.getElementById('gLn')); p.onclick=ev=>{ev.stopPropagation();show(o.id)};
+ }
+});
+D.edges.forEach(e=>{const [a,b]=e.v.map(i=>V[i]);
+ const l=el('line',{x1:a.x_px,y1:a.y_px,x2:b.x_px,y2:b.y_px,class:'ed '+(e.trace_quality||''),id:'ed_'+e.id},document.getElementById('gEd'));
+ l.onclick=ev=>{ev.stopPropagation();showEdge(e.id)}; el('title',{},l).textContent=e.id;});
+D.labels.forEach(l=>{const [a,b,c,d]=l.bbox_px; const t=el('text',{x:(a+c)/2,y:(b+d)/2,'text-anchor':'middle',class:'lbl'},document.getElementById('gLb')); t.textContent=l.literal_text??'(onleesbaar)';});
+D.vertices.forEach(v=>el('circle',{cx:v.x_px,cy:v.y_px,class:'vx',r:2.5},document.getElementById('gVx')));
+[['lSp','gSp'],['lEd','gEd'],['lLb','gLb'],['lVx','gVx']].forEach(([c,g])=>document.getElementById(c).onchange=e=>document.getElementById(g).style.display=e.target.checked?'':'none');
+document.getElementById('legalReason').textContent='Uitgeschakeld: '+D.legal_split_ui.reason;
+// popups
+const pop=document.getElementById('pop');
+const dimTxt=dm=>dm.status==='unknown'?'<i>onbekend</i>':(dm.status==='derived'?`${dm.length_m.toFixed(2)} m <span class="badge">afgeleid, nominaal</span>`:`${dm.length_m} m <span class="badge">bron</span>`);
+function clearHL(){document.querySelectorAll('.hl').forEach(n=>n.classList.remove('hl'));document.querySelectorAll('.sp.sel').forEach(n=>n.classList.remove('sel'))}
+function show(id){const o=O[id];clearHL(); spEl[id]&&spEl[id].classList.add('sel');
+ const labs=o.label_ids.map(i=>L[i]).map(l=>`<li>“${esc(l.literal_text)}” <span class="badge">${esc(l.category)}</span> <span class="badge">${esc(l.certainty)}</span>${l.note?'<br><span class="muted">'+esc(l.note)+'</span>':''}</li>`).join('');
+ const conns=D.connections.filter(c=>c.connects.includes(id)).map(c=>`<li>${esc(c.kind)} → ${esc(c.connects.filter(x=>x!==id).map(x=>O[x]?O[x].display_name:x).join(', '))} <span class="badge">${esc(c.certainty)}</span><br><span class="muted">${esc(c.note)}</span></li>`).join('')||'<li class="muted">geen bevestigde verbindingen</li>';
+ const legacy=D.legacy_links.filter(k=>k.object_id===id).map(k=>`<li>${esc(k.legacy_id)} <span class="badge">${esc(k.relation)}</span></li>`).join('')||'<li class="muted">geen</li>';
+ const mem=D.memberships.filter(m=>m.object_id===id).map(m=>`<li>${esc(m.split_id)}: <b>${esc(m.relation)}</b></li>`).join('')||'<li class="muted">geen</li>';
+ let rows='';
+ (o.edge_ids||[]).forEach(eid=>{const e=E[eid];document.getElementById('ed_'+eid).classList.add('hl');const nb=D.objects.filter(x=>x.id!==id&&(x.edge_ids||[]).includes(eid)).map(x=>x.display_name).join(', ');
+  rows+=`<tr><td>${esc(eid.replace('e_bg_core_',''))}</td><td>${esc(e.role)}</td><td>${dimTxt(e.dimension)}</td><td>${e.ink_support?Math.round(e.ink_support.fraction*100)+'%':'–'}</td><td>${esc(nb)||'–'}</td></tr>`});
+ let per='';if(o.edge_ids&&o.edge_ids.length){const ds=o.edge_ids.map(i=>E[i].dimension);per=ds.every(d=>d.length_m!=null)?ds.reduce((s,d)=>s+d.length_m,0).toFixed(2)+' m (nominaal)':'onbekend (niet alle zijden bekend)';}
+ pop.innerHTML=`<b>${esc(o.display_name)}</b> <span class="badge">${esc(o.kind)}</span><br><span class="muted">${esc(o.id)} · rev ${o.revision} · ${esc(o.floor_id)} · zekerheid: ${esc(o.certainty)} · review: ${esc(o.review_status)}</span>
+ <p class="muted">${esc(o.evidence&&o.evidence.note||'')}</p>
+ <b>Labels</b><ul>${labs||'<li class="muted">geen label op tekening</li>'}</ul>
+ ${rows?`<b>Zijden</b> <span class="muted">(omtrek: ${per})</span><table><tr><th>zijde</th><th>rol</th><th>lengte</th><th>inkt</th><th>grenst aan</th></tr>${rows}</table>`:''}
+ <b>Verbindingen</b><ul>${conns}</ul><b>Juridisch</b><ul>${mem}</ul><b>Koppeling huidige kaart</b><ul>${legacy}</ul>
+ <button onclick="document.getElementById('pop').style.display='none'">Sluiten</button>`;pop.style.display='block';}
+function showEdge(id){const e=E[id];clearHL();document.getElementById('ed_'+id).classList.add('hl');const users=D.objects.filter(o=>(o.edge_ids||[]).includes(id)).map(o=>o.display_name).join(' | ');
+ const dm=e.dimension;pop.innerHTML=`<b>Zijde ${esc(id)}</b><br><span class="muted">${esc(e.role)} · ${esc(e.trace_quality)}</span><table>
+ <tr><td>Lengte</td><td>${dimTxt(dm)}</td></tr><tr><td>Lengte (px)</td><td>${e.length_px}</td></tr><tr><td>Onzekerheid</td><td>${dm.uncertainty_m==null?'onbekend':dm.uncertainty_m+' m'}</td></tr>
+ <tr><td>Methode</td><td>${esc(dm.method)||'–'}</td></tr><tr><td>Kalibratie</td><td>${esc(dm.calibration_ref)||'–'}</td></tr><tr><td>Inktsteun</td><td>${e.ink_support?Math.round(e.ink_support.fraction*100)+'% (max gat '+e.ink_support.max_gap_px+' px)':'–'}</td></tr>
+ <tr><td>Grenst aan</td><td>${esc(users)}</td></tr></table><p class="muted">${esc(dm.note)}</p><button onclick="document.getElementById('pop').style.display='none'">Sluiten</button>`;pop.style.display='block';}
+svg.addEventListener('click',()=>{pop.style.display='none';clearHL()});
+// lijst + dekking
+document.getElementById('list').innerHTML=D.objects.map(o=>`<div><a href="#" data-id="${esc(o.id)}">${esc(o.display_name)}</a> <span class="badge">${esc(o.certainty)}</span></div>`).join('');
+document.getElementById('list').onclick=e=>{const a=e.target.closest('a');if(a){e.preventDefault();show(a.dataset.id)}};
+document.getElementById('cov').innerHTML=`<b>Volledig: ${D.coverage.complete?'ja':'nee'}</b><br>Getraceerd: ${D.coverage.traced.map(esc).join('; ')}<br><br>Niet getraceerd: ${D.coverage.not_traced.map(esc).join('; ')}`;
+// deeplink #obj=<id> of #edge=<id>
+const h=decodeURIComponent(location.hash.slice(1));if(h.startsWith('obj=')&&O[h.slice(4)])show(h.slice(4));if(h.startsWith('edge=')&&E[h.slice(5)])showEdge(h.slice(5));
+// zoom/pan
+let drag=null;svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect(),k=e.deltaY>0?1.15:1/1.15;const s=Math.max(vb[2]/r.width,vb[3]/r.height);const mx=vb[0]+(e.clientX-r.left)*s,my=vb[1]+(e.clientY-r.top)*s;vb=[mx-(mx-vb[0])*k,my-(my-vb[1])*k,vb[2]*k,vb[3]*k];setVB()},{passive:false});
+svg.addEventListener('mousedown',e=>drag=[e.clientX,e.clientY,vb[0],vb[1]]);window.addEventListener('mouseup',()=>drag=null);
+window.addEventListener('mousemove',e=>{if(!drag)return;const r=svg.getBoundingClientRect(),s=Math.max(vb[2]/r.width,vb[3]/r.height);vb[0]=drag[2]-(e.clientX-drag[0])*s;vb[1]=drag[3]-(e.clientY-drag[1])*s;setVB()});
+})();
+</script>
+</body>
+</html>

@@ -21,6 +21,9 @@ De plattegrond is **vanaf nul opgebouwd als schone SVG** (geen gescande tekening
 ### Betrouwbaarheid per object
 `op tekening` = staat zo op de splitsingstekening · `afgeleid` = doorgetrokken van een andere verdieping (bijv. lift op 3e/4e) · `geschat` = staat niet op de tekening (wandeling of opgave van een bewoner). Geschatte en afgeleide vormen hebben een stippelrand.
 
+## Datamodel v2 (pilot, in ontwikkeling)
+Brongetrouwe hertekening vanaf de splitsingstekening: zie [`model/README.md`](model/README.md). Los van de huidige kaart; nog onvolledig (alleen één BG-kern).
+
 ## Zoeken
 `173`, `Kiel 64`, `k64`, `lift`, `hydrofoor`, `meterkast`, `fietsenberging`, `berging 308`, `melding 384979`, `lekkage`.
 
