@@ -163,7 +163,7 @@ $('list').innerHTML=Object.entries(groups).map(([r,os])=>`<p><b>${esc(R[r]?R[r].
 $('list').onclick=e=>{const a=e.target.closest('a');if(a){e.preventDefault();show(a.dataset.id)}};
 $('cov').innerHTML=`<b>Volledig: ${D.coverage.complete?'ja':'nee'}</b> — ${esc(D.coverage.scope)}<br><br>Getraceerd: ${D.coverage.traced.map(esc).join('; ')}<br><br>Niet getraceerd: ${D.coverage.not_traced.map(esc).join('; ')}`;
 // deeplinks
-const h=decodeURIComponent(location.hash.slice(1));if(h.startsWith('obj=')&&O[h.slice(4)]){const o=O[h.slice(4)];o.region_id&&fit(R[o.region_id].region_px);show(o.id)}if(h.startsWith('edge=')&&E[h.slice(5)])showEdge(h.slice(5));if(h.startsWith('legal=')){const r=document.querySelector(`input[name=lg][value=${h.slice(6)}]`);if(r){r.checked=true;legal(r.value)}}
+for(const h of decodeURIComponent(location.hash.slice(1)).split('&')){if(h.startsWith('legal=')){const r=document.querySelector(`input[name=lg][value=${h.slice(6)}]`);if(r){r.checked=true;legal(r.value)}}if(h.startsWith('obj=')&&O[h.slice(4)]){const o=O[h.slice(4)];o.region_id&&fit(R[o.region_id].region_px);show(o.id)}if(h.startsWith('edge=')&&E[h.slice(5)])showEdge(h.slice(5));}
 // zoom/pan (muis + touch)
 svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect(),k=e.deltaY>0?1.15:1/1.15;const s=Math.max(vb[2]/r.width,vb[3]/r.height);const mx=vb[0]+(e.clientX-r.left)*s,my=vb[1]+(e.clientY-r.top)*s;vb=[mx-(mx-vb[0])*k,my-(my-vb[1])*k,vb[2]*k,vb[3]*k];setVB()},{passive:false});
 let drag=null;svg.addEventListener('pointerdown',e=>drag=[e.clientX,e.clientY,vb[0],vb[1]]);window.addEventListener('pointerup',()=>drag=null);
