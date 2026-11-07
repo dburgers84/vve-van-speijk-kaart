@@ -40,7 +40,8 @@
       "id": {"$ref": "#/$defs/id"}, "model": {"enum": ["none", "nominal_scale", "similarity", "affine", "projective", "piecewise"]},
       "m_per_px_x": {"type": ["number", "null"], "exclusiveMinimum": 0}, "m_per_px_y": {"type": ["number", "null"], "exclusiveMinimum": 0},
       "uncertainty_m": {"type": ["number", "null"], "minimum": 0}, "uncertainty_status": {"enum": ["unknown", "estimated", "measured"]},
-      "status": {"enum": ["none", "nominal_unverified", "fitted_unreviewed", "verified"]}, "control_points": {"type": "array"}}},
+      "status": {"enum": ["none", "nominal_unverified", "fitted_unreviewed",
+            "controls_checked_one_axis", "verified"]}, "control_points": {"type": "array"}}},
     "frame": {"type": "object", "required": ["id", "source_id", "floor_id", "unit", "width_px", "height_px"], "properties": {
       "id": {"$ref": "#/$defs/id"}, "unit": {"const": "px_native"}, "width_px": {"type": "integer"}, "height_px": {"type": "integer"}, "calibration_ids": {"type": "array", "items": {"type": "string"}}}},
     "floor": {"type": "object", "required": ["id", "name", "level"], "properties": {"id": {"type": "string"}, "level": {"type": "integer"}}},

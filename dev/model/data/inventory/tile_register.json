@@ -3,10 +3,9 @@
  "generated_by": "model/tools/build_tile_register.py",
  "summary_status_per_floor": {
   "BG": {
-   "survey_reviewed": 12,
-   "traced_partial": 2,
-   "empty_auto": 3,
-   "auto_only": 7
+   "traced_semi_auto": 6,
+   "traced_semi_auto_with_unresolved": 9,
+   "survey_reviewed": 9
   },
   "1e": {
    "overview_reviewed": 20,
@@ -32,7 +31,7 @@
   "84": 21,
   "85": 9
  },
- "caveat": "Kolomkandidaten = detector (holle vierkanten ≥12 px), niet individueel gecontroleerd; bevat fout-positieven (letters/symbolen) en mist vage/rechthoekige kolommen.",
+ "caveat": "Kolomkandidaten = detector (holle vierkanten ≥12 px). Blad 81: per stuk visueel gecontroleerd (data/inventory/columns_review_p81.json: 247 kolomsymbool, 12 onzeker, 10 afgekeurd). Bladen 82-85: niet gecontroleerd.",
  "tiles": [
   {
    "tile": "p81_r0c0",
@@ -46,7 +45,7 @@
    ],
    "ink_fraction": 0.0277,
    "column_candidates_auto": 4,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -63,21 +62,27 @@
     "hatch_not_in_split": "present"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
     "common_core": "n/a",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
+    "wall": "traced_partial",
+    "column": "traced_partial",
     "stair": "n/a",
     "lift": "n/a",
-    "label": "to_trace",
+    "label": "traced_partial",
     "index_number": "n/a",
-    "hatch_not_in_split": "to_trace"
+    "hatch_not_in_split": "traced_partial"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "column": 4
+   },
+   "unresolved_objects": 0,
    "notes": "Legenda 'niet in de splitsing betrokken' (arcering); schaalbalk 0–10 m 'Schaal 1 a 200'; cm-liniaal 0–5 cm; label 'expeditie'; begin gearceerde bedrijfsruimte."
   },
   {
@@ -92,7 +97,7 @@
    ],
    "ink_fraction": 0.0126,
    "column_candidates_auto": 24,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto_with_unresolved",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -109,21 +114,30 @@
     "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
     "common_core": "n/a",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
+    "wall": "traced_partial",
+    "column": "traced_partial",
     "stair": "n/a",
     "lift": "n/a",
-    "label": "to_trace",
-    "index_number": "to_trace",
+    "label": "traced_partial",
+    "index_number": "traced_partial",
     "hatch_not_in_split": "n/a"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "wall_band": 5,
+    "commercial_unit": 3,
+    "unlabeled_space": 1,
+    "column": 23
+   },
+   "unresolved_objects": 1,
    "notes": "3x 'bedrijfs-ruimte'; grote 179; gevel met kolommen; tekst 'KPN, (EV)' aan rand."
   },
   {
@@ -138,7 +152,7 @@
    ],
    "ink_fraction": 0.0141,
    "column_candidates_auto": 24,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -155,21 +169,29 @@
     "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
-    "common_core": "to_trace",
+    "common_core": "traced_partial",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
+    "wall": "traced_partial",
+    "column": "traced_partial",
     "stair": "n/a",
     "lift": "n/a",
-    "label": "to_trace",
+    "label": "traced_partial",
     "index_number": "n/a",
     "hatch_not_in_split": "n/a"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "wall_band": 6,
+    "commercial_unit": 4,
+    "column": 24
+   },
+   "unresolved_objects": 0,
    "notes": "3x 'bedrijfs-ruimte'; straat 'HET DIEP'; 'flatkast' + 'GEM.' aan gevel; kolommen."
   },
   {
@@ -184,7 +206,7 @@
    ],
    "ink_fraction": 0.0185,
    "column_candidates_auto": 27,
-   "status": "traced_partial",
+   "status": "traced_semi_auto",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -216,8 +238,24 @@
     "hatch_not_in_split": "n/a"
    },
    "traced_regions": [
-    "reg_bg_kiel"
+    "reg_bg_kiel",
+    "reg_bg_seg"
    ],
+   "objects_by_kind": {
+    "container_room": 1,
+    "stair": 1,
+    "lift_shaft": 1,
+    "meter_cupboard_common": 1,
+    "entrance_hall": 1,
+    "commercial_unit": 7,
+    "lift_car_symbol": 1,
+    "stair_walkline_symbol": 1,
+    "facade_wall_double_line": 1,
+    "column": 28,
+    "facade_frame_strip": 1,
+    "wall_band": 6
+   },
+   "unresolved_objects": 0,
    "notes": "Straat 'DE KIEL'; 2x 179; 6+ 'bedrijfs-ruimte'; kern container/trap/lift/entree/180/flatkast; 'water, KPN, UPC'; gestippelde contour buiten gevel (betekenis onbekend)."
   },
   {
@@ -232,7 +270,7 @@
    ],
    "ink_fraction": 0.0435,
    "column_candidates_auto": 23,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto_with_unresolved",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -249,21 +287,36 @@
     "hatch_not_in_split": "present"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
-    "common_core": "to_trace",
+    "common_core": "traced_partial",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "traced_partial",
+    "lift": "traced_partial",
+    "label": "traced_partial",
+    "index_number": "traced_partial",
+    "hatch_not_in_split": "traced_partial"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "entrance_hall": 1,
+    "stair": 1,
+    "unlabeled_space": 1,
+    "hall": 1,
+    "lift_shaft": 1,
+    "commercial_unit": 5,
+    "wall_band": 3,
+    "container_room": 1,
+    "not_in_split_area": 1,
+    "column": 22
+   },
+   "unresolved_objects": 1,
    "notes": "Gearceerde bedrijfsruimte (niet in splitsing); kern entree/trap/hal/lift/containerruimte/180; 'flatkast', 'KPN & UPC'; 4x 'bedrijfs-ruimte'; straat 'DE BINNENLOOP'."
   },
   {
@@ -278,7 +331,7 @@
    ],
    "ink_fraction": 0.0183,
    "column_candidates_auto": 22,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto_with_unresolved",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -295,21 +348,32 @@
     "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
-    "common_core": "to_trace",
+    "common_core": "traced_partial",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
+    "wall": "traced_partial",
+    "column": "traced_partial",
     "stair": "n/a",
     "lift": "n/a",
-    "label": "to_trace",
+    "label": "traced_partial",
     "index_number": "n/a",
     "hatch_not_in_split": "n/a"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "commercial_unit": 2,
+    "wall_band": 2,
+    "unlabeled_space": 1,
+    "meter_cupboard_common": 1,
+    "commercial_multi_unresolved": 1,
+    "column": 21
+   },
+   "unresolved_objects": 2,
    "notes": "'bedrijfs-ruimte' x5; 'HET HAVENPLEIN'; kernfragment 'CVZ kast', 'GEM.', 'flatkast', 'UPC, water'; gestippeld element met 2 kolommen."
   },
   {
@@ -324,7 +388,7 @@
    ],
    "ink_fraction": 0.0103,
    "column_candidates_auto": 15,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto_with_unresolved",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -341,21 +405,36 @@
     "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
-    "common_core": "to_trace",
+    "common_core": "traced_partial",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "traced_partial",
+    "lift": "traced_partial",
+    "label": "traced_partial",
+    "index_number": "traced_partial",
     "hatch_not_in_split": "n/a"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "entrance_hall": 1,
+    "lift_shaft": 1,
+    "unlabeled_space": 3,
+    "unresolved_space": 1,
+    "stair": 1,
+    "wall_band": 3,
+    "commercial_large_region_unresolved": 1,
+    "container_room": 1,
+    "technical_room": 2,
+    "column": 15
+   },
+   "unresolved_objects": 5,
    "notes": "Kern linksboven entree/trap/lift/180; kleine kern containerruimte/180/LS-ruimte/trafo ruimte/trap; 179; kolomraster."
   },
   {
@@ -370,6 +449,459 @@
    ],
    "ink_fraction": 0.0032,
    "column_candidates_auto": 2,
+   "status": "traced_semi_auto",
+   "types": {
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "not_observed",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "n/a",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "column": 2
+   },
+   "unresolved_objects": 0,
+   "notes": "Lege marge + vouw; alleen kaderlijn."
+  },
+  {
+   "tile": "p81_r2c0",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    0,
+    3600,
+    1800,
+    5400
+   ],
+   "ink_fraction": 0.0158,
+   "column_candidates_auto": 30,
+   "status": "traced_semi_auto_with_unresolved",
+   "types": {
+    "commercial": "present",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "present",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "present",
+    "column": "present",
+    "stair": "present",
+    "lift": "present",
+    "label": "present",
+    "index_number": "present",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "traced_partial",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "traced_partial",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "traced_partial",
+    "lift": "traced_partial",
+    "label": "traced_partial",
+    "index_number": "traced_partial",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [
+    "reg_bg_core",
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "entrance_hall": 1,
+    "stair": 2,
+    "unknown": 3,
+    "meter_cupboard_common": 1,
+    "hall": 1,
+    "lift_shaft": 1,
+    "container_room": 1,
+    "gas_meter_cupboards": 1,
+    "sprinkler_room": 1,
+    "transformer_room": 1,
+    "low_voltage_room": 1,
+    "facade_wall": 1,
+    "lift_car_symbol": 1,
+    "stair_walkline_symbol": 1,
+    "facade_frame_strip": 2,
+    "stair_symbol_line": 1,
+    "column": 30,
+    "wall_band": 5,
+    "commercial_unit": 3,
+    "commercial_multi_unresolved": 1,
+    "unlabeled_space": 2,
+    "service_corridor": 1
+   },
+   "unresolved_objects": 6,
+   "notes": "Pilotkern Schans-zijde getraceerd (reg_bg_core); grote bedrijfsruimte erboven nog niet; 'DE SCHANS'."
+  },
+  {
+   "tile": "p81_r2c1",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    1800,
+    3600,
+    3600,
+    5400
+   ],
+   "ink_fraction": 0.0154,
+   "column_candidates_auto": 38,
+   "status": "traced_semi_auto",
+   "types": {
+    "commercial": "present",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "present",
+    "wall": "present",
+    "column": "present",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "traced_partial",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "traced_partial",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "traced_partial",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "wall_band": 1,
+    "commercial_unit": 8,
+    "column": 38
+   },
+   "unresolved_objects": 0,
+   "notes": "6+ 'bedrijfs-ruimte'; passage 'DE RELING' met gestippelde lijnen (overkapping?); kolommen in gevels."
+  },
+  {
+   "tile": "p81_r2c2",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    3600,
+    3600,
+    5400,
+    5400
+   ],
+   "ink_fraction": 0.0058,
+   "column_candidates_auto": 14,
+   "status": "traced_semi_auto_with_unresolved",
+   "types": {
+    "commercial": "present",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "present",
+    "column": "present",
+    "stair": "present",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "traced_partial",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "traced_partial",
+    "lift": "n/a",
+    "label": "traced_partial",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "wall_band": 4,
+    "commercial_large_region_unresolved": 1,
+    "unlabeled_space": 3,
+    "stair": 1,
+    "service_corridor": 1,
+    "column": 14
+   },
+   "unresolved_objects": 4,
+   "notes": "'expeditie gang'; strook met label 'trap' + looppijl + snijlijn langs de expeditiegang. CORRECTIE fase 3: de eerder als 'treden' gelezen streepjes zijn korte dwarsstreepjes op de lijnen (komen op veel wanden voor, betekenis niet in legenda) — GEEN traptreden. Noordpijl niet in deze tile; 'HET DIEP'; kolommen."
+  },
+  {
+   "tile": "p81_r2c3",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    5400,
+    3600,
+    7118,
+    5400
+   ],
+   "ink_fraction": 0.0026,
+   "column_candidates_auto": 0,
+   "status": "survey_reviewed",
+   "types": {
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "to_trace",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): geen bebouwing; straatnaam 'HET DIEP' en noordpijl ('Noord') rond x≈6150,y≈4990."
+  },
+  {
+   "tile": "p81_r3c0",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    0,
+    5400,
+    1800,
+    7200
+   ],
+   "ink_fraction": 0.0118,
+   "column_candidates_auto": 25,
+   "status": "traced_semi_auto_with_unresolved",
+   "types": {
+    "commercial": "present",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "present",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "present",
+    "column": "present",
+    "stair": "present",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "traced_partial",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "traced_partial",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "traced_partial",
+    "lift": "n/a",
+    "label": "traced_partial",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "technical_room": 2,
+    "wall_band": 6,
+    "stair": 1,
+    "cross_marked_cell": 1,
+    "commercial_multi_unresolved": 1,
+    "commercial_large_region_unresolved": 1,
+    "commercial_unit": 2,
+    "column": 24
+   },
+   "unresolved_objects": 3,
+   "notes": "'GEM.', 'trafo ruimte', 'LS-ruimte', 'expeditie', 'E-kast', 'hydrofoor', trap met kruisvak; 2x 'bedrijfs-ruimte'; kolomraster."
+  },
+  {
+   "tile": "p81_r3c1",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    1800,
+    5400,
+    3600,
+    7200
+   ],
+   "ink_fraction": 0.0265,
+   "column_candidates_auto": 10,
+   "status": "traced_semi_auto_with_unresolved",
+   "types": {
+    "commercial": "present",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "present",
+    "column": "present",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "present"
+   },
+   "work": {
+    "commercial": "traced_partial",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "traced_partial",
+    "index_number": "n/a",
+    "hatch_not_in_split": "traced_partial"
+   },
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "unlabeled_space": 1,
+    "commercial_unit": 6,
+    "not_in_split_area": 1,
+    "column": 9
+   },
+   "unresolved_objects": 1,
+   "notes": "5+ 'bedrijfs-ruimte'; 2 gearceerde bedrijfsruimten (niet in splitsing); 'expeditie'; 'RELING'."
+  },
+  {
+   "tile": "p81_r3c2",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    3600,
+    5400,
+    5400,
+    7200
+   ],
+   "ink_fraction": 0.0038,
+   "column_candidates_auto": 1,
+   "status": "traced_semi_auto",
+   "types": {
+    "commercial": "present",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "present",
+    "wall": "present",
+    "column": "present",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
+   },
+   "work": {
+    "commercial": "traced_partial",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "traced_partial",
+    "wall": "traced_partial",
+    "column": "traced_partial",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "traced_partial",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
+   },
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "wall_band": 2,
+    "service_corridor": 1,
+    "column": 1
+   },
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): oostgevel blok tot x≈3910 met expeditie gang (onderaan); klein vak/kastje aan gevel bij y≈6060-6100 met onleesbare tekst; legenda-arcering 'niet in de splitsing betrokken' onderaan; verder leeg."
+  },
+  {
+   "tile": "p81_r3c3",
+   "page": 81,
+   "floor": "BG",
+   "box_px": [
+    5400,
+    5400,
+    7118,
+    7200
+   ],
+   "ink_fraction": 0.0003,
+   "column_candidates_auto": 0,
    "status": "survey_reviewed",
    "types": {
     "commercial": "not_observed",
@@ -402,377 +934,9 @@
     "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Lege marge + vouw; alleen kaderlijn."
-  },
-  {
-   "tile": "p81_r2c0",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    0,
-    3600,
-    1800,
-    5400
-   ],
-   "ink_fraction": 0.0158,
-   "column_candidates_auto": 30,
-   "status": "traced_partial",
-   "types": {
-    "commercial": "present",
-    "dwelling": "not_observed",
-    "storage": "not_observed",
-    "common_core": "present",
-    "roof": "not_observed",
-    "path_gallery": "not_observed",
-    "wall": "present",
-    "column": "present",
-    "stair": "present",
-    "lift": "present",
-    "label": "present",
-    "index_number": "present",
-    "hatch_not_in_split": "not_observed"
-   },
-   "work": {
-    "commercial": "traced_partial",
-    "dwelling": "n/a",
-    "storage": "n/a",
-    "common_core": "traced_partial",
-    "roof": "n/a",
-    "path_gallery": "n/a",
-    "wall": "traced_partial",
-    "column": "traced_partial",
-    "stair": "traced_partial",
-    "lift": "traced_partial",
-    "label": "traced_partial",
-    "index_number": "traced_partial",
-    "hatch_not_in_split": "n/a"
-   },
-   "traced_regions": [
-    "reg_bg_core"
-   ],
-   "notes": "Pilotkern Schans-zijde getraceerd (reg_bg_core); grote bedrijfsruimte erboven nog niet; 'DE SCHANS'."
-  },
-  {
-   "tile": "p81_r2c1",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    1800,
-    3600,
-    3600,
-    5400
-   ],
-   "ink_fraction": 0.0154,
-   "column_candidates_auto": 38,
-   "status": "survey_reviewed",
-   "types": {
-    "commercial": "present",
-    "dwelling": "not_observed",
-    "storage": "not_observed",
-    "common_core": "not_observed",
-    "roof": "not_observed",
-    "path_gallery": "present",
-    "wall": "present",
-    "column": "present",
-    "stair": "not_observed",
-    "lift": "not_observed",
-    "label": "present",
-    "index_number": "not_observed",
-    "hatch_not_in_split": "not_observed"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "n/a",
-    "storage": "n/a",
-    "common_core": "n/a",
-    "roof": "n/a",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "n/a",
-    "lift": "n/a",
-    "label": "to_trace",
-    "index_number": "n/a",
-    "hatch_not_in_split": "n/a"
-   },
-   "traced_regions": [],
-   "notes": "6+ 'bedrijfs-ruimte'; passage 'DE RELING' met gestippelde lijnen (overkapping?); kolommen in gevels."
-  },
-  {
-   "tile": "p81_r2c2",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    3600,
-    3600,
-    5400,
-    5400
-   ],
-   "ink_fraction": 0.0058,
-   "column_candidates_auto": 14,
-   "status": "survey_reviewed",
-   "types": {
-    "commercial": "present",
-    "dwelling": "not_observed",
-    "storage": "not_observed",
-    "common_core": "not_observed",
-    "roof": "not_observed",
-    "path_gallery": "not_observed",
-    "wall": "present",
-    "column": "present",
-    "stair": "present",
-    "lift": "not_observed",
-    "label": "present",
-    "index_number": "not_observed",
-    "hatch_not_in_split": "not_observed"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "n/a",
-    "storage": "n/a",
-    "common_core": "n/a",
-    "roof": "n/a",
-    "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "n/a",
-    "label": "to_trace",
-    "index_number": "n/a",
-    "hatch_not_in_split": "n/a"
-   },
-   "traced_regions": [],
-   "notes": "'expeditie gang'; buitentrap met getekende treden (streepjes) bij expeditie; 'HET DIEP'; kolommen."
-  },
-  {
-   "tile": "p81_r2c3",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    5400,
-    3600,
-    7118,
-    5400
-   ],
-   "ink_fraction": 0.0026,
-   "column_candidates_auto": 0,
-   "status": "empty_auto",
-   "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
-   },
-   "traced_regions": [],
-   "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
-  },
-  {
-   "tile": "p81_r3c0",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    0,
-    5400,
-    1800,
-    7200
-   ],
-   "ink_fraction": 0.0118,
-   "column_candidates_auto": 25,
-   "status": "survey_reviewed",
-   "types": {
-    "commercial": "present",
-    "dwelling": "not_observed",
-    "storage": "not_observed",
-    "common_core": "present",
-    "roof": "not_observed",
-    "path_gallery": "not_observed",
-    "wall": "present",
-    "column": "present",
-    "stair": "present",
-    "lift": "not_observed",
-    "label": "present",
-    "index_number": "not_observed",
-    "hatch_not_in_split": "not_observed"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "n/a",
-    "storage": "n/a",
-    "common_core": "to_trace",
-    "roof": "n/a",
-    "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "n/a",
-    "label": "to_trace",
-    "index_number": "n/a",
-    "hatch_not_in_split": "n/a"
-   },
-   "traced_regions": [],
-   "notes": "'GEM.', 'trafo ruimte', 'LS-ruimte', 'expeditie', 'E-kast', 'hydrofoor', trap met kruisvak; 2x 'bedrijfs-ruimte'; kolomraster."
-  },
-  {
-   "tile": "p81_r3c1",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    1800,
-    5400,
-    3600,
-    7200
-   ],
-   "ink_fraction": 0.0265,
-   "column_candidates_auto": 10,
-   "status": "survey_reviewed",
-   "types": {
-    "commercial": "present",
-    "dwelling": "not_observed",
-    "storage": "not_observed",
-    "common_core": "not_observed",
-    "roof": "not_observed",
-    "path_gallery": "not_observed",
-    "wall": "present",
-    "column": "present",
-    "stair": "not_observed",
-    "lift": "not_observed",
-    "label": "present",
-    "index_number": "not_observed",
-    "hatch_not_in_split": "present"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "n/a",
-    "storage": "n/a",
-    "common_core": "n/a",
-    "roof": "n/a",
-    "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "n/a",
-    "lift": "n/a",
-    "label": "to_trace",
-    "index_number": "n/a",
-    "hatch_not_in_split": "to_trace"
-   },
-   "traced_regions": [],
-   "notes": "5+ 'bedrijfs-ruimte'; 2 gearceerde bedrijfsruimten (niet in splitsing); 'expeditie'; 'RELING'."
-  },
-  {
-   "tile": "p81_r3c2",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    3600,
-    5400,
-    5400,
-    7200
-   ],
-   "ink_fraction": 0.0038,
-   "column_candidates_auto": 1,
-   "status": "auto_only",
-   "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
-   },
-   "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
-  },
-  {
-   "tile": "p81_r3c3",
-   "page": 81,
-   "floor": "BG",
-   "box_px": [
-    5400,
-    5400,
-    7118,
-    7200
-   ],
-   "ink_fraction": 0.0003,
-   "column_candidates_auto": 0,
-   "status": "empty_auto",
-   "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
-   },
-   "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
-   },
-   "traced_regions": [],
-   "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): leeg."
   },
   {
    "tile": "p81_r4c0",
@@ -786,7 +950,7 @@
    ],
    "ink_fraction": 0.0141,
    "column_candidates_auto": 5,
-   "status": "survey_reviewed",
+   "status": "traced_semi_auto_with_unresolved",
    "types": {
     "commercial": "present",
     "dwelling": "not_observed",
@@ -803,21 +967,29 @@
     "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
+    "commercial": "traced_partial",
     "dwelling": "n/a",
     "storage": "n/a",
     "common_core": "n/a",
     "roof": "n/a",
     "path_gallery": "n/a",
-    "wall": "to_trace",
-    "column": "to_trace",
+    "wall": "traced_partial",
+    "column": "traced_partial",
     "stair": "n/a",
     "lift": "n/a",
-    "label": "to_trace",
+    "label": "traced_partial",
     "index_number": "n/a",
     "hatch_not_in_split": "n/a"
    },
-   "traced_regions": [],
+   "traced_regions": [
+    "reg_bg_seg"
+   ],
+   "objects_by_kind": {
+    "round_element_part": 2,
+    "passage_or_overhang_unresolved": 1,
+    "column": 5
+   },
+   "unresolved_objects": 1,
    "notes": "Planonderkant 'DE KAJUIT', rond element op hoek (betekenis onbekend); titelblok begint (A-2, legenda 'Gemeenschappelijk [X] kanalen', notarisgegevens: niet overnemen)."
   },
   {
@@ -832,39 +1004,41 @@
    ],
    "ink_fraction": 0.008,
    "column_candidates_auto": 0,
-   "status": "auto_only",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "present"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
     "label": "to_trace",
-    "index_number": "to_trace",
+    "index_number": "n/a",
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): oosteinde strook 'DE KAJUIT', onderkant arcering; titelblok/legenda (persoons- en notarisgegevens: niet overgenomen)."
   },
   {
    "tile": "p81_r4c2",
@@ -878,39 +1052,41 @@
    ],
    "ink_fraction": 0.0041,
    "column_candidates_auto": 0,
-   "status": "auto_only",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "present",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
     "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): legenda 'niet in de splitsing betrokken' en begin SITUATIE-inzet 1:1000 (niet gebruikt)."
   },
   {
    "tile": "p81_r4c3",
@@ -924,39 +1100,41 @@
    ],
    "ink_fraction": 0.0011,
    "column_candidates_auto": 0,
-   "status": "empty_auto",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "not_observed",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "n/a",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): leeg op een stempel na (niet overgenomen)."
   },
   {
    "tile": "p81_r5c0",
@@ -970,39 +1148,41 @@
    ],
    "ink_fraction": 0.0293,
    "column_candidates_auto": 5,
-   "status": "auto_only",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "not_observed",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "n/a",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): titelblok (projectgegevens, handtekeningen/stempels: niet overgenomen). Geen plan."
   },
   {
    "tile": "p81_r5c1",
@@ -1016,39 +1196,41 @@
    ],
    "ink_fraction": 0.007,
    "column_candidates_auto": 0,
-   "status": "auto_only",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "not_observed",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "n/a",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): titelblok/legendadeel, geen plan."
   },
   {
    "tile": "p81_r5c2",
@@ -1062,39 +1244,41 @@
    ],
    "ink_fraction": 0.0053,
    "column_candidates_auto": 0,
-   "status": "auto_only",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "not_observed",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "n/a",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): SITUATIE-inzet 1:1000 (niet gebruikt voor geometrie)."
   },
   {
    "tile": "p81_r5c3",
@@ -1108,39 +1292,41 @@
    ],
    "ink_fraction": 0.0031,
    "column_candidates_auto": 0,
-   "status": "auto_only",
+   "status": "survey_reviewed",
    "types": {
-    "commercial": "unknown",
-    "dwelling": "unknown",
-    "storage": "unknown",
-    "common_core": "unknown",
-    "roof": "unknown",
-    "path_gallery": "unknown",
-    "wall": "unknown",
-    "column": "unknown",
-    "stair": "unknown",
-    "lift": "unknown",
-    "label": "unknown",
-    "index_number": "unknown",
-    "hatch_not_in_split": "unknown"
+    "commercial": "not_observed",
+    "dwelling": "not_observed",
+    "storage": "not_observed",
+    "common_core": "not_observed",
+    "roof": "not_observed",
+    "path_gallery": "not_observed",
+    "wall": "not_observed",
+    "column": "not_observed",
+    "stair": "not_observed",
+    "lift": "not_observed",
+    "label": "not_observed",
+    "index_number": "not_observed",
+    "hatch_not_in_split": "not_observed"
    },
    "work": {
-    "commercial": "to_trace",
-    "dwelling": "to_trace",
-    "storage": "to_trace",
-    "common_core": "to_trace",
-    "roof": "to_trace",
-    "path_gallery": "to_trace",
-    "wall": "to_trace",
-    "column": "to_trace",
-    "stair": "to_trace",
-    "lift": "to_trace",
-    "label": "to_trace",
-    "index_number": "to_trace",
-    "hatch_not_in_split": "to_trace"
+    "commercial": "n/a",
+    "dwelling": "n/a",
+    "storage": "n/a",
+    "common_core": "n/a",
+    "roof": "n/a",
+    "path_gallery": "n/a",
+    "wall": "n/a",
+    "column": "n/a",
+    "stair": "n/a",
+    "lift": "n/a",
+    "label": "n/a",
+    "index_number": "n/a",
+    "hatch_not_in_split": "n/a"
    },
    "traced_regions": [],
-   "notes": "Niet visueel per tile bekeken (o.a. titelblok/situatie-inzet 1:1000 onderaan blad)."
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
+   "notes": "Visueel (fase 3): handtekening/stempel, geen plan (niet overgenomen)."
   },
   {
    "tile": "p82_r0c0",
@@ -1186,6 +1372,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1232,6 +1420,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1278,6 +1468,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1324,6 +1516,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1370,6 +1564,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1416,6 +1612,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1462,6 +1660,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1508,6 +1708,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1554,6 +1756,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1600,6 +1804,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1646,6 +1852,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1692,6 +1900,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -1738,6 +1948,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1784,6 +1996,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1830,6 +2044,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -1876,6 +2092,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -1922,6 +2140,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -1968,6 +2188,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -2014,6 +2236,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -2060,6 +2284,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -2106,6 +2332,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -2152,6 +2380,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -2198,6 +2428,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -2244,6 +2476,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (1/7x) bekeken: woningen met indexnummers (o.a. 181–215, 226–229, 238–240, 248–251 zichtbaar), bergingblokken (vele kleine genummerde vakjes), 179-zones (installatie/bedrijfsdak), gearceerd 'niet in de splitsing', kolommen, galerijen/paden, 'Bouwnr.'-teksten. Niet per tile gereviewd."
   },
   {
@@ -2290,6 +2524,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2336,6 +2572,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2382,6 +2620,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2428,6 +2668,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2474,6 +2716,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2520,6 +2764,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2566,6 +2812,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2612,6 +2860,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -2658,6 +2908,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2704,6 +2956,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2750,6 +3004,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2796,6 +3052,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -2842,6 +3100,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2888,6 +3148,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -2934,6 +3196,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -2980,6 +3244,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -3026,6 +3292,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3072,6 +3340,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3118,6 +3388,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3164,6 +3436,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -3210,6 +3484,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3256,6 +3532,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3302,6 +3580,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3348,6 +3628,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 183–184, 194–197, 200–201, 206–207, 216–225, 230–237, 241–245, 252–255), dakvlakken met 179 + 'indicatieve installatiezone', gearceerd deel. Niet per tile gereviewd."
   },
   {
@@ -3394,6 +3676,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3440,6 +3724,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3486,6 +3772,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -3532,6 +3820,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3578,6 +3868,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3624,6 +3916,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3670,6 +3964,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3716,6 +4012,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -3762,6 +4060,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3808,6 +4108,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3854,6 +4156,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -3900,6 +4204,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -3946,6 +4252,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -3992,6 +4300,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4038,6 +4348,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4084,6 +4396,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4130,6 +4444,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -4176,6 +4492,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -4222,6 +4540,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4268,6 +4588,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4314,6 +4636,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -4360,6 +4684,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -4406,6 +4732,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -4452,6 +4780,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht: woningen (o.a. 216–225, 230–237, 246–247, 256–259), dakvlakken/installatiezones, 179. Niet per tile gereviewd."
   },
   {
@@ -4498,6 +4828,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4544,6 +4876,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4590,6 +4924,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4636,6 +4972,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -4682,6 +5020,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -4728,6 +5068,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -4774,6 +5116,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -4820,6 +5164,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -4866,6 +5212,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -4912,6 +5260,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -4958,6 +5308,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -5004,6 +5356,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -5050,6 +5404,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5096,6 +5452,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -5142,6 +5500,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5188,6 +5548,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -5234,6 +5596,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5280,6 +5644,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5326,6 +5692,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -5372,6 +5740,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Inktfractie <0,3%: waarschijnlijk leeg/marge (niet visueel bevestigd)."
   },
   {
@@ -5418,6 +5788,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5464,6 +5836,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5510,6 +5884,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   },
   {
@@ -5556,6 +5932,8 @@
     "hatch_not_in_split": "to_trace"
    },
    "traced_regions": [],
+   "objects_by_kind": {},
+   "unresolved_objects": 0,
    "notes": "Pagina-overzicht (4e + daken): woningen 256–259, dakvlakken met 'indicatieve installatiezone', 179, tweede schaalbalk 'Daken 1:200'. Niet per tile gereviewd."
   }
  ]

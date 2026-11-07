@@ -80,6 +80,45 @@ def _on_segment_interior(p, a, b, tol=0.5):
     return d <= tol
 
 
+def _bbox_hit(P, Q):
+    return not (max(p[0] for p in P) <= min(q[0] for q in Q) or max(q[0] for q in Q) <= min(p[0] for p in P)
+                or max(p[1] for p in P) <= min(q[1] for q in Q) or max(q[1] for q in Q) <= min(p[1] for p in P))
+
+
+def _seg_cross(a, b, c, d):
+    def o(p, q, r):
+        v = (q[0] - p[0]) * (r[1] - q[1]) - (q[1] - p[1]) * (r[0] - q[0])
+        return (v > 1e-9) - (v < -1e-9)
+    return o(a, b, c) * o(a, b, d) < 0 and o(c, d, a) * o(c, d, b) < 0
+
+
+def _edges_cross(P, Q):
+    qb = [(Q[j], Q[(j + 1) % len(Q)]) for j in range(len(Q))]
+    for i in range(len(P)):
+        a, b = P[i], P[(i + 1) % len(P)]
+        for c, d in qb:
+            if max(a[0], b[0]) < min(c[0], d[0]) or max(c[0], d[0]) < min(a[0], b[0]) or \
+               max(a[1], b[1]) < min(c[1], d[1]) or max(c[1], d[1]) < min(a[1], b[1]):
+                continue
+            if _seg_cross(a, b, c, d):
+                return True
+    return False
+
+
+def _interior_pt(P):
+    """Punt binnen polygon: midden van de langste horizontale doorsnede op y=midden bbox."""
+    ys = sorted(p[1] for p in P)
+    y = (ys[0] + ys[-1]) / 2 + 0.37
+    xs = []
+    for i in range(len(P)):
+        (x1, y1), (x2, y2) = P[i], P[(i + 1) % len(P)]
+        if (y1 > y) != (y2 > y):
+            xs.append(x1 + (y - y1) * (x2 - x1) / (y2 - y1))
+    xs.sort()
+    best = max(((xs[k + 1] - xs[k], (xs[k] + xs[k + 1]) / 2) for k in range(0, len(xs) - 1, 2)), default=(0, P[0][0]))
+    return (best[1], y)
+
+
 def _poly_overlap_area(P, Q, step=2.0):
     """Ruwe overlap-schatting via raster-sampling op de doorsnede van bboxen (px)."""
     minx = max(min(p[0] for p in P), min(q[0] for q in Q))
@@ -164,8 +203,19 @@ def validate(d):
     for c in d["calibrations"]:
         if c["frame_id"] not in frm:
             r.err(f"kalibratie {c['id']}: onbekend frame {c['frame_id']}")
-        if c.get("uncertainty_m") is None and c.get("uncertainty_status") != "unknown":
-            r.err(f"kalibratie {c['id']}: uncertainty_m null vereist uncertainty_status 'unknown'")
+        if c.get("uncertainty_m") is None and c.get("uncertainty_status") != "unknown" and not c.get("rel_uncertainty"):
+            r.err(f"kalibratie {c['id']}: uncertainty_m null vereist uncertainty_status 'unknown' (of rel_uncertainty)")
+        if c.get("status") == "controls_checked_one_axis":
+            if len(c.get("control_points") or []) < 2:
+                r.err(f"kalibratie {c['id']}: controle zonder minstens 2 control_points")
+            ax = c.get("axis_status") or {}
+            if not ax:
+                r.err(f"kalibratie {c['id']}: axis_status vereist")
+            if all(str(v).startswith("checked") for v in ax.values()):
+                r.err(f"kalibratie {c['id']}: 'one_axis' maar beide assen als gecontroleerd opgegeven")
+            ru = c.get("rel_uncertainty") or {}
+            if not (ru.get("x", 0) > 0 and ru.get("y", 0) > 0):
+                r.err(f"kalibratie {c['id']}: rel_uncertainty x/y > 0 vereist")
         if c.get("status") == "verified" and not c.get("control_points"):
             r.err(f"kalibratie {c['id']}: 'verified' zonder control_points")
         if c.get("status") == "nominal_unverified" and c.get("uncertainty_m") is not None:
@@ -239,6 +289,15 @@ def validate(d):
             if c.get("status") in ("nominal_unverified", "none"):
                 if dm.get("uncertainty_m") is not None:
                     r.err(f"edge {e['id']}: nominale kalibratie kan geen uncertainty_m onderbouwen (fictieve exactheid)")
+            elif c.get("rel_uncertainty"):
+                if dm.get("uncertainty_m") is None:
+                    r.err(f"edge {e['id']}: gecontroleerde kalibratie vereist uncertainty_m (geen schijnexactheid)")
+                else:
+                    (x1, y1), (x2, y2) = P[a], P[b]
+                    ru = c["rel_uncertainty"]
+                    umin = math.hypot((x2 - x1) * c["m_per_px_x"] * ru["x"], (y2 - y1) * c["m_per_px_y"] * ru["y"])
+                    if dm["uncertainty_m"] + 0.006 < umin:
+                        r.err(f"edge {e['id']}: uncertainty_m {dm['uncertainty_m']} kleiner dan schaalonzekerheid {umin:.3f}")
         elif st == "source":
             if not dm.get("source_text") or not dm.get("source_ref"):
                 r.err(f"edge {e['id']}: source-maat vereist source_text en source_ref")
@@ -326,6 +385,10 @@ def validate(d):
             fa, pa = space_polys[ids[i]]
             fb, pb = space_polys[ids[j]]
             if fa != fb or len(pa) < 3 or len(pb) < 3:
+                continue
+            if not _bbox_hit(pa, pb):
+                continue
+            if not (_edges_cross(pa, pb) or _point_in_poly(_interior_pt(pa), pb) or _point_in_poly(_interior_pt(pb), pa)):
                 continue
             ov = _poly_overlap_area(pa, pb)
             if ov > 16:  # >16 px² ~ 0.01 m² nominaal
