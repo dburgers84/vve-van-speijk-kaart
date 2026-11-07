@@ -129,7 +129,7 @@ def validate(d):
 
     # ---- ids
     seen = {}
-    for coll in ["sources", "calibrations", "frames", "objects", "vertices", "edges", "labels", "connections", "legal_splits"]:
+    for coll in ["sources", "calibrations", "frames", "regions", "reference_overlays", "objects", "vertices", "edges", "labels", "connections", "legal_splits"]:
         for it in d.get(coll, []):
             i = it.get("id")
             if not isinstance(i, str) or not ID_RE.match(i):
@@ -148,6 +148,14 @@ def validate(d):
     L = {l["id"]: l for l in d["labels"]}
     S = {s["id"]: s for s in d["legal_splits"]}
 
+    for ov in d.get("reference_overlays", []):
+        if ov["frame_id"] not in frm:
+            r.err(f"overlay {ov['id']}: onbekend frame")
+        if ov.get("public") and not str(ov.get("image", "")).startswith("img/plan_"):
+            r.err(f"overlay {ov['id']}: publieke overlay alleen uit reeds gepubliceerde img/plan_*.jpg")
+    for o in d["objects"]:
+        if o.get("region_id") and o["region_id"] not in {g["id"] for g in d.get("regions", [])}:
+            r.err(f"object {o['id']}: onbekende regio {o['region_id']}")
     # ---- sources/privacy
     for s in d["sources"]:
         if s.get("privacy_class") != "public" and s.get("publish_native_raster"):
@@ -168,7 +176,7 @@ def validate(d):
             r.err(f"frame {f['id']}: onbekende bron")
         if f["floor_id"] not in flr:
             r.err(f"frame {f['id']}: onbekende verdieping {f['floor_id']}")
-        sw, sh = src.get(f["source_id"], {}).get("native_size_px", [None, None])
+        sw, sh = (src.get(f["source_id"], {}).get("native_size_px") or [None, None])
         if (sw, sh) != (f["width_px"], f["height_px"]):
             r.err(f"frame {f['id']}: afmeting wijkt af van bron native_size_px")
         for ci in f.get("calibration_ids", []):
@@ -298,10 +306,15 @@ def validate(d):
     for eid in E:
         if eid not in edge_users:
             r.warn(f"edge {eid} wordt door geen polygon gebruikt")
-    # T-knopen
+    # T-knopen (alleen tussen ruimte-vertices en ruimte-randen; elementen mogen op wanden liggen)
+    space_v = {v for o in d["objects"] if o["class"] == "space" for r in o["geometry"]["rings"] for v in r}
+    space_e = {e for o in d["objects"] if o["class"] == "space" for e in o["edge_ids"]}
     for eid, e in E.items():
+        if eid not in space_e:
+            continue
         a, b = e["v"]
-        for vid, p in P.items():
+        for vid in space_v:
+            p = P[vid]
             if vid in (a, b) or V[vid]["frame_id"] != e["frame_id"]:
                 continue
             if _on_segment_interior(p, P[a], P[b]):
@@ -329,8 +342,15 @@ def validate(d):
             r.err(f"label {l['id']}: ongeldige bbox")
         if l.get("literal_text") is None and l.get("certainty") == "source":
             r.err(f"label {l['id']}: onleesbaar label kan geen certainty 'source' hebben")
+    # ---- hedendaags gebruik gescheiden van bronlabel
+    for o in d["objects"]:
+        cu = o.get("current_use")
+        if cu is not None and (not cu.get("value") or not cu.get("source") or cu.get("certainty") == "source"):
+            r.err(f"object {o['id']}: current_use vereist value+source en is nooit 'source' (bronlabel staat apart)")
     # ---- connections
     for c in d["connections"]:
+        if c["kind"] == "door" and not c.get("door_leaf_drawn"):
+            r.err(f"verbinding {c['id']}: 'door' alleen bij getekend deurblad/draaicirkel; gebruik opening(_candidate)")
         for oi in c["connects"]:
             if oi not in O and oi != "exterior":
                 r.err(f"verbinding {c['id']}: onbekend object {oi}")
@@ -352,6 +372,11 @@ def validate(d):
         if m["split_id"] not in S:
             r.err(f"membership: onbekende split {m['split_id']}")
         elif m["relation"] != "unknown":
+            rights = {x["id"] for x in S[m["split_id"]].get("rights", [])}
+            if m.get("right_id") and m["right_id"] not in rights:
+                r.err(f"membership {m['object_id']}: onbekend recht {m['right_id']} in {m['split_id']}")
+            if m.get("evidence") and m["evidence"].get("source_id") not in src:
+                r.err(f"membership {m['object_id']}: evidence verwijst naar onbekende bron")
             if not m.get("evidence"):
                 r.err(f"membership {m['object_id']}->{m['split_id']}: relation zonder evidence")
             if S[m["split_id"]]["boundary_status"] == "unknown" and m.get("certainty") in ("source",):

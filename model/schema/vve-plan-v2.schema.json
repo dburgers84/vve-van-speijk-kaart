@@ -10,6 +10,8 @@
     "schema_version": {"type": "string", "pattern": "^vve-plan/2\\.\\d+\\.\\d+$"},
     "dataset_version": {"type": "string"},
     "generated": {"type": "string"},
+    "regions": {"type": "array", "items": {"type": "object", "required": ["id", "name", "region_px", "floor_id"]}},
+    "reference_overlays": {"type": "array", "items": {"type": "object", "required": ["id", "frame_id", "image", "public", "image_to_native_affine"], "properties": {"public": {"type": "boolean"}}}},
     "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
     "calibrations": {"type": "array", "items": {"$ref": "#/$defs/calibration"}},
     "frames": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/frame"}},
@@ -30,7 +32,7 @@
     "id": {"type": "string", "pattern": "^[a-z][a-z0-9]*(_[A-Za-z0-9]+)+$"},
     "certainty": {"enum": ["source", "probable", "uncertain", "unresolved", "unknown", "source_label_context"]},
     "evidence": {"type": ["object", "null"], "required": ["source_id", "method"], "properties": {"source_id": {"type": "string"}, "method": {"type": "string"}, "note": {"type": "string"}}},
-    "source": {"type": "object", "required": ["id", "page", "native_size_px", "privacy_class", "publish_native_raster"], "properties": {
+    "source": {"type": "object", "required": ["id", "page", "privacy_class", "publish_native_raster"], "properties": {
       "id": {"$ref": "#/$defs/id"}, "page": {"type": "integer"}, "native_size_px": {"type": "array", "items": {"type": "integer", "minimum": 1}, "minItems": 2, "maxItems": 2},
       "scan_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}, "pdf_extract_sha256": {"type": ["string", "null"]},
       "privacy_class": {"enum": ["public", "private_deed_drawing", "private_personal_data"]}, "publish_native_raster": {"type": "boolean"}}},
@@ -52,11 +54,13 @@
       "method": {"type": ["string", "null"]}, "calibration_ref": {"type": ["string", "null"]}, "source_text": {"type": ["string", "null"]}, "source_ref": {"type": ["object", "string", "null"]}}},
     "edge": {"type": "object", "required": ["id", "frame_id", "floor_id", "v", "role", "dimension"], "properties": {
       "id": {"$ref": "#/$defs/id"}, "v": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2},
-      "role": {"enum": ["wall_drawn", "wall_drawn_thin", "facade", "virtual_opening", "virtual_boundary", "railing", "roof_edge"]},
+      "role": {"enum": ["wall_drawn", "wall_drawn_thin", "wall_inner_face", "facade", "virtual_opening", "virtual_boundary", "railing", "roof_edge", "element_outline"]},
       "dimension": {"$ref": "#/$defs/dimension"}, "trace_quality": {"enum": ["ink_confirmed", "partial_ink", "not_applicable", null]}}},
     "object": {"type": "object", "required": ["id", "revision", "floor_id", "frame_id", "kind", "class", "geometry", "edge_ids", "label_ids", "certainty", "review_status"], "properties": {
       "id": {"$ref": "#/$defs/id"}, "revision": {"type": "integer", "minimum": 1},
-      "class": {"enum": ["space", "linear_feature", "point_feature"]},
+      "class": {"enum": ["space", "element", "linear_feature", "point_feature"]},
+      "source_label_text": {"type": ["string", "null"]},
+      "current_use": {"type": ["object", "null"], "required": ["value", "source", "certainty"]},
       "kind": {"type": "string"},
       "certainty": {"$ref": "#/$defs/certainty"},
       "review_status": {"enum": ["needs_review", "reviewed", "rejected"]},
@@ -68,12 +72,12 @@
       "literal_text": {"type": ["string", "null"]}, "category": {"enum": ["space_name", "index_number", "index_number_candidate", "bouw_nr", "address", "dimension", "note", "street_name"]},
       "bbox_px": {"type": "array", "items": {"type": "number"}, "minItems": 4, "maxItems": 4}, "assigned_object_ids": {"type": "array", "items": {"type": "string"}}, "certainty": {"$ref": "#/$defs/certainty"}}},
     "connection": {"type": "object", "required": ["id", "kind", "edge_id", "connects", "certainty"], "properties": {
-      "kind": {"enum": ["opening", "door", "stair_link", "lift_link"]}, "edge_id": {"type": ["string", "null"]},
+      "kind": {"enum": ["opening", "opening_candidate", "door", "stair_link", "lift_link"]}, "edge_id": {"type": ["string", "null"]},
       "connects": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}}, "certainty": {"$ref": "#/$defs/certainty"}}},
     "legal_split": {"type": "object", "required": ["id", "name", "status", "boundary_status"], "properties": {
       "status": {"enum": ["identified_in_source", "referenced_not_located", "hypothesis"]}, "boundary_status": {"enum": ["unknown", "partial", "traced"]}, "parent_id": {"type": ["string", "null"]}}},
     "membership": {"type": "object", "required": ["object_id", "split_id", "relation", "certainty"], "properties": {
-      "relation": {"enum": ["private", "common", "excluded", "context", "unknown"]}, "certainty": {"$ref": "#/$defs/certainty"}, "evidence": {"type": ["object", "null"]}}},
+      "relation": {"enum": ["private", "common", "excluded", "context", "unknown"]}, "right_id": {"type": ["string", "null"]}, "certainty": {"$ref": "#/$defs/certainty"}, "evidence": {"type": ["object", "null"]}}},
     "legacy_link": {"type": "object", "required": ["legacy_system", "legacy_id", "object_id", "relation", "certainty"], "properties": {
       "legacy_system": {"enum": ["svg_v2_common_json", "svg_v2_units_json", "melding", "gps_photo", "walk_photo"]}}}
   }

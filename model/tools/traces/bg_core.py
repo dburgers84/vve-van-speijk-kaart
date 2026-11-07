@@ -1,4 +1,4 @@
-"""Handmatige brontrace (pilot) van één gemeenschappelijke kern, BG, akte 2006 p.81.
+"""Handmatige brontrace (pilot, regio 1) van één gemeenschappelijke kern, BG, akte 2006 p.81.
 
 Coördinaten zijn NATIVE PIXELS van de bron-JPEG (7118x10099, 200 dpi), x naar rechts,
 y naar beneden, in de oriëntatie van de scan (niet gedraaid naar noord).
@@ -6,6 +6,11 @@ Waarden zijn visueel afgelezen op 2x-vergrote rasteruitsneden en daarna per lijn
 gecontroleerd met een inktprofiel (zie build_pilot.py: ink_support per edge).
 Lijnen zijn op de getekende lijn-hartlijn gezet; wanddikte is NIET apart gemodelleerd.
 """
+
+PREFIX = "bg_core"
+REGION_ID = "reg_bg_core"
+REGION_NAME = "BG kern Schans-zijde (entree/trap 180/lift/GEM./techniek)"
+REGION_PX = (150, 4650, 1050, 5600)
 
 # vertex-id -> (x_px, y_px)
 VERTICES = {
@@ -48,6 +53,21 @@ SPACES = [
     ("ls",        "low_voltage_room", ["Z1", "Z3", "Z4", "Z2"], "LS-ruimte", (690, 5345, 750, 5420), "source_label"),
 ]
 
+# hedendaags gebruik (los van bronlabel)
+CURRENT_USE = {
+    "container": ("fietsenberging", "opgave bewoner 06-11-2026; zie data/sources.md (alle containerruimtes omgebouwd)", "probable"),
+}
+
+# bouwdetails (class 'element'): (key, kind, ring, note, certainty)
+ELEMENTS = [
+    ("kozijn_hal", "facade_frame_strip", [(289, 5000), (306, 5000), (306, 5125), (289, 5125)],
+     "Kozijn-/raamstrook in gevel bij hal: dubbele lijn met stijlen (source-zichtbaar)", "source"),
+    ("kozijn_entree", "facade_frame_strip", [(276, 4836), (360, 4836), (360, 4850), (276, 4850)],
+     "Kozijnstrook entree-pui bovenzijde: rij vakjes tussen gevel en x≈360 (source-zichtbaar)", "source"),
+    ("trap180_cutline", "stair_symbol_line", [(278, 4865), (500, 4865)],
+     "Doorgaande lijn in trapruimte 180 (snede/bordessymbool); geen afzonderlijke treden getekend", "source"),
+]
+
 # randrol per (ongeordend) vertexpaar; default 'wall_drawn'
 EDGE_ROLES = {
     ("D", "E"): "virtual_opening",   # alleen onderbroken stippellijn, geen massieve wand: kandidaat-doorgang entree-hal
@@ -77,6 +97,7 @@ EXTRA_LABELS = [
     ("E-kast", "space_name", (405, 5460, 430, 5560), [], "uncertain",
      "Aanwijslijn richting box_a/box_b; toewijzing niet eenduidig"),
     ("UPC", "note", (225, 5040, 250, 5090), [], "uncertain", "Buiten gevel, aanwijslijn naar gevelkast"),
+    ("UPC", "note", (228, 5440, 252, 5495), [], "uncertain", "Tweede UPC-tekst buiten gevel (onderzijde pilot)"),
     ("DE SCHANS", "street_name", (40, 4300, 70, 4500), [], "source_label_context",
      "Straatnaam links van gevel (contextlabel, buiten pilot-geometrie)"),
 ]
@@ -99,3 +120,17 @@ LEGACY = [
     ("BG-OOST-TECH", "trafo", "part_of_candidate"), ("BG-OOST-TECH", "ls", "part_of_candidate"),
     ("BG-OOST-MK1", "gem", "part_of_candidate"), ("BG-OOST-MK2", "gem", "same_space_candidate"),
 ]
+
+# juridische lidmaatschappen: key -> [(split_id, relation, right_id, certainty, note)]
+_H, _O = "ls_hoofdsplitsing", "ls_ondersplitsing_woningen"
+_AKTE = "Akte ondersplitsing 2006 (visueel gelezen): entrees, liften/trappen, technische ruimten behoren tot de gemeenschap"
+LEGAL = {
+    "trap180": [(_H, "private", "A-180", "probable", "Indexnummer 180 (omcirkeld) staat in deze ruimte; A-180 = Woningen volgens MVGM-begroting hoofdsplitsing"),
+                (_O, "common", None, "probable", _AKTE)],
+    "entree": [(_H, "private", "A-180", "uncertain", "Zelfde kern als index 180; eigen indexnummer ontbreekt"), (_O, "common", None, "probable", _AKTE)],
+    "hal": [(_H, "private", "A-180", "uncertain", "Zelfde kern als index 180; eigen indexnummer ontbreekt"), (_O, "common", None, "probable", _AKTE)],
+    "lift": [(_H, "private", "A-180", "uncertain", "Zelfde kern als index 180"), (_O, "common", None, "probable", _AKTE)],
+    "trap2": [(_H, "private", "A-180", "uncertain", "Zelfde kern als index 180"), (_O, "common", None, "probable", _AKTE)],
+    "container": [(_O, "common", None, "uncertain", "Gemeenschappelijke voorziening (containerruimte) in woonkern; niet expliciet per ruimte bewezen")],
+    "gem": [(_O, "common", None, "uncertain", "GEM. = gemeenschappelijk (label) in woonkern")],
+}

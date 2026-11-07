@@ -1,29 +1,26 @@
-# Datamodel v2 – brongetrouwe plattegrond (pilotfase)
+# Datamodel v2 – brongetrouwe plattegrond (in opbouw)
 
-Status: **pilot, onvolledig**. Dit staat los van de huidige kaart (`index.html`, `js/`, `svg/`) en verandert daar niets aan.
+Status: **onvolledig**. Alleen BG, twee gemeenschappelijke kernen en één bedrijfsruimte zijn overgetrokken. De huidige kaart (`index.html`, `js/`, `svg/`) blijft de referentie. Viewer: `model/pilot/`, online `/dev/model/pilot/`.
 
 ## Inhoud
 | Pad | Wat |
 |---|---|
-| `schema/vve-plan-v2.schema.json` | JSON Schema (draft 2020-12) voor de structuur |
-| `validate.py` | Validator (stdlib; gebruikt `jsonschema` extra als dat geïnstalleerd is): ids, referenties, x/y-rel-consistentie, ringen, zelfdoorsnijding, overlap, T-knopen, gedeelde edges, maatstatus, adjacency van verbindingen, juridische regels, dekking |
-| `tests/test_validate.py` | 24 unittests (pilot geldig + negatieve gevallen) |
-| `tools/pilot_trace_bg_core.py` | Handmatige trace in **native scanpixels** van akte 2006 p.81 (BG) |
-| `tools/build_pilot.py` | Bouwt dataset + `pilot/pilot_data.js`; meet inktsteun per zijde op de lokale scan |
-| `data/pilot-bg-core.v2.json` | Pilotdataset: één gemeenschappelijke kern BG |
-| `pilot/index.html` | Losse detailviewer: klikbare objecten/zijden, popup met maatstatus, ondergrond aan/uit |
-
-## Draaien
-```bash
-python3 model/validate.py model/data/pilot-bg-core.v2.json
-python3 -m unittest discover -s model/tests
-python3 model/tools/build_pilot.py --scan /pad/naar/page-81.png   # alleen lokaal, scan is privé
-```
+| `schema/vve-plan-v2.schema.json` | JSON Schema (draft 2020-12) |
+| `validate.py` | Validator (stdlib; gebruikt `jsonschema` als dat er is) |
+| `tests/test_validate.py` | Unittests (dataset + negatieve gevallen) en `tests/fixtures/stable_ids_v0.1.json` (ids mogen niet verdwijnen) |
+| `tools/traces/bg_core.py`, `tools/traces/bg_kiel.py` | Handmatige traces in **native scanpixels** van akte 2006 p.81 |
+| `tools/build_model.py` | Bouwt `data/bg.v2.json` + `pilot/pilot_data.js` (inktsteun per zijde uit lokale scan, of hergebruik met `--scan none`) |
+| `tools/detect_columns.py` | Kolomkandidaten (holle vierkanten) per blad → `data/inventory/columns_auto_all.json` |
+| `tools/register_plan_jpg.py` | Registreert de al gepubliceerde `img/plan_*.jpg` op het native frame → `data/inventory/registration_plan_jpg.json` |
+| `tools/build_tile_register.py` | Werkregister per tile (alle 5 bladen) → `data/inventory/tile_register.json` |
+| `run_checks.sh` | Reproduceer-, validatie- en testcheck zonder privébron |
+| `pilot/index.html` | Viewer: klikbare ruimtes/bouwdetails/zijden, popup met bronlabel vs huidig gebruik, relatieve coördinaten, afgeleide maten, buren, verbindingen, juridische lidmaatschappen |
 
 ## Kernregels
-- **Coördinaten**: per bronblad één frame (`px_native`, x rechts, y omlaag, scan-oriëntatie). Elke vertex heeft `x_px,y_px` én `x_rel,y_rel` (= px / bladmaat) en `floor_id`. Geen per-object coördinaten.
-- **Stabiele ids** voor objecten, vertices en edges; een gedeelde grens is precies één edge die door beide ruimtes wordt gebruikt.
-- **Maat per zijde**: `status` = `source` (bronmaat op tekening, met brontekst) | `derived` (berekend via kalibratie) | `unknown` (`length_m: null`). Huidige kalibratie is **nominaal** (1:200 @ 200 dpi ≈ 0,0254 m/px), scanvervorming ongetoetst ⇒ `uncertainty_m: null`, `uncertainty_status: "unknown"`. De validator weigert een onzekerheid bij nominale kalibratie.
-- **Juridisch**: `legal_splits` + `memberships` (nullable/`unknown`). Het highlighten staat uit (`legal_split_ui.enabled=false`) zolang de bedoelde twee splitsingen en hun grenzen niet uit een bron zijn bewezen.
-- **Privacy**: de native scan en uitsneden blijven lokaal (`model/pilot/local/` staat in `.gitignore`). De repo bevat alleen afgeleide geometrie.
-- **Legacy**: `legacy_links` koppelt ids van de huidige kaart (`data/common.json`) als kandidaat aan nieuwe objecten; meldingen/GPS lopen via die ids.
+- Per bronblad één frame (`px_native`). Elke vertex heeft `x_px,y_px`, `x_rel,y_rel` en `floor_id`.
+- Vaste ids; een gedeelde grens is precies één edge.
+- Zijmaat: `source` | `derived` | `unknown`. De huidige kalibratie is nominaal (scanvervorming niet getoetst), dus `uncertainty_m` is altijd `null`. Het blad heeft wel een schaalbalk 0–10 m en een cm-liniaal; die zijn nog niet gemeten.
+- `source_label_text` (bron) en `current_use` (nu, met bron) staan in aparte velden.
+- Een `door` mag alleen als er een deurblad of draaicirkel getekend is. Een onderbroken lijn wordt `opening_candidate`.
+- Juridisch: hoofdsplitsing (A-179 Winkels / A-180 Woningen) en ondersplitsing Woningen. Lidmaatschap per ruimte is `probable`/`uncertain` met bewijs; de grenzen zelf zijn niet als lijn getekend.
+- Privacy: native scan en uitsneden blijven lokaal (`model/pilot/local/`, git-ignored). Online staat alleen de eerder gepubliceerde `img/plan_bg.jpg` als overlay.

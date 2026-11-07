@@ -6,7 +6,8 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT)
 from validate import validate  # noqa: E402
 
-PILOT = os.path.join(ROOT, "data", "pilot-bg-core.v2.json")
+PILOT = os.path.join(ROOT, "data", "bg.v2.json")
+STABLE = os.path.join(HERE, "fixtures", "stable_ids_v0.1.json")
 
 
 def load():
@@ -42,11 +43,19 @@ class PilotDataset(unittest.TestCase):
             self.assertEqual(c["status"], "nominal_unverified")
             self.assertIsNone(c["uncertainty_m"])
 
-    def test_legal_highlight_disabled_with_reason(self):
+    def test_legal_memberships_are_evidenced_not_exact(self):
         d = load()
-        self.assertFalse(d["legal_split_ui"]["enabled"])
-        self.assertTrue(d["legal_split_ui"]["reason"])
-        self.assertTrue(all(m["relation"] == "unknown" for m in d["memberships"]))
+        self.assertTrue(d["legal_split_ui"]["enabled"])
+        self.assertIn("Gedeeltelijk", d["legal_split_ui"]["reason"])
+        self.assertTrue(all(s["boundary_status"] != "traced" for s in d["legal_splits"]))
+        claimed = [m for m in d["memberships"] if m["relation"] != "unknown"]
+        self.assertTrue(claimed)
+        for m in claimed:
+            self.assertIn(m["certainty"], ("probable", "uncertain"))
+            self.assertTrue(m["evidence"]["note"])
+        # alleen ruimtes met omcirkeld 180 krijgen 'probable' voor A-180
+        prob = {m["object_id"] for m in claimed if m.get("right_id") == "A-180" and m["certainty"] == "probable"}
+        self.assertEqual(prob, {"obj_bg_core_trap180", "obj_bg_kiel_entree"})
 
     def test_private_raster_not_published(self):
         d = load()
@@ -70,10 +79,48 @@ class PilotDataset(unittest.TestCase):
         self.assertGreater(len(shared), 10)
 
     def test_ids_are_stable_across_rebuild(self):
-        """ids zijn afgeleid van trace-sleutels, niet van posities."""
+        """Alle ids uit pilot v0.1 bestaan nog (ids volgen trace-sleutels, niet posities)."""
         d = load()
-        self.assertIn("obj_bg_core_hal", {o["id"] for o in d["objects"]})
-        self.assertIn("v_bg_core_A", {v["id"] for v in d["vertices"]})
+        with open(STABLE) as f:
+            old = json.load(f)
+        for coll in ("objects", "vertices", "edges"):
+            have = {x["id"] for x in d[coll]}
+            missing = [i for i in old[coll] if i not in have]
+            self.assertEqual(missing, [], coll)
+
+    def test_two_regions_and_commercial_unit(self):
+        d = load()
+        self.assertGreaterEqual(len(d["regions"]), 2)
+        self.assertTrue(any(o["kind"] == "commercial_unit" for o in d["objects"]))
+
+    def test_columns_and_details_are_clickable_elements(self):
+        d = load()
+        cols = [o for o in d["objects"] if o["kind"] == "column"]
+        self.assertGreaterEqual(len(cols), 4)
+        for o in cols:
+            self.assertEqual(o["class"], "element")
+            self.assertTrue(o["display_name"] and o["evidence"]["method"])
+        self.assertTrue(any(o["kind"] == "facade_frame_strip" for o in d["objects"]))
+
+    def test_source_label_and_current_use_separate(self):
+        d = load()
+        cont = [o for o in d["objects"] if o["kind"] == "container_room"]
+        self.assertEqual(len(cont), 2)
+        for o in cont:
+            self.assertEqual(o["source_label_text"], "container-ruimte")
+            self.assertEqual(o["current_use"]["value"], "fietsenberging")
+            self.assertNotEqual(o["current_use"]["certainty"], "source")
+
+    def test_no_door_claimed_without_leaf(self):
+        d = load()
+        for c in d["connections"]:
+            self.assertNotEqual(c["kind"], "door")
+
+    def test_public_overlay_is_existing_plan_jpg(self):
+        d = load()
+        for ov in d["reference_overlays"]:
+            self.assertTrue(ov["image"].startswith("img/plan_"))
+            self.assertTrue(os.path.exists(os.path.join(os.path.dirname(ROOT), ov["image"])))
 
 
 class NegativeCases(unittest.TestCase):
@@ -141,16 +188,36 @@ class NegativeCases(unittest.TestCase):
         self.assertTrue(any("geen adjacency" in m for m in errs(self.d)))
 
     def test_legal_ui_cannot_enable_without_boundaries(self):
-        self.d["legal_split_ui"]["enabled"] = True
+        for sp in self.d["legal_splits"]:
+            sp["boundary_status"] = "unknown"
         self.assertTrue(any("splitsgrens" in m for m in errs(self.d)))
 
     def test_membership_claim_needs_evidence(self):
-        self.d["memberships"][0]["relation"] = "common"
-        self.assertTrue(any("zonder evidence" in m for m in errs(self.d)))
+        m = next(m for m in self.d["memberships"] if m["relation"] != "unknown")
+        m["evidence"] = None
+        self.assertTrue(any("zonder evidence" in x for x in errs(self.d)))
+
+    def test_membership_unknown_right_rejected(self):
+        m = next(m for m in self.d["memberships"] if m.get("right_id"))
+        m["right_id"] = "A-999"
+        self.assertTrue(any("onbekend recht" in x for x in errs(self.d)))
 
     def test_private_raster_publish_rejected(self):
         self.d["sources"][0]["publish_native_raster"] = True
         self.assertTrue(any("privé-bron" in m for m in errs(self.d)))
+
+    def test_door_without_leaf_rejected(self):
+        self.d["connections"][0]["kind"] = "door"
+        self.assertTrue(any("deurblad" in m for m in errs(self.d)))
+
+    def test_current_use_as_source_rejected(self):
+        o = next(o for o in self.d["objects"] if o.get("current_use"))
+        o["current_use"]["certainty"] = "source"
+        self.assertTrue(any("current_use" in m for m in errs(self.d)))
+
+    def test_private_overlay_rejected(self):
+        self.d["reference_overlays"][0]["image"] = "model/pilot/local/src.png"
+        self.assertTrue(any("publieke overlay" in m for m in errs(self.d)))
 
     def test_duplicate_shared_edge_rejected(self):
         e = copy.deepcopy(self.d["edges"][0])
