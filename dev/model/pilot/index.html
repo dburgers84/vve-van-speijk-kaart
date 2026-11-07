@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Detailmodel in opbouw – VvE Van Speijk (datamodel v2, BG)</title>
+<style>
+ body{margin:0;font:14px/1.4 system-ui,sans-serif;display:flex;height:100vh;color:#222}
+ #side{width:350px;overflow:auto;padding:12px;border-right:1px solid #ddd;background:#fafafa}
+ #main{flex:1;position:relative;overflow:hidden;background:#fff}
+ svg{width:100%;height:100%;cursor:grab;touch-action:none}
+ .sp{fill-opacity:.28;stroke:none;cursor:pointer}.sp:hover,.sp.sel{fill-opacity:.55}
+ .el{fill:#b0b;fill-opacity:.35;stroke:#b0b;stroke-width:1.5;vector-effect:non-scaling-stroke;cursor:pointer}
+ .el.facade_frame_strip,.el.facade_wall_double_line{fill:#09f;stroke:#09f}
+ .el:hover,.el.sel{fill-opacity:.8}
+ .ed{stroke-width:2.4;vector-effect:non-scaling-stroke;cursor:pointer}
+ .ed.ink_confirmed{stroke:#0a8a2a}.ed.partial_ink{stroke:#f08c00;stroke-dasharray:6 3}.ed.not_applicable{stroke:#d0f;stroke-dasharray:2 3}
+ .ed.hl{stroke:#000;stroke-width:5}
+ .ln{fill:none;stroke:#1565c0;stroke-width:1.6;vector-effect:non-scaling-stroke;pointer-events:stroke;cursor:pointer}
+ .lbl{font-size:12px;fill:#111;pointer-events:none;paint-order:stroke;stroke:#fff;stroke-width:3px}
+ .vx{fill:#d00}
+ #pop{position:absolute;right:12px;top:12px;width:400px;max-height:88vh;overflow:auto;background:#fff;border:1px solid #bbb;box-shadow:0 4px 18px #0003;padding:10px 12px;display:none;border-radius:6px;font-size:13px}
+ #pop table{border-collapse:collapse;width:100%;font-size:12px}#pop td,#pop th{border-bottom:1px solid #eee;padding:2px 4px;text-align:left}
+ .warn{background:#fff4e0;border:1px solid #f0c070;padding:6px 8px;border-radius:4px;font-size:12px;margin:6px 0}
+ .muted{color:#777;font-size:12px} fieldset{border:1px solid #ddd;margin:8px 0} button{cursor:pointer;margin:2px}
+ .badge{display:inline-block;padding:0 6px;border-radius:8px;font-size:11px;background:#eee}
+ .sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:middle;margin-right:3px}
+ details summary{cursor:pointer;font-weight:600}
+</style>
+</head>
+<body>
+<div id="side">
+ <h3 style="margin:0 0 4px">Detailmodel in opbouw – BG</h3>
+ <div class="muted"><a href="../../">← terug naar de huidige kaart</a></div>
+ <div class="warn"><b>Onvolledig.</b> Brongetrouw overgetrokken uit de splitsingstekening (akte 2006, blad 01): 2 gemeenschappelijke kernen + 1 bedrijfsruimte. Coördinaten in native scanpixels + relatief (x/breedte, y/hoogte). Zijmaten <b>nominaal afgeleid</b> (1:200 @ 200 dpi), onzekerheid <b>onbekend</b>.</div>
+ <fieldset><legend>Regio</legend><div id="regions"></div></fieldset>
+ <fieldset><legend>Ondergrond</legend>
+  <label><input type="checkbox" id="ovOn" checked> Referentie <span id="ovName"></span></label><br>
+  <input type="range" id="ovOp" min="0" max="1" step="0.05" value="0.55" style="width:100%">
+  <div class="muted" id="ovNote"></div>
+ </fieldset>
+ <fieldset><legend>Lagen</legend>
+  <label><input type="checkbox" id="lSp" checked> Ruimtes</label>
+  <label><input type="checkbox" id="lEl" checked> Bouwdetails</label>
+  <label><input type="checkbox" id="lEd" checked> Zijden</label><br>
+  <label><input type="checkbox" id="lLn" checked> Symbolen</label>
+  <label><input type="checkbox" id="lLb" checked> Labels</label>
+  <label><input type="checkbox" id="lVx"> Vertices</label>
+  <div class="muted">Zijden: <span style="color:#0a8a2a">━ inkt bevestigd</span> · <span style="color:#f08c00">╍ deels inkt</span> · <span style="color:#d0f">┅ kandidaat-opening</span></div>
+ </fieldset>
+ <fieldset><legend>Juridische splitsingen</legend>
+  <label><input type="radio" name="lg" value="off" checked> Uit</label>
+  <label><input type="radio" name="lg" value="hoofd"> Hoofdsplitsing</label><br>
+  <label><input type="radio" name="lg" value="onder"> Ondersplitsing woningen</label>
+  <label><input type="radio" name="lg" value="beide"> Beide</label>
+  <div id="lgLegend" class="muted"></div>
+  <div class="muted" id="legalReason"></div>
+ </fieldset>
+ <details><summary>Objecten</summary><div id="list"></div></details>
+ <details><summary>Dekking</summary><div id="cov" class="muted"></div></details>
+</div>
+<div id="main">
+ <svg id="svg" xmlns="http://www.w3.org/2000/svg"><g id="vp"><g id="gOv"></g><g id="gSp"></g><g id="gEl"></g><g id="gEd"></g><g id="gLn"></g><g id="gLb"></g><g id="gVx" style="display:none"></g></g></svg>
+ <div id="pop"></div>
+</div>
+<script src="pilot_data.js"></script>
+<script>
+(function(){
+const D=window.PILOT_DATA, NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id);
+const V=Object.fromEntries(D.vertices.map(v=>[v.id,v])), E=Object.fromEntries(D.edges.map(e=>[e.id,e]));
+const L=Object.fromEntries(D.labels.map(l=>[l.id,l])), O=Object.fromEntries(D.objects.map(o=>[o.id,o]));
+const R=Object.fromEntries(D.regions.map(r=>[r.id,r])), SPL=Object.fromEntries(D.legal_splits.map(s=>[s.id,s]));
+const cal=D.calibrations[0], frame=D.frames[0], svg=$('svg');
+const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);p&&p.appendChild(n);return n};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let vb=[0,0,1,1];const setVB=()=>svg.setAttribute('viewBox',vb.join(' '));
+function fit(b){const m=40;vb=[b[0]-m,b[1]-m,b[2]-b[0]+2*m,b[3]-b[1]+2*m];setVB()}
+// regio's
+const allB=[Math.min(...D.regions.map(r=>r.region_px[0])),Math.min(...D.regions.map(r=>r.region_px[1])),Math.max(...D.regions.map(r=>r.region_px[2])),Math.max(...D.regions.map(r=>r.region_px[3]))];
+$('regions').innerHTML=D.regions.map(r=>`<button data-r="${esc(r.id)}">${esc(r.name)}</button>`).join('')+'<button data-r="all">Alles (heel blad)</button>';
+$('regions').onclick=e=>{const b=e.target.closest('button');if(!b)return;b.dataset.r==='all'?fit([0,0,frame.width_px,frame.height_px*0.75]):fit(R[b.dataset.r].region_px)};
+fit(D.regions[0].region_px);
+// ondergrond: lokaal hoge-res per regio indien aanwezig, anders publieke lage-res plan_bg.jpg
+const ov=D.reference_overlays[0], gOv=$('gOv');let localOk=0;
+if(ov){const A=ov.image_to_native_affine;const im=el('image',{href:'../../'+ov.image,width:ov.size_px[0],height:ov.size_px[1],transform:`matrix(${A[0][0]} ${A[1][0]} ${A[0][1]} ${A[1][1]} ${A[0][2]} ${A[1][2]})`,preserveAspectRatio:'none',id:'ovPub'},gOv);
+ $('ovName').textContent='(online: eerder gepubliceerde plan_bg.jpg, ≈0,24x)';
+ $('ovNote').textContent=`Lage-resolutie referentie, geregistreerd op het bronframe (${ov.method}; ECC ${ov.ecc_correlation}). Bronuitsneden op hoge resolutie worden niet online gepubliceerd.`;}
+D.regions.forEach(r=>{const [x0,y0,x1,y1]=r.region_px;const im=el('image',{href:`local/src_p81_${r.id}.png`,x:x0,y:y0,width:x1-x0,height:y1-y0,preserveAspectRatio:'none'},gOv);
+ im.addEventListener('load',()=>{localOk++;$('ovName').textContent='(lokaal: hoge-res bronuitsnede + lage-res plan_bg.jpg)'});im.addEventListener('error',()=>im.remove());});
+$('ovOn').onchange=e=>gOv.style.display=e.target.checked?'':'none';
+const setOp=v=>gOv.setAttribute('opacity',v);setOp(.55);$('ovOp').oninput=e=>setOp(e.target.value);
+// tekenen
+const col={stair:'#e53935',lift_shaft:'#1e64dc',unknown:'#9e9e9e',hall:'#43a047',entrance_hall:'#2e7d32',container_room:'#8d6e63',sprinkler_room:'#00acc1',transformer_room:'#fb8c00',low_voltage_room:'#f4511e',meter_cupboard_common:'#7b1fa2',gas_meter_cupboards:'#c0ca33',commercial_unit:'#ffb300'};
+const ringD=o=>o.geometry.rings.map(r=>'M'+r.map(i=>V[i].x_px+' '+V[i].y_px).join('L')+'Z').join('');
+const shp={};
+D.objects.forEach(o=>{let n;
+ if(o.geometry.type==='Polygon'&&o.class==='space'){n=el('path',{d:ringD(o),class:'sp',fill:col[o.kind]||'#4caf50'},$('gSp'));}
+ else if(o.geometry.type==='Polygon'){n=el('path',{d:ringD(o),class:'el '+o.kind},$('gEl'));}
+ else if(o.geometry.type==='LineString'){n=el('polyline',{points:o.geometry.vertices.map(i=>V[i].x_px+','+V[i].y_px).join(' '),class:'ln'},$('gLn'));}
+ if(n){n.onclick=ev=>{ev.stopPropagation();show(o.id)};shp[o.id]=n;el('title',{},n).textContent=o.display_name;}});
+D.edges.forEach(e=>{const [a,b]=e.v.map(i=>V[i]);if(e.role==='element_outline')return;
+ const l=el('line',{x1:a.x_px,y1:a.y_px,x2:b.x_px,y2:b.y_px,class:'ed '+(e.trace_quality||''),id:'ed_'+e.id},$('gEd'));l.onclick=ev=>{ev.stopPropagation();showEdge(e.id)};});
+D.labels.forEach(l=>{const [a,b,c,d]=l.bbox_px;const t=el('text',{x:(a+c)/2,y:(b+d)/2,'text-anchor':'middle',class:'lbl'},$('gLb'));t.textContent=l.literal_text??'(onleesbaar)'});
+D.vertices.forEach(v=>el('circle',{cx:v.x_px,cy:v.y_px,r:2.5,class:'vx'},$('gVx')));
+[['lSp','gSp'],['lEl','gEl'],['lEd','gEd'],['lLn','gLn'],['lLb','gLb'],['lVx','gVx']].forEach(([c,g])=>$(c).onchange=e=>$(g).style.display=e.target.checked?'':'none');
+// juridisch
+$('legalReason').textContent=D.legal_split_ui.reason;
+const mem=id=>D.memberships.filter(m=>m.object_id===id);
+const LG={hoofd:{'A-179':'#ffb300','A-180':'#1e88e5'},onder:{common:'#8e24aa',excluded:'#c62828',private:'#6a1b9a'}};
+function legal(mode){
+ D.objects.filter(o=>o.class==='space').forEach(o=>{const n=shp[o.id];n.removeAttribute('stroke');n.removeAttribute('stroke-width');n.style.strokeDasharray='';
+  if(mode==='off'){n.setAttribute('fill',col[o.kind]||'#4caf50');n.style.fillOpacity='';return}
+  const h=mem(o.id).find(m=>m.split_id==='ls_hoofdsplitsing'),u=mem(o.id).find(m=>m.split_id==='ls_ondersplitsing_woningen');
+  const op=m=>!m||m.relation==='unknown'?.12:(m.certainty==='probable'?.6:.3);
+  if(mode==='hoofd'||mode==='beide'){n.setAttribute('fill',h&&h.right_id?LG.hoofd[h.right_id]:'#bbb');n.style.fillOpacity=op(h)}
+  if(mode==='onder'){n.setAttribute('fill',u&&u.relation!=='unknown'?LG.onder[u.relation]:'#bbb');n.style.fillOpacity=op(u)}
+  if(mode==='beide'&&u&&u.relation!=='unknown'){n.setAttribute('stroke',LG.onder[u.relation]);n.setAttribute('stroke-width',4);n.setAttribute('vector-effect','non-scaling-stroke');if(u.certainty!=='probable')n.style.strokeDasharray='6 4'}});
+ const sw=(c,t)=>`<span class="sw" style="background:${c}"></span>${t} `;
+ $('lgLegend').innerHTML=mode==='off'?'':((mode!=='onder'?sw('#ffb300','A-179 winkels')+sw('#1e88e5','A-180 woningen'):'')+(mode!=='hoofd'?(mode==='beide'?'rand: ':'')+sw('#8e24aa','gemeenschappelijk')+sw('#c62828','buiten ondersplitsing'):'')+sw('#bbb','onbekend')+'<br>dekking: vol = waarschijnlijk, licht = onzeker');}
+document.querySelectorAll('input[name=lg]').forEach(r=>r.onchange=e=>legal(e.target.value));
+// metingen
+const area=ring=>{let s=0;for(let i=0;i<ring.length;i++){const a=V[ring[i]],b=V[ring[(i+1)%ring.length]];s+=a.x_px*b.y_px-b.x_px*a.y_px}return Math.abs(s/2)};
+const dimTxt=dm=>dm.status==='unknown'?'<i>onbekend</i>':(dm.status==='derived'?`${dm.length_m.toFixed(2)} m <span class="badge">afgeleid</span>`:`${dm.length_m} m <span class="badge">bron</span>`);
+function clearHL(){document.querySelectorAll('.hl').forEach(n=>n.classList.remove('hl'));document.querySelectorAll('.sel').forEach(n=>n.classList.remove('sel'))}
+const neighbours=o=>[...new Set((o.edge_ids||[]).flatMap(eid=>D.objects.filter(x=>x.id!==o.id&&x.class==='space'&&(x.edge_ids||[]).includes(eid)).map(x=>x.id)))];
+const inside=(o)=>{if(o.class!=='space')return[];const ring=o.geometry.rings[0].map(i=>[V[i].x_px,V[i].y_px]);const pip=(x,y)=>{let c=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const[xi,yi]=ring[i],[xj,yj]=ring[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)c=!c}return c};
+ return D.objects.filter(x=>x.class==='element'&&x.geometry.type==='Polygon').filter(x=>{const r=x.geometry.rings[0];const cx=r.reduce((s,i)=>s+V[i].x_px,0)/r.length,cy=r.reduce((s,i)=>s+V[i].y_px,0)/r.length;return pip(cx,cy)})};
+function show(id){const o=O[id];clearHL();shp[id]&&shp[id].classList.add('sel');
+ const labs=o.label_ids.map(i=>L[i]).map(l=>`<li>“${esc(l.literal_text)}” <span class="badge">${esc(l.category)}</span> <span class="badge">${esc(l.certainty)}</span>${l.note?'<br><span class="muted">'+esc(l.note)+'</span>':''}</li>`).join('');
+ let rows='',per='',ar='';
+ (o.edge_ids||[]).forEach(eid=>{const e=E[eid];const ln=$('ed_'+eid);ln&&ln.classList.add('hl');const nb=D.objects.filter(x=>x.id!==id&&(x.edge_ids||[]).includes(eid)).map(x=>x.display_name).join(', ');
+  rows+=`<tr><td>${esc(eid.split('_').slice(3).join('_'))}</td><td>${esc(e.role)}</td><td>${dimTxt(e.dimension)}</td><td>${e.ink_support?Math.round(e.ink_support.fraction*100)+'%':'–'}</td><td>${esc(nb)||'–'}</td></tr>`});
+ if(o.edge_ids&&o.edge_ids.length){const ds=o.edge_ids.map(i=>E[i].dimension);per=ds.every(d=>d.length_m!=null)?ds.reduce((s,d)=>s+d.length_m,0).toFixed(2)+' m':'onbekend (niet alle zijden bekend)';
+  ar=(area(o.geometry.rings[0])*cal.m_per_px_x*cal.m_per_px_y).toFixed(1)+' m²';}
+ const verts=(o.geometry.rings?o.geometry.rings[0]:o.geometry.vertices||[]).map(i=>V[i]);
+ const vt=verts.map(v=>`<tr><td>${esc(v.id.split('_').slice(3).join('_'))}</td><td>${v.x_px}, ${v.y_px}</td><td>${v.x_rel.toFixed(5)}, ${v.y_rel.toFixed(5)}</td></tr>`).join('');
+ const conns=D.connections.filter(c=>c.connects.includes(id)).map(c=>`<li>${esc(c.kind)} → ${esc(c.connects.filter(x=>x!==id).map(x=>O[x]?O[x].display_name:x).join(', '))} <span class="badge">${esc(c.certainty)}</span><br><span class="muted">${esc(c.note)}</span></li>`).join('');
+ const nbs=neighbours(o).map(x=>`<a href="#obj=${x}" data-o="${x}">${esc(O[x].display_name)}</a>`).join(', ');
+ const ins=inside(o).map(x=>`<a href="#obj=${x.id}" data-o="${x.id}">${esc(x.kind)}</a>`).join(', ');
+ const mm=mem(id).map(m=>`<li>${esc(SPL[m.split_id].name)}: <b>${esc(m.relation)}</b>${m.right_id?' · recht '+esc(m.right_id):''} <span class="badge">${esc(m.certainty)}</span>${m.evidence?'<br><span class="muted">'+esc(m.evidence.note)+'</span>':''}</li>`).join('')||'<li class="muted">n.v.t.</li>';
+ const legacy=D.legacy_links.filter(k=>k.object_id===id).map(k=>`<li>${esc(k.legacy_id)} <span class="badge">${esc(k.relation)}</span></li>`).join('')||'<li class="muted">geen</li>';
+ const cu=o.current_use?`<b>Huidig gebruik:</b> ${esc(o.current_use.value)} <span class="badge">${esc(o.current_use.certainty)}</span><br><span class="muted">${esc(o.current_use.source)}</span><br>`:'';
+ $('pop').innerHTML=`<b>${esc(o.display_name)}</b> <span class="badge">${esc(o.kind)}</span><br><span class="muted">${esc(o.id)} · rev ${o.revision} · ${esc(o.floor_id)} · ${esc(o.class)} · zekerheid: ${esc(o.certainty)} · review: ${esc(o.review_status)}</span>
+ <p style="margin:4px 0"><b>Bronlabel:</b> ${o.source_label_text?'“'+esc(o.source_label_text)+'”':'<i>geen</i>'}<br>${cu}<span class="muted">${esc(o.evidence&&(o.evidence.note||o.evidence.method)||'')}</span></p>
+ ${ar?`<b>Oppervlak</b> ${ar} <span class="badge">afgeleid, nominaal; hartlijnmaat</span> · <b>omtrek</b> ${per}<br>`:''}
+ <b>Labels</b><ul>${labs||'<li class="muted">geen label op tekening</li>'}</ul>
+ ${rows?`<b>Zijden</b><table><tr><th>zijde</th><th>rol</th><th>lengte</th><th>inkt</th><th>grenst aan</th></tr>${rows}</table>`:''}
+ <details><summary>Coördinaten (px / relatief)</summary><table><tr><th>vertex</th><th>x,y px</th><th>x,y rel</th></tr>${vt}</table></details>
+ ${nbs?`<b>Grenst aan:</b> ${nbs}<br>`:''}${ins?`<b>Bevat:</b> ${ins}<br>`:''}
+ <b>Verbindingen</b><ul>${conns||'<li class="muted">geen getekende of bevestigde doorgang</li>'}</ul>
+ <b>Juridisch</b><ul>${mm}</ul><b>Koppeling huidige kaart</b><ul>${legacy}</ul>
+ <button onclick="document.getElementById('pop').style.display='none'">Sluiten</button>`;$('pop').style.display='block';}
+function showEdge(id){const e=E[id];clearHL();$('ed_'+id).classList.add('hl');const users=D.objects.filter(o=>(o.edge_ids||[]).includes(id)).map(o=>o.display_name).join(' | ');const dm=e.dimension;const [a,b]=e.v.map(i=>V[i]);
+ $('pop').innerHTML=`<b>Zijde ${esc(id)}</b><br><span class="muted">${esc(e.role)} · ${esc(e.trace_quality)}</span><table>
+ <tr><td>Lengte</td><td>${dimTxt(dm)}</td></tr><tr><td>Lengte (px)</td><td>${e.length_px}</td></tr><tr><td>Onzekerheid</td><td>${dm.uncertainty_m==null?'onbekend':dm.uncertainty_m+' m'}</td></tr>
+ <tr><td>Van → naar (px)</td><td>${a.x_px},${a.y_px} → ${b.x_px},${b.y_px}</td></tr><tr><td>Relatief</td><td>${a.x_rel.toFixed(5)},${a.y_rel.toFixed(5)} → ${b.x_rel.toFixed(5)},${b.y_rel.toFixed(5)}</td></tr>
+ <tr><td>Methode</td><td>${esc(dm.method)||'–'}</td></tr><tr><td>Inktsteun</td><td>${e.ink_support?Math.round(e.ink_support.fraction*100)+'% (max gat '+e.ink_support.max_gap_px+' px)':'–'}</td></tr><tr><td>Grenst aan</td><td>${esc(users)}</td></tr></table>
+ <p class="muted">${esc(dm.note)}</p><button onclick="document.getElementById('pop').style.display='none'">Sluiten</button>`;$('pop').style.display='block';}
+$('pop').addEventListener('click',e=>{const a=e.target.closest('a[data-o]');if(a){e.preventDefault();show(a.dataset.o)}});
+svg.addEventListener('click',()=>{$('pop').style.display='none';clearHL()});
+const groups={};D.objects.forEach(o=>(groups[o.region_id]=groups[o.region_id]||[]).push(o));
+$('list').innerHTML=Object.entries(groups).map(([r,os])=>`<p><b>${esc(R[r]?R[r].name:r)}</b></p>`+os.map(o=>`<div><a href="#" data-id="${esc(o.id)}">${esc(o.display_name)}</a> <span class="badge">${esc(o.certainty)}</span></div>`).join('')).join('');
+$('list').onclick=e=>{const a=e.target.closest('a');if(a){e.preventDefault();show(a.dataset.id)}};
+$('cov').innerHTML=`<b>Volledig: ${D.coverage.complete?'ja':'nee'}</b> — ${esc(D.coverage.scope)}<br><br>Getraceerd: ${D.coverage.traced.map(esc).join('; ')}<br><br>Niet getraceerd: ${D.coverage.not_traced.map(esc).join('; ')}`;
+// deeplinks
+const h=decodeURIComponent(location.hash.slice(1));if(h.startsWith('obj=')&&O[h.slice(4)]){const o=O[h.slice(4)];o.region_id&&fit(R[o.region_id].region_px);show(o.id)}if(h.startsWith('edge=')&&E[h.slice(5)])showEdge(h.slice(5));if(h.startsWith('legal=')){const r=document.querySelector(`input[name=lg][value=${h.slice(6)}]`);if(r){r.checked=true;legal(r.value)}}
+// zoom/pan (muis + touch)
+svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect(),k=e.deltaY>0?1.15:1/1.15;const s=Math.max(vb[2]/r.width,vb[3]/r.height);const mx=vb[0]+(e.clientX-r.left)*s,my=vb[1]+(e.clientY-r.top)*s;vb=[mx-(mx-vb[0])*k,my-(my-vb[1])*k,vb[2]*k,vb[3]*k];setVB()},{passive:false});
+let drag=null;svg.addEventListener('pointerdown',e=>drag=[e.clientX,e.clientY,vb[0],vb[1]]);window.addEventListener('pointerup',()=>drag=null);
+window.addEventListener('pointermove',e=>{if(!drag)return;const r=svg.getBoundingClientRect(),s=Math.max(vb[2]/r.width,vb[3]/r.height);vb[0]=drag[2]-(e.clientX-drag[0])*s;vb[1]=drag[3]-(e.clientY-drag[1])*s;setVB()});
+})();
+</script>
+</body>
+</html>
