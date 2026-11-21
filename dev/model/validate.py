@@ -28,6 +28,24 @@ DIM_STATUS = {"source", "derived", "unknown"}
 EPS_REL = 1e-6
 
 
+def _check_display(r, eid, dm):
+    """Weergave van een afgeleide maat: geschatte marge, afronding niet fijner dan de marge rechtvaardigt."""
+    d = dm.get("display")
+    if not d:
+        r.err(f"edge {eid}: afgeleide maat met marge vereist display (afgeronde weergave)")
+        return
+    u = dm["uncertainty_m"]
+    step = 0.01 if u < 0.05 else (0.1 if u < 0.5 else 0.5)
+    if abs(d["step_m"] - step) > 1e-9:
+        r.err(f"edge {eid}: afrondingsstap {d['step_m']} past niet bij marge {u} (verwacht {step})")
+    if d["margin_m"] + 1e-9 < u:
+        r.err(f"edge {eid}: getoonde marge {d['margin_m']} kleiner dan uncertainty_m {u}")
+    if abs(d["length_m"] - dm["length_m"]) > d["step_m"] / 2 + 0.006:
+        r.err(f"edge {eid}: getoonde lengte {d['length_m']} wijkt meer dan halve stap af van {dm['length_m']}")
+    if "geschatte marge" not in d.get("text", ""):
+        r.err(f"edge {eid}: weergavetekst moet 'geschatte marge' noemen")
+
+
 class Report:
     def __init__(self):
         self.errors, self.warnings = [], []
@@ -298,6 +316,7 @@ def validate(d):
                     umin = math.hypot((x2 - x1) * c["m_per_px_x"] * ru["x"], (y2 - y1) * c["m_per_px_y"] * ru["y"])
                     if dm["uncertainty_m"] + 0.006 < umin:
                         r.err(f"edge {e['id']}: uncertainty_m {dm['uncertainty_m']} kleiner dan schaalonzekerheid {umin:.3f}")
+                    _check_display(r, e["id"], dm)
         elif st == "source":
             if not dm.get("source_text") or not dm.get("source_ref"):
                 r.err(f"edge {e['id']}: source-maat vereist source_text en source_ref")

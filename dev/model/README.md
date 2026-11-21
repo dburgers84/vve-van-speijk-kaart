@@ -14,6 +14,8 @@ De 1e t/m 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`
 | `tests/test_validate.py` | Unittests (dataset + negatieve gevallen) en `tests/fixtures/stable_ids_v0.1.json` (ids mogen niet verdwijnen) |
 | `tools/traces/bg_core.py`, `tools/traces/bg_kiel.py` | Handmatige traces in **native scanpixels** van akte 2006 p.81 |
 | `tools/traces/bg_segments.py` + `tools/segment_bg.py` | Vaste zaadpunten en classificatie per vak; segmentatie uit de lokale scan → `data/inventory/bg_segments_p81.json` |
+| `tools/linework.py` | Bouwlijnen scheiden van tekst/symbolen (gedeeld voor alle bladen): rechte lijnen ≥ 31 px + aangesloten restinkt blijven; losse woorden, cijfers, omcirkelde 180 (gemeten box) en losse stippels vallen weg; `simplify()` verwijdert rafel-hoekjes < 60 px² |
+| `tests/test_linework.py` | Regressietests: synthetische tekst/indexcirkel geeft geen wand/gat, onderbroken lijn blijft barrière, indexcirkels zonder hoekpunten/inkepingen in de dataset, stabiele segment-ids sinds v0.3.0 (`tests/fixtures/bg_seg_keys_v0.3.0.json`), afronding met geschatte marge |
 | `data/inventory/columns_review_p81.json` | Visuele controle van alle 269 kolomkandidaten op p.81 (247 symbool / 12 onzeker / 10 afgekeurd) |
 | `data/inventory/calibration_p81.json` | Metingen aan schaalbalk en cm-liniaal + vergelijking met nominaal |
 | `tools/build_model.py` | Bouwt `data/bg.v2.json` + `pilot/pilot_data.js` (inktsteun per zijde uit lokale scan, of hergebruik met `--scan none`) |
@@ -30,10 +32,12 @@ De 1e t/m 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`
 - **Kalibratie:** gebaseerd op de schaalbalk van het hoofdplan ('Begane grond, Schaal 1 a 200', 0–10 m = 387 px → 0,02584 m/px) en de cm-liniaal (78,47 px/cm → 0,02549 m/px bij 1:200).
   - We gebruiken het midden: 0,02566 m/px (≈ +1,0 % t.o.v. de oude nominale 0,0254).
   - Beide controles liggen langs native **y**. De **x-as is niet onafhankelijk gecontroleerd** (isotroop aangenomen).
-  - Onzekerheid per zijde: ±0,7 % (y) / ±1,6 % (x), plus de afleestolerantie van beide eindpunten.
+  - **Geschatte marge** per zijde (geen gemeten tolerantie): ±0,7 % (y) / ±1,6 % (x) schaalspreiding, plus de afleestolerantie van beide eindpunten.
+  - Weergave (`dimension.display`) is afgerond op een stap die bij die marge past: 0,1 m bij een marge van 5–50 cm (bijna alle zijden), 0,01 m alleen bij een marge < 5 cm; de marge wordt naar boven afgerond. Voorbeeld: `≈ 2,9 m (geschatte marge ±0,2 m)`. Oppervlak en omtrek in de viewer krijgen op dezelfde manier een geschatte marge (schaal + randtolerantie).
 - Grenzen:
   - handmatige traces: hartlijn (bij een dubbele gevellijn de binnenlijn);
   - segmenten: de binnenzijde van de getekende lijn. Er ligt dus een wandstrook tussen buren en er zijn geen gedeelde zijden.
+  - Tekst en symbolen zijn geen grens (sinds bg-0.4.0, `tools/linework.py`). Gestippelde lijnen zijn ook geen grens, tenzij expliciet als CUT met reden (bv. `bgB`); scanuitval in een doorgetrokken lijn alleen via CUT (bv. `bgD_s060`), want streepjeslijnen hebben dezelfde gaten (3–4 px).
 - `source_label_text` (bron) en `current_use` (nu, met bron) staan in aparte velden.
 - Een `door` mag alleen als er een deurblad of draaicirkel getekend is. Een onderbroken lijn wordt `opening_candidate`.
 - Juridisch:
