@@ -6,8 +6,8 @@ Status: **onvolledig**. Gedaan: BG (blad p.81) en, in een eerste versie, de 1e (
 - **1e verdieping (f1-0.1.0), semi-automatisch:** alle 342 gesloten vakken met zaadpunt + 2 arceringen, zelfde lijnwerk; nummers/functies visueel gelezen (38 woningen, alle 91 bergingen 266–356). Labelposities sinds f1-0.2.0 deels gemeten (f1-0.2.1: 162 van 286, strengere regel voor korte woorden), de rest benaderd; een deel is **onopgelost** (multi-vakken, kernen, buitenruimten met gestippelde onderverdeling).
 
 - **2e verdieping (f2-0.1.0), semi-automatisch:** 119 vakken + 1 arcering; 39 woningen (geen bergingen op dit blad); 102 van 121 labelposities gemeten (f2-0.1.1).
-- **3e verdieping (f3-0.1.0):** 76 vakken; 26 woningen (216-225, 230-237 ook op de 2e; 246, 247, 256-259, 264, 265); galerij en woning 246 gescheiden met 4 gedocumenteerde CUTS (perforatiegaten/scanuitval); 66 van 81 labels gemeten.
-- **4e verdieping en daken (f4-0.1.0):** 42 vakken (19 ruimten + 23 kleine dak-symbolen als element); bovenste laag woningen 256-259; 15 van 22 labels gemeten.
+- **3e verdieping (f3-0.1.1):** 77 vakken (s076 bij woning 264 toegevoegd); 26 woningen (216-225, 230-237 ook op de 2e; 246, 247, 256-259, 264, 265); galerij en woning 246 gescheiden met 4 gedocumenteerde CUTS (perforatiegaten/scanuitval); 66 van 81 labels gemeten.
+- **4e verdieping en daken (f4-0.1.1):** 46 vakken (21 ruimten + 25 elementen: 23 kleine dak-symbolen en 2 dakranden); ruitvormig dakblok en een dakblok dat pas na 4 CUTS (perforatiegaten) sloot toegevoegd; bovenste laag woningen 256-259; 17 van 24 labels gemeten.
 - **Nummercontrole** (`tools/number_check.py` → `data/inventory/number_check.json`): alle 85 woningen (181-265) en 91 bergingen (266-356) gevonden; geen dubbelen op één blad; 22 woningnummers op twee bladen (vermoedelijk meerlaags). De huidige kaart (`index.html`, `js/`, `svg/`) blijft de referentie. Viewer: `model/pilot/`, online `/dev/model/pilot/`.
 
 ## Inhoud

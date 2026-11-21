@@ -83,10 +83,15 @@ class TestCoverage(unittest.TestCase):
 
 class TestIdsLegal(unittest.TestCase):
     def test_fixtures(self):
+        """Eerder uitgegeven sleutels blijven bestaan met dezelfde soort/nummer; de laatste fixture = huidige stand."""
         for n, F in ((3, F3), (4, F4)):
-            with open(os.path.join(HERE, "fixtures", f"f{n}_seg_keys_v0.1.0.json")) as f:
-                fx = json.load(f)["keys"]
-            self.assertEqual({k: [kd, i] for k, _s, kd, _l, i, _h, _n in F.SEEDS}, fx)
+            now = {k: [kd, i] for k, _s, kd, _l, i, _h, _n in F.SEEDS}
+            for v in ("0.1.0", "0.1.1"):
+                with open(os.path.join(HERE, "fixtures", f"f{n}_seg_keys_v{v}.json")) as f:
+                    fx = json.load(f)["keys"]
+                for k, val in fx.items():
+                    self.assertEqual(now.get(k), val, (n, v, k))
+            self.assertEqual(now, fx)
 
     def test_ids_unique_across_floors(self):
         seen = set()

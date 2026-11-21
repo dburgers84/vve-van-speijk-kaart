@@ -2,7 +2,7 @@
 
 Op dit blad alleen de bovenste laag van woningen 256-259 (ook op p84) plus daken; geen nieuwe woningnummers.
 
-Sleutels sNNN eenmalig uitgedeeld op 2026-11-21 (rij van 150 px, dan x) en blijven vast. Classificatie VISUEEL gelezen
+Sleutels sNNN eenmalig uitgedeeld op 2026-11-21 (rij van 150 px, dan x; s042-s045 later toegevoegd: ruitvormig dakblok tot y 8229 en een dakblok dat pas na CUTS gesloten is) en blijven vast. Classificatie VISUEEL gelezen
 op contactbladen (geen OCR). Tuple: (key, seed_xy, kind, label_literal, index_number, has_179, note)
 """
 PREFIX = "f4_seg"
@@ -24,10 +24,15 @@ HATCH_DIAG_LEN = 21
 HATCH_WIN, HATCH_DENSITY = 41, 0.03
 HATCH_BARRIER_ERODE = 17
 HATCH_SEEDS = []
-CUTS = []
+CUTS = [
+    ("f4_p1o", (790, 4972), (790, 5030), "Buitenlijn dakblok (x 790) onderbroken door rond perforatiegat in de scan; hersteld langs de getekende lijn"),
+    ("f4_p1i", (773, 4972), (773, 5030), "Binnenlijn dakblok (x 773) idem, eerste perforatiegat"),
+    ("f4_p2o", (790, 5155), (790, 5212), "Buitenlijn dakblok idem, tweede perforatiegat"),
+    ("f4_p2i", (773, 5155), (773, 5212), "Binnenlijn dakblok idem, tweede perforatiegat"),
+]
 LEGEND_BBOX = None
 IDX180 = {}
-IDX180_KEYS = ['s001', 's003', 's011', 's019', 's033']   # vakken met een omcirkelde 180 zonder eigen indexnummer
+IDX180_KEYS = ['s001', 's003', 's011', 's019', 's033', 's043', 's044']   # vakken met een omcirkelde 180 zonder eigen indexnummer
 SEEDS = [
     ('s000', (1844, 2416), 'roof', 'None', None, False, 'Dakvlak (helft van blok met s001, dunne deellijn); omcirkeld 180 staat in buurvak s001'),
     ('s001', (2182, 2433), 'roof', 'dak', None, False, 'Dak + indicatieve installatiezone; omcirkeld 180 in het vak'),
@@ -71,4 +76,8 @@ SEEDS = [
     ('s039', (5334, 6443), 'roof_symbol', None, None, False, 'Klein rechthoekig symbool op dak (opbouw/installatie?), geen label'),
     ('s040', (408, 6851), 'apartment_dwelling', 'woning', '256', False, None),
     ('s041', (5337, 6735), 'roof_symbol', None, None, False, 'Klein rechthoekig symbool op dak (opbouw/installatie?), geen label'),
+    ('s042', (751, 7321), 'wall_band', None, None, False, 'Rand van het ruitvormige dakblok (vak loopt tot y 8229, daarom later toegevoegd)'),
+    ('s043', (564, 7772), 'roof', 'dak', None, False, 'Ruitvormig dakblok: dak + indicatieve installatiezone + dakluik; omcirkeld 180 in het vak'),
+    ('s044', (400, 5100), 'roof', 'dak', None, False, 'Dakblok met dakluik + indicatieve installatiezone; omcirkeld 180 in het vak. Pas gesloten na 4 CUTS (perforatiegaten)'),
+    ('s045', (781, 5100), 'wall_band', None, None, False, 'Rand van dakblok s044'),
 ]

@@ -1,6 +1,6 @@
 {
  "schema_version": "vve-plan/2.1.0",
- "dataset_version": "f4-0.1.0",
+ "dataset_version": "f4-0.1.1",
  "generated": "2026-11-21",
  "sources": [
   {
@@ -144,10 +144,10 @@
    ],
    "floor_id": "4e",
    "fit_px": [
-    233,
+    120,
     1823,
     6557,
-    6965
+    8227
    ],
    "columns_from_detector": 0,
    "method": "semi-automatische segmentatie (binnenzijde lijn) + visuele review",
@@ -2317,6 +2317,240 @@
     "method": "auto_segment_inner_face (tools/segment_bg.py --floor 4e) + visuele review contactbladen",
     "boundary": "binnenzijde getekende lijn",
     "note": "Klein rechthoekig symbool op dak (opbouw/installatie?), geen label."
+   }
+  },
+  {
+   "id": "obj_f4_seg_s042",
+   "revision": 1,
+   "floor_id": "4e",
+   "frame_id": "frm_p85_native",
+   "geometry": {
+    "type": "Polygon",
+    "rings": [
+     [
+      "v_f4_seg_s042_0",
+      "v_f4_seg_s042_1",
+      "v_f4_seg_s042_2",
+      "v_f4_seg_s042_3",
+      "v_f4_seg_s042_4",
+      "v_f4_seg_s042_5",
+      "v_f4_seg_s042_6",
+      "v_f4_seg_s042_7",
+      "v_f4_seg_s042_8",
+      "v_f4_seg_s042_9",
+      "v_f4_seg_s042_10",
+      "v_f4_seg_s042_11",
+      "v_f4_seg_s042_12"
+     ],
+     [
+      "v_f4_seg_s042_h0_0",
+      "v_f4_seg_s042_h0_1",
+      "v_f4_seg_s042_h0_2",
+      "v_f4_seg_s042_h0_3",
+      "v_f4_seg_s042_h0_4",
+      "v_f4_seg_s042_h0_5",
+      "v_f4_seg_s042_h0_6",
+      "v_f4_seg_s042_h0_7",
+      "v_f4_seg_s042_h0_8",
+      "v_f4_seg_s042_h0_9",
+      "v_f4_seg_s042_h0_10"
+     ]
+    ]
+   },
+   "edge_ids": [
+    "e_f4_seg_s042_0_s042_1",
+    "e_f4_seg_s042_1_s042_2",
+    "e_f4_seg_s042_2_s042_3",
+    "e_f4_seg_s042_3_s042_4",
+    "e_f4_seg_s042_4_s042_5",
+    "e_f4_seg_s042_5_s042_6",
+    "e_f4_seg_s042_6_s042_7",
+    "e_f4_seg_s042_7_s042_8",
+    "e_f4_seg_s042_8_s042_9",
+    "e_f4_seg_s042_10_s042_9",
+    "e_f4_seg_s042_10_s042_11",
+    "e_f4_seg_s042_11_s042_12",
+    "e_f4_seg_s042_0_s042_12",
+    "e_f4_seg_s042_h0_0_s042_h0_1",
+    "e_f4_seg_s042_h0_1_s042_h0_2",
+    "e_f4_seg_s042_h0_2_s042_h0_3",
+    "e_f4_seg_s042_h0_3_s042_h0_4",
+    "e_f4_seg_s042_h0_4_s042_h0_5",
+    "e_f4_seg_s042_h0_5_s042_h0_6",
+    "e_f4_seg_s042_h0_6_s042_h0_7",
+    "e_f4_seg_s042_h0_7_s042_h0_8",
+    "e_f4_seg_s042_h0_8_s042_h0_9",
+    "e_f4_seg_s042_h0_10_s042_h0_9",
+    "e_f4_seg_s042_h0_0_s042_h0_10"
+   ],
+   "label_ids": [],
+   "kind": "wall_band",
+   "class": "element",
+   "region_id": "reg_f4_seg",
+   "display_name": "Wandstrook tussen dubbele lijnen (getekende wanddikte)",
+   "certainty": "probable",
+   "review_status": "needs_review",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face (tools/segment_bg.py --floor 4e) + visuele review contactbladen",
+    "boundary": "binnenzijde getekende lijn",
+    "note": "Rand van het ruitvormige dakblok (vak loopt tot y 8229, daarom later toegevoegd). 1 omsloten buurvakken als gaten (binnenringen)."
+   }
+  },
+  {
+   "id": "obj_f4_seg_s043",
+   "revision": 1,
+   "floor_id": "4e",
+   "frame_id": "frm_p85_native",
+   "geometry": {
+    "type": "Polygon",
+    "rings": [
+     [
+      "v_f4_seg_s043_0",
+      "v_f4_seg_s043_1",
+      "v_f4_seg_s043_2",
+      "v_f4_seg_s043_3"
+     ]
+    ]
+   },
+   "edge_ids": [
+    "e_f4_seg_s043_0_s043_1",
+    "e_f4_seg_s043_1_s043_2",
+    "e_f4_seg_s043_2_s043_3",
+    "e_f4_seg_s043_0_s043_3"
+   ],
+   "label_ids": [
+    "lbl_f4_seg_s043"
+   ],
+   "kind": "roof",
+   "class": "space",
+   "region_id": "reg_f4_seg",
+   "display_name": "Dak",
+   "certainty": "probable",
+   "review_status": "needs_review",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face (tools/segment_bg.py --floor 4e) + visuele review contactbladen",
+    "boundary": "binnenzijde getekende lijn",
+    "note": "Ruitvormig dakblok: dak + indicatieve installatiezone + dakluik; omcirkeld 180 in het vak. Grens = binnenzijde van de getekende lijn (wandstrook ligt ertussen)."
+   },
+   "source_label_text": "dak",
+   "current_use": null
+  },
+  {
+   "id": "obj_f4_seg_s044",
+   "revision": 1,
+   "floor_id": "4e",
+   "frame_id": "frm_p85_native",
+   "geometry": {
+    "type": "Polygon",
+    "rings": [
+     [
+      "v_f4_seg_s044_0",
+      "v_f4_seg_s044_1",
+      "v_f4_seg_s044_2",
+      "v_f4_seg_s044_3",
+      "v_f4_seg_s044_4",
+      "v_f4_seg_s044_5",
+      "v_f4_seg_s044_6",
+      "v_f4_seg_s044_7"
+     ]
+    ]
+   },
+   "edge_ids": [
+    "e_f4_seg_s044_0_s044_1",
+    "e_f4_seg_s044_1_s044_2",
+    "e_f4_seg_s044_2_s044_3",
+    "e_f4_seg_s044_3_s044_4",
+    "e_f4_seg_s044_4_s044_5",
+    "e_f4_seg_s044_5_s044_6",
+    "e_f4_seg_s044_6_s044_7",
+    "e_f4_seg_s044_0_s044_7"
+   ],
+   "label_ids": [
+    "lbl_f4_seg_s044"
+   ],
+   "kind": "roof",
+   "class": "space",
+   "region_id": "reg_f4_seg",
+   "display_name": "Dak",
+   "certainty": "probable",
+   "review_status": "needs_review",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face (tools/segment_bg.py --floor 4e) + visuele review contactbladen",
+    "boundary": "binnenzijde getekende lijn",
+    "note": "Dakblok met dakluik + indicatieve installatiezone; omcirkeld 180 in het vak. Pas gesloten na 4 CUTS (perforatiegaten). Grens = binnenzijde van de getekende lijn (wandstrook ligt ertussen)."
+   },
+   "source_label_text": "dak",
+   "current_use": null
+  },
+  {
+   "id": "obj_f4_seg_s045",
+   "revision": 1,
+   "floor_id": "4e",
+   "frame_id": "frm_p85_native",
+   "geometry": {
+    "type": "Polygon",
+    "rings": [
+     [
+      "v_f4_seg_s045_0",
+      "v_f4_seg_s045_1",
+      "v_f4_seg_s045_2",
+      "v_f4_seg_s045_3",
+      "v_f4_seg_s045_4",
+      "v_f4_seg_s045_5",
+      "v_f4_seg_s045_6",
+      "v_f4_seg_s045_7",
+      "v_f4_seg_s045_8"
+     ],
+     [
+      "v_f4_seg_s045_h0_0",
+      "v_f4_seg_s045_h0_1",
+      "v_f4_seg_s045_h0_2",
+      "v_f4_seg_s045_h0_3",
+      "v_f4_seg_s045_h0_4",
+      "v_f4_seg_s045_h0_5",
+      "v_f4_seg_s045_h0_6",
+      "v_f4_seg_s045_h0_7",
+      "v_f4_seg_s045_h0_8",
+      "v_f4_seg_s045_h0_9"
+     ]
+    ]
+   },
+   "edge_ids": [
+    "e_f4_seg_s045_0_s045_1",
+    "e_f4_seg_s045_1_s045_2",
+    "e_f4_seg_s045_2_s045_3",
+    "e_f4_seg_s045_3_s045_4",
+    "e_f4_seg_s045_4_s045_5",
+    "e_f4_seg_s045_5_s045_6",
+    "e_f4_seg_s045_6_s045_7",
+    "e_f4_seg_s045_7_s045_8",
+    "e_f4_seg_s045_0_s045_8",
+    "e_f4_seg_s045_h0_0_s045_h0_1",
+    "e_f4_seg_s045_h0_1_s045_h0_2",
+    "e_f4_seg_s045_h0_2_s045_h0_3",
+    "e_f4_seg_s045_h0_3_s045_h0_4",
+    "e_f4_seg_s045_h0_4_s045_h0_5",
+    "e_f4_seg_s045_h0_5_s045_h0_6",
+    "e_f4_seg_s045_h0_6_s045_h0_7",
+    "e_f4_seg_s045_h0_7_s045_h0_8",
+    "e_f4_seg_s045_h0_8_s045_h0_9",
+    "e_f4_seg_s045_h0_0_s045_h0_9"
+   ],
+   "label_ids": [],
+   "kind": "wall_band",
+   "class": "element",
+   "region_id": "reg_f4_seg",
+   "display_name": "Wandstrook tussen dubbele lijnen (getekende wanddikte)",
+   "certainty": "probable",
+   "review_status": "needs_review",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face (tools/segment_bg.py --floor 4e) + visuele review contactbladen",
+    "boundary": "binnenzijde getekende lijn",
+    "note": "Rand van dakblok s044. 1 omsloten buurvakken als gaten (binnenringen)."
    }
   }
  ],
@@ -8153,6 +8387,776 @@
    "y_px": 6722,
    "x_rel": 0.75564653,
    "y_rel": 0.6695886,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_0",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 751,
+   "y_px": 7312,
+   "x_rel": 0.10601355,
+   "y_rel": 0.7283594,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 531,
+   "y_px": 7542,
+   "x_rel": 0.07495765,
+   "y_rel": 0.75127005,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 438,
+   "y_px": 7636,
+   "x_rel": 0.06182947,
+   "y_rel": 0.76063353,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 421,
+   "y_px": 7656,
+   "x_rel": 0.0594297,
+   "y_rel": 0.76262576,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 345,
+   "y_px": 7732,
+   "x_rel": 0.0487013,
+   "y_rel": 0.77019623,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 306,
+   "y_px": 7775,
+   "x_rel": 0.04319593,
+   "y_rel": 0.77447953,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 502,
+   "y_px": 7970,
+   "x_rel": 0.07086392,
+   "y_rel": 0.79390378,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 766,
+   "y_px": 8227,
+   "x_rel": 0.108131,
+   "y_rel": 0.81950393,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1014,
+   "y_px": 7972,
+   "x_rel": 0.14313947,
+   "y_rel": 0.794103,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1060,
+   "y_px": 7922,
+   "x_rel": 0.14963298,
+   "y_rel": 0.78912242,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_10",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1209,
+   "y_px": 7770,
+   "x_rel": 0.17066629,
+   "y_rel": 0.77398147,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_11",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1212,
+   "y_px": 7764,
+   "x_rel": 0.17108978,
+   "y_rel": 0.7733838,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_12",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1081,
+   "y_px": 7639,
+   "x_rel": 0.1525974,
+   "y_rel": 0.76093236,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_0",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 749,
+   "y_px": 7330,
+   "x_rel": 0.10573123,
+   "y_rel": 0.73015241,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 755,
+   "y_px": 7331,
+   "x_rel": 0.1065782,
+   "y_rel": 0.73025202,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 915,
+   "y_px": 7491,
+   "x_rel": 0.12916431,
+   "y_rel": 0.74618986,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1195,
+   "y_px": 7763,
+   "x_rel": 0.16869001,
+   "y_rel": 0.77328419,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1195,
+   "y_px": 7768,
+   "x_rel": 0.16869001,
+   "y_rel": 0.77378225,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 768,
+   "y_px": 8209,
+   "x_rel": 0.10841333,
+   "y_rel": 0.81771093,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 763,
+   "y_px": 8209,
+   "x_rel": 0.10770751,
+   "y_rel": 0.81771093,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 324,
+   "y_px": 7777,
+   "x_rel": 0.04573687,
+   "y_rel": 0.77467875,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 324,
+   "y_px": 7772,
+   "x_rel": 0.04573687,
+   "y_rel": 0.7741807,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 364,
+   "y_px": 7729,
+   "x_rel": 0.0513834,
+   "y_rel": 0.7698974,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s042_h0_10",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 437,
+   "y_px": 7656,
+   "x_rel": 0.06168831,
+   "y_rel": 0.76262576,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s043_0",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 751,
+   "y_px": 7335,
+   "x_rel": 0.10601355,
+   "y_rel": 0.73065046,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s043_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 329,
+   "y_px": 7775,
+   "x_rel": 0.04644269,
+   "y_rel": 0.77447953,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s043_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 766,
+   "y_px": 8204,
+   "x_rel": 0.108131,
+   "y_rel": 0.81721287,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s043_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 1190,
+   "y_px": 7765,
+   "x_rel": 0.16798419,
+   "y_rel": 0.77348341,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_0",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 765,
+   "y_px": 4813,
+   "x_rel": 0.10798984,
+   "y_rel": 0.47943022,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 136,
+   "y_px": 4818,
+   "x_rel": 0.01919819,
+   "y_rel": 0.47992828,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 144,
+   "y_px": 5393,
+   "x_rel": 0.0203275,
+   "y_rel": 0.5372049,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 773,
+   "y_px": 5387,
+   "x_rel": 0.10911914,
+   "y_rel": 0.53660723,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 772,
+   "y_px": 5217,
+   "x_rel": 0.10897798,
+   "y_rel": 0.51967327,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 768,
+   "y_px": 5214,
+   "x_rel": 0.10841333,
+   "y_rel": 0.51937444,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 767,
+   "y_px": 5163,
+   "x_rel": 0.10827216,
+   "y_rel": 0.51429425,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s044_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 770,
+   "y_px": 5097,
+   "x_rel": 0.10869565,
+   "y_rel": 0.50771989,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_0",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 781,
+   "y_px": 4797,
+   "x_rel": 0.11024845,
+   "y_rel": 0.47783644,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 120,
+   "y_px": 4801,
+   "x_rel": 0.01693958,
+   "y_rel": 0.47823488,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 127,
+   "y_px": 5208,
+   "x_rel": 0.01792772,
+   "y_rel": 0.51877677,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 128,
+   "y_px": 5410,
+   "x_rel": 0.01806889,
+   "y_rel": 0.5388983,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 790,
+   "y_px": 5404,
+   "x_rel": 0.11151892,
+   "y_rel": 0.53830063,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 787,
+   "y_px": 5216,
+   "x_rel": 0.11109543,
+   "y_rel": 0.51957366,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 785,
+   "y_px": 5214,
+   "x_rel": 0.1108131,
+   "y_rel": 0.51937444,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 785,
+   "y_px": 4989,
+   "x_rel": 0.1108131,
+   "y_rel": 0.49696185,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 782,
+   "y_px": 4932,
+   "x_rel": 0.11038961,
+   "y_rel": 0.49128399,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_0",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 769,
+   "y_px": 4810,
+   "x_rel": 0.10855449,
+   "y_rel": 0.47913139,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 774,
+   "y_px": 5133,
+   "x_rel": 0.1092603,
+   "y_rel": 0.51130591,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 771,
+   "y_px": 5134,
+   "x_rel": 0.10883682,
+   "y_rel": 0.51140552,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 772,
+   "y_px": 5211,
+   "x_rel": 0.10897798,
+   "y_rel": 0.51907561,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 776,
+   "y_px": 5214,
+   "x_rel": 0.10954263,
+   "y_rel": 0.51937444,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 776,
+   "y_px": 5391,
+   "x_rel": 0.10954263,
+   "y_rel": 0.53700568,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 264,
+   "y_px": 5397,
+   "x_rel": 0.03726708,
+   "y_rel": 0.53760335,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 140,
+   "y_px": 5396,
+   "x_rel": 0.01976285,
+   "y_rel": 0.53750374,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 133,
+   "y_px": 4814,
+   "x_rel": 0.0187747,
+   "y_rel": 0.47952983,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f4_seg_s045_h0_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "x_px": 517,
+   "y_px": 4810,
+   "x_rel": 0.07298137,
+   "y_rel": 0.47913139,
    "positional_tolerance_px": 3,
    "evidence": {
     "source_id": "src_akte2006_p85",
@@ -24006,6 +25010,2096 @@
     "source_id": "src_akte2006_p85",
     "method": "auto_segment_inner_face"
    }
+  },
+  {
+   "id": "e_f4_seg_s042_0_s042_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_0",
+    "v_f4_seg_s042_1"
+   ],
+   "role": "element_outline",
+   "length_px": 318.28,
+   "dimension": {
+    "status": "derived",
+    "length_m": 8.1,
+    "uncertainty_m": 0.14,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 8.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 8,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.962,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_1_s042_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_1",
+    "v_f4_seg_s042_2"
+   ],
+   "role": "element_outline",
+   "length_px": 132.23,
+   "dimension": {
+    "status": "derived",
+    "length_m": 3.36,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 3.4,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 3,4 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.947,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_2_s042_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_2",
+    "v_f4_seg_s042_3"
+   ],
+   "role": "element_outline",
+   "length_px": 26.25,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.67,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.7,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,7 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_3_s042_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_3",
+    "v_f4_seg_s042_4"
+   ],
+   "role": "element_outline",
+   "length_px": 107.48,
+   "dimension": {
+    "status": "derived",
+    "length_m": 2.73,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 2.7,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 2,7 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.981,
+    "max_gap_px": 2
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_4_s042_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_4",
+    "v_f4_seg_s042_5"
+   ],
+   "role": "element_outline",
+   "length_px": 58.05,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.48,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 1.5,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 1,5 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.932,
+    "max_gap_px": 2
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_5_s042_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_5",
+    "v_f4_seg_s042_6"
+   ],
+   "role": "element_outline",
+   "length_px": 276.48,
+   "dimension": {
+    "status": "derived",
+    "length_m": 7.03,
+    "uncertainty_m": 0.14,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 7.0,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 7,0 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.993,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_6_s042_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_6",
+    "v_f4_seg_s042_7"
+   ],
+   "role": "element_outline",
+   "length_px": 368.44,
+   "dimension": {
+    "status": "derived",
+    "length_m": 9.37,
+    "uncertainty_m": 0.15,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 9.4,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 9,4 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_7_s042_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_7",
+    "v_f4_seg_s042_8"
+   ],
+   "role": "element_outline",
+   "length_px": 355.71,
+   "dimension": {
+    "status": "derived",
+    "length_m": 9.05,
+    "uncertainty_m": 0.15,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 9.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 9,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_8_s042_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_8",
+    "v_f4_seg_s042_9"
+   ],
+   "role": "element_outline",
+   "length_px": 67.94,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.73,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 1.7,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 1,7 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.985,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_10_s042_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_9",
+    "v_f4_seg_s042_10"
+   ],
+   "role": "element_outline",
+   "length_px": 212.85,
+   "dimension": {
+    "status": "derived",
+    "length_m": 5.42,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 5.4,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 5,4 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.953,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_10_s042_11",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_10",
+    "v_f4_seg_s042_11"
+   ],
+   "role": "element_outline",
+   "length_px": 6.71,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.17,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.2,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,2 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_11_s042_12",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_11",
+    "v_f4_seg_s042_12"
+   ],
+   "role": "element_outline",
+   "length_px": 181.07,
+   "dimension": {
+    "status": "derived",
+    "length_m": 4.61,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 4.6,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 4,6 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.956,
+    "max_gap_px": 2
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_0_s042_12",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_12",
+    "v_f4_seg_s042_0"
+   ],
+   "role": "element_outline",
+   "length_px": 464.57,
+   "dimension": {
+    "status": "derived",
+    "length_m": 11.82,
+    "uncertainty_m": 0.18,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 11.8,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 11,8 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.987,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_0_s042_h0_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_0",
+    "v_f4_seg_s042_h0_1"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 6.08,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.15,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.2,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,2 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_1_s042_h0_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_1",
+    "v_f4_seg_s042_h0_2"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 226.27,
+   "dimension": {
+    "status": "derived",
+    "length_m": 5.76,
+    "uncertainty_m": 0.13,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 5.8,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 5,8 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_2_s042_h0_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_2",
+    "v_f4_seg_s042_h0_3"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 390.36,
+   "dimension": {
+    "status": "derived",
+    "length_m": 9.93,
+    "uncertainty_m": 0.16,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 9.9,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 9,9 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_3_s042_h0_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_3",
+    "v_f4_seg_s042_h0_4"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 5.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.13,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_4_s042_h0_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_4",
+    "v_f4_seg_s042_h0_5"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 613.85,
+   "dimension": {
+    "status": "derived",
+    "length_m": 15.62,
+    "uncertainty_m": 0.21,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 15.6,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 15,6 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_5_s042_h0_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_5",
+    "v_f4_seg_s042_h0_6"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 5.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.13,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_6_s042_h0_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_6",
+    "v_f4_seg_s042_h0_7"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 615.91,
+   "dimension": {
+    "status": "derived",
+    "length_m": 15.67,
+    "uncertainty_m": 0.21,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 15.7,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 15,7 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_7_s042_h0_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_7",
+    "v_f4_seg_s042_h0_8"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 5.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.13,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_8_s042_h0_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_8",
+    "v_f4_seg_s042_h0_9"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 58.73,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.49,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 1.5,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 1,5 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_10_s042_h0_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_9",
+    "v_f4_seg_s042_h0_10"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 103.24,
+   "dimension": {
+    "status": "derived",
+    "length_m": 2.63,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 2.6,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 2,6 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s042_h0_0_s042_h0_10",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s042_h0_10",
+    "v_f4_seg_s042_h0_0"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 451.24,
+   "dimension": {
+    "status": "derived",
+    "length_m": 11.48,
+    "uncertainty_m": 0.17,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 11.5,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 11,5 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s043_0_s043_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s043_0",
+    "v_f4_seg_s043_1"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 609.66,
+   "dimension": {
+    "status": "derived",
+    "length_m": 15.51,
+    "uncertainty_m": 0.21,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 15.5,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 15,5 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.926,
+    "max_gap_px": 12
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s043_1_s043_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s043_1",
+    "v_f4_seg_s043_2"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 612.38,
+   "dimension": {
+    "status": "derived",
+    "length_m": 15.58,
+    "uncertainty_m": 0.21,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 15.6,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 15,6 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.804,
+    "max_gap_px": 4
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s043_2_s043_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s043_2",
+    "v_f4_seg_s043_3"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 610.33,
+   "dimension": {
+    "status": "derived",
+    "length_m": 15.53,
+    "uncertainty_m": 0.21,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 15.5,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 15,5 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.876,
+    "max_gap_px": 3
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s043_0_s043_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s043_3",
+    "v_f4_seg_s043_0"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 614.51,
+   "dimension": {
+    "status": "derived",
+    "length_m": 15.64,
+    "uncertainty_m": 0.21,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 15.6,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 15,6 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.998,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_0_s044_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_0",
+    "v_f4_seg_s044_1"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 629.02,
+   "dimension": {
+    "status": "derived",
+    "length_m": 16.0,
+    "uncertainty_m": 0.27,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 16.0,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 16,0 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.998,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_1_s044_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_1",
+    "v_f4_seg_s044_2"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 575.06,
+   "dimension": {
+    "status": "derived",
+    "length_m": 14.63,
+    "uncertainty_m": 0.14,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 14.6,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 14,6 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_2_s044_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_2",
+    "v_f4_seg_s044_3"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 629.03,
+   "dimension": {
+    "status": "derived",
+    "length_m": 16.0,
+    "uncertainty_m": 0.27,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 16.0,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 16,0 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.814,
+    "max_gap_px": 35
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_3_s044_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_3",
+    "v_f4_seg_s044_4"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 170.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 4.33,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 4.3,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 4,3 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_4_s044_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_4",
+    "v_f4_seg_s044_5"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 5.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.13,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.333,
+    "max_gap_px": 4
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_5_s044_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_5",
+    "v_f4_seg_s044_6"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 51.01,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.3,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 1.3,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 1,3 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.288,
+    "max_gap_px": 37
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_6_s044_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_6",
+    "v_f4_seg_s044_7"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 66.07,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.68,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 1.7,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 1,7 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.687,
+    "max_gap_px": 21
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s044_0_s044_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s044_7",
+    "v_f4_seg_s044_0"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 284.04,
+   "dimension": {
+    "status": "derived",
+    "length_m": 7.23,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 7.2,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 7,2 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.86,
+    "max_gap_px": 40
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_0_s045_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_0",
+    "v_f4_seg_s045_1"
+   ],
+   "role": "element_outline",
+   "length_px": 661.01,
+   "dimension": {
+    "status": "derived",
+    "length_m": 16.82,
+    "uncertainty_m": 0.28,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 16.8,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 16,8 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_1_s045_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_1",
+    "v_f4_seg_s045_2"
+   ],
+   "role": "element_outline",
+   "length_px": 407.06,
+   "dimension": {
+    "status": "derived",
+    "length_m": 10.36,
+    "uncertainty_m": 0.13,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 10.4,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 10,4 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.495,
+    "max_gap_px": 38
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_2_s045_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_2",
+    "v_f4_seg_s045_3"
+   ],
+   "role": "element_outline",
+   "length_px": 202.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 5.14,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 5.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 5,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.966,
+    "max_gap_px": 5
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_3_s045_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_3",
+    "v_f4_seg_s045_4"
+   ],
+   "role": "element_outline",
+   "length_px": 662.03,
+   "dimension": {
+    "status": "derived",
+    "length_m": 16.84,
+    "uncertainty_m": 0.28,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 16.8,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 16,8 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.95,
+    "max_gap_px": 17
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_4_s045_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_4",
+    "v_f4_seg_s045_5"
+   ],
+   "role": "element_outline",
+   "length_px": 188.02,
+   "dimension": {
+    "status": "derived",
+    "length_m": 4.78,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 4.8,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 4,8 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.995,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_5_s045_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_5",
+    "v_f4_seg_s045_6"
+   ],
+   "role": "element_outline",
+   "length_px": 2.83,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.07,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.333,
+    "max_gap_px": 2
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_6_s045_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_6",
+    "v_f4_seg_s045_7"
+   ],
+   "role": "element_outline",
+   "length_px": 225.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 5.72,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 5.7,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 5,7 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.522,
+    "max_gap_px": 79
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_7_s045_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_7",
+    "v_f4_seg_s045_8"
+   ],
+   "role": "element_outline",
+   "length_px": 57.08,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.45,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 1.5,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 1,5 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.862,
+    "max_gap_px": 8
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_0_s045_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_8",
+    "v_f4_seg_s045_0"
+   ],
+   "role": "element_outline",
+   "length_px": 135.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 3.43,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 3.4,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 3,4 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.993,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_0_s045_h0_1",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_0",
+    "v_f4_seg_s045_h0_1"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 323.04,
+   "dimension": {
+    "status": "derived",
+    "length_m": 8.22,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 8.2,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 8,2 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.867,
+    "max_gap_px": 43
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_1_s045_h0_2",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_1",
+    "v_f4_seg_s045_h0_2"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 3.16,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.08,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_2_s045_h0_3",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_2",
+    "v_f4_seg_s045_h0_3"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 77.01,
+   "dimension": {
+    "status": "derived",
+    "length_m": 1.96,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 2.0,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 2,0 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.526,
+    "max_gap_px": 37
+   },
+   "trace_quality": "partial_ink",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_3_s045_h0_4",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_3",
+    "v_f4_seg_s045_h0_4"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 5.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 0.13,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 0.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 0,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_4_s045_h0_5",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_4",
+    "v_f4_seg_s045_h0_5"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 177.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 4.5,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 4.5,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 4,5 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_5_s045_h0_6",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_5",
+    "v_f4_seg_s045_h0_6"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 512.04,
+   "dimension": {
+    "status": "derived",
+    "length_m": 13.03,
+    "uncertainty_m": 0.23,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 13.0,
+     "margin_m": 0.3,
+     "step_m": 0.1,
+     "text": "≈ 13,0 m (geschatte marge ±0,3 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_6_s045_h0_7",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_6",
+    "v_f4_seg_s045_h0_7"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 124.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 3.16,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 3.2,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 3,2 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_7_s045_h0_8",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_7",
+    "v_f4_seg_s045_h0_8"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 582.04,
+   "dimension": {
+    "status": "derived",
+    "length_m": 14.81,
+    "uncertainty_m": 0.14,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 14.8,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 14,8 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_8_s045_h0_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_8",
+    "v_f4_seg_s045_h0_9"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 384.02,
+   "dimension": {
+    "status": "derived",
+    "length_m": 9.77,
+    "uncertainty_m": 0.18,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 9.8,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 9,8 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f4_seg_s045_h0_0_s045_h0_9",
+   "frame_id": "frm_p85_native",
+   "floor_id": "4e",
+   "v": [
+    "v_f4_seg_s045_h0_9",
+    "v_f4_seg_s045_h0_0"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 252.0,
+   "dimension": {
+    "status": "derived",
+    "length_m": 6.41,
+    "uncertainty_m": 0.15,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 6.4,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 6,4 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p85_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "auto_segment_inner_face"
+   }
   }
  ],
  "labels": [
@@ -24492,6 +27586,50 @@
     "method": "visual_read_no_ocr"
    },
    "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 6 tekens)"
+  },
+  {
+   "id": "lbl_f4_seg_s043",
+   "literal_text": "dak",
+   "normalized_text": "dak",
+   "category": "space_name",
+   "bbox_px": [
+    505,
+    7762,
+    528,
+    7812
+   ],
+   "frame_id": "frm_p85_native",
+   "assigned_object_ids": [
+    "obj_f4_seg_s043"
+   ],
+   "certainty": "probable",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "visual_read_no_ocr"
+   },
+   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 3 tekens)"
+  },
+  {
+   "id": "lbl_f4_seg_s044",
+   "literal_text": "dak",
+   "normalized_text": "dak",
+   "category": "space_name",
+   "bbox_px": [
+    239,
+    5087,
+    261,
+    5123
+   ],
+   "frame_id": "frm_p85_native",
+   "assigned_object_ids": [
+    "obj_f4_seg_s044"
+   ],
+   "certainty": "probable",
+   "evidence": {
+    "source_id": "src_akte2006_p85",
+    "method": "visual_read_no_ocr"
+   },
+   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 3 tekens)"
   }
  ],
  "connections": [],
@@ -25798,6 +28936,46 @@
     "method": "label+akte/MVGM-tekst (afgeleid)",
     "note": "Indexnummer 256 in dit vak (visueel gelezen); 181-265 = woningen volgens de nummering van de ondersplitsing (176 rechten)"
    }
+  },
+  {
+   "object_id": "obj_f4_seg_s043",
+   "split_id": "ls_hoofdsplitsing",
+   "relation": "private",
+   "right_id": "A-180",
+   "certainty": "probable",
+   "evidence": {
+    "source_id": "src_mvgm_hoofdsplitsing_stukken",
+    "method": "label+akte/MVGM-tekst (afgeleid)",
+    "note": "Omcirkeld 180 in dit dak-/installatievak; A-180 = Woningen (MVGM)"
+   }
+  },
+  {
+   "object_id": "obj_f4_seg_s043",
+   "split_id": "ls_ondersplitsing_woningen",
+   "relation": "unknown",
+   "right_id": null,
+   "certainty": "unknown",
+   "evidence": null
+  },
+  {
+   "object_id": "obj_f4_seg_s044",
+   "split_id": "ls_hoofdsplitsing",
+   "relation": "private",
+   "right_id": "A-180",
+   "certainty": "probable",
+   "evidence": {
+    "source_id": "src_mvgm_hoofdsplitsing_stukken",
+    "method": "label+akte/MVGM-tekst (afgeleid)",
+    "note": "Omcirkeld 180 in dit dak-/installatievak; A-180 = Woningen (MVGM)"
+   }
+  },
+  {
+   "object_id": "obj_f4_seg_s044",
+   "split_id": "ls_ondersplitsing_woningen",
+   "relation": "unknown",
+   "right_id": null,
+   "certainty": "unknown",
+   "evidence": null
   }
  ],
  "legacy_links": [],
@@ -25811,9 +28989,10 @@
    "segment_kinds": {
     "a179_region_unresolved": 1,
     "apartment_dwelling": 4,
-    "roof": 12,
+    "roof": 14,
     "roof_symbol": 23,
-    "unlabeled_space": 2
+    "unlabeled_space": 2,
+    "wall_band": 2
    },
    "unresolved_or_unlabeled_segments": 3,
    "woningen_on_sheet": 4,
@@ -25824,8 +29003,8 @@
     259
    ],
    "bergingen_on_sheet": 0,
-   "labels_total": 22,
-   "labels_position_measured": 15,
+   "labels_total": 24,
+   "labels_position_measured": 17,
    "labels_position_approximated": 7,
    "segments_problems": []
   },
@@ -25835,7 +29014,7 @@
    "buitenruimten, daken, vides, trappen/liften, bedrijfs-/179-vakken (labels visueel gelezen)",
    "0 arcering(en) 'niet in de splitsing betrokken' (diagonaaldetectie)",
    "wandstroken tussen dubbele lijnen",
-   "labelposities: 15 van 22 GEMETEN als tekstcluster, rest benaderd rond het zaadpunt"
+   "labelposities: 17 van 24 GEMETEN als tekstcluster, rest benaderd rond het zaadpunt"
   ],
   "not_traced": [
    "23 kleine rechthoekige symbolen op de daken: betekenis niet gelezen (als element, niet als ruimte)",
