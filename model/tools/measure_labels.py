@@ -34,6 +34,7 @@ def islands(raw, poly, holes):
     for hl in holes:
         cv2.fillPoly(m, [np.array(hl, np.int32) - [x - 1, y - 1]], 0)
     m = cv2.erode(m, np.ones((9, 9), np.uint8))
+    islands.mask, islands.off = m, (x - 1, y - 1)
     r = raw[y - 1:y + h + 1, x - 1:x + w + 1]
     n, lab, st, _ = cv2.connectedComponentsWithStats(r, connectivity=8)
     out = []
@@ -87,6 +88,14 @@ def enclosed(raw, b, d=(3, 14)):
         and raw[y0:y1, x0 - d[1]:x0 - d[0]].any() and raw[y0:y1, x1 + d[0]:x1 + d[1]].any()
 
 
+def near_edge(b, pad=8):
+    m, (ox, oy) = islands.mask, islands.off
+    x0, y0, x1, y1 = b[0] - ox - pad, b[1] - oy - pad, b[2] - ox + pad, b[3] - oy + pad
+    if x0 < 0 or y0 < 0 or x1 >= m.shape[1] or y1 >= m.shape[0]:
+        return True
+    return not m[y0:y1 + 1, x0:x1 + 1].all()
+
+
 def pick(groups, n_expect, tol, seed, raw=None):
     ok = [gr for gr in groups if abs(len(gr) - n_expect) <= tol and (raw is None or not enclosed(raw, bbox(gr)))]
     if not ok:
@@ -121,7 +130,10 @@ def measure(M, seg, raw):
                 r["i179"] = b
         if lit:
             n = len(lit.replace(" ", "").replace("-", ""))
-            b = pick(small, n, max(2, round(0.35 * n)), seed)
+            # korte woorden ('dak', 'trap'): exact aantal tekens en het cluster mag niet tegen de vakrand liggen
+            # (anders is het vaak een stuk van een langer woord dat over de rand doorloopt, bv. 'indicatieve')
+            cand = small if n > 4 else [gr for gr in small if len(gr) >= 2 and not near_edge(bbox(gr))]
+            b = pick(cand, n, max(2, round(0.35 * n)) if n > 4 else 0, seed)
             if b:
                 r["literal"] = b
         if r:
@@ -131,10 +143,10 @@ def measure(M, seg, raw):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--floor", choices=["1e", "2e"], required=True)
+    ap.add_argument("--floor", choices=["1e", "2e", "3e", "4e"], required=True)
     a = ap.parse_args()
     import importlib
-    mod, page = {"1e": ("f1_segments", 82), "2e": ("f2_segments", 83)}[a.floor]
+    mod, page = {"1e": ("f1_segments", 82), "2e": ("f2_segments", 83), "3e": ("f3_segments", 84), "4e": ("f4_segments", 85)}[a.floor]
     M = importlib.import_module("traces." + mod)
     seg = json.load(open(os.path.join(ROOT, "data", "inventory", f"{M.PREFIX.split('_')[0]}_segments_p{page}.json")))
     g = cv2.imread(f"/workspace/vve-source-audit/page-{page}.png", cv2.IMREAD_GRAYSCALE)

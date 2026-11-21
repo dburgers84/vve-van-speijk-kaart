@@ -1,0 +1,1672 @@
+{
+ "generated_by": "tools/number_check.py",
+ "expected": {
+  "woningen": "181-265 (85)",
+  "bergingen": "266-356 (91)"
+ },
+ "woningen_found": 85,
+ "bergingen_found": 91,
+ "woningen_missing": [],
+ "bergingen_missing": [],
+ "woningen_on_multiple_sheets": {
+  "216": [
+   "2e",
+   "3e"
+  ],
+  "217": [
+   "2e",
+   "3e"
+  ],
+  "218": [
+   "2e",
+   "3e"
+  ],
+  "219": [
+   "2e",
+   "3e"
+  ],
+  "220": [
+   "2e",
+   "3e"
+  ],
+  "221": [
+   "2e",
+   "3e"
+  ],
+  "222": [
+   "2e",
+   "3e"
+  ],
+  "223": [
+   "2e",
+   "3e"
+  ],
+  "224": [
+   "2e",
+   "3e"
+  ],
+  "225": [
+   "2e",
+   "3e"
+  ],
+  "230": [
+   "2e",
+   "3e"
+  ],
+  "231": [
+   "2e",
+   "3e"
+  ],
+  "232": [
+   "2e",
+   "3e"
+  ],
+  "233": [
+   "2e",
+   "3e"
+  ],
+  "234": [
+   "2e",
+   "3e"
+  ],
+  "235": [
+   "2e",
+   "3e"
+  ],
+  "236": [
+   "2e",
+   "3e"
+  ],
+  "237": [
+   "2e",
+   "3e"
+  ],
+  "256": [
+   "3e",
+   "4e"
+  ],
+  "257": [
+   "3e",
+   "4e"
+  ],
+  "258": [
+   "3e",
+   "4e"
+  ],
+  "259": [
+   "3e",
+   "4e"
+  ]
+ },
+ "bergingen_on_multiple_sheets": {},
+ "duplicate_on_same_sheet": {},
+ "wrong_kind_for_range": [],
+ "parts_only": {},
+ "by_number": {
+  "181": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s066",
+    "kind": "woning"
+   }
+  ],
+  "182": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s068",
+    "kind": "woning"
+   }
+  ],
+  "183": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s011",
+    "kind": "woning"
+   }
+  ],
+  "184": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s013",
+    "kind": "woning"
+   }
+  ],
+  "185": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s047",
+    "kind": "woning"
+   }
+  ],
+  "186": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s048",
+    "kind": "woning"
+   }
+  ],
+  "187": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s037",
+    "kind": "woning"
+   }
+  ],
+  "188": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s038",
+    "kind": "woning"
+   }
+  ],
+  "189": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s012",
+    "kind": "woning"
+   }
+  ],
+  "190": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s094",
+    "kind": "woning"
+   }
+  ],
+  "191": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s095",
+    "kind": "woning"
+   }
+  ],
+  "192": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s121",
+    "kind": "woning"
+   }
+  ],
+  "193": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s133",
+    "kind": "woning"
+   }
+  ],
+  "194": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s030",
+    "kind": "woning"
+   }
+  ],
+  "195": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s031",
+    "kind": "woning"
+   }
+  ],
+  "196": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s041",
+    "kind": "woning"
+   }
+  ],
+  "197": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s040",
+    "kind": "woning"
+   }
+  ],
+  "198": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s125",
+    "kind": "woning"
+   }
+  ],
+  "199": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s131",
+    "kind": "woning"
+   }
+  ],
+  "200": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s043",
+    "kind": "woning"
+   }
+  ],
+  "201": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s048",
+    "kind": "woning"
+   }
+  ],
+  "202": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s103",
+    "kind": "woning"
+   }
+  ],
+  "203": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s085",
+    "kind": "woning"
+   }
+  ],
+  "204": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s053",
+    "kind": "woning"
+   }
+  ],
+  "205": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s003",
+    "kind": "woning"
+   }
+  ],
+  "206": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s010",
+    "kind": "woning"
+   }
+  ],
+  "207": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s005",
+    "kind": "woning"
+   }
+  ],
+  "208": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s098",
+    "kind": "woning"
+   }
+  ],
+  "209": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s099",
+    "kind": "woning"
+   }
+  ],
+  "210": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s073",
+    "kind": "woning"
+   }
+  ],
+  "211": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s159",
+    "kind": "woning"
+   },
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s160",
+    "kind": "deel (onzeker)"
+   }
+  ],
+  "212": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s149",
+    "kind": "woning"
+   },
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s150",
+    "kind": "deel (onzeker)"
+   }
+  ],
+  "213": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s137",
+    "kind": "woning"
+   },
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s138",
+    "kind": "deel (onzeker)"
+   }
+  ],
+  "214": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s134",
+    "kind": "woning"
+   },
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s135",
+    "kind": "deel (onzeker)"
+   }
+  ],
+  "215": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s100",
+    "kind": "woning"
+   }
+  ],
+  "216": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s073",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s047",
+    "kind": "woning"
+   }
+  ],
+  "217": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s070",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s044",
+    "kind": "woning"
+   }
+  ],
+  "218": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s067",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s035",
+    "kind": "woning"
+   }
+  ],
+  "219": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s057",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s022",
+    "kind": "woning"
+   }
+  ],
+  "220": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s055",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s018",
+    "kind": "woning"
+   }
+  ],
+  "221": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s050",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s017",
+    "kind": "woning"
+   }
+  ],
+  "222": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s049",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s016",
+    "kind": "woning"
+   }
+  ],
+  "223": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s042",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s010",
+    "kind": "woning"
+   }
+  ],
+  "224": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s039",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s008",
+    "kind": "woning"
+   }
+  ],
+  "225": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s032",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s004",
+    "kind": "woning"
+   }
+  ],
+  "226": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s155",
+    "kind": "woning"
+   }
+  ],
+  "227": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s156",
+    "kind": "woning"
+   }
+  ],
+  "228": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s157",
+    "kind": "woning"
+   }
+  ],
+  "229": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s158",
+    "kind": "woning"
+   }
+  ],
+  "230": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s059",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s036",
+    "kind": "woning"
+   }
+  ],
+  "231": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s060",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s037",
+    "kind": "woning"
+   }
+  ],
+  "232": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s061",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s038",
+    "kind": "woning"
+   }
+  ],
+  "233": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s062",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s039",
+    "kind": "woning"
+   }
+  ],
+  "234": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s063",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s040",
+    "kind": "woning"
+   }
+  ],
+  "235": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s064",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s041",
+    "kind": "woning"
+   }
+  ],
+  "236": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s065",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s042",
+    "kind": "woning"
+   }
+  ],
+  "237": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s066",
+    "kind": "woning"
+   },
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s043",
+    "kind": "woning"
+   }
+  ],
+  "238": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s179",
+    "kind": "woning"
+   }
+  ],
+  "239": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s164",
+    "kind": "woning"
+   }
+  ],
+  "240": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s151",
+    "kind": "woning"
+   }
+  ],
+  "241": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s077",
+    "kind": "woning"
+   }
+  ],
+  "242": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s074",
+    "kind": "woning"
+   }
+  ],
+  "243": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s069",
+    "kind": "woning"
+   }
+  ],
+  "244": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s094",
+    "kind": "woning"
+   }
+  ],
+  "245": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s087",
+    "kind": "woning"
+   }
+  ],
+  "246": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s052",
+    "kind": "woning"
+   }
+  ],
+  "247": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s051",
+    "kind": "woning"
+   }
+  ],
+  "248": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s315",
+    "kind": "woning"
+   }
+  ],
+  "249": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s305",
+    "kind": "woning"
+   }
+  ],
+  "250": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s294",
+    "kind": "woning"
+   }
+  ],
+  "251": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s282",
+    "kind": "woning"
+   }
+  ],
+  "252": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s108",
+    "kind": "woning"
+   }
+  ],
+  "253": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s107",
+    "kind": "woning"
+   }
+  ],
+  "254": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s103",
+    "kind": "woning"
+   }
+  ],
+  "255": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s101",
+    "kind": "woning"
+   }
+  ],
+  "256": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s065",
+    "kind": "woning"
+   },
+   {
+    "floor": "4e",
+    "page": 85,
+    "object_id": "obj_f4_seg_s040",
+    "kind": "woning"
+   }
+  ],
+  "257": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s064",
+    "kind": "woning"
+   },
+   {
+    "floor": "4e",
+    "page": 85,
+    "object_id": "obj_f4_seg_s038",
+    "kind": "woning"
+   }
+  ],
+  "258": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s061",
+    "kind": "woning"
+   },
+   {
+    "floor": "4e",
+    "page": 85,
+    "object_id": "obj_f4_seg_s036",
+    "kind": "woning"
+   }
+  ],
+  "259": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s060",
+    "kind": "woning"
+   },
+   {
+    "floor": "4e",
+    "page": 85,
+    "object_id": "obj_f4_seg_s034",
+    "kind": "woning"
+   }
+  ],
+  "260": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s340",
+    "kind": "woning"
+   }
+  ],
+  "261": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s339",
+    "kind": "woning"
+   }
+  ],
+  "262": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s117",
+    "kind": "woning"
+   }
+  ],
+  "263": [
+   {
+    "floor": "2e",
+    "page": 83,
+    "object_id": "obj_f2_seg_s112",
+    "kind": "woning"
+   }
+  ],
+  "264": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s069",
+    "kind": "woning"
+   }
+  ],
+  "265": [
+   {
+    "floor": "3e",
+    "page": 84,
+    "object_id": "obj_f3_seg_s067",
+    "kind": "woning"
+   }
+  ],
+  "266": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s059",
+    "kind": "berging"
+   }
+  ],
+  "267": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s060",
+    "kind": "berging"
+   }
+  ],
+  "268": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s061",
+    "kind": "berging"
+   }
+  ],
+  "269": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s062",
+    "kind": "berging"
+   }
+  ],
+  "270": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s087",
+    "kind": "berging"
+   }
+  ],
+  "271": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s088",
+    "kind": "berging"
+   }
+  ],
+  "272": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s089",
+    "kind": "berging"
+   }
+  ],
+  "273": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s090",
+    "kind": "berging"
+   }
+  ],
+  "274": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s091",
+    "kind": "berging"
+   }
+  ],
+  "275": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s092",
+    "kind": "berging"
+   }
+  ],
+  "276": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s013",
+    "kind": "berging"
+   }
+  ],
+  "277": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s014",
+    "kind": "berging"
+   }
+  ],
+  "278": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s015",
+    "kind": "berging"
+   }
+  ],
+  "279": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s016",
+    "kind": "berging"
+   }
+  ],
+  "280": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s017",
+    "kind": "berging"
+   }
+  ],
+  "281": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s018",
+    "kind": "berging"
+   }
+  ],
+  "282": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s019",
+    "kind": "berging"
+   }
+  ],
+  "283": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s020",
+    "kind": "berging"
+   }
+  ],
+  "284": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s021",
+    "kind": "berging"
+   }
+  ],
+  "285": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s022",
+    "kind": "berging"
+   }
+  ],
+  "286": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s023",
+    "kind": "berging"
+   }
+  ],
+  "287": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s024",
+    "kind": "berging"
+   }
+  ],
+  "288": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s025",
+    "kind": "berging"
+   }
+  ],
+  "289": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s026",
+    "kind": "berging"
+   }
+  ],
+  "290": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s027",
+    "kind": "berging"
+   }
+  ],
+  "291": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s028",
+    "kind": "berging"
+   }
+  ],
+  "292": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s029",
+    "kind": "berging"
+   }
+  ],
+  "293": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s030",
+    "kind": "berging"
+   }
+  ],
+  "294": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s031",
+    "kind": "berging"
+   }
+  ],
+  "295": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s032",
+    "kind": "berging"
+   }
+  ],
+  "296": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s169",
+    "kind": "berging"
+   }
+  ],
+  "297": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s168",
+    "kind": "berging"
+   }
+  ],
+  "298": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s178",
+    "kind": "berging"
+   }
+  ],
+  "299": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s177",
+    "kind": "berging"
+   }
+  ],
+  "300": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s192",
+    "kind": "berging"
+   }
+  ],
+  "301": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s193",
+    "kind": "berging"
+   }
+  ],
+  "302": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s200",
+    "kind": "berging"
+   }
+  ],
+  "303": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s199",
+    "kind": "berging"
+   }
+  ],
+  "304": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s211",
+    "kind": "berging"
+   }
+  ],
+  "305": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s163",
+    "kind": "berging"
+   }
+  ],
+  "306": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s166",
+    "kind": "berging"
+   }
+  ],
+  "307": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s167",
+    "kind": "berging"
+   }
+  ],
+  "308": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s176",
+    "kind": "berging"
+   }
+  ],
+  "309": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s175",
+    "kind": "berging"
+   }
+  ],
+  "310": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s191",
+    "kind": "berging"
+   }
+  ],
+  "311": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s190",
+    "kind": "berging"
+   }
+  ],
+  "312": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s198",
+    "kind": "berging"
+   }
+  ],
+  "313": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s209",
+    "kind": "berging"
+   }
+  ],
+  "314": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s162",
+    "kind": "berging"
+   }
+  ],
+  "315": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s204",
+    "kind": "berging"
+   }
+  ],
+  "316": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s205",
+    "kind": "berging"
+   }
+  ],
+  "317": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s212",
+    "kind": "berging"
+   }
+  ],
+  "318": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s213",
+    "kind": "berging"
+   }
+  ],
+  "319": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s228",
+    "kind": "berging"
+   }
+  ],
+  "320": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s227",
+    "kind": "berging"
+   }
+  ],
+  "321": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s241",
+    "kind": "berging"
+   }
+  ],
+  "322": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s207",
+    "kind": "berging"
+   }
+  ],
+  "323": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s206",
+    "kind": "berging"
+   }
+  ],
+  "324": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s215",
+    "kind": "berging"
+   }
+  ],
+  "325": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s214",
+    "kind": "berging"
+   }
+  ],
+  "326": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s230",
+    "kind": "berging"
+   }
+  ],
+  "327": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s229",
+    "kind": "berging"
+   }
+  ],
+  "328": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s243",
+    "kind": "berging"
+   }
+  ],
+  "329": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s242",
+    "kind": "berging"
+   }
+  ],
+  "330": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s296",
+    "kind": "berging"
+   }
+  ],
+  "331": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s297",
+    "kind": "berging"
+   }
+  ],
+  "332": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s301",
+    "kind": "berging"
+   }
+  ],
+  "333": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s300",
+    "kind": "berging"
+   }
+  ],
+  "334": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s307",
+    "kind": "berging"
+   }
+  ],
+  "335": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s312",
+    "kind": "berging"
+   }
+  ],
+  "336": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s311",
+    "kind": "berging"
+   }
+  ],
+  "337": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s318",
+    "kind": "berging"
+   }
+  ],
+  "338": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s317",
+    "kind": "berging"
+   }
+  ],
+  "339": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s321",
+    "kind": "berging"
+   }
+  ],
+  "340": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s322",
+    "kind": "berging"
+   }
+  ],
+  "341": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s329",
+    "kind": "berging"
+   }
+  ],
+  "342": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s328",
+    "kind": "berging"
+   }
+  ],
+  "343": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s299",
+    "kind": "berging"
+   }
+  ],
+  "344": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s298",
+    "kind": "berging"
+   }
+  ],
+  "345": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s302",
+    "kind": "berging"
+   }
+  ],
+  "346": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s303",
+    "kind": "berging"
+   }
+  ],
+  "347": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s309",
+    "kind": "berging"
+   }
+  ],
+  "348": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s308",
+    "kind": "berging"
+   }
+  ],
+  "349": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s314",
+    "kind": "berging"
+   }
+  ],
+  "350": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s313",
+    "kind": "berging"
+   }
+  ],
+  "351": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s320",
+    "kind": "berging"
+   }
+  ],
+  "352": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s319",
+    "kind": "berging"
+   }
+  ],
+  "353": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s324",
+    "kind": "berging"
+   }
+  ],
+  "354": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s323",
+    "kind": "berging"
+   }
+  ],
+  "355": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s331",
+    "kind": "berging"
+   }
+  ],
+  "356": [
+   {
+    "floor": "1e",
+    "page": 82,
+    "object_id": "obj_f1_seg_s330",
+    "kind": "berging"
+   }
+  ]
+ },
+ "note": "Meerdere bladen bij woningen 216-225, 230-237 en 256-259: vermoedelijk meerlaagse woningen (dezelfde nummers op de opeenvolgende verdiepingen); niet als fout aangemerkt, niet bewezen."
+}

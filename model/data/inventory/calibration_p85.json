@@ -1,0 +1,15 @@
+{
+ "page": 85,
+ "measured": "2026-11-21, Grok Bot (executor), op lokale scan page-85.png (7084x10039)",
+ "finding": "Blad 85 = '4e Verdieping en daken / Schaal 1 a 200'. De eigen schaalbalk linksboven valt grotendeels buiten de scan (alleen de eindlijn tot y 813 en de maatcijfers zijn zichtbaar). Er staat een tweede balk 'Daken Schaal 1 a 200' in de tekening.",
+ "cm_ruler": {"axis": "native y", "x_px": 438, "ticks_y_px": {"0": 468.0, "1": 547.0, "2": 625.0, "3": 703.45, "4": 782.0, "5": 860.52},
+              "px_per_cm": 78.50, "m_per_px_at_1to200": 0.025476, "note": "y 360,52 = kaderlijn, geen tick"},
+ "transfer_from_p84": {"objects": "woningen 256-259 (op beide bladen getekend)", "y_span_px": {"p84": 1207, "p85": 1205},
+                       "m_per_px": 0.025411, "x_note": "x-maat per woning p85 516-518 px vs p84 514-516 px (+0,4 %); de rij staat op p85 ≈0,5° scheef"},
+ "rejected_bar_daken": {"x_px": 4742, "edge_0m_y_px": 353.5, "edge_10m_y_px": 757.5, "length_px": 404.0, "m_per_px": 0.024752,
+                        "vs_ruler_pct": -2.84, "reason": "Wijkt bijna 3 % af van liniaal en overdracht, die onderling maar 0,26 % verschillen; daarom niet gebruikt (oorzaak onbekend)."},
+ "spread": {"transfer_vs_ruler_pct": -0.26, "half_spread_rel": 0.0013, "reading_tolerance_rel": 0.0064,
+            "note": "Tolerantie = ±3 px per polygoonrand over 1205 px, gecombineerd met de marge van p84 (0,54 %)."},
+ "adopted": {"m_per_px": 0.0254435, "rel_uncertainty_y": 0.0064, "rel_uncertainty_x": 0.0152,
+             "x_axis": "NIET onafhankelijk gecontroleerd; marge x = marge y + 0,88 %."}
+}
