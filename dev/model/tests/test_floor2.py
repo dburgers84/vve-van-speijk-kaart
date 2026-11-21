@@ -117,7 +117,7 @@ class TestViewerP83(unittest.TestCase):
     def test_floor_switch(self):
         with open(os.path.join(ROOT, "pilot", "index.html"), encoding="utf-8") as f:
             html = f.read()
-        for t in ("pilot_data_f2.js", "PILOT_DATA_F2", "floor=(1e|2e)", "'2e verdieping'"):
+        for t in ("pilot_data_f2.js", "PILOT_DATA_F2", "floor=(1e|2e|3e|4e)", "'2e verdieping'"):
             self.assertIn(t, html)
         with open(os.path.join(ROOT, "pilot", "pilot_data_f2.js"), encoding="utf-8") as f:
             self.assertIn("window.PILOT_DATA_F2 =", f.read(200))

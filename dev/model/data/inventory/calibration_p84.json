@@ -1,0 +1,14 @@
+{
+ "page": 84,
+ "measured": "2026-11-21, Grok Bot (executor), op lokale scan page-84.png (7121x10045)",
+ "finding": "Blad 84 = '3e Verdieping / Schaal 1 a 200'. Schaalbalk 0-10 m linksboven (langs native y), cm-liniaal 'IN CM' ernaast.",
+ "scale_bar": {"axis": "native y", "x_px": 78, "edge_0m_y_px": 352.25, "edge_10m_y_px": 747.6, "length_px": 395.35,
+               "edge_method": "50%-overgang van het gemiddelde inktprofiel over x 72-84",
+               "segments_px_per_2m": [81.7, 80.0, 76.0, 79.0, 78.6], "m_per_px": 0.025294, "reading_tolerance_px_per_end": 1.5},
+ "cm_ruler": {"axis": "native y", "x_px": 465, "ticks_y_px": {"0": 390.43, "1": 469.0, "2": 547.0, "3": 625.0, "4": 704.0, "5": 783.47},
+              "px_per_cm": 78.61, "m_per_px_at_1to200": 0.025443, "note": "y 300,43 = kaderlijn, geen tick"},
+ "spread": {"bar_vs_ruler_pct": -0.58, "half_spread_rel": 0.0029, "reading_tolerance_rel": 0.0054},
+ "cross_check": "Woningen 216-225 (zelfde getekende rij op p83 en p84): y-overspanning 2014 px (p83) vs 2015 px (p84); de gekozen m/px van p83 (0,025305) en p84 (0,025368) verschillen 0,25 %, binnen beide marges.",
+ "adopted": {"m_per_px": 0.0253684, "rel_uncertainty_y": 0.0054, "rel_uncertainty_x": 0.0142,
+             "x_axis": "NIET onafhankelijk gecontroleerd; marge x = marge y + 0,88 % (anisotropie kolomstramien p81)."}
+}

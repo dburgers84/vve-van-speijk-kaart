@@ -19,11 +19,13 @@ import cv2
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-from traces import bg_core, bg_kiel, bg_segments, f1_segments, f2_segments  # noqa: E402
+from traces import bg_core, bg_kiel, bg_segments, f1_segments, f2_segments, f3_segments, f4_segments  # noqa: E402
 S = bg_segments
 FLOORS = {"BG": (bg_segments, "/workspace/vve-source-audit/page-81.png", "bg_segments_p81.json", True),
           "1e": (f1_segments, "/workspace/vve-source-audit/page-82.png", "f1_segments_p82.json", False),
-          "2e": (f2_segments, "/workspace/vve-source-audit/page-83.png", "f2_segments_p83.json", False)}
+          "2e": (f2_segments, "/workspace/vve-source-audit/page-83.png", "f2_segments_p83.json", False),
+          "3e": (f3_segments, "/workspace/vve-source-audit/page-84.png", "f3_segments_p84.json", False),
+          "4e": (f4_segments, "/workspace/vve-source-audit/page-85.png", "f4_segments_p85.json", False)}
 from linework import bridged_mask, simplify, add_columns  # noqa: E402
 
 OUT = os.path.join(ROOT, "data", "inventory", "bg_segments_p81.json")

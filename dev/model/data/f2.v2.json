@@ -1,6 +1,6 @@
 {
  "schema_version": "vve-plan/2.1.0",
- "dataset_version": "f2-0.1.0",
+ "dataset_version": "f2-0.1.1",
  "generated": "2026-11-21",
  "sources": [
   {
@@ -70655,10 +70655,10 @@
    "normalized_text": "trap",
    "category": "space_name",
    "bbox_px": [
-    6693,
-    677,
-    6706,
-    702
+    6587,
+    628,
+    6707,
+    748
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -70669,7 +70669,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 2 tekens; DEELS: 2 van 4 tekens gevonden (rest raakt een lijn))"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s005_n",
@@ -70721,10 +70721,10 @@
    "normalized_text": "lift",
    "category": "space_name",
    "bbox_px": [
-    6858,
-    681,
-    6880,
-    711
+    6787,
+    662,
+    6907,
+    782
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -70735,7 +70735,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 4 tekens)"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s007",
@@ -71227,10 +71227,10 @@
    "normalized_text": "lift",
    "category": "space_name",
    "bbox_px": [
-    3616,
-    2030,
-    3637,
-    2060
+    3566,
+    2004,
+    3686,
+    2124
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -71241,7 +71241,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 3 tekens; DEELS: 3 van 4 tekens gevonden (rest raakt een lijn))"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s035",
@@ -71249,10 +71249,10 @@
    "normalized_text": "vide",
    "category": "space_name",
    "bbox_px": [
-    1730,
-    2397,
-    1752,
-    2441
+    1681,
+    2418,
+    1801,
+    2538
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -71263,7 +71263,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 3 tekens; DEELS: 3 van 4 tekens gevonden (rest raakt een lijn))"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s037",
@@ -71293,10 +71293,10 @@
    "normalized_text": "lift",
    "category": "space_name",
    "bbox_px": [
-    2053,
-    2364,
-    2076,
-    2396
+    2032,
+    2346,
+    2152,
+    2466
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -71307,7 +71307,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 4 tekens)"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s039_n",
@@ -71535,10 +71535,10 @@
    "normalized_text": "lift",
    "category": "space_name",
    "bbox_px": [
-    481,
-    2597,
-    502,
-    2628
+    392,
+    2530,
+    512,
+    2650
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -71549,7 +71549,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 4 tekens)"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s048_n",
@@ -72701,10 +72701,10 @@
    "normalized_text": "lift",
    "category": "space_name",
    "bbox_px": [
-    653,
-    5045,
-    675,
-    5072
+    589,
+    4998,
+    709,
+    5118
    ],
    "frame_id": "frm_p83_native",
    "assigned_object_ids": [
@@ -72715,7 +72715,7 @@
     "source_id": "src_akte2006_p83",
     "method": "visual_read_no_ocr"
    },
-   "note": "Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, 4 tekens)"
+   "note": "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
   },
   {
    "id": "lbl_f2_seg_s093",
@@ -76435,7 +76435,7 @@
  "legacy_links": [],
  "coverage": {
   "complete": false,
-  "scope": "Alleen 2e verdieping (blad p.83). Semi-automatisch: alle gesloten vakken met zaadpunt (binnenzijde getekende lijn), 1 arcering(en) en wandstroken. Classificatie visueel gelezen op contactbladen. Andere verdiepingen staan in eigen datasets; 3e en 4e verdieping/daken nog niet getraceerd.",
+  "scope": "Alleen 2e verdieping (blad p.83). Semi-automatisch: alle gesloten vakken met zaadpunt (binnenzijde getekende lijn), 1 arcering(en) en wandstroken. Classificatie visueel gelezen op contactbladen. Andere verdiepingen staan in eigen datasets (bg, f1-f4); samen nog niet compleet.",
   "floors_covered": [
    "2e (grotendeels, deels onopgelost)"
   ],
@@ -76500,8 +76500,8 @@
    ],
    "bergingen_on_sheet": 0,
    "labels_total": 121,
-   "labels_position_measured": 109,
-   "labels_position_approximated": 12,
+   "labels_position_measured": 102,
+   "labels_position_approximated": 19,
    "segments_problems": []
   },
   "traced": [
@@ -76510,7 +76510,7 @@
    "buitenruimten, daken, vides, trappen/liften, bedrijfs-/179-vakken (labels visueel gelezen)",
    "1 arcering(en) 'niet in de splitsing betrokken' (diagonaaldetectie)",
    "wandstroken tussen dubbele lijnen",
-   "labelposities: 109 van 121 GEMETEN als tekstcluster, rest benaderd rond het zaadpunt"
+   "labelposities: 102 van 121 GEMETEN als tekstcluster, rest benaderd rond het zaadpunt"
   ],
   "not_traced": [
    "kleine buitenruimten binnen woningen (bv. 196, 197, 200, 201, 241-243, 252-255) die naar buiten openstaan in het lijnwerk: niet als eigen vak",
@@ -76520,8 +76520,8 @@
    "posities van de omcirkelde 180-symbolen (alleen als toelichting, niet per vak gemeten)",
    "kolommen (kolomkandidaten op p82-p85 niet beoordeeld)",
    "gestippelde contouren",
-   "exacte tekstpositie van 12 labels (benaderd; tekst raakt lijnen of is meerregelig)",
-   "3e en 4e verdieping/daken: niets getraceerd"
+   "exacte tekstpositie van 19 labels (benaderd; tekst raakt lijnen of is meerregelig)",
+   "nummercontrole over alle bladen: zie data/inventory/number_check.json"
   ]
  },
  "review_log": [
