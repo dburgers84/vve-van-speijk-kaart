@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Detailmodel in opbouw – VvE Van Speijk (datamodel v2, BG)</title>
+<title>Detailmodel in opbouw – VvE Van Speijk (datamodel v2)</title>
 <style>
  body{margin:0;font:14px/1.4 system-ui,sans-serif;display:flex;height:100vh;color:#222}
  #side{width:350px;overflow:auto;padding:12px;border-right:1px solid #ddd;background:#fafafa}
@@ -32,9 +32,10 @@
 </head>
 <body>
 <div id="side">
- <h3 style="margin:0 0 4px">Detailmodel in opbouw – BG</h3>
+ <h3 style="margin:0 0 4px" id="ttl">Detailmodel in opbouw</h3>
  <div class="muted"><a href="../../">← terug naar de huidige kaart</a></div>
- <div class="warn"><b>Onvolledig – alleen begane grond.</b> Uit de splitsingstekening (akte 2006, blad 01): handmatig 2 kernen + 1 bedrijfsruimte; de rest van het BG semi-automatisch (binnenzijde van de getekende lijn), deels <b>onopgelost</b>. 1e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief. <span id="calTxt"></span></div>
+ <fieldset><legend>Verdieping</legend><div id="floors"></div><div class="muted">Elke verdieping heeft een eigen bronblad, frame en kalibratie.</div></fieldset>
+ <div class="warn" id="warnBox"><span id="warnTxt"></span> <span id="calTxt"></span></div>
  <fieldset><legend>Regio</legend><div id="regions"></div></fieldset>
  <fieldset><legend>Ondergrond</legend>
   <label><input type="checkbox" id="ovOn" checked> Referentie <span id="ovName"></span></label><br>
@@ -65,16 +66,25 @@
  <svg id="svg" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="hatch" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="24" height="24" fill="#f3e5f5"/><line x1="0" y1="0" x2="0" y2="24" stroke="#8e24aa" stroke-width="5"/></pattern></defs><g id="vp"><g id="gOv"></g><g id="gSp"></g><g id="gEl"></g><g id="gEd"></g><g id="gLn"></g><g id="gLb"></g><g id="gVx" style="display:none"></g></g></svg>
  <div id="pop"></div>
 </div>
-<script src="pilot_data.js"></script>
+<script>
+// verdiepingkeuze via #floor=1e (alleen de data van de gekozen verdieping wordt geladen)
+window.PILOT_FLOOR=/(^|[#&])floor=1e(&|$)/.test(decodeURIComponent(location.hash))?'1e':'BG';
+document.write('<script src="'+(window.PILOT_FLOOR==='1e'?'pilot_data_f1.js':'pilot_data.js')+'"><\/script>');
+</script>
 <script>
 (function(){
-const D=window.PILOT_DATA, NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id);
+const FL=window.PILOT_FLOOR, D=FL==='1e'?window.PILOT_DATA_F1:window.PILOT_DATA, NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id);
 const V=Object.fromEntries(D.vertices.map(v=>[v.id,v])), E=Object.fromEntries(D.edges.map(e=>[e.id,e]));
 const L=Object.fromEntries(D.labels.map(l=>[l.id,l])), O=Object.fromEntries(D.objects.map(o=>[o.id,o]));
 const R=Object.fromEntries(D.regions.map(r=>[r.id,r])), SPL=Object.fromEntries(D.legal_splits.map(s=>[s.id,s]));
 const cal=D.calibrations[0], frame=D.frames[0], svg=$('svg');
 const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);p&&p.appendChild(n);return n};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const FLOORS=[['BG','Begane grond'],['1e','1e verdieping']];
+$('floors').innerHTML=FLOORS.map(([f,n])=>`<button data-f="${f}"${f===FL?' style="font-weight:700;background:#e3f2fd"':''}>${n}</button>`).join('');
+$('floors').onclick=e=>{const b=e.target.closest('button');if(!b||b.dataset.f===FL)return;location.hash=b.dataset.f==='BG'?'':'floor='+b.dataset.f;location.reload()};
+$('ttl').textContent='Detailmodel in opbouw – '+(FL==='1e'?'1e verdieping':'BG');
+$('warnTxt').innerHTML={"BG": "<b>Onvolledig – alleen begane grond.</b> Uit de splitsingstekening (akte 2006, blad 01): handmatig 2 kernen + 1 bedrijfsruimte; de rest van het BG semi-automatisch (binnenzijde van de getekende lijn), deels <b>onopgelost</b>. 1e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief.", "1e": "<b>Onvolledig – 1e verdieping in opbouw.</b> Uit de splitsingstekening (akte 2006, blad p.82 '1e Verdieping'): alle gesloten vakken semi-automatisch (binnenzijde van de getekende lijn, zelfde lijnwerk als BG), functies en nummers visueel gelezen; deels <b>onopgelost</b>. Labelposities benaderd. 2e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief."}[FL];
 let vb=[0,0,1,1];const setVB=()=>svg.setAttribute('viewBox',vb.join(' '));
 function fit(b){const m=40;vb=[b[0]-m,b[1]-m,b[2]-b[0]+2*m,b[3]-b[1]+2*m];setVB()}
 // regio's
@@ -88,18 +98,18 @@ fit(bAll);
 // ondergrond: lokaal hoge-res per regio indien aanwezig, anders publieke lage-res plan_bg.jpg
 const ov=D.reference_overlays[0], gOv=$('gOv');let localOk=0;
 if(ov){const A=ov.image_to_native_affine;const im=el('image',{href:'../../'+ov.image,width:ov.size_px[0],height:ov.size_px[1],transform:`matrix(${A[0][0]} ${A[1][0]} ${A[0][1]} ${A[1][1]} ${A[0][2]} ${A[1][2]})`,preserveAspectRatio:'none',id:'ovPub'},gOv);
- $('ovName').textContent='(online: eerder gepubliceerde plan_bg.jpg, ≈0,24x)';
+ $('ovName').textContent=`(online: eerder gepubliceerde ${ov.image.split('/').pop()}, ≈0,24x)`;
  $('ovNote').textContent=`Lage-resolutie referentie, geregistreerd op het bronframe (${ov.method}; ECC ${ov.ecc_correlation}). Bronuitsneden op hoge resolutie worden niet online gepubliceerd.`;}
-D.regions.forEach(r=>{const [x0,y0,x1,y1]=r.region_px;const im=el('image',{href:`local/src_p81_${r.id}.png`,x:x0,y:y0,width:x1-x0,height:y1-y0,preserveAspectRatio:'none'},gOv);
- im.addEventListener('load',()=>{localOk++;$('ovName').textContent='(lokaal: hoge-res bronuitsnede + lage-res plan_bg.jpg)'});im.addEventListener('error',()=>im.remove());});
+D.regions.forEach(r=>{const [x0,y0,x1,y1]=r.region_px;const im=el('image',{href:`local/src_p${D.sources[0].page}_${r.id}.png`,x:x0,y:y0,width:x1-x0,height:y1-y0,preserveAspectRatio:'none'},gOv);
+ im.addEventListener('load',()=>{localOk++;$('ovName').textContent=`(lokaal: hoge-res bronuitsnede + lage-res ${ov?ov.image.split('/').pop():''})`});im.addEventListener('error',()=>im.remove());});
 $('ovOn').onchange=e=>gOv.style.display=e.target.checked?'':'none';
 const setOp=v=>gOv.setAttribute('opacity',v);setOp(.55);$('ovOp').oninput=e=>setOp(e.target.value);
 // tekenen
-const col={not_in_split_area:'url(#hatch)',service_space:'#26a69a',commercial_multi_unresolved:'#ff7043',commercial_large_region_unresolved:'#ef5350',unlabeled_space:'#9e9e9e',unresolved_space:'#757575',cross_marked_cell:'#bdbdbd',service_corridor:'#00897b',passage_or_overhang_unresolved:'#26a69a',technical_room:'#fb8c00',stair:'#e53935',lift_shaft:'#1e64dc',unknown:'#9e9e9e',hall:'#43a047',entrance_hall:'#2e7d32',container_room:'#8d6e63',sprinkler_room:'#00acc1',transformer_room:'#fb8c00',low_voltage_room:'#f4511e',meter_cupboard_common:'#7b1fa2',gas_meter_cupboards:'#c0ca33',commercial_unit:'#ffb300'};
+const col={not_in_split_area:'url(#hatch)',service_space:'#26a69a',commercial_multi_unresolved:'#ff7043',commercial_large_region_unresolved:'#ef5350',unlabeled_space:'#9e9e9e',unresolved_space:'#757575',cross_marked_cell:'#bdbdbd',service_corridor:'#00897b',passage_or_overhang_unresolved:'#26a69a',technical_room:'#fb8c00',stair:'#e53935',lift_shaft:'#1e64dc',unknown:'#9e9e9e',hall:'#43a047',entrance_hall:'#2e7d32',container_room:'#8d6e63',sprinkler_room:'#00acc1',transformer_room:'#fb8c00',low_voltage_room:'#f4511e',meter_cupboard_common:'#7b1fa2',gas_meter_cupboards:'#c0ca33',commercial_unit:'#ffb300',apartment_dwelling:'#66bb6a',apartment_part:'#a5d6a7',storage_unit:'#8d6e63',private_outdoor:'#9ccc65',private_outdoor_multi_unresolved:'#c5e1a5',roof:'#b0bec5',void:'#e0e0e0',core_multi_unresolved:'#ab47bc',storage_corridor:'#00897b',roof_path_network_unresolved:'#90a4ae',a179_region_unresolved:'#ef5350',commercial_room:'#ffca28',commercial_round_part:'#ffb300'};
 const ringD=o=>o.geometry.rings.map(r=>'M'+r.map(i=>V[i].x_px+' '+V[i].y_px).join('L')+'Z').join('');
 const shp={};
 D.objects.forEach(o=>{let n;
- if(o.geometry.type==='Polygon'&&o.class==='space'){n=el('path',{d:ringD(o),class:'sp'+(o.certainty==='unresolved'?' unres':''),fill:col[o.kind]||'#4caf50'},$('gSp'));}
+ if(o.geometry.type==='Polygon'&&o.class==='space'){n=el('path',{d:ringD(o),'fill-rule':'evenodd',class:'sp'+(o.certainty==='unresolved'?' unres':''),fill:col[o.kind]||'#4caf50'},$('gSp'));}
  else if(o.geometry.type==='Polygon'){n=el('path',{d:ringD(o),class:'el '+o.kind},$('gEl'));}
  else if(o.geometry.type==='LineString'){n=el('polyline',{points:o.geometry.vertices.map(i=>V[i].x_px+','+V[i].y_px).join(' '),class:'ln'},$('gLn'));}
  if(n){n.onclick=ev=>{ev.stopPropagation();show(o.id)};shp[o.id]=n;el('title',{},n).textContent=o.display_name;}});
@@ -153,7 +163,7 @@ function show(id){const o=O[id];clearHL();shp[id]&&shp[id].classList.add('sel');
  if(o.edge_ids&&o.edge_ids.length){const ds=o.edge_ids.map(i=>E[i].dimension);const ru0=cal.rel_uncertainty,P0=ds.reduce((s,d)=>s+(d.length_m||0),0);
   // geschatte marge omtrek: schaalfout gecorreleerd (P x max rel.) + eindpunttoleranties ongecorreleerd (kwadratisch)
   per=!ds.every(d=>d.length_m!=null)?'onbekend (niet alle zijden bekend)':(ru0?fmtM(P0,P0*Math.max(ru0.x,ru0.y)+Math.sqrt(o.edge_ids.reduce((s,i)=>{const e=E[i],a=V[e.v[0]],b=V[e.v[1]];return s+((a.positional_tolerance_px||3)**2+(b.positional_tolerance_px||3)**2)},0))*cal.m_per_px_x,'m'):P0.toFixed(2)+' m');
-  if(o.geometry.rings){const rg=o.geometry.rings[0],a2=area(rg)*cal.m_per_px_x*cal.m_per_px_y,ru=cal.rel_uncertainty;
+  if(o.geometry.rings){const rg=o.geometry.rings[0],a2=(area(rg)-o.geometry.rings.slice(1).reduce((s,h)=>s+area(h),0))*cal.m_per_px_x*cal.m_per_px_y,ru=cal.rel_uncertainty;
   // geschatte marge oppervlak: schaal (x+y) + randtolerantie (omtrek x gemiddelde puntstolerantie)
   let pm=0,tl=0;for(let i=0;i<rg.length;i++){const p=V[rg[i]],q=V[rg[(i+1)%rg.length]];pm+=Math.hypot(q.x_px-p.x_px,q.y_px-p.y_px);tl+=(p.positional_tolerance_px||3)}
   ar=ru?fmtM(a2,a2*(ru.x+ru.y)+pm*(tl/rg.length)*cal.m_per_px_x*cal.m_per_px_y,'m²'):a2.toFixed(1)+' m²';}}
