@@ -1,0 +1,140 @@
+{
+ "note": "image_to_native_affine: [x_native, y_native] = A @ [x_img, y_img, 1]",
+ "floors": {
+  "BG": {
+   "image_size": [
+    1950,
+    1698
+   ],
+   "native_size": [
+    7118,
+    10099
+   ],
+   "image_to_native_affine": [
+    [
+     1.7e-05,
+     -4.20795,
+     7113.95752
+    ],
+    [
+     4.207669,
+     -5e-06,
+     189.104813
+    ]
+   ],
+   "template_score": 0.9703,
+   "ecc_correlation": 0.9732,
+   "method": "rot90 hypothesis + template match + OpenCV ECC affine",
+   "page": 81,
+   "image": "img/plan_bg.jpg"
+  },
+  "1e": {
+   "image_size": [
+    1950,
+    1698
+   ],
+   "native_size": [
+    7122,
+    10049
+   ],
+   "image_to_native_affine": [
+    [
+     -1.9e-05,
+     -4.186652,
+     7117.914551
+    ],
+    [
+     4.187151,
+     1.6e-05,
+     188.089798
+    ]
+   ],
+   "template_score": 0.8164,
+   "ecc_correlation": 0.9932,
+   "method": "rot90 hypothesis + template match + OpenCV ECC affine",
+   "page": 82,
+   "image": "img/plan_1e.jpg"
+  },
+  "2e": {
+   "image_size": [
+    1950,
+    1698
+   ],
+   "native_size": [
+    7120,
+    10055
+   ],
+   "image_to_native_affine": [
+    [
+     -7e-06,
+     -4.189083,
+     7115.961426
+    ],
+    [
+     4.189713,
+     1e-06,
+     188.106171
+    ]
+   ],
+   "template_score": 0.8334,
+   "ecc_correlation": 0.9896,
+   "method": "rot90 hypothesis + template match + OpenCV ECC affine",
+   "page": 83,
+   "image": "img/plan_2e.jpg"
+  },
+  "3e": {
+   "image_size": [
+    1950,
+    1698
+   ],
+   "native_size": [
+    7121,
+    10045
+   ],
+   "image_to_native_affine": [
+    [
+     4.5e-05,
+     -4.184921,
+     7116.912598
+    ],
+    [
+     4.185032,
+     8.1e-05,
+     188.056168
+    ]
+   ],
+   "template_score": 0.8951,
+   "ecc_correlation": 0.9769,
+   "method": "rot90 hypothesis + template match + OpenCV ECC affine",
+   "page": 84,
+   "image": "img/plan_3e.jpg"
+  },
+  "4e": {
+   "image_size": [
+    1950,
+    1698
+   ],
+   "native_size": [
+    7084,
+    10039
+   ],
+   "image_to_native_affine": [
+    [
+     -3.4e-05,
+     -4.18255,
+     7079.961426
+    ],
+    [
+     4.182489,
+     -5.9e-05,
+     188.177475
+    ]
+   ],
+   "template_score": 0.8263,
+   "ecc_correlation": 0.9342,
+   "method": "rot90 hypothesis + template match + OpenCV ECC affine",
+   "page": 85,
+   "image": "img/plan_4e.jpg"
+  }
+ }
+}

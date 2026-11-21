@@ -1,0 +1,174 @@
+{
+"version": "f4-0.1.0",
+"note": "Vaste sleutels f4 (p85); wijzigen = bewuste migratie",
+"keys": {
+"s000": [
+"roof",
+null
+],
+"s001": [
+"roof",
+null
+],
+"s002": [
+"roof",
+null
+],
+"s003": [
+"roof",
+null
+],
+"s004": [
+"roof",
+null
+],
+"s005": [
+"roof_symbol",
+null
+],
+"s006": [
+"roof_symbol",
+null
+],
+"s007": [
+"unlabeled_space",
+null
+],
+"s008": [
+"roof_symbol",
+null
+],
+"s009": [
+"roof_symbol",
+null
+],
+"s010": [
+"roof_symbol",
+null
+],
+"s011": [
+"roof",
+null
+],
+"s012": [
+"unlabeled_space",
+null
+],
+"s013": [
+"roof_symbol",
+null
+],
+"s014": [
+"roof",
+null
+],
+"s015": [
+"roof_symbol",
+null
+],
+"s016": [
+"roof_symbol",
+null
+],
+"s017": [
+"roof",
+null
+],
+"s018": [
+"a179_region_unresolved",
+null
+],
+"s019": [
+"roof",
+null
+],
+"s020": [
+"roof_symbol",
+null
+],
+"s021": [
+"roof_symbol",
+null
+],
+"s022": [
+"roof_symbol",
+null
+],
+"s023": [
+"roof_symbol",
+null
+],
+"s024": [
+"roof_symbol",
+null
+],
+"s025": [
+"roof_symbol",
+null
+],
+"s026": [
+"roof_symbol",
+null
+],
+"s027": [
+"roof_symbol",
+null
+],
+"s028": [
+"roof_symbol",
+null
+],
+"s029": [
+"roof",
+null
+],
+"s030": [
+"roof_symbol",
+null
+],
+"s031": [
+"roof_symbol",
+null
+],
+"s032": [
+"roof",
+null
+],
+"s033": [
+"roof",
+null
+],
+"s034": [
+"apartment_dwelling",
+"259"
+],
+"s035": [
+"roof_symbol",
+null
+],
+"s036": [
+"apartment_dwelling",
+"258"
+],
+"s037": [
+"roof_symbol",
+null
+],
+"s038": [
+"apartment_dwelling",
+"257"
+],
+"s039": [
+"roof_symbol",
+null
+],
+"s040": [
+"apartment_dwelling",
+"256"
+],
+"s041": [
+"roof_symbol",
+null
+]
+}
+}

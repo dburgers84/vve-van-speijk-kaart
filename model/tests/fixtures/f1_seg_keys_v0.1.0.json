@@ -1,0 +1,1374 @@
+{
+"version": "f1-0.1.0",
+"note": "Vaste sleutels 1e verdieping (p82); wijzigen = bewuste migratie",
+"keys": {
+"s000": [
+"unresolved_space",
+null
+],
+"s001": [
+"unlabeled_space",
+null
+],
+"s002": [
+"wall_band",
+null
+],
+"s003": [
+"apartment_dwelling",
+"205"
+],
+"s004": [
+"unlabeled_space",
+null
+],
+"s005": [
+"stair",
+null
+],
+"s006": [
+"stair",
+null
+],
+"s007": [
+"stair",
+null
+],
+"s008": [
+"unlabeled_space",
+null
+],
+"s009": [
+"lift_shaft",
+null
+],
+"s010": [
+"private_outdoor",
+null
+],
+"s011": [
+"private_outdoor",
+null
+],
+"s012": [
+"apartment_dwelling",
+"189"
+],
+"s013": [
+"storage_unit",
+"276"
+],
+"s014": [
+"storage_unit",
+"277"
+],
+"s015": [
+"storage_unit",
+"278"
+],
+"s016": [
+"storage_unit",
+"279"
+],
+"s017": [
+"storage_unit",
+"280"
+],
+"s018": [
+"storage_unit",
+"281"
+],
+"s019": [
+"storage_unit",
+"282"
+],
+"s020": [
+"storage_unit",
+"283"
+],
+"s021": [
+"storage_unit",
+"284"
+],
+"s022": [
+"storage_unit",
+"285"
+],
+"s023": [
+"storage_unit",
+"286"
+],
+"s024": [
+"storage_unit",
+"287"
+],
+"s025": [
+"storage_unit",
+"288"
+],
+"s026": [
+"storage_unit",
+"289"
+],
+"s027": [
+"storage_unit",
+"290"
+],
+"s028": [
+"storage_unit",
+"291"
+],
+"s029": [
+"storage_unit",
+"292"
+],
+"s030": [
+"storage_unit",
+"293"
+],
+"s031": [
+"storage_unit",
+"294"
+],
+"s032": [
+"storage_unit",
+"295"
+],
+"s033": [
+"roof",
+null
+],
+"s034": [
+"unlabeled_space",
+null
+],
+"s035": [
+"private_outdoor",
+null
+],
+"s036": [
+"private_outdoor",
+null
+],
+"s037": [
+"apartment_dwelling",
+"187"
+],
+"s038": [
+"apartment_dwelling",
+"188"
+],
+"s039": [
+"wall_band",
+null
+],
+"s040": [
+"void",
+null
+],
+"s041": [
+"void",
+null
+],
+"s042": [
+"void",
+null
+],
+"s043": [
+"void",
+null
+],
+"s044": [
+"wall_band",
+null
+],
+"s045": [
+"private_outdoor",
+null
+],
+"s046": [
+"roof",
+null
+],
+"s047": [
+"apartment_dwelling",
+"185"
+],
+"s048": [
+"apartment_dwelling",
+"186"
+],
+"s049": [
+"unlabeled_space",
+null
+],
+"s050": [
+"unlabeled_space",
+null
+],
+"s051": [
+"wall_band",
+null
+],
+"s052": [
+"wall_band",
+null
+],
+"s053": [
+"apartment_dwelling",
+"204"
+],
+"s054": [
+"unresolved_space",
+null
+],
+"s055": [
+"private_outdoor",
+null
+],
+"s056": [
+"unlabeled_space",
+null
+],
+"s057": [
+"roof",
+null
+],
+"s058": [
+"storage_corridor",
+null
+],
+"s059": [
+"storage_unit",
+"266"
+],
+"s060": [
+"storage_unit",
+"267"
+],
+"s061": [
+"storage_unit",
+"268"
+],
+"s062": [
+"storage_unit",
+"269"
+],
+"s063": [
+"cross_marked_cell",
+null
+],
+"s064": [
+"wall_band",
+null
+],
+"s065": [
+"private_outdoor",
+null
+],
+"s066": [
+"apartment_dwelling",
+"181"
+],
+"s067": [
+"stair",
+null
+],
+"s068": [
+"apartment_dwelling",
+"182"
+],
+"s069": [
+"storage_corridor",
+null
+],
+"s070": [
+"storage_corridor",
+null
+],
+"s071": [
+"private_outdoor",
+null
+],
+"s072": [
+"private_outdoor",
+null
+],
+"s073": [
+"apartment_dwelling",
+"210"
+],
+"s074": [
+"wall_band",
+null
+],
+"s075": [
+"void",
+null
+],
+"s076": [
+"void",
+null
+],
+"s077": [
+"void",
+null
+],
+"s078": [
+"roof",
+null
+],
+"s079": [
+"wall_band",
+null
+],
+"s080": [
+"wall_band",
+null
+],
+"s081": [
+"void",
+null
+],
+"s082": [
+"wall_band",
+null
+],
+"s083": [
+"commercial_unit",
+null
+],
+"s084": [
+"wall_band",
+null
+],
+"s085": [
+"apartment_dwelling",
+"203"
+],
+"s086": [
+"private_outdoor",
+null
+],
+"s087": [
+"storage_unit",
+"270"
+],
+"s088": [
+"storage_unit",
+"271"
+],
+"s089": [
+"storage_unit",
+"272"
+],
+"s090": [
+"storage_unit",
+"273"
+],
+"s091": [
+"storage_unit",
+"274"
+],
+"s092": [
+"storage_unit",
+"275"
+],
+"s093": [
+"cross_marked_cell",
+null
+],
+"s094": [
+"apartment_dwelling",
+"190"
+],
+"s095": [
+"apartment_dwelling",
+"191"
+],
+"s096": [
+"private_outdoor",
+null
+],
+"s097": [
+"wall_band",
+null
+],
+"s098": [
+"apartment_dwelling",
+"208"
+],
+"s099": [
+"apartment_dwelling",
+"209"
+],
+"s100": [
+"apartment_dwelling",
+"215"
+],
+"s101": [
+"wall_band",
+null
+],
+"s102": [
+"wall_band",
+null
+],
+"s103": [
+"apartment_dwelling",
+"202"
+],
+"s104": [
+"private_outdoor",
+null
+],
+"s105": [
+"lift_shaft",
+null
+],
+"s106": [
+"unlabeled_space",
+null
+],
+"s107": [
+"unlabeled_space",
+null
+],
+"s108": [
+"roof_path_network_unresolved",
+null
+],
+"s109": [
+"unlabeled_space",
+null
+],
+"s110": [
+"stair",
+null
+],
+"s111": [
+"unlabeled_space",
+null
+],
+"s112": [
+"stair",
+null
+],
+"s113": [
+"private_outdoor",
+null
+],
+"s114": [
+"wall_band",
+null
+],
+"s115": [
+"unlabeled_space",
+null
+],
+"s116": [
+"unlabeled_space",
+null
+],
+"s117": [
+"stair",
+null
+],
+"s118": [
+"unlabeled_space",
+null
+],
+"s119": [
+"wall_band",
+null
+],
+"s120": [
+"core_multi_unresolved",
+null
+],
+"s121": [
+"apartment_dwelling",
+"192"
+],
+"s122": [
+"lift_shaft",
+null
+],
+"s123": [
+"unlabeled_space",
+null
+],
+"s124": [
+"private_outdoor",
+null
+],
+"s125": [
+"apartment_dwelling",
+"198"
+],
+"s126": [
+"wall_band",
+null
+],
+"s127": [
+"core_multi_unresolved",
+null
+],
+"s128": [
+"unlabeled_space",
+null
+],
+"s129": [
+"lift_shaft",
+null
+],
+"s130": [
+"unlabeled_space",
+null
+],
+"s131": [
+"apartment_dwelling",
+"199"
+],
+"s132": [
+"roof",
+null
+],
+"s133": [
+"apartment_dwelling",
+"193"
+],
+"s134": [
+"apartment_dwelling",
+"214"
+],
+"s135": [
+"apartment_part",
+"214"
+],
+"s136": [
+"unlabeled_space",
+null
+],
+"s137": [
+"apartment_dwelling",
+"213"
+],
+"s138": [
+"apartment_part",
+"213"
+],
+"s139": [
+"stair",
+null
+],
+"s140": [
+"stair",
+null
+],
+"s141": [
+"private_outdoor",
+null
+],
+"s142": [
+"private_outdoor",
+null
+],
+"s143": [
+"wall_band",
+null
+],
+"s144": [
+"private_outdoor",
+null
+],
+"s145": [
+"private_outdoor",
+null
+],
+"s146": [
+"wall_band",
+null
+],
+"s147": [
+"stair",
+null
+],
+"s148": [
+"commercial_room",
+null
+],
+"s149": [
+"apartment_dwelling",
+"212"
+],
+"s150": [
+"apartment_part",
+"212"
+],
+"s151": [
+"apartment_dwelling",
+"240"
+],
+"s152": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s153": [
+"wall_band",
+null
+],
+"s154": [
+"roof",
+null
+],
+"s155": [
+"apartment_dwelling",
+"226"
+],
+"s156": [
+"apartment_dwelling",
+"227"
+],
+"s157": [
+"apartment_dwelling",
+"228"
+],
+"s158": [
+"apartment_dwelling",
+"229"
+],
+"s159": [
+"apartment_dwelling",
+"211"
+],
+"s160": [
+"apartment_part",
+"211"
+],
+"s161": [
+"storage_corridor",
+null
+],
+"s162": [
+"storage_unit",
+"314"
+],
+"s163": [
+"storage_unit",
+"305"
+],
+"s164": [
+"apartment_dwelling",
+"239"
+],
+"s165": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s166": [
+"storage_unit",
+"306"
+],
+"s167": [
+"storage_unit",
+"307"
+],
+"s168": [
+"storage_unit",
+"297"
+],
+"s169": [
+"storage_unit",
+"296"
+],
+"s170": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s171": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s172": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s173": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s174": [
+"wall_band",
+null
+],
+"s175": [
+"storage_unit",
+"309"
+],
+"s176": [
+"storage_unit",
+"308"
+],
+"s177": [
+"storage_unit",
+"299"
+],
+"s178": [
+"storage_unit",
+"298"
+],
+"s179": [
+"apartment_dwelling",
+"238"
+],
+"s180": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s181": [
+"a179_region_unresolved",
+null
+],
+"s182": [
+"wall_band",
+null
+],
+"s183": [
+"wall_band",
+null
+],
+"s184": [
+"void",
+null
+],
+"s185": [
+"wall_band",
+null
+],
+"s186": [
+"wall_band",
+null
+],
+"s187": [
+"void",
+null
+],
+"s188": [
+"wall_band",
+null
+],
+"s189": [
+"roof",
+null
+],
+"s190": [
+"storage_unit",
+"311"
+],
+"s191": [
+"storage_unit",
+"310"
+],
+"s192": [
+"storage_unit",
+"300"
+],
+"s193": [
+"storage_unit",
+"301"
+],
+"s194": [
+"unlabeled_space",
+null
+],
+"s195": [
+"unlabeled_space",
+null
+],
+"s196": [
+"void",
+null
+],
+"s197": [
+"wall_band",
+null
+],
+"s198": [
+"storage_unit",
+"312"
+],
+"s199": [
+"storage_unit",
+"303"
+],
+"s200": [
+"storage_unit",
+"302"
+],
+"s201": [
+"wall_band",
+null
+],
+"s202": [
+"roof",
+null
+],
+"s203": [
+"storage_corridor",
+null
+],
+"s204": [
+"storage_unit",
+"315"
+],
+"s205": [
+"storage_unit",
+"316"
+],
+"s206": [
+"storage_unit",
+"323"
+],
+"s207": [
+"storage_unit",
+"322"
+],
+"s208": [
+"unlabeled_space",
+null
+],
+"s209": [
+"storage_unit",
+"313"
+],
+"s210": [
+"unlabeled_space",
+null
+],
+"s211": [
+"storage_unit",
+"304"
+],
+"s212": [
+"storage_unit",
+"317"
+],
+"s213": [
+"storage_unit",
+"318"
+],
+"s214": [
+"storage_unit",
+"325"
+],
+"s215": [
+"storage_unit",
+"324"
+],
+"s216": [
+"void",
+null
+],
+"s217": [
+"void",
+null
+],
+"s218": [
+"wall_band",
+null
+],
+"s219": [
+"commercial_room",
+null
+],
+"s220": [
+"commercial_room",
+null
+],
+"s221": [
+"commercial_room",
+null
+],
+"s222": [
+"commercial_room",
+null
+],
+"s223": [
+"cross_marked_cell",
+null
+],
+"s224": [
+"commercial_room",
+null
+],
+"s225": [
+"unlabeled_space",
+null
+],
+"s226": [
+"cross_marked_cell",
+null
+],
+"s227": [
+"storage_unit",
+"320"
+],
+"s228": [
+"storage_unit",
+"319"
+],
+"s229": [
+"storage_unit",
+"327"
+],
+"s230": [
+"storage_unit",
+"326"
+],
+"s231": [
+"unlabeled_space",
+null
+],
+"s232": [
+"unlabeled_space",
+null
+],
+"s233": [
+"unlabeled_space",
+null
+],
+"s234": [
+"unlabeled_space",
+null
+],
+"s235": [
+"commercial_multi_unresolved",
+null
+],
+"s236": [
+"unlabeled_space",
+null
+],
+"s237": [
+"wall_band",
+null
+],
+"s238": [
+"unlabeled_space",
+null
+],
+"s239": [
+"stair",
+null
+],
+"s240": [
+"wall_band",
+null
+],
+"s241": [
+"storage_unit",
+"321"
+],
+"s242": [
+"storage_unit",
+"329"
+],
+"s243": [
+"storage_unit",
+"328"
+],
+"s244": [
+"void",
+null
+],
+"s245": [
+"void",
+null
+],
+"s246": [
+"wall_band",
+null
+],
+"s247": [
+"a179_region_unresolved",
+null
+],
+"s248": [
+"unresolved_space",
+null
+],
+"s249": [
+"stair",
+null
+],
+"s250": [
+"stair",
+null
+],
+"s251": [
+"stair",
+null
+],
+"s252": [
+"unlabeled_space",
+null
+],
+"s253": [
+"commercial_room",
+null
+],
+"s254": [
+"commercial_room",
+null
+],
+"s255": [
+"wall_band",
+null
+],
+"s256": [
+"unlabeled_space",
+null
+],
+"s257": [
+"roof",
+null
+],
+"s258": [
+"commercial_multi_unresolved",
+null
+],
+"s259": [
+"cross_marked_cell",
+null
+],
+"s260": [
+"cross_marked_cell",
+null
+],
+"s261": [
+"wall_band",
+null
+],
+"s262": [
+"stair",
+null
+],
+"s263": [
+"lift_shaft",
+null
+],
+"s264": [
+"void",
+null
+],
+"s265": [
+"void",
+null
+],
+"s266": [
+"unresolved_space",
+null
+],
+"s267": [
+"unlabeled_space",
+null
+],
+"s268": [
+"commercial_room",
+null
+],
+"s269": [
+"commercial_room",
+null
+],
+"s270": [
+"wall_band",
+null
+],
+"s271": [
+"unlabeled_space",
+null
+],
+"s272": [
+"wall_band",
+null
+],
+"s273": [
+"commercial_room",
+null
+],
+"s274": [
+"unlabeled_space",
+null
+],
+"s275": [
+"unlabeled_space",
+null
+],
+"s276": [
+"wall_band",
+null
+],
+"s277": [
+"commercial_room",
+null
+],
+"s278": [
+"unlabeled_space",
+null
+],
+"s279": [
+"unlabeled_space",
+null
+],
+"s280": [
+"void",
+null
+],
+"s281": [
+"stair",
+null
+],
+"s282": [
+"apartment_dwelling",
+"251"
+],
+"s283": [
+"unlabeled_space",
+null
+],
+"s284": [
+"commercial_room",
+null
+],
+"s285": [
+"commercial_room",
+null
+],
+"s286": [
+"commercial_room",
+null
+],
+"s287": [
+"void",
+null
+],
+"s288": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s289": [
+"storage_corridor",
+null
+],
+"s290": [
+"cross_marked_cell",
+null
+],
+"s291": [
+"commercial_room",
+null
+],
+"s292": [
+"cross_marked_cell",
+null
+],
+"s293": [
+"void",
+null
+],
+"s294": [
+"apartment_dwelling",
+"250"
+],
+"s295": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s296": [
+"storage_unit",
+"330"
+],
+"s297": [
+"storage_unit",
+"331"
+],
+"s298": [
+"storage_unit",
+"344"
+],
+"s299": [
+"storage_unit",
+"343"
+],
+"s300": [
+"storage_unit",
+"333"
+],
+"s301": [
+"storage_unit",
+"332"
+],
+"s302": [
+"storage_unit",
+"345"
+],
+"s303": [
+"storage_unit",
+"346"
+],
+"s304": [
+"void",
+null
+],
+"s305": [
+"apartment_dwelling",
+"249"
+],
+"s306": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s307": [
+"storage_unit",
+"334"
+],
+"s308": [
+"storage_unit",
+"348"
+],
+"s309": [
+"storage_unit",
+"347"
+],
+"s310": [
+"unlabeled_space",
+null
+],
+"s311": [
+"storage_unit",
+"336"
+],
+"s312": [
+"storage_unit",
+"335"
+],
+"s313": [
+"storage_unit",
+"350"
+],
+"s314": [
+"storage_unit",
+"349"
+],
+"s315": [
+"apartment_dwelling",
+"248"
+],
+"s316": [
+"private_outdoor_multi_unresolved",
+null
+],
+"s317": [
+"storage_unit",
+"338"
+],
+"s318": [
+"storage_unit",
+"337"
+],
+"s319": [
+"storage_unit",
+"352"
+],
+"s320": [
+"storage_unit",
+"351"
+],
+"s321": [
+"storage_unit",
+"339"
+],
+"s322": [
+"storage_unit",
+"340"
+],
+"s323": [
+"storage_unit",
+"354"
+],
+"s324": [
+"storage_unit",
+"353"
+],
+"s325": [
+"void",
+null
+],
+"s326": [
+"wall_band",
+null
+],
+"s327": [
+"roof",
+null
+],
+"s328": [
+"storage_unit",
+"342"
+],
+"s329": [
+"storage_unit",
+"341"
+],
+"s330": [
+"storage_unit",
+"356"
+],
+"s331": [
+"storage_unit",
+"355"
+],
+"s332": [
+"commercial_round_part",
+null
+],
+"s333": [
+"roof",
+null
+],
+"s334": [
+"unlabeled_space",
+null
+],
+"s335": [
+"unlabeled_space",
+null
+],
+"s336": [
+"wall_band",
+null
+],
+"s337": [
+"unlabeled_space",
+null
+],
+"s338": [
+"unlabeled_space",
+null
+],
+"s339": [
+"apartment_dwelling",
+"261"
+],
+"s340": [
+"apartment_dwelling",
+"260"
+],
+"s341": [
+"unlabeled_space",
+null
+]
+}
+}

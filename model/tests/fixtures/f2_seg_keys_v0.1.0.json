@@ -1,0 +1,482 @@
+{
+"version": "f2-0.1.0",
+"note": "Vaste sleutels 2e verdieping (p83); wijzigen = bewuste migratie",
+"keys": {
+"s000": [
+"wall_band",
+null
+],
+"s001": [
+"unlabeled_space",
+null
+],
+"s002": [
+"core_multi_unresolved",
+null
+],
+"s003": [
+"wall_band",
+null
+],
+"s004": [
+"stair",
+null
+],
+"s005": [
+"apartment_dwelling",
+"207"
+],
+"s006": [
+"lift_shaft",
+null
+],
+"s007": [
+"roof",
+null
+],
+"s008": [
+"wall_band",
+null
+],
+"s009": [
+"a179_region_unresolved",
+null
+],
+"s010": [
+"apartment_dwelling",
+"206"
+],
+"s011": [
+"apartment_dwelling",
+"183"
+],
+"s012": [
+"unlabeled_space",
+null
+],
+"s013": [
+"apartment_dwelling",
+"184"
+],
+"s014": [
+"wall_band",
+null
+],
+"s015": [
+"roof",
+null
+],
+"s016": [
+"wall_band",
+null
+],
+"s017": [
+"roof",
+null
+],
+"s018": [
+"wall_band",
+null
+],
+"s019": [
+"cross_marked_cell",
+null
+],
+"s020": [
+"private_outdoor",
+null
+],
+"s021": [
+"unlabeled_space",
+null
+],
+"s022": [
+"private_outdoor",
+null
+],
+"s023": [
+"roof",
+null
+],
+"s024": [
+"wall_band",
+null
+],
+"s025": [
+"a179_region_unresolved",
+null
+],
+"s026": [
+"cross_marked_cell",
+null
+],
+"s027": [
+"private_outdoor",
+null
+],
+"s028": [
+"private_outdoor",
+null
+],
+"s029": [
+"unlabeled_space",
+null
+],
+"s030": [
+"apartment_dwelling",
+"194"
+],
+"s031": [
+"apartment_dwelling",
+"195"
+],
+"s032": [
+"apartment_dwelling",
+"225"
+],
+"s033": [
+"lift_shaft",
+null
+],
+"s034": [
+"unlabeled_space",
+null
+],
+"s035": [
+"void",
+null
+],
+"s036": [
+"core_multi_unresolved",
+null
+],
+"s037": [
+"stair",
+null
+],
+"s038": [
+"lift_shaft",
+null
+],
+"s039": [
+"apartment_dwelling",
+"224"
+],
+"s040": [
+"apartment_dwelling",
+"197"
+],
+"s041": [
+"apartment_dwelling",
+"196"
+],
+"s042": [
+"apartment_dwelling",
+"223"
+],
+"s043": [
+"apartment_dwelling",
+"200"
+],
+"s044": [
+"unlabeled_space",
+null
+],
+"s045": [
+"core_multi_unresolved",
+null
+],
+"s046": [
+"wall_band",
+null
+],
+"s047": [
+"lift_shaft",
+null
+],
+"s048": [
+"apartment_dwelling",
+"201"
+],
+"s049": [
+"apartment_dwelling",
+"222"
+],
+"s050": [
+"apartment_dwelling",
+"221"
+],
+"s051": [
+"private_outdoor",
+null
+],
+"s052": [
+"private_outdoor",
+null
+],
+"s053": [
+"private_outdoor",
+null
+],
+"s054": [
+"private_outdoor",
+null
+],
+"s055": [
+"apartment_dwelling",
+"220"
+],
+"s056": [
+"commercial_multi_unresolved",
+null
+],
+"s057": [
+"apartment_dwelling",
+"219"
+],
+"s058": [
+"unlabeled_space",
+null
+],
+"s059": [
+"apartment_dwelling",
+"230"
+],
+"s060": [
+"apartment_dwelling",
+"231"
+],
+"s061": [
+"apartment_dwelling",
+"232"
+],
+"s062": [
+"apartment_dwelling",
+"233"
+],
+"s063": [
+"apartment_dwelling",
+"234"
+],
+"s064": [
+"apartment_dwelling",
+"235"
+],
+"s065": [
+"apartment_dwelling",
+"236"
+],
+"s066": [
+"apartment_dwelling",
+"237"
+],
+"s067": [
+"apartment_dwelling",
+"218"
+],
+"s068": [
+"private_outdoor",
+null
+],
+"s069": [
+"apartment_dwelling",
+"243"
+],
+"s070": [
+"apartment_dwelling",
+"217"
+],
+"s071": [
+"wall_band",
+null
+],
+"s072": [
+"roof",
+null
+],
+"s073": [
+"apartment_dwelling",
+"216"
+],
+"s074": [
+"apartment_dwelling",
+"242"
+],
+"s075": [
+"wall_band",
+null
+],
+"s076": [
+"wall_band",
+null
+],
+"s077": [
+"apartment_dwelling",
+"241"
+],
+"s078": [
+"private_outdoor",
+null
+],
+"s079": [
+"wall_band",
+null
+],
+"s080": [
+"a179_region_unresolved",
+null
+],
+"s081": [
+"a179_region_unresolved",
+null
+],
+"s082": [
+"wall_band",
+null
+],
+"s083": [
+"roof",
+null
+],
+"s084": [
+"wall_band",
+null
+],
+"s085": [
+"a179_region_unresolved",
+null
+],
+"s086": [
+"private_outdoor",
+null
+],
+"s087": [
+"apartment_dwelling",
+"245"
+],
+"s088": [
+"wall_band",
+null
+],
+"s089": [
+"a179_region_unresolved",
+null
+],
+"s090": [
+"wall_band",
+null
+],
+"s091": [
+"wall_band",
+null
+],
+"s092": [
+"lift_shaft",
+null
+],
+"s093": [
+"private_outdoor",
+null
+],
+"s094": [
+"apartment_dwelling",
+"244"
+],
+"s095": [
+"stair",
+null
+],
+"s096": [
+"stair",
+null
+],
+"s097": [
+"stair",
+null
+],
+"s098": [
+"stair",
+null
+],
+"s099": [
+"stair",
+null
+],
+"s100": [
+"private_outdoor",
+null
+],
+"s101": [
+"apartment_dwelling",
+"255"
+],
+"s102": [
+"roof",
+null
+],
+"s103": [
+"apartment_dwelling",
+"254"
+],
+"s104": [
+"wall_band",
+null
+],
+"s105": [
+"private_outdoor",
+null
+],
+"s106": [
+"private_outdoor",
+null
+],
+"s107": [
+"apartment_dwelling",
+"253"
+],
+"s108": [
+"apartment_dwelling",
+"252"
+],
+"s109": [
+"private_outdoor",
+null
+],
+"s110": [
+"wall_band",
+null
+],
+"s111": [
+"a179_region_unresolved",
+null
+],
+"s112": [
+"apartment_dwelling",
+"263"
+],
+"s113": [
+"wall_band",
+null
+],
+"s114": [
+"stair",
+null
+],
+"s115": [
+"stair",
+null
+],
+"s116": [
+"unlabeled_space",
+null
+],
+"s117": [
+"apartment_dwelling",
+"262"
+],
+"s118": [
+"unlabeled_space",
+null
+]
+}
+}
