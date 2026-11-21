@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Bouwt data/f1.v2.json + pilot/pilot_data_f1.js: 1e verdieping (akte 2006 p.82).
+"""Bouwt per verdieping data/fN.v2.json + pilot/pilot_data_fN.js (1e = akte 2006 p.82, 2e = p.83).
 
-Hergebruikt de Builder/maatlogica van build_model.py met een EIGEN frame + kalibratie (p82),
-en de semi-automatische segmentatie uit data/inventory/f1_segments_p82.json
-(tools/segment_bg.py --floor 1e, zelfde lijnwerk tools/linework.py als de BG).
+Gebruik: build_floor.py --floor 1e|2e [--scan none]
+Hergebruikt de Builder/maatlogica van build_model.py met een EIGEN frame + kalibratie per blad,
+de semi-automatische segmentatie uit data/inventory/fN_segments_p8X.json
+(tools/segment_bg.py --floor N, zelfde lijnwerk tools/linework.py als de BG) en de gemeten labelboxen
+uit data/inventory/labels_measured_p8X.json (tools/measure_labels.py).
 Zonder lokale scan (--scan none) wordt de inkt-ondersteuning uit de vorige build overgenomen (reproduceerbaar).
 """
 import argparse
@@ -18,35 +20,53 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import build_model as BM  # noqa: E402
-from traces import f1_segments as M  # noqa: E402
+from traces import f1_segments, f2_segments  # noqa: E402
 
 ROOT = os.path.dirname(HERE)
-DATASET_VERSION = "f1-0.1.0"
-FLOOR, FRAME, SOURCE, CAL = "1e", "frm_p82_native", "src_akte2006_p82", "cal_p82_controls"
-NATIVE = M.NATIVE
-# ---- kalibratie p82 (zie data/inventory/calibration_p82.json; gemeten 2026-11-21 op de lokale scan)
-BAR_X, BAR_PX, BAR_M = 77, (335.5, 728.7), 10.0
-RULER_X, RULER_TICKS = 438, (379.34, 773.49)          # 0 en 5 cm
-RULER_PX_PER_CM = (RULER_TICKS[1] - RULER_TICKS[0]) / 5
-M_BAR = BAR_M / (BAR_PX[1] - BAR_PX[0])               # 0.025432 m/px
-M_RULER = 2.0 / RULER_PX_PER_CM                         # 0.025371 m/px
-M_NOMINAL = 0.0254
-M_ADOPT = round((M_BAR + M_RULER) / 2, 7)
-HALF_SPREAD = abs(M_BAR - M_RULER) / 2 / M_ADOPT        # ~0,12 %
-READ_TOL = math.sqrt(2) * 1.5 / (BAR_PX[1] - BAR_PX[0])  # ~0,54 %
-REL_U_Y = round(max(HALF_SPREAD, READ_TOL), 4)
-REL_ANISO_P81 = BM.REL_ANISO                           # 0,88 % (kolomstramien p81)
-REL_U_X = round(REL_U_Y + REL_ANISO_P81, 4)
-OUT = os.path.join(ROOT, "data", "f1.v2.json")
-JS_OUT = os.path.join(ROOT, "pilot", "pilot_data_f1.js")
-SEG_JSON = os.path.join(ROOT, "data", "inventory", "f1_segments_p82.json")
+# ---- per bronblad: eigen frame + kalibratie (metingen in data/inventory/calibration_p8X.json, op de lokale scan)
+FLOORS = {
+    "1e": dict(M=f1_segments, version="f1-0.2.0", page=82, sheet="02", name="1e verdieping", level=1, title_txt="1e Verdieping",
+               bar_x=77, bar_px=(335.5, 728.7), bar_segments=[76.5, 81.5, 80.7, 75.5, 79.0],
+               ruler_x=438, ruler_ticks=(379.34, 773.49), overlay="img/plan_1e.jpg", js_var="PILOT_DATA_F1", js="pilot_data_f1.js",
+               out="f1.v2.json", seg="f1_segments_p82.json", labels="labels_measured_p82.json",
+               review=[{"date": "2026-11-21", "by": "Grok Bot (executor)", "action": "fase 4: 1e verdieping (p82) kalibratie + semi-automatische segmentatie + visuele classificatie", "status": "needs_human_review"},
+                       {"date": "2026-11-21", "by": "Grok Bot (executor)", "action": "fase 5: labelposities gemeten (tekstclusters) waar mogelijk", "status": "needs_human_review"}]),
+    "2e": dict(M=f2_segments, version="f2-0.1.0", page=83, sheet="03", name="2e verdieping", level=2, title_txt="2e Verdieping",
+               bar_x=76, bar_px=(408.3, 805.6), bar_segments=[81.7, 78.0, 81.0, 80.5, 76.1],
+               ruler_x=434, ruler_ticks=(419.07, 812.14), overlay="img/plan_2e.jpg", js_var="PILOT_DATA_F2", js="pilot_data_f2.js",
+               out="f2.v2.json", seg="f2_segments_p83.json", labels="labels_measured_p83.json",
+               review=[{"date": "2026-11-21", "by": "Grok Bot (executor)", "action": "fase 5: 2e verdieping (p83) kalibratie + semi-automatische segmentatie + visuele classificatie + gemeten labelposities", "status": "needs_human_review"}]),
+}
 REG_JSON = BM.REG_JSON
+C = None   # actieve configuratie (zie configure)
+M = None
+FLOOR = FRAME = SOURCE = CAL = NATIVE = None
+M_BAR = M_RULER = M_ADOPT = HALF_SPREAD = READ_TOL = REL_U_Y = REL_U_X = None
+M_NOMINAL = 0.0254
+REL_ANISO_P81 = BM.REL_ANISO                           # 0,88 % (kolomstramien p81)
 
-# Builder/dim_for lezen deze module-globals van build_model: zet ze op het p82-frame
-for k, v in dict(FLOOR=FLOOR, FRAME=FRAME, SOURCE=SOURCE, CAL=CAL, NATIVE=NATIVE, M_PER_PX=(M_ADOPT, M_ADOPT),
-                 REL_U_X=REL_U_X, REL_U_Y=REL_U_Y,
-                 EV_TRACE={"source_id": SOURCE, "method": "auto_segment_inner_face"}).items():
-    setattr(BM, k, v)
+
+def configure(floor):
+    """Zet module- en build_model-globals op het frame/de kalibratie van dit blad (Builder/dim_for lezen die)."""
+    global C, M, FLOOR, FRAME, SOURCE, CAL, NATIVE, M_BAR, M_RULER, M_ADOPT, HALF_SPREAD, READ_TOL, REL_U_Y, REL_U_X
+    C = FLOORS[floor]
+    M = C["M"]
+    FLOOR, NATIVE = floor, M.NATIVE
+    FRAME, SOURCE, CAL = f"frm_p{C['page']}_native", f"src_akte2006_p{C['page']}", f"cal_p{C['page']}_controls"
+    b0, b1 = C["bar_px"]
+    r0, r1 = C["ruler_ticks"]
+    M_BAR = 10.0 / (b1 - b0)
+    M_RULER = 2.0 / ((r1 - r0) / 5)
+    M_ADOPT = round((M_BAR + M_RULER) / 2, 7)
+    HALF_SPREAD = abs(M_BAR - M_RULER) / 2 / M_ADOPT
+    READ_TOL = math.sqrt(2) * 1.5 / (b1 - b0)
+    REL_U_Y = round(max(HALF_SPREAD, READ_TOL), 4)
+    REL_U_X = round(REL_U_Y + REL_ANISO_P81, 4)
+    for k, v in dict(FLOOR=FLOOR, FRAME=FRAME, SOURCE=SOURCE, CAL=CAL, NATIVE=NATIVE, M_PER_PX=(M_ADOPT, M_ADOPT),
+                     REL_U_X=REL_U_X, REL_U_Y=REL_U_Y,
+                     EV_TRACE={"source_id": SOURCE, "method": "auto_segment_inner_face"}).items():
+        setattr(BM, k, v)
+
 
 H, O = "ls_hoofdsplitsing", "ls_ondersplitsing_woningen"
 WONING_RANGE, BERGING_RANGE = range(181, 266), range(266, 357)
@@ -86,7 +106,7 @@ def certainty(kind):
     return "uncertain" if kind == "apartment_part" else "probable"
 
 
-def legal_for(kind, idx, h179):
+def legal_for(kind, idx, h179, h180=False):
     """Afgeleide lidmaatschappen per vak; ontbrekend = unknown."""
     n = int(idx) if idx else None
     out = {}
@@ -114,11 +134,17 @@ def legal_for(kind, idx, h179):
         out[O] = ("common", None, "uncertain", "Gang tussen bergingen; gemeenschappelijk niet per vak bewezen")
     elif kind in ("stair", "lift_shaft", "core_multi_unresolved"):
         out[O] = ("common", None, "uncertain", BM._AKTE_O + "; welke trappen/liften bij de woningen horen is niet per vak bewezen")
+        if h180:
+            out[H] = ("private", "A-180", "probable", "Omcirkeld 180 in dit vak; A-180 = Woningen (MVGM)")
+    elif kind == "roof" and h180:
+        out[H] = ("private", "A-180", "probable", "Omcirkeld 180 in dit dak-/installatievak; A-180 = Woningen (MVGM)")
+    elif kind == "unlabeled_space" and h180:
+        out[H] = ("private", "A-180", "uncertain", "Omcirkeld 180 in dit vak; functie niet gelezen")
     return out
 
 
-class F1Builder(BM.Builder):
-    def add_segments_f1(self, seg):
+class FloorBuilder(BM.Builder):
+    def add_segments_floor(self, seg, lm):
         P = M.PREFIX
         okey, meta = {}, []
         for key, seed, kind, lit, idx, h179, note in M.SEEDS:
@@ -132,7 +158,7 @@ class F1Builder(BM.Builder):
             fields = {"kind": kind, "class": "element" if is_el else "space", "region_id": M.REGION_ID,
                       "display_name": ELEMENT_KINDS.get(kind) or display_name(kind, lit, idx),
                       "certainty": certainty(kind), "review_status": "needs_review",
-                      "evidence": {"source_id": SOURCE, "method": "auto_segment_inner_face (tools/segment_bg.py --floor 1e) + visuele review contactbladen",
+                      "evidence": {"source_id": SOURCE, "method": f"auto_segment_inner_face (tools/segment_bg.py --floor {FLOOR}) + visuele review contactbladen",
                                    "boundary": "binnenzijde getekende lijn",
                                    "note": " ".join(x for x in [(note or "").rstrip(".") + ("." if note else ""),
                                                                 "" if is_el else "Grens = binnenzijde van de getekende lijn (wandstrook ligt ertussen)."] if x)}}
@@ -149,16 +175,26 @@ class F1Builder(BM.Builder):
             if g.get("holes"):
                 o["evidence"]["note"] += f" {len(g['holes'])} omsloten buurvakken als gaten (binnenringen)."
             sx, sy = seed
-            approx = "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstpositie niet gemeten)"
+            meas = lm.get(key, {})
+
+            def box(kind_, text, approx_box):
+                m = meas.get(kind_)
+                n_txt = len(text.replace(" ", "").replace("-", ""))
+                if m:
+                    part = "" if m[4] == n_txt else f"; DEELS: {m[4]} van {n_txt} tekens gevonden (rest raakt een lijn)"
+                    return tuple(m[:4]), f"Visueel gelezen; positie GEMETEN als tekstcluster in het vak (tools/measure_labels.py, {m[4]} tekens{part})"
+                return approx_box, "Visueel gelezen op contactblad; bbox BENADERD rond het zaadpunt (tekstcluster niet eenduidig gemeten)"
             if idx:
-                self.label(f"lbl_{P}_{key}_n", idx, "index_number", (sx - 45, sy - 80, sx + 45, sy + 80), [o_id], "probable", approx)
+                b, nt = box("number", idx, (sx - 30, sy - 50, sx + 30, sy + 50) if kind == "storage_unit" else (sx - 45, sy - 80, sx + 45, sy + 80))
+                self.label(f"lbl_{P}_{key}_n", idx, "index_number", b, [o_id], "probable", nt)
             if lit:
-                self.label(f"lbl_{P}_{key}", lit, "space_name", (sx - 60, sy - 60, sx + 60, sy + 60), [o_id], "probable", approx)
+                b, nt = box("literal", lit, (sx - 60, sy - 60, sx + 60, sy + 60))
+                self.label(f"lbl_{P}_{key}", lit, "space_name", b, [o_id], "probable", nt)
             if h179:
-                self.label(f"lbl_{P}_{key}_i179", "179", "index_number", (sx - 40, sy - 75, sx + 40, sy + 75), [o_id], "probable",
-                           "Indexnummer 179 in dit vak (visueel); bbox benaderd")
+                b, nt = box("i179", "179", (sx - 40, sy - 75, sx + 40, sy + 75))
+                self.label(f"lbl_{P}_{key}_i179", "179", "index_number", b, [o_id], "probable", "Indexnummer 179 in dit vak. " + nt)
             if not is_el:
-                meta.append((o_id, legal_for(kind, idx, h179)))
+                meta.append((o_id, legal_for(kind, idx, h179, key in getattr(M, "IDX180_KEYS", ()))))
         for key, seed, note in M.HATCH_SEEDS:
             g = seg["hatch"].get(key)
             if g is None:
@@ -169,7 +205,7 @@ class F1Builder(BM.Builder):
             self.polygon_object(o_id, P, vids, lambda a, b: "virtual_boundary", kind="not_in_split_area", **{"class": "space"},
                                 region_id=M.REGION_ID, display_name="Gearceerd: niet in de splitsing betrokken",
                                 source_label_text=None, current_use=None, certainty="probable", review_status="needs_review",
-                                evidence={"source_id": SOURCE, "method": "dichtheid diagonale arceerlijnen (tools/segment_bg.py --floor 1e)",
+                                evidence={"source_id": SOURCE, "method": f"dichtheid diagonale arceerlijnen (tools/segment_bg.py --floor {FLOOR})",
                                           "boundary": "buitenrand arcering (±8 px)",
                                           "note": note + ". Labels binnen de arcering (o.a. 'vide', 'dak') niet als aparte vakken getraceerd."})
             ex = ("excluded", None, "probable", "Arcering = 'niet in de splitsing betrokken' (legenda op het blad)")
@@ -179,30 +215,45 @@ class F1Builder(BM.Builder):
         return okey, meta
 
 
-def coverage_block(B, seg):
+COMMON_NOT_TRACED = ["deuren/draaibogen en traptreden (niet getraceerd; niet verzonnen)",
+                     "posities van de omcirkelde 180-symbolen (alleen als toelichting, niet per vak gemeten)",
+                     "kolommen (kolomkandidaten op p82-p85 niet beoordeeld)", "gestippelde contouren"]
+FLOORS["1e"]["not_traced"] = ["onderverdeling van buitenruimten met meerdere omcirkelde 180 en gestippelde deellijnen",
+                              "scheiding woning/buitenruimte waar de lijn niet gesloten is (WB-vakken) en kernen trap+lift in één vlak",
+                              "onderverdeling multi-label bedrijfsvakken en 179-gebieden"]
+FLOORS["2e"]["not_traced"] = ["kleine buitenruimten binnen woningen (bv. 196, 197, 200, 201, 241-243, 252-255) die naar buiten openstaan in het lijnwerk: niet als eigen vak",
+                              "kernen trap+lift in één vlak (s002, s036, s045) en woning 225 met lift/trap in hetzelfde vak",
+                              "onderverdeling 179-stroken/-blokken; betekenis omcirkelde '1' (bij 220 en beheerder)"]
+
+
+def coverage_block(B, seg, lm):
+    ids = {o["id"] for o in B.objects}
     kinds = Counter(o["kind"] for o in B.objects if o.get("region_id") == M.REGION_ID)
     unres = sum(v for k, v in kinds.items() if k.endswith("unresolved") or k in UNRES)
-    won = sorted(int(i) for _k, _s, kd, _l, i, _h, _n in M.SEEDS if kd == "apartment_dwelling" and f"obj_{M.PREFIX}_{_k}" in {o["id"] for o in B.objects})
-    berg = sorted(int(i) for _k, _s, kd, _l, i, _h, _n in M.SEEDS if kd == "storage_unit")
+    won = sorted(int(i) for k, _s, kd, _l, i, _h, _n in M.SEEDS if kd == "apartment_dwelling" and f"obj_{M.PREFIX}_{k}" in ids)
+    berg = sorted(int(i) for k, _s, kd, _l, i, _h, _n in M.SEEDS if kd == "storage_unit" and f"obj_{M.PREFIX}_{k}" in ids)
+    lbl = [l for l in B.labels if l["id"] != f"lbl_{M.PREFIX}_legend_hatch"]
+    measured = sum("GEMETEN" in (l.get("note") or "") for l in lbl)
+    counts = {"segment_kinds": dict(sorted(kinds.items())), "unresolved_or_unlabeled_segments": unres,
+              "woningen_on_sheet": len(won), "woningen_numbers": won, "bergingen_on_sheet": len(berg),
+              "labels_total": len(lbl), "labels_position_measured": measured, "labels_position_approximated": len(lbl) - measured,
+              "segments_problems": seg.get("problems", [])}
+    if berg:
+        counts["bergingen_missing_266_356"] = sorted(set(BERGING_RANGE) - set(berg))
+    nh = len(M.HATCH_SEEDS)
     return {"complete": False,
-            "scope": "Alleen 1e verdieping (blad p.82). Semi-automatisch: alle gesloten vakken met zaadpunt (binnenzijde getekende lijn), "
-                     "2 arceringen en wandstroken. Classificatie visueel gelezen op contactbladen. BG staat in bg.v2.json; 2e-4e verdieping nog niet getraceerd.",
-            "floors_covered": ["1e (grotendeels, deels onopgelost)"],
-            "counts": {"segment_kinds": dict(sorted(kinds.items())), "unresolved_or_unlabeled_segments": unres,
-                       "woningen_on_sheet": len(won), "woningen_numbers": won,
-                       "bergingen_on_sheet": len(berg), "bergingen_missing_266_356": sorted(set(BERGING_RANGE) - set(berg)),
-                       "segments_problems": seg.get("problems", [])},
-            "traced": [f"{len(won)} woningen (indexnummers visueel gelezen)", f"{len(berg)} bergingen = alle 266-356",
-                       "buitenruimten, daken, vides, trappen/liften, gangen bergingen, bedrijfsruimten (labels visueel gelezen)",
-                       "2 arceringen 'niet in de splitsing betrokken' (diagonaaldetectie)", "wandstroken tussen dubbele lijnen"],
-            "not_traced": ["deuren/draaibogen en traptreden (niet getraceerd; niet verzonnen)",
-                           "onderverdeling van buitenruimten met meerdere omcirkelde 180 en gestippelde deellijnen",
-                           "scheiding woning/buitenruimte waar de lijn niet gesloten is (WB-vakken) en kernen trap+lift in één vlak",
-                           "onderverdeling multi-label bedrijfsvakken en 179-gebieden",
-                           "posities van de omcirkelde 180-symbolen (alleen als toelichting, niet per vak gemeten)",
-                           "exacte tekstposities: labelboxen zijn benaderd rond het zaadpunt",
-                           "kolommen (p82 kolomkandidaten niet beoordeeld)", "gestippelde contouren (bijv. 'contour bovengelegen ...')",
-                           "2e, 3e en 4e verdieping/daken: niets getraceerd"]}
+            "scope": f"Alleen {C['name']} (blad p.{C['page']}). Semi-automatisch: alle gesloten vakken met zaadpunt (binnenzijde getekende lijn), "
+                     f"{nh} arcering(en) en wandstroken. Classificatie visueel gelezen op contactbladen. Andere verdiepingen staan in eigen datasets; "
+                     "3e en 4e verdieping/daken nog niet getraceerd.",
+            "floors_covered": [f"{FLOOR} (grotendeels, deels onopgelost)"],
+            "counts": counts,
+            "traced": [f"{len(won)} woningen (indexnummers visueel gelezen)"] + ([f"{len(berg)} bergingen"] if berg else ["geen bergingen op dit blad"]) +
+                      ["buitenruimten, daken, vides, trappen/liften, bedrijfs-/179-vakken (labels visueel gelezen)",
+                       f"{nh} arcering(en) 'niet in de splitsing betrokken' (diagonaaldetectie)", "wandstroken tussen dubbele lijnen",
+                       f"labelposities: {measured} van {len(lbl)} GEMETEN als tekstcluster, rest benaderd rond het zaadpunt"],
+            "not_traced": C["not_traced"] + COMMON_NOT_TRACED +
+                          [f"exacte tekstpositie van {len(lbl) - measured} labels (benaderd; tekst raakt lijnen of is meerregelig)",
+                           "3e en 4e verdieping/daken: niets getraceerd"]}
 
 
 def build(scan_path=None):
@@ -215,14 +266,18 @@ def build(scan_path=None):
         assert im.size == NATIVE, im.size
         A = np.array(im) < BM.INK_SUPPORT_THRESHOLD
         scan_sha = hashlib.sha256(open(scan_path, "rb").read()).hexdigest()
+    OUT = os.path.join(ROOT, "data", C["out"])
+    JS_OUT = os.path.join(ROOT, "pilot", C["js"])
     old = json.load(open(OUT)) if os.path.exists(OUT) else {}
     old_ink = {e["id"]: e.get("ink_support") for e in old.get("edges", [])}
     if scan_sha is None:
         scan_sha = (old.get("sources") or [{}])[0].get("scan_sha256")
-    seg = json.load(open(SEG_JSON))
+    seg = json.load(open(os.path.join(ROOT, "data", "inventory", C["seg"])))
+    lp = os.path.join(ROOT, "data", "inventory", C["labels"])
+    lm = json.load(open(lp))["labels"] if os.path.exists(lp) else {}
     reg = json.load(open(REG_JSON)) if os.path.exists(REG_JSON) else None
-    B = F1Builder(A, old_ink)
-    okey, seg_meta = B.add_segments_f1(seg)
+    B = FloorBuilder(A, old_ink)
+    okey, seg_meta = B.add_segments_floor(seg, lm)
     pts = [B.pos[v] for o in B.objects for v in o["geometry"]["rings"][0]]
     regions = [{"id": M.REGION_ID, "name": M.REGION_NAME, "region_px": list(M.REGION_PX), "floor_id": FLOOR,
                 "fit_px": [min(p[0] for p in pts), min(p[1] for p in pts), max(p[0] for p in pts), max(p[1] for p in pts)],
@@ -230,47 +285,47 @@ def build(scan_path=None):
     overlays = []
     if reg and FLOOR in reg.get("floors", {}):
         r = reg["floors"][FLOOR]
-        overlays.append({"id": "ovl_plan_1e_jpg", "frame_id": FRAME, "image": "img/plan_1e.jpg", "public": True,
+        overlays.append({"id": f"ovl_plan_{FLOOR}_jpg", "frame_id": FRAME, "image": C["overlay"], "public": True,
                          "size_px": r["image_size"], "image_to_native_affine": r["image_to_native_affine"],
                          "method": r["method"], "ecc_correlation": r["ecc_correlation"],
                          "note": "Eerder gepubliceerde lage-resolutie (≈0,24x) referentie; geen nieuwe bronpublicatie."})
     seg_ids = {o for o, _ in seg_meta}
     data = {
-        "schema_version": BM.SCHEMA_VERSION, "dataset_version": DATASET_VERSION, "generated": "2026-11-21",
+        "schema_version": BM.SCHEMA_VERSION, "dataset_version": C["version"], "generated": "2026-11-21",
         "sources": [{
-            "id": SOURCE, "title": "Splitsingsakte 2006, tekenblad 1e verdieping (ondersplitsingstekening woningen + bergingen)",
-            "document": "1050_96739052_Splitsingsakte_+_tekeningen.pdf", "page": 82, "drawing_sheet": "02",
+            "id": SOURCE, "title": f"Splitsingsakte 2006, tekenblad {C['name']} (ondersplitsingstekening woningen + bergingen)",
+            "document": "1050_96739052_Splitsingsakte_+_tekeningen.pdf", "page": C["page"], "drawing_sheet": C["sheet"],
             "author": "W. Grandia BV, project 2273", "native_size_px": list(NATIVE), "dpi": 200, "raster_only": True,
             "scan_sha256": scan_sha, "pdf_extract_sha256": (old.get("sources") or [{}])[0].get("pdf_extract_sha256"),
             "privacy_class": "private_deed_drawing", "publish_native_raster": False,
-            "note": "Bladtitel '1e Verdieping, Schaal 1 a 200' gelezen; bladnummer 02 afgeleid uit de volgorde. Native raster blijft lokaal."}] + BM.EXTRA_SOURCES,
+            "note": f"Bladtitel '{C['title_txt']}, Schaal 1 a 200' gelezen; bladnummer {C['sheet']} afgeleid uit de volgorde. Native raster blijft lokaal."}] + BM.EXTRA_SOURCES,
         "calibrations": [{
             "id": CAL, "frame_id": FRAME, "model": "nominal_scale", "m_per_px_x": M_ADOPT, "m_per_px_y": M_ADOPT,
-            "basis": "Gemiddelde van twee controles langs native y op blad 82: eigen schaalbalk ('1e Verdieping Schaal 1 a 200', 0-10 m) en cm-liniaal x opgegeven schaal 1:200",
+            "basis": f"Gemiddelde van twee controles langs native y op blad {C['page']}: eigen schaalbalk ('{C['title_txt']} Schaal 1 a 200', 0-10 m) en cm-liniaal x opgegeven schaal 1:200",
             "status": "controls_checked_one_axis", "uncertainty_m": None, "uncertainty_status": "estimated",
             "rel_uncertainty": {"x": REL_U_X, "y": REL_U_Y},
             "axis_status": {"y": "checked_against_scale_bar_and_ruler", "x": "assumed_isotropic_not_independently_verified"},
             "control_points": [
-                {"id": "bar_0m", "kind": "scale_bar_tick", "x_px": BAR_X, "y_px": BAR_PX[0], "value_m": 0.0, "reading_tolerance_px": 1.5},
-                {"id": "bar_10m", "kind": "scale_bar_tick", "x_px": BAR_X, "y_px": BAR_PX[1], "value_m": 10.0, "reading_tolerance_px": 1.5},
-                {"id": "ruler_0cm", "kind": "ruler_tick", "x_px": RULER_X, "y_px": RULER_TICKS[0], "value_cm": 0},
-                {"id": "ruler_5cm", "kind": "ruler_tick", "x_px": RULER_X, "y_px": RULER_TICKS[1], "value_cm": 5}],
+                {"id": "bar_0m", "kind": "scale_bar_tick", "x_px": C["bar_x"], "y_px": C["bar_px"][0], "value_m": 0.0, "reading_tolerance_px": 1.5},
+                {"id": "bar_10m", "kind": "scale_bar_tick", "x_px": C["bar_x"], "y_px": C["bar_px"][1], "value_m": 10.0, "reading_tolerance_px": 1.5},
+                {"id": "ruler_0cm", "kind": "ruler_tick", "x_px": C["ruler_x"], "y_px": C["ruler_ticks"][0], "value_cm": 0},
+                {"id": "ruler_5cm", "kind": "ruler_tick", "x_px": C["ruler_x"], "y_px": C["ruler_ticks"][1], "value_cm": 5}],
             "checks": {
                 "m_per_px_scale_bar_0_10m": round(M_BAR, 6), "m_per_px_ruler_x_1to200": round(M_RULER, 6),
                 "m_per_px_nominal_1to200_200dpi": M_NOMINAL, "adopted": M_ADOPT,
                 "bar_vs_ruler_pct": round((M_BAR / M_RULER - 1) * 100, 2),
                 "bar_vs_nominal_pct": round((M_BAR / M_NOMINAL - 1) * 100, 2), "ruler_vs_nominal_pct": round((M_RULER / M_NOMINAL - 1) * 100, 2),
                 "half_spread_rel": round(HALF_SPREAD, 4), "reading_tolerance_rel": round(READ_TOL, 4),
-                "bar_segments_px_per_2m": [76.5, 81.5, 80.7, 75.5, 79.0],
-                "bar_segment_note": "Segmenten ongelijk (75,5-81,5 px per 2 m); alleen eindpunten gebruikt",
+                "bar_segments_px_per_2m": C["bar_segments"],
+                "bar_segment_note": f"Segmenten ongelijk ({min(C['bar_segments']):.1f}-{max(C['bar_segments']):.1f} px per 2 m); alleen eindpunten gebruikt".replace(".", ","),
                 "x_margin_note": "x-as niet onafhankelijk gecontroleerd; marge = marge y + 0,88 % anisotropie (kolomstramien p81)",
-                "p81_comparison": "Balk p81 387,0 px vs p82 393,2 px per 10 m: reproductieschaal verschilt per blad (1,6 %), dus per blad gekalibreerd"},
+                "p81_comparison": f"Balk p81 387,0 px vs p{C['page']} {C['bar_px'][1] - C['bar_px'][0]:.1f} px per 10 m: reproductieschaal verschilt per blad, dus per blad gekalibreerd".replace("p83 397.3", "p83 397,3").replace("p82 393.2", "p82 393,2")},
             "residuals": None,
-            "note": "GESCHATTE marge: y = max(halve spreiding balk/liniaal, afleestolerantie balkeinden). Zie data/inventory/calibration_p82.json."}],
+            "note": "GESCHATTE marge: y = max(halve spreiding balk/liniaal, afleestolerantie balkeinden). Zie data/inventory/calibration_p" + str(C["page"]) + ".json."}],
         "frames": [{"id": FRAME, "source_id": SOURCE, "floor_id": FLOOR, "unit": "px_native", "width_px": NATIVE[0],
                     "height_px": NATIVE[1], "axis_x": "right", "axis_y": "down",
                     "orientation": "scan_as_is_not_north_up", "calibration_ids": [CAL]}],
-        "floors": [{"id": FLOOR, "name": "1e verdieping", "level": 1, "source_ids": [SOURCE]}],
+        "floors": [{"id": FLOOR, "name": C["name"], "level": C["level"], "source_ids": [SOURCE]}],
         "regions": regions, "reference_overlays": overlays,
         "objects": B.objects, "vertices": B.vertices, "edges": B.edges, "labels": B.labels,
         "connections": [],
@@ -279,15 +334,14 @@ def build(scan_path=None):
                            "reason": "Gedeeltelijk: lidmaatschap per vak afgeleid uit indexnummers (181-356, 179, omcirkeld 180) + MVGM-stukken en akte-tekst; splitsingsgrenzen zelf niet als lijn getekend. Zekerheid per vak zichtbaar."},
         "memberships": _memberships(seg_meta),
         "legacy_links": [],
-        "coverage": coverage_block(B, seg),
-        "review_log": [{"date": "2026-11-21", "by": "Grok Bot (executor)",
-                        "action": "fase 4: 1e verdieping (p82) kalibratie + semi-automatische segmentatie + visuele classificatie", "status": "needs_human_review"}],
+        "coverage": coverage_block(B, seg, lm),
+        "review_log": C["review"],
     }
     assert seg_ids <= {o["id"] for o in B.objects}
     with open(OUT, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
     with open(JS_OUT, "w") as f:
-        f.write("// gegenereerd door model/tools/build_floor1.py\nwindow.PILOT_DATA_F1 = ")
+        f.write(f"// gegenereerd door model/tools/build_floor.py --floor {FLOOR}\nwindow.{C['js_var']} = ")
         json.dump(data, f, ensure_ascii=False)
         f.write(";\n")
     return data
@@ -304,8 +358,10 @@ def _memberships(seg_meta):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--scan", default="/workspace/vve-source-audit/page-82.png")
+    ap.add_argument("--floor", required=True, choices=sorted(FLOORS))
+    ap.add_argument("--scan", default=None, help="lokale bronscan (standaard page-8X.png); 'none' = inktsteun uit vorige build")
     a = ap.parse_args()
-    d = build(a.scan)
+    configure(a.floor)
+    d = build(a.scan or f"/workspace/vve-source-audit/page-{C['page']}.png")
     weak = [e for e in d["edges"] if e["ink_support"] and e["role"] == "wall_inner_face" and e["ink_support"]["fraction"] < 0.9]
-    print(OUT, len(d["objects"]), "objects", len(d["edges"]), "edges;", len(weak), "space edges ink<0.9")
+    print(C["out"], len(d["objects"]), "objects", len(d["edges"]), "edges;", len(weak), "space edges ink<0.9")

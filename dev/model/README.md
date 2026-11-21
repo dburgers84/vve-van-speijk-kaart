@@ -1,11 +1,13 @@
 # Datamodel v2 – brongetrouwe plattegrond (in opbouw)
 
-Status: **onvolledig**. Gedaan: BG (blad p.81) en, in een eerste versie, de 1e verdieping (blad p.82).
+Status: **onvolledig**. Gedaan: BG (blad p.81) en, in een eerste versie, de 1e (p.82) en 2e verdieping (p.83).
 - **BG handmatig:** 2 kernen en 1 bedrijfsruimte;
 - **BG semi-automatisch:** de rest van het BG (gesloten vakken op de binnenzijde van de getekende lijn, arceringen, wandstroken en visueel gecontroleerde kolomsymbolen). Een deel daarvan is expliciet **onopgelost**.
-- **1e verdieping (f1-0.1.0), semi-automatisch:** alle 342 gesloten vakken met zaadpunt + 2 arceringen, zelfde lijnwerk; nummers/functies visueel gelezen (38 woningen, alle 91 bergingen 266–356). Labelposities zijn benaderd; een deel is **onopgelost** (multi-vakken, kernen, buitenruimten met gestippelde onderverdeling).
+- **1e verdieping (f1-0.1.0), semi-automatisch:** alle 342 gesloten vakken met zaadpunt + 2 arceringen, zelfde lijnwerk; nummers/functies visueel gelezen (38 woningen, alle 91 bergingen 266–356). Labelposities sinds f1-0.2.0 deels gemeten (176 van 286), de rest benaderd; een deel is **onopgelost** (multi-vakken, kernen, buitenruimten met gestippelde onderverdeling).
 
-De 2e t/m 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`, `js/`, `svg/`) blijft de referentie. Viewer: `model/pilot/`, online `/dev/model/pilot/`.
+- **2e verdieping (f2-0.1.0), semi-automatisch:** 119 vakken + 1 arcering; 39 woningen (geen bergingen op dit blad); 109 van 121 labelposities gemeten.
+
+De 3e en 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`, `js/`, `svg/`) blijft de referentie. Viewer: `model/pilot/`, online `/dev/model/pilot/`.
 
 ## Inhoud
 | Pad | Wat |
@@ -16,7 +18,11 @@ De 2e t/m 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`
 | `tools/traces/bg_core.py`, `tools/traces/bg_kiel.py` | Handmatige traces in **native scanpixels** van akte 2006 p.81 |
 | `tools/traces/bg_segments.py` + `tools/segment_bg.py` | Vaste zaadpunten en classificatie per vak; segmentatie uit de lokale scan → `data/inventory/bg_segments_p81.json` |
 | `tools/traces/f1_segments.py` + `tools/segment_bg.py --floor 1e` | 1e verdieping: vaste zaadpunten/classificatie (sleutels s000–s341) → `data/inventory/f1_segments_p82.json`. Arcering op p82 via dichtheid van **diagonale** lijnstukken (de dichtheidsmethode van p81 lekte in de dicht beschreven bergingen); omsloten buurvakken worden gaten (binnenringen) |
-| `tools/build_floor1.py` | Bouwt `data/f1.v2.json` + `pilot/pilot_data_f1.js` met eigen frame `frm_p82_native` en kalibratie `cal_p82_controls` (hergebruikt Builder/maatlogica van `build_model.py`) |
+| `tools/traces/f2_segments.py` + `tools/segment_bg.py --floor 2e` | 2e verdieping: zaadpunten/classificatie (s000–s118) → `data/inventory/f2_segments_p83.json` |
+| `tools/build_floor.py --floor 1e\|2e` | Bouwt `data/fN.v2.json` + `pilot/pilot_data_fN.js` met eigen frame (`frm_p8X_native`) en kalibratie (`cal_p8X_controls`) per blad (hergebruikt Builder/maatlogica van `build_model.py`) |
+| `tools/measure_labels.py --floor 1e\|2e` | Meet labelposities: inkt-eilanden binnen het vak, gegroepeerd per tekstkolom/-regel; alleen aanvaard als het aantal tekens past bij de gelezen tekst (omcirkelde 180 uitgesloten) → `data/inventory/labels_measured_p8X.json` |
+| `data/inventory/calibration_p83.json` | Metingen balk + liniaal op p83 |
+| `tests/test_floor2.py` | 2e verdieping + meetfunctie labels |
 | `data/inventory/calibration_p82.json` | Metingen balk + liniaal op p82 |
 | `tests/test_floor1.py` | Kalibratie p82, dekking (bergingen 266–356, woningenlijst), stabiele sleutels (`tests/fixtures/f1_seg_keys_v0.1.0.json`), juridisch, vloerkeuze viewer, diagonale-arceringdetectie |
 | `tools/linework.py` | Bouwlijnen scheiden van tekst/symbolen (gedeeld voor alle bladen): rechte lijnen ≥ 31 px + aangesloten restinkt blijven; losse woorden, cijfers, omcirkelde 180 (gemeten box) en losse stippels vallen weg; `simplify()` verwijdert rafel-hoekjes < 60 px² |
@@ -46,6 +52,7 @@ De 2e t/m 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`
 - `source_label_text` (bron) en `current_use` (nu, met bron) staan in aparte velden.
 - Een `door` mag alleen als er een deurblad of draaicirkel getekend is. Een onderbroken lijn wordt `opening_candidate`.
 - **Kalibratie 1e verdieping (p82), eigen meting:** balk '1e Verdieping Schaal 1 a 200' 0–10 m = 393,2 px → 0,025432 m/px; liniaal 78,83 px/cm → 0,025371 m/px (verschil 0,24 %). Gebruikt: 0,025402 m/px. Geschatte marge y = max(halve spreiding 0,12 %, afleestolerantie balkeinden 0,54 %) = ±0,5 %; x = +0,88 % (niet getoetst) = ±1,4 %. De reproductieschaal verschilt per blad (p81-balk 387 px), daarom per blad meten.
+- **Kalibratie 2e verdieping (p83):** balk 0–10 m = 397,3 px → 0,025170 m/px; liniaal 78,61 px/cm → 0,025441 m/px; verschil 1,06 % (groter dan op p82, oorzaak onbekend). Gebruikt 0,025305 m/px; geschatte marge y ±0,54 % (= halve spreiding), x ±1,4 %.
 - Juridisch:
   - De hoofdsplitsing omvat het hele complex: A-179 Winkels + A-180 Woningen.
   - De ondersplitsing (85 woningen + 91 bergingen) ligt **genest binnen A-180**; het is geen apart gebied ernaast.
@@ -53,5 +60,5 @@ De 2e t/m 4e verdieping zijn nog niet getraceerd. De huidige kaart (`index.html`
   - Gearceerd = 'niet in de splitsing betrokken' (legenda).
   - A-2 (titelblok) vs A-180 (MVGM): **onopgelost**.
 - `current_use` voor containerruimtes = fietsenberging, `user_confirmed`: de gebruiker heeft bevestigd dat alle containerruimtes zijn omgebouwd. Het bronlabel blijft `container-ruimte`.
-- Juridisch 1e: woning/berging = A-180 (probable) en ondersplitsing privé recht `O-n` (n = indexnummer op de tekening, **geen** kadastrale aanduiding); vakken met 179 = A-179; arcering = buiten beide splitsingen; trappen/liften = gemeenschappelijk (uncertain).
-- Privacy: native scan en uitsneden blijven lokaal (`model/pilot/local/`, git-ignored). Online staan alleen de eerder gepubliceerde `img/plan_bg.jpg` en `img/plan_1e.jpg` als overlay.
+- Juridisch 1e/2e: dak-/installatievakken en kernen met een omcirkelde 180 = A-180 (probable); woning/berging = A-180 (probable) en ondersplitsing privé recht `O-n` (n = indexnummer op de tekening, **geen** kadastrale aanduiding); vakken met 179 = A-179; arcering = buiten beide splitsingen; trappen/liften = gemeenschappelijk (uncertain).
+- Privacy: native scan en uitsneden blijven lokaal (`model/pilot/local/`, git-ignored). Online staan alleen de eerder gepubliceerde `img/plan_bg.jpg`, `img/plan_1e.jpg` en `img/plan_2e.jpg` als overlay.

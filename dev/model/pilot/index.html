@@ -20,6 +20,7 @@
  .ed.hl{stroke:#000;stroke-width:5}
  .ln{fill:none;stroke:#1565c0;stroke-width:1.6;vector-effect:non-scaling-stroke;pointer-events:stroke;cursor:pointer}
  .lbl{fill:#111;pointer-events:none;paint-order:stroke;stroke:#fff;stroke-opacity:.85;font-family:system-ui,sans-serif}
+ .lbl.approx{fill-opacity:.45;font-style:italic}
  .vx{fill:#d00}
  #pop{position:absolute;right:12px;top:12px;width:400px;max-height:88vh;overflow:auto;background:#fff;border:1px solid #bbb;box-shadow:0 4px 18px #0003;padding:10px 12px;display:none;border-radius:6px;font-size:13px}
  #pop table{border-collapse:collapse;width:100%;font-size:12px}#pop td,#pop th{border-bottom:1px solid #eee;padding:2px 4px;text-align:left}
@@ -67,24 +68,24 @@
  <div id="pop"></div>
 </div>
 <script>
-// verdiepingkeuze via #floor=1e (alleen de data van de gekozen verdieping wordt geladen)
-window.PILOT_FLOOR=/(^|[#&])floor=1e(&|$)/.test(decodeURIComponent(location.hash))?'1e':'BG';
-document.write('<script src="'+(window.PILOT_FLOOR==='1e'?'pilot_data_f1.js':'pilot_data.js')+'"><\/script>');
+// verdiepingkeuze via #floor=1e / #floor=2e (alleen de data van de gekozen verdieping wordt geladen)
+window.PILOT_FLOOR=(decodeURIComponent(location.hash).match(/(?:^|[#&])floor=(1e|2e)(?:&|$)/)||[0,'BG'])[1];
+document.write('<script src="'+({BG:'pilot_data.js','1e':'pilot_data_f1.js','2e':'pilot_data_f2.js'}[window.PILOT_FLOOR])+'"><\/script>');
 </script>
 <script>
 (function(){
-const FL=window.PILOT_FLOOR, D=FL==='1e'?window.PILOT_DATA_F1:window.PILOT_DATA, NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id);
+const FL=window.PILOT_FLOOR, D={BG:window.PILOT_DATA,'1e':window.PILOT_DATA_F1,'2e':window.PILOT_DATA_F2}[FL], NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id);
 const V=Object.fromEntries(D.vertices.map(v=>[v.id,v])), E=Object.fromEntries(D.edges.map(e=>[e.id,e]));
 const L=Object.fromEntries(D.labels.map(l=>[l.id,l])), O=Object.fromEntries(D.objects.map(o=>[o.id,o]));
 const R=Object.fromEntries(D.regions.map(r=>[r.id,r])), SPL=Object.fromEntries(D.legal_splits.map(s=>[s.id,s]));
 const cal=D.calibrations[0], frame=D.frames[0], svg=$('svg');
 const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);p&&p.appendChild(n);return n};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const FLOORS=[['BG','Begane grond'],['1e','1e verdieping']];
+const FLOORS=[['BG','Begane grond'],['1e','1e verdieping'],['2e','2e verdieping']];
 $('floors').innerHTML=FLOORS.map(([f,n])=>`<button data-f="${f}"${f===FL?' style="font-weight:700;background:#e3f2fd"':''}>${n}</button>`).join('');
 $('floors').onclick=e=>{const b=e.target.closest('button');if(!b||b.dataset.f===FL)return;location.hash=b.dataset.f==='BG'?'':'floor='+b.dataset.f;location.reload()};
-$('ttl').textContent='Detailmodel in opbouw – '+(FL==='1e'?'1e verdieping':'BG');
-$('warnTxt').innerHTML={"BG": "<b>Onvolledig – alleen begane grond.</b> Uit de splitsingstekening (akte 2006, blad 01): handmatig 2 kernen + 1 bedrijfsruimte; de rest van het BG semi-automatisch (binnenzijde van de getekende lijn), deels <b>onopgelost</b>. 1e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief.", "1e": "<b>Onvolledig – 1e verdieping in opbouw.</b> Uit de splitsingstekening (akte 2006, blad p.82 '1e Verdieping'): alle gesloten vakken semi-automatisch (binnenzijde van de getekende lijn, zelfde lijnwerk als BG), functies en nummers visueel gelezen; deels <b>onopgelost</b>. Labelposities benaderd. 2e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief."}[FL];
+$('ttl').textContent='Detailmodel in opbouw – '+({BG:'BG','1e':'1e verdieping','2e':'2e verdieping'}[FL]);
+$('warnTxt').innerHTML={"BG": "<b>Onvolledig – alleen begane grond.</b> Uit de splitsingstekening (akte 2006, blad 01): handmatig 2 kernen + 1 bedrijfsruimte; de rest van het BG semi-automatisch (binnenzijde van de getekende lijn), deels <b>onopgelost</b>. 1e en 2e verdieping: zie de knoppen hierboven; 3e–4e nog niet. Coördinaten in native scanpixels + relatief.", "1e": "<b>Onvolledig – 1e verdieping in opbouw.</b> Uit de splitsingstekening (akte 2006, blad p.82 '1e Verdieping'): alle gesloten vakken semi-automatisch (binnenzijde van de getekende lijn, zelfde lijnwerk als BG), functies en nummers visueel gelezen; deels <b>onopgelost</b>. Labelposities deels gemeten (tekstclusters), rest benaderd. 3e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief.", "2e": "<b>Onvolledig – 2e verdieping in opbouw.</b> Uit de splitsingstekening (akte 2006, blad p.83 '2e Verdieping'): alle gesloten vakken semi-automatisch (binnenzijde van de getekende lijn, zelfde lijnwerk), nummers en functies visueel gelezen, labelposities grotendeels gemeten; deels <b>onopgelost</b>. 3e–4e verdieping nog niet. Coördinaten in native scanpixels + relatief."}[FL];
 let vb=[0,0,1,1];const setVB=()=>svg.setAttribute('viewBox',vb.join(' '));
 function fit(b){const m=40;vb=[b[0]-m,b[1]-m,b[2]-b[0]+2*m,b[3]-b[1]+2*m];setVB()}
 // regio's
@@ -118,7 +119,7 @@ D.edges.forEach(e=>{const [a,b]=e.v.map(i=>V[i]);if(e.role==='element_outline')r
 // labels in de oriëntatie van de bron: hoge bbox = tekst 90° gedraaid (zoals op het blad), grootte volgt de bbox
 D.labels.forEach(l=>{const [a,b,c,d]=l.bbox_px,w=c-a,h=d-b,txt=l.literal_text??'(onleesbaar)',rot=h>w*1.3;
  const long=rot?h:w,short=rot?w:h,fs=Math.max(8,Math.min(short*0.8,long/Math.max(3,txt.length)*1.7));
- const t=el('text',{x:(a+c)/2,y:(b+d)/2,'text-anchor':'middle','dominant-baseline':'central',class:'lbl','font-size':fs.toFixed(1),'stroke-width':(fs/5).toFixed(1),transform:rot?`rotate(90 ${(a+c)/2} ${(b+d)/2})`:''},$('gLb'));t.textContent=txt});
+ const t=el('text',{x:(a+c)/2,y:(b+d)/2,'text-anchor':'middle','dominant-baseline':'central',class:'lbl'+(/BENADERD/.test(l.note||'')?' approx':''),'font-size':fs.toFixed(1),'stroke-width':(fs/5).toFixed(1),transform:rot?`rotate(90 ${(a+c)/2} ${(b+d)/2})`:''},$('gLb'));t.textContent=txt});
 D.vertices.forEach(v=>el('circle',{cx:v.x_px,cy:v.y_px,r:2.5,class:'vx'},$('gVx')));
 [['lSp','gSp'],['lEl','gEl'],['lEd','gEd'],['lLn','gLn'],['lLb','gLb'],['lVx','gVx']].forEach(([c,g])=>$(c).onchange=e=>$(g).style.display=e.target.checked?'':'none');
 // juridisch
