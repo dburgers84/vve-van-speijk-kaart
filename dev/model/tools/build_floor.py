@@ -36,7 +36,7 @@ FLOORS = {
                ruler_x=434, ruler_ticks=(419.07, 812.14), overlay="img/plan_2e.jpg", js_var="PILOT_DATA_F2", js="pilot_data_f2.js",
                out="f2.v2.json", seg="f2_segments_p83.json", labels="labels_measured_p83.json",
                review=[{"date": "2026-11-21", "by": "Grok Bot (executor)", "action": "fase 5: 2e verdieping (p83) kalibratie + semi-automatische segmentatie + visuele classificatie + gemeten labelposities", "status": "needs_human_review"}]),
-    "3e": dict(M=f3_segments, version="f3-0.1.0", page=84, sheet="04", name="3e verdieping", level=3, title_txt="3e Verdieping",
+    "3e": dict(M=f3_segments, version="f3-0.1.1", page=84, sheet="04", name="3e verdieping", level=3, title_txt="3e Verdieping",
                bar_x=78, bar_px=(352.25, 747.6), bar_segments=[81.7, 80.0, 76.0, 79.0, 78.6],
                ruler_x=465, ruler_ticks=(390.43, 783.47), overlay="img/plan_3e.jpg", js_var="PILOT_DATA_F3", js="pilot_data_f3.js",
                out="f3.v2.json", seg="f3_segments_p84.json", labels="labels_measured_p84.json",
@@ -44,7 +44,7 @@ FLOORS = {
     # p85: de eigen schaalbalk '4e Verdieping en daken' valt buiten de scan (alleen de 10 m-eindlijn); de tweede balk 'Daken'
     # (x 4742, y 353,5-757,5 = 404,0 px) wijkt 2,8 % af van de liniaal en van de overdracht via p84 en wordt daarom NIET gebruikt.
     # Tweede controle = overdracht van p84 via dezelfde getekende woningen 256-259 (y-overspanning 1207 px op p84, 1205 px op p85).
-    "4e": dict(M=f4_segments, version="f4-0.1.0", page=85, sheet="05", name="4e verdieping en daken", level=4, title_txt="4e Verdieping en daken",
+    "4e": dict(M=f4_segments, version="f4-0.1.1", page=85, sheet="05", name="4e verdieping en daken", level=4, title_txt="4e Verdieping en daken",
                bar_x=4742, bar_px=(353.5, 757.5), bar_segments=None, bar_rejected=True,
                transfer=dict(floor="3e", span_from=1207, span_to=1205, objects="woningen 256-259 (y-overspanning buitenzijde polygonen)"),
                ruler_x=438, ruler_ticks=(468.0, 860.52), overlay="img/plan_4e.jpg", js_var="PILOT_DATA_F4", js="pilot_data_f4.js",

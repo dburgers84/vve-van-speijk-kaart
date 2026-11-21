@@ -1,6 +1,6 @@
 {
  "schema_version": "vve-plan/2.1.0",
- "dataset_version": "f3-0.1.0",
+ "dataset_version": "f3-0.1.1",
  "generated": "2026-11-21",
  "sources": [
   {
@@ -160,7 +160,7 @@
     89,
     635,
     7038,
-    8134
+    8198
    ],
    "columns_from_detector": 0,
    "method": "semi-automatische segmentatie (binnenzijde lijn) + visuele review",
@@ -4064,6 +4064,44 @@
     "boundary": "binnenzijde getekende lijn",
     "note": " 1 omsloten buurvakken als gaten (binnenringen)."
    }
+  },
+  {
+   "id": "obj_f3_seg_s076",
+   "revision": 1,
+   "floor_id": "3e",
+   "frame_id": "frm_p84_native",
+   "geometry": {
+    "type": "Polygon",
+    "rings": [
+     [
+      "v_f3_seg_s076_0",
+      "v_f3_seg_s076_1",
+      "v_f3_seg_s076_2",
+      "v_f3_seg_s076_3"
+     ]
+    ]
+   },
+   "edge_ids": [
+    "e_f3_seg_s076_0_s076_1",
+    "e_f3_seg_s076_1_s076_2",
+    "e_f3_seg_s076_2_s076_3",
+    "e_f3_seg_s076_0_s076_3"
+   ],
+   "label_ids": [],
+   "kind": "unlabeled_space",
+   "class": "space",
+   "region_id": "reg_f3_seg",
+   "display_name": "Onbenoemd vak",
+   "certainty": "unresolved",
+   "review_status": "needs_review",
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face (tools/segment_bg.py --floor 3e) + visuele review contactbladen",
+    "boundary": "binnenzijde getekende lijn",
+    "note": "Kleiner vak met dunne lijn bij woning 264 (buitenruimte?), geen label; vak loopt tot y 8200, daarom later toegevoegd. Grens = binnenzijde van de getekende lijn (wandstrook ligt ertussen)."
+   },
+   "source_label_text": null,
+   "current_use": null
   }
  ],
  "vertices": [
@@ -14057,6 +14095,62 @@
    "y_px": 5173,
    "x_rel": 0.07583205,
    "y_rel": 0.51498258,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f3_seg_s076_0",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "x_px": 608,
+   "y_px": 7996,
+   "x_rel": 0.08538127,
+   "y_rel": 0.79601792,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f3_seg_s076_1",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "x_px": 550,
+   "y_px": 8054,
+   "x_rel": 0.07723634,
+   "y_rel": 0.80179194,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f3_seg_s076_2",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "x_px": 694,
+   "y_px": 8198,
+   "x_rel": 0.09745822,
+   "y_rel": 0.81612743,
+   "positional_tolerance_px": 3,
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "v_f3_seg_s076_3",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "x_px": 750,
+   "y_px": 8139,
+   "x_rel": 0.10532229,
+   "y_rel": 0.81025386,
    "positional_tolerance_px": 3,
    "evidence": {
     "source_id": "src_akte2006_p84",
@@ -41196,6 +41290,158 @@
     "source_id": "src_akte2006_p84",
     "method": "auto_segment_inner_face"
    }
+  },
+  {
+   "id": "e_f3_seg_s076_0_s076_1",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "v": [
+    "v_f3_seg_s076_0",
+    "v_f3_seg_s076_1"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 82.02,
+   "dimension": {
+    "status": "derived",
+    "length_m": 2.08,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 2.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 2,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p84_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f3_seg_s076_1_s076_2",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "v": [
+    "v_f3_seg_s076_1",
+    "v_f3_seg_s076_2"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 203.65,
+   "dimension": {
+    "status": "derived",
+    "length_m": 5.17,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 5.2,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 5,2 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p84_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.975,
+    "max_gap_px": 3
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f3_seg_s076_2_s076_3",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "v": [
+    "v_f3_seg_s076_2",
+    "v_f3_seg_s076_3"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 81.34,
+   "dimension": {
+    "status": "derived",
+    "length_m": 2.06,
+    "uncertainty_m": 0.11,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 2.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 2,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p84_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 0.927,
+    "max_gap_px": 1
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
+  },
+  {
+   "id": "e_f3_seg_s076_0_s076_3",
+   "frame_id": "frm_p84_native",
+   "floor_id": "3e",
+   "v": [
+    "v_f3_seg_s076_3",
+    "v_f3_seg_s076_0"
+   ],
+   "role": "wall_inner_face",
+   "length_px": 201.53,
+   "dimension": {
+    "status": "derived",
+    "length_m": 5.11,
+    "uncertainty_m": 0.12,
+    "uncertainty_status": "estimated",
+    "display": {
+     "length_m": 5.1,
+     "margin_m": 0.2,
+     "step_m": 0.1,
+     "text": "≈ 5,1 m (geschatte marge ±0,2 m)"
+    },
+    "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
+    "calibration_ref": "cal_p84_controls",
+    "source_text": null,
+    "source_ref": null,
+    "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."
+   },
+   "ink_support": {
+    "radius_px": 3,
+    "fraction": 1.0,
+    "max_gap_px": 0
+   },
+   "trace_quality": "ink_confirmed",
+   "evidence": {
+    "source_id": "src_akte2006_p84",
+    "method": "auto_segment_inner_face"
+   }
   }
  ],
  "labels": [
@@ -45422,6 +45668,22 @@
     "method": "label+akte/MVGM-tekst (afgeleid)",
     "note": "Akte ondersplitsing 2006 (visueel gelezen): entrees, liften/trappen, technische ruimten behoren tot de gemeenschap; galerij als gemeenschappelijk niet per vak bewezen"
    }
+  },
+  {
+   "object_id": "obj_f3_seg_s076",
+   "split_id": "ls_hoofdsplitsing",
+   "relation": "unknown",
+   "right_id": null,
+   "certainty": "unknown",
+   "evidence": null
+  },
+  {
+   "object_id": "obj_f3_seg_s076",
+   "split_id": "ls_ondersplitsing_woningen",
+   "relation": "unknown",
+   "right_id": null,
+   "certainty": "unknown",
+   "evidence": null
   }
  ],
  "legacy_links": [],
@@ -45441,11 +45703,11 @@
     "private_outdoor": 6,
     "roof": 4,
     "stair": 6,
-    "unlabeled_space": 16,
+    "unlabeled_space": 17,
     "void": 9,
     "wall_band": 5
    },
-   "unresolved_or_unlabeled_segments": 17,
+   "unresolved_or_unlabeled_segments": 18,
    "woningen_on_sheet": 26,
    "woningen_numbers": [
     216,

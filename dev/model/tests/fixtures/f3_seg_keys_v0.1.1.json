@@ -1,0 +1,314 @@
+{
+"version": "f3-0.1.1",
+"note": "Vaste sleutels f3 (p84); v0.1.1 = v0.1.0 + later toegevoegde vakken (geen sleutel gewijzigd)",
+"keys": {
+"s000": [
+"wall_band",
+null
+],
+"s001": [
+"roof",
+null
+],
+"s002": [
+"roof",
+null
+],
+"s003": [
+"unlabeled_space",
+null
+],
+"s004": [
+"apartment_dwelling",
+"225"
+],
+"s005": [
+"unlabeled_space",
+null
+],
+"s006": [
+"unlabeled_space",
+null
+],
+"s007": [
+"unlabeled_space",
+null
+],
+"s008": [
+"apartment_dwelling",
+"224"
+],
+"s009": [
+"void",
+null
+],
+"s010": [
+"apartment_dwelling",
+"223"
+],
+"s011": [
+"unlabeled_space",
+null
+],
+"s012": [
+"unlabeled_space",
+null
+],
+"s013": [
+"roof",
+null
+],
+"s014": [
+"wall_band",
+null
+],
+"s015": [
+"lift_overrun",
+null
+],
+"s016": [
+"apartment_dwelling",
+"222"
+],
+"s017": [
+"apartment_dwelling",
+"221"
+],
+"s018": [
+"apartment_dwelling",
+"220"
+],
+"s019": [
+"unlabeled_space",
+null
+],
+"s020": [
+"commercial_multi_unresolved",
+null
+],
+"s021": [
+"unlabeled_space",
+null
+],
+"s022": [
+"apartment_dwelling",
+"219"
+],
+"s023": [
+"unlabeled_space",
+null
+],
+"s024": [
+"unlabeled_space",
+null
+],
+"s025": [
+"wall_band",
+null
+],
+"s026": [
+"roof",
+null
+],
+"s027": [
+"void",
+null
+],
+"s028": [
+"void",
+null
+],
+"s029": [
+"void",
+null
+],
+"s030": [
+"void",
+null
+],
+"s031": [
+"void",
+null
+],
+"s032": [
+"void",
+null
+],
+"s033": [
+"void",
+null
+],
+"s034": [
+"void",
+null
+],
+"s035": [
+"apartment_dwelling",
+"218"
+],
+"s036": [
+"apartment_dwelling",
+"230"
+],
+"s037": [
+"apartment_dwelling",
+"231"
+],
+"s038": [
+"apartment_dwelling",
+"232"
+],
+"s039": [
+"apartment_dwelling",
+"233"
+],
+"s040": [
+"apartment_dwelling",
+"234"
+],
+"s041": [
+"apartment_dwelling",
+"235"
+],
+"s042": [
+"apartment_dwelling",
+"236"
+],
+"s043": [
+"apartment_dwelling",
+"237"
+],
+"s044": [
+"apartment_dwelling",
+"217"
+],
+"s045": [
+"unlabeled_space",
+null
+],
+"s046": [
+"unlabeled_space",
+null
+],
+"s047": [
+"apartment_dwelling",
+"216"
+],
+"s048": [
+"unlabeled_space",
+null
+],
+"s049": [
+"unlabeled_space",
+null
+],
+"s050": [
+"private_outdoor",
+null
+],
+"s051": [
+"apartment_dwelling",
+"247"
+],
+"s052": [
+"apartment_dwelling",
+"246"
+],
+"s053": [
+"private_outdoor",
+null
+],
+"s054": [
+"unlabeled_space",
+null
+],
+"s055": [
+"lift_shaft",
+null
+],
+"s056": [
+"stair",
+null
+],
+"s057": [
+"stair",
+null
+],
+"s058": [
+"stair",
+null
+],
+"s059": [
+"private_outdoor",
+null
+],
+"s060": [
+"apartment_dwelling",
+"259"
+],
+"s061": [
+"apartment_dwelling",
+"258"
+],
+"s062": [
+"private_outdoor",
+null
+],
+"s063": [
+"private_outdoor",
+null
+],
+"s064": [
+"apartment_dwelling",
+"257"
+],
+"s065": [
+"apartment_dwelling",
+"256"
+],
+"s066": [
+"private_outdoor",
+null
+],
+"s067": [
+"apartment_dwelling",
+"265"
+],
+"s068": [
+"wall_band",
+null
+],
+"s069": [
+"apartment_dwelling",
+"264"
+],
+"s070": [
+"stair",
+null
+],
+"s071": [
+"stair",
+null
+],
+"s072": [
+"stair",
+null
+],
+"s073": [
+"unlabeled_space",
+null
+],
+"s074": [
+"gallery",
+null
+],
+"s075": [
+"wall_band",
+null
+],
+"s076": [
+"unlabeled_space",
+null
+]
+}
+}

@@ -2,7 +2,7 @@
 
 Woningnummers die ook op p83 staan (216-225, 230-237) zijn vermoedelijk meerlaagse woningen (maisonnettes); 246/247, 256-259, 264/265 beginnen hier.
 
-Sleutels sNNN eenmalig uitgedeeld op 2026-11-21 (rij van 150 px, dan x) en blijven vast. Classificatie VISUEEL gelezen
+Sleutels sNNN eenmalig uitgedeeld op 2026-11-21 (rij van 150 px, dan x; s074-s076 later toegevoegd) en blijven vast. Classificatie VISUEEL gelezen
 op contactbladen (geen OCR). Tuple: (key, seed_xy, kind, label_literal, index_number, has_179, note)
 """
 PREFIX = "f3_seg"
@@ -105,4 +105,5 @@ SEEDS = [
     ('s073', (296, 7741), 'unlabeled_space', None, None, False, 'Kleiner vak met dunne lijn bij woning 265 (buitenruimte?), geen label'),
     ('s074', (780, 6000), 'gallery', 'galerij', None, False, 'Galerij langs 246-259 naar het trappenhuis bij 264/265; omcirkeld 180 aan beide uiteinden'),
     ('s075', (539, 5120), 'wall_band', None, None, False, None),
+    ('s076', (650, 8097), 'unlabeled_space', None, None, False, 'Kleiner vak met dunne lijn bij woning 264 (buitenruimte?), geen label; vak loopt tot y 8200, daarom later toegevoegd'),
 ]
