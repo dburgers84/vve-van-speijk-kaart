@@ -25,7 +25,7 @@
  #pop table{border-collapse:collapse;width:100%;font-size:12px}#pop td,#pop th{border-bottom:1px solid #eee;padding:2px 4px;text-align:left}
  .warn{background:#fff4e0;border:1px solid #f0c070;padding:6px 8px;border-radius:4px;font-size:12px;margin:6px 0}
  .muted{color:#777;font-size:12px} fieldset{border:1px solid #ddd;margin:8px 0} button{cursor:pointer;margin:2px}
- .badge{display:inline-block;padding:0 6px;border-radius:8px;font-size:11px;background:#eee}
+ .mg{color:#666;font-size:.92em}.badge{display:inline-block;padding:0 6px;border-radius:8px;font-size:11px;background:#eee}
  .sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:middle;margin-right:3px}
  details summary{cursor:pointer;font-weight:600}
 </style>
@@ -84,7 +84,7 @@ const fitR=r=>fit(r.fit_px||r.region_px);
 const bAll=[Math.min(...D.regions.map(r=>(r.fit_px||r.region_px)[0])),Math.min(...D.regions.map(r=>(r.fit_px||r.region_px)[1])),Math.max(...D.regions.map(r=>(r.fit_px||r.region_px)[2])),Math.max(...D.regions.map(r=>(r.fit_px||r.region_px)[3]))];
 $('regions').onclick=e=>{const b=e.target.closest('button');if(!b)return;b.dataset.r==='all'?fit(bAll):fitR(R[b.dataset.r])};
 fit(bAll);
-{const ck=cal.checks||{},ru=cal.rel_uncertainty||{};$('calTxt').innerHTML=cal.status==='controls_checked_one_axis'?`Zijmaten <b>afgeleid</b> met ${(+cal.m_per_px_y).toFixed(5)} m/px: schaalbalk hoofdplan (${ck.m_per_px_scale_bar_0_10m}) en cm-liniaal (${ck.m_per_px_ruler_x_1to200}) langs de y-as; <b>x-as niet onafhankelijk getoetst</b>. Onzekerheid ±${(ru.y*100).toFixed(1)}% (y) / ±${(ru.x*100).toFixed(1)}% (x) + afleestolerantie.`:'Zijmaten nominaal afgeleid, onzekerheid onbekend.'}
+{const ck=cal.checks||{},ru=cal.rel_uncertainty||{};$('calTxt').innerHTML=cal.status==='controls_checked_one_axis'?`Zijmaten <b>afgeleid</b> met ${(+cal.m_per_px_y).toFixed(5)} m/px: schaalbalk hoofdplan (${ck.m_per_px_scale_bar_0_10m}) en cm-liniaal (${ck.m_per_px_ruler_x_1to200}) langs de y-as; <b>x-as niet onafhankelijk getoetst</b>. <b>Geschatte</b> schaalmarge ±${(ru.y*100).toFixed(1)}% (y) / ±${(ru.x*100).toFixed(1)}% (x) plus afleestolerantie van de eindpunten; maten zijn daarom afgerond op 0,1 m (of 0,01 m bij een marge &lt; 5 cm).`:'Zijmaten nominaal afgeleid, onzekerheid onbekend.'}
 // ondergrond: lokaal hoge-res per regio indien aanwezig, anders publieke lage-res plan_bg.jpg
 const ov=D.reference_overlays[0], gOv=$('gOv');let localOk=0;
 if(ov){const A=ov.image_to_native_affine;const im=el('image',{href:'../../'+ov.image,width:ov.size_px[0],height:ov.size_px[1],transform:`matrix(${A[0][0]} ${A[1][0]} ${A[0][1]} ${A[1][1]} ${A[0][2]} ${A[1][2]})`,preserveAspectRatio:'none',id:'ovPub'},gOv);
@@ -95,7 +95,7 @@ D.regions.forEach(r=>{const [x0,y0,x1,y1]=r.region_px;const im=el('image',{href:
 $('ovOn').onchange=e=>gOv.style.display=e.target.checked?'':'none';
 const setOp=v=>gOv.setAttribute('opacity',v);setOp(.55);$('ovOp').oninput=e=>setOp(e.target.value);
 // tekenen
-const col={not_in_split_area:'url(#hatch)',commercial_multi_unresolved:'#ff7043',commercial_large_region_unresolved:'#ef5350',unlabeled_space:'#9e9e9e',unresolved_space:'#757575',cross_marked_cell:'#bdbdbd',service_corridor:'#00897b',passage_or_overhang_unresolved:'#26a69a',technical_room:'#fb8c00',stair:'#e53935',lift_shaft:'#1e64dc',unknown:'#9e9e9e',hall:'#43a047',entrance_hall:'#2e7d32',container_room:'#8d6e63',sprinkler_room:'#00acc1',transformer_room:'#fb8c00',low_voltage_room:'#f4511e',meter_cupboard_common:'#7b1fa2',gas_meter_cupboards:'#c0ca33',commercial_unit:'#ffb300'};
+const col={not_in_split_area:'url(#hatch)',service_space:'#26a69a',commercial_multi_unresolved:'#ff7043',commercial_large_region_unresolved:'#ef5350',unlabeled_space:'#9e9e9e',unresolved_space:'#757575',cross_marked_cell:'#bdbdbd',service_corridor:'#00897b',passage_or_overhang_unresolved:'#26a69a',technical_room:'#fb8c00',stair:'#e53935',lift_shaft:'#1e64dc',unknown:'#9e9e9e',hall:'#43a047',entrance_hall:'#2e7d32',container_room:'#8d6e63',sprinkler_room:'#00acc1',transformer_room:'#fb8c00',low_voltage_room:'#f4511e',meter_cupboard_common:'#7b1fa2',gas_meter_cupboards:'#c0ca33',commercial_unit:'#ffb300'};
 const ringD=o=>o.geometry.rings.map(r=>'M'+r.map(i=>V[i].x_px+' '+V[i].y_px).join('L')+'Z').join('');
 const shp={};
 D.objects.forEach(o=>{let n;
@@ -137,7 +137,10 @@ function legal(mode){
 document.querySelectorAll('input[name=lg]').forEach(r=>r.onchange=e=>legal(e.target.value));
 // metingen
 const area=ring=>{let s=0;for(let i=0;i<ring.length;i++){const a=V[ring[i]],b=V[ring[(i+1)%ring.length]];s+=a.x_px*b.y_px-b.x_px*a.y_px}return Math.abs(s/2)};
-const dimTxt=dm=>dm.status==='unknown'?'<i>onbekend</i>':(dm.status==='derived'?`${dm.length_m.toFixed(2)} m${dm.uncertainty_m!=null?' ±'+dm.uncertainty_m.toFixed(2):''} <span class="badge">afgeleid</span>`:`${dm.length_m} m <span class="badge">bron</span>`);
+const nl=(v,nd)=>v.toFixed(nd).replace('.',',');
+const stepFor=u=>u<0.05?0.01:(u<0.5?0.1:(u<5?0.5:(u<10?1:5)));
+const fmtM=(v,u,unit)=>{const st=stepFor(u),nd=st<0.1?2:(st<1?1:0);return `≈ ${nl(Math.round(v/st)*st,nd)} ${unit} <span class="mg">(geschatte marge ±${nl(Math.ceil(+(u/st).toFixed(6))*st,nd)} ${unit})</span>`};
+const dimTxt=dm=>dm.status==='unknown'?'<i>onbekend</i>':(dm.status==='derived'?(dm.display?`≈ ${nl(dm.display.length_m,dm.display.step_m<0.1?2:1)} m <span class="mg">(geschatte marge ±${nl(dm.display.margin_m,dm.display.step_m<0.1?2:1)} m)</span>`:`${dm.length_m.toFixed(2)} m`)+' <span class="badge">afgeleid</span>':`${dm.length_m} m <span class="badge">bron</span>`);
 function clearHL(){document.querySelectorAll('.hl').forEach(n=>n.classList.remove('hl'));document.querySelectorAll('.sel').forEach(n=>n.classList.remove('sel'))}
 const neighbours=o=>[...new Set((o.edge_ids||[]).flatMap(eid=>D.objects.filter(x=>x.id!==o.id&&x.class==='space'&&(x.edge_ids||[]).includes(eid)).map(x=>x.id)))];
 const inside=(o)=>{if(o.class!=='space')return[];const ring=o.geometry.rings[0].map(i=>[V[i].x_px,V[i].y_px]);const pip=(x,y)=>{let c=false;for(let i=0,j=ring.length-1;i<ring.length;j=i++){const[xi,yi]=ring[i],[xj,yj]=ring[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)c=!c}return c};
@@ -147,8 +150,13 @@ function show(id){const o=O[id];clearHL();shp[id]&&shp[id].classList.add('sel');
  let rows='',per='',ar='';
  (o.edge_ids||[]).forEach(eid=>{const e=E[eid];const ln=$('ed_'+eid);ln&&ln.classList.add('hl');const nb=D.objects.filter(x=>x.id!==id&&(x.edge_ids||[]).includes(eid)).map(x=>x.display_name).join(', ');
   rows+=`<tr><td>${esc(eid.split('_').slice(3).join('_'))}</td><td>${esc(e.role)}</td><td>${dimTxt(e.dimension)}</td><td>${e.ink_support?Math.round(e.ink_support.fraction*100)+'%':'–'}</td><td>${esc(nb)||'–'}</td></tr>`});
- if(o.edge_ids&&o.edge_ids.length){const ds=o.edge_ids.map(i=>E[i].dimension);per=ds.every(d=>d.length_m!=null)?ds.reduce((s,d)=>s+d.length_m,0).toFixed(2)+' m':'onbekend (niet alle zijden bekend)';
-  const a2=area(o.geometry.rings[0])*cal.m_per_px_x*cal.m_per_px_y,ru=cal.rel_uncertainty;ar=a2.toFixed(1)+' m²'+(ru?' (±'+(a2*(ru.x+ru.y)).toFixed(1)+' schaal)':'');}
+ if(o.edge_ids&&o.edge_ids.length){const ds=o.edge_ids.map(i=>E[i].dimension);const ru0=cal.rel_uncertainty,P0=ds.reduce((s,d)=>s+(d.length_m||0),0);
+  // geschatte marge omtrek: schaalfout gecorreleerd (P x max rel.) + eindpunttoleranties ongecorreleerd (kwadratisch)
+  per=!ds.every(d=>d.length_m!=null)?'onbekend (niet alle zijden bekend)':(ru0?fmtM(P0,P0*Math.max(ru0.x,ru0.y)+Math.sqrt(o.edge_ids.reduce((s,i)=>{const e=E[i],a=V[e.v[0]],b=V[e.v[1]];return s+((a.positional_tolerance_px||3)**2+(b.positional_tolerance_px||3)**2)},0))*cal.m_per_px_x,'m'):P0.toFixed(2)+' m');
+  if(o.geometry.rings){const rg=o.geometry.rings[0],a2=area(rg)*cal.m_per_px_x*cal.m_per_px_y,ru=cal.rel_uncertainty;
+  // geschatte marge oppervlak: schaal (x+y) + randtolerantie (omtrek x gemiddelde puntstolerantie)
+  let pm=0,tl=0;for(let i=0;i<rg.length;i++){const p=V[rg[i]],q=V[rg[(i+1)%rg.length]];pm+=Math.hypot(q.x_px-p.x_px,q.y_px-p.y_px);tl+=(p.positional_tolerance_px||3)}
+  ar=ru?fmtM(a2,a2*(ru.x+ru.y)+pm*(tl/rg.length)*cal.m_per_px_x*cal.m_per_px_y,'m²'):a2.toFixed(1)+' m²';}}
  const verts=(o.geometry.rings?o.geometry.rings[0]:o.geometry.vertices||[]).map(i=>V[i]);
  const vt=verts.map(v=>`<tr><td>${esc(v.id.split('_').slice(3).join('_'))}</td><td>${v.x_px}, ${v.y_px}</td><td>${v.x_rel.toFixed(5)}, ${v.y_rel.toFixed(5)}</td></tr>`).join('');
  const conns=D.connections.filter(c=>c.connects.includes(id)).map(c=>`<li>${esc(c.kind)} → ${esc(c.connects.filter(x=>x!==id).map(x=>O[x]?O[x].display_name:x).join(', '))} <span class="badge">${esc(c.certainty)}</span><br><span class="muted">${esc(c.note)}</span></li>`).join('');
@@ -169,7 +177,7 @@ function show(id){const o=O[id];clearHL();shp[id]&&shp[id].classList.add('sel');
  <button onclick="document.getElementById('pop').style.display='none'">Sluiten</button>`;$('pop').style.display='block';}
 function showEdge(id){const e=E[id];clearHL();$('ed_'+id).classList.add('hl');const users=D.objects.filter(o=>(o.edge_ids||[]).includes(id)).map(o=>o.display_name).join(' | ');const dm=e.dimension;const [a,b]=e.v.map(i=>V[i]);
  $('pop').innerHTML=`<b>Zijde ${esc(id)}</b><br><span class="muted">${esc(e.role)} · ${esc(e.trace_quality)}</span><table>
- <tr><td>Lengte</td><td>${dimTxt(dm)}</td></tr><tr><td>Lengte (px)</td><td>${e.length_px}</td></tr><tr><td>Onzekerheid</td><td>${dm.uncertainty_m==null?'onbekend':dm.uncertainty_m+' m'}</td></tr>
+ <tr><td>Lengte</td><td>${dimTxt(dm)}</td></tr><tr><td>Lengte (px)</td><td>${e.length_px}</td></tr><tr><td>Geschatte marge</td><td>${dm.uncertainty_m==null?'onbekend':'±'+nl(dm.uncertainty_m,2)+' m (schatting, geen gemeten tolerantie)'}</td></tr><tr><td>Onafgerond</td><td>${dm.length_m==null?'–':nl(dm.length_m,2)+' m'}</td></tr>
  <tr><td>Van → naar (px)</td><td>${a.x_px},${a.y_px} → ${b.x_px},${b.y_px}</td></tr><tr><td>Relatief</td><td>${a.x_rel.toFixed(5)},${a.y_rel.toFixed(5)} → ${b.x_rel.toFixed(5)},${b.y_rel.toFixed(5)}</td></tr>
  <tr><td>Methode</td><td>${esc(dm.method)||'–'}</td></tr><tr><td>Inktsteun</td><td>${e.ink_support?Math.round(e.ink_support.fraction*100)+'% (max gat '+e.ink_support.max_gap_px+' px)':'–'}</td></tr><tr><td>Grenst aan</td><td>${esc(users)}</td></tr></table>
  <p class="muted">${esc(dm.note)}</p><button onclick="document.getElementById('pop').style.display='none'">Sluiten</button>`;$('pop').style.display='block';}

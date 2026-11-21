@@ -133,7 +133,7 @@
    ],
    "objects_by_kind": {
     "wall_band": 5,
-    "commercial_unit": 3,
+    "commercial_unit": 4,
     "unlabeled_space": 1,
     "column": 23
    },
@@ -187,7 +187,7 @@
     "reg_bg_seg"
    ],
    "objects_by_kind": {
-    "wall_band": 6,
+    "wall_band": 7,
     "commercial_unit": 4,
     "column": 24
    },
@@ -310,7 +310,7 @@
     "unlabeled_space": 1,
     "hall": 1,
     "lift_shaft": 1,
-    "commercial_unit": 5,
+    "commercial_unit": 4,
     "wall_band": 3,
     "container_room": 1,
     "not_in_split_area": 1,
@@ -366,14 +366,13 @@
     "reg_bg_seg"
    ],
    "objects_by_kind": {
-    "commercial_unit": 2,
     "wall_band": 2,
     "unlabeled_space": 1,
+    "commercial_unit": 3,
     "meter_cupboard_common": 1,
-    "commercial_multi_unresolved": 1,
     "column": 21
    },
-   "unresolved_objects": 2,
+   "unresolved_objects": 1,
    "notes": "'bedrijfs-ruimte' x5; 'HET HAVENPLEIN'; kernfragment 'CVZ kast', 'GEM.', 'flatkast', 'UPC, water'; gestippeld element met 2 kolommen."
   },
   {
@@ -424,11 +423,11 @@
    ],
    "objects_by_kind": {
     "entrance_hall": 1,
+    "wall_band": 4,
     "lift_shaft": 1,
     "unlabeled_space": 3,
     "unresolved_space": 1,
     "stair": 1,
-    "wall_band": 3,
     "commercial_large_region_unresolved": 1,
     "container_room": 1,
     "technical_room": 2,
@@ -554,8 +553,8 @@
     "facade_frame_strip": 2,
     "stair_symbol_line": 1,
     "column": 30,
+    "commercial_unit": 4,
     "wall_band": 5,
-    "commercial_unit": 3,
     "commercial_multi_unresolved": 1,
     "unlabeled_space": 2,
     "service_corridor": 1
@@ -773,12 +772,12 @@
     "wall_band": 6,
     "stair": 1,
     "cross_marked_cell": 1,
-    "commercial_multi_unresolved": 1,
+    "service_space": 1,
     "commercial_large_region_unresolved": 1,
     "commercial_unit": 2,
     "column": 24
    },
-   "unresolved_objects": 3,
+   "unresolved_objects": 2,
    "notes": "'GEM.', 'trafo ruimte', 'LS-ruimte', 'expeditie', 'E-kast', 'hydrofoor', trap met kruisvak; 2x 'bedrijfs-ruimte'; kolomraster."
   },
   {
@@ -830,6 +829,7 @@
    "objects_by_kind": {
     "unlabeled_space": 1,
     "commercial_unit": 6,
+    "service_corridor": 1,
     "not_in_split_area": 1,
     "column": 9
    },
@@ -884,7 +884,6 @@
    ],
    "objects_by_kind": {
     "wall_band": 2,
-    "service_corridor": 1,
     "column": 1
    },
    "unresolved_objects": 0,

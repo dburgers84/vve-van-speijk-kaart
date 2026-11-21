@@ -23,7 +23,7 @@ from traces import bg_core, bg_kiel, bg_segments  # noqa: E402
 
 TRACES = [bg_core, bg_kiel]
 SCHEMA_VERSION = "vve-plan/2.1.0"
-DATASET_VERSION = "bg-0.3.0"
+DATASET_VERSION = "bg-0.4.0"
 FLOOR = "BG"
 FRAME = "frm_p81_native"
 SOURCE = "src_akte2006_p81"
@@ -76,6 +76,21 @@ def ink_support(A, p, q, r=3):
     return {"radius_px": r, "fraction": round(hits / (n + 1), 3), "max_gap_px": max(gaps) if gaps else 0}
 
 
+def margin_step(u):
+    """Afrondingsstap passend bij de geschatte marge: niet nauwkeuriger tonen dan de marge rechtvaardigt."""
+    return 0.01 if u < 0.05 else (0.1 if u < 0.5 else 0.5)
+
+
+def display_dim(lm, u):
+    step = margin_step(u)
+    nd = 2 if step < 0.1 else 1
+    val = round(round(lm / step) * step, nd)
+    mar = round(math.ceil(round(u / step, 6)) * step, nd)
+    fmt = (lambda v: f"{v:.{nd}f}".replace(".", ","))
+    return {"length_m": val, "margin_m": mar, "step_m": step,
+            "text": f"≈ {fmt(val)} m (geschatte marge ±{fmt(mar)} m)"}
+
+
 def dim_for(role, p, q, tol=(4, 4)):
     if role == "virtual_opening":
         return {"status": "unknown", "length_m": None, "uncertainty_m": None, "uncertainty_status": "unknown",
@@ -85,11 +100,13 @@ def dim_for(role, p, q, tol=(4, 4)):
     lm = math.hypot(dx * M_PER_PX[0], dy * M_PER_PX[1])
     u = math.sqrt((dx * M_PER_PX[0] * REL_U_X) ** 2 + (dy * M_PER_PX[1] * REL_U_Y) ** 2
                   + (tol[0] ** 2 + tol[1] ** 2) * M_PER_PX[0] ** 2)
-    return {"status": "derived", "length_m": round(lm, 2), "uncertainty_m": max(0.01, round(u, 2)), "uncertainty_status": "estimated",
+    u = max(0.01, round(u, 2))
+    return {"status": "derived", "length_m": round(lm, 2), "uncertainty_m": u, "uncertainty_status": "estimated",
+            "display": display_dim(lm, u),
             "method": "px_length x m_per_px (schaalbalk 0-10 m + cm-liniaal, y-as; x-as isotroop aangenomen)",
             "calibration_ref": CAL, "source_text": None, "source_ref": None,
-            "note": "Afgeleid; geen maat op de tekening gevonden. Onzekerheid = schaalspreiding tussen schaalbalk en liniaal (y), "
-                    "plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten."}
+            "note": "Afgeleid; geen maat op de tekening gevonden. GESCHATTE marge (geen gemeten tolerantie) = schaalspreiding tussen schaalbalk en liniaal (y), "
+                    "plus mogelijke anisotropie (x, niet onafhankelijk getoetst), plus aflees-/trace-tolerantie van beide eindpunten. Weergave afgerond op een stap passend bij die marge (display)."}
 
 
 LEGAL_SPLITS = [
@@ -403,11 +420,11 @@ def coverage_block(B, seg, cols):
                        "columns_uncertain": sum(c["verdict"] == "uncertain" for c in cols)},
             "traced": ["handmatig: kern Schans-zijde + kern De Kiel + 1 bedrijfsruimte (hartlijn/binnenlijn)",
                        "semi-automatisch: alle gesloten vakken van het BG-plan met zaadpunt (binnenzijde getekende lijn)",
-                       "woonkernen A, B, C en kern E (labels visueel gelezen)", "3 expeditiegangen", "strook De Kajuit (onopgelost)",
+                       "woonkernen A, B, C en kern E (labels visueel gelezen)", "3 expeditiegangen + 1 expeditieruimte", "strook De Kajuit (onopgelost)",
                        "2 arceringen 'niet in de splitsing betrokken'", "wandstroken tussen dubbele lijnen (getekende wanddikte)",
                        "kolomsymbolen (visueel gecontroleerd; 10 afgekeurd, 12 onzeker)", "indexnummers 179 (5x) en omcirkeld 180 (5x)",
                        "hedendaags gebruik apart (alle containerruimtes -> fietsenberging, door gebruiker bevestigd)"],
-            "not_traced": ["onderverdeling van bedrijfsruimtes waar tussenwanden deels/niet getekend zijn (3 'multi' + 3 'groot' vakken)",
+            "not_traced": [f"onderverdeling van bedrijfsruimtes waar tussenwanden deels/niet getekend zijn ({kinds.get('commercial_multi_unresolved', 0)} 'multi' + {kinds.get('commercial_large_region_unresolved', 0)} 'groot' vakken)",
                            "binnen de arceringen (niet in splitsing)", "deuren/draaibogen (niet getekend op BG)",
                            "traptreden (in BG-kernen alleen looppijl/snijlijn; de eerder genoemde 'treden' bij de expeditiegang bleken korte dwarsstreepjes, geen treden)",
                            "korte dwarsstreepjes op veel lijnen (betekenis niet in legenda)", "straten/buitenruimte (alleen als labels gezien)",

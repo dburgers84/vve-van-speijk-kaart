@@ -16,9 +16,13 @@ REGION_ID = "reg_bg_seg"
 REGION_NAME = "BG overige delen (semi-automatische segmentatie, binnenzijde lijn)"
 REGION_PX = (0, 350, 7118, 7600)
 INK_THRESHOLD = 200
+LINE_MIN_PX = 31          # ~0,8 m: kortere rechte inkt telt niet als bouwlijn
+LINE_GAP_PX = 0           # GEEN generieke gatdichting: streepjeslijnen hebben dezelfde gaten (3-4 px) als scan-uitval; uitval alleen via CUTS
+MIN_JOG_AREA_PX2 = 60     # ~0,04 m2: kleinere hoekpunt-driehoeken = rafel, geen bouwrand
 CLOSE_PX_SMALL, CLOSE_PX_LARGE = 5, 25
 EPS_SMALL, EPS_LARGE = 1.5, 2.5
 HATCH_WIN, HATCH_DENSITY = 81, 0.12
+HATCH_BARRIER_ERODE = 17  # arceringsrand is ±8 px vaag: als barrière 8 px INGEKROMPEN zodat hij niet over de grenslijn in buurvakken bijt
 HATCH_SEEDS = [
     ("h1", (1000, 1900), "Gearceerd vlak linksboven (legenda: 'niet in de splitsing betrokken')"),
     ("h2", (3100, 6600), "Gearceerd vlak onderaan (legenda: 'niet in de splitsing betrokken')"),
@@ -27,10 +31,12 @@ CUTS = [
     ("bgB", (527, 2594), (890, 2594), "Gestippelde lijn tussen vak-180 en container-ruimte (kern B); als grens gebruikt, GEEN wand/deur geclaimd"),
     ("bgC_ls", (4562, 2606), (4702, 2606), "Bovenlijn LS-ruimte (kern C) onderbroken in scan; hersteld langs getekende lijn"),
     ("bgC_lt", (4568, 2683), (4700, 2683), "Scheidingslijn LS-ruimte/trafo ruimte (kern C) onderbroken in scan; hersteld langs getekende lijn"),
+    ("bgD_s060", (2025, 2595), (2047, 2595), "Doorgaande dunne scheidingslijn tussen twee bedrijfsruimten (y=2595) met 3 px scanuitval bij x=2035-2037; hersteld langs getekende lijn (2026-11-21, visueel)"),
 ]
 LEGEND_BBOX = (700, 850, 890, 1235)
-# omcirkelde 180 (visueel bevestigd; bbox ca. template 60x130 px)
-IDX180 = {"s039": (3740, 1940, 3800, 2070), "s052": (633, 2495, 693, 2625), "s061": (4513, 2657, 4573, 2787)}
+# omcirkelde 180: bbox = gemeten inktcomponent van de ovale ring (raw ink < 200, 8-connected), visueel bevestigd.
+# (v0.3.0 gebruikte een template-box 60x130 die ~40 px te laag lag; gecorrigeerd 2026-11-21.)
+IDX180 = {"s039": (3750, 1901, 3791, 1961), "s052": (641, 2455, 683, 2517), "s061": (4519, 2619, 4562, 2679)}
 CU_SRC = "Gebruiker (eerder bevestigd; data/sources.md): alle containerruimtes zijn omgebouwd tot fietsenberging"
 CURRENT_USE = {"s061": ("fietsenberging", CU_SRC, "user_confirmed"), "s052b": ("fietsenberging", CU_SRC, "user_confirmed")}
 # kernen (gemeenschappelijke woonkernen) en hun vakken
@@ -56,6 +62,7 @@ SEEDS = [
     ('s012', (6274, 665), 'wall_band', None, None, None, [], []),
     ('s018', (3934, 840), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[3933, 1030, 3987, 1140, 0.659]], []),
     ('s019', (4860, 827), 'wall_band', None, None, None, [], []),
+    ('s019b', (4862, 1080), 'wall_band', None, None, 'Deel van wandstrook s019 onder het kolomsymbool (sinds v0.4: kolom = barrière)', [], []),
     ('s020', (4992, 811), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[5083, 890, 5137, 1000, 0.723]], []),
     ('s022', (5435, 1088), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[5525, 884, 5579, 994, 0.701]], [[5607, 879]]),
     ('s023', (5866, 1096), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[5895, 878, 5949, 988, 0.684]], []),
@@ -76,6 +83,7 @@ SEEDS = [
     ('s038', (3600, 1982), 'unlabeled_space', None, None, "Vak naast GEM./lift; tekst 'CVZ kast' staat links buiten de kern, toewijzing niet bewezen", [], []),
     ('s039', (3759, 1988), 'entrance_hall', 'entree', (3700, 1950, 3725, 2010), 'Label entree + omcirkeld 180', [], []),
     ('s040', (5413, 1818), 'wall_band', None, None, None, [], []),
+    ('s040b', (6558, 1796), 'wall_band', None, None, 'Deel van wandstrook s040 voorbij het kolomsymbool (sinds v0.4: kolom = barrière)', [], []),
     ('s041', (3343, 2130), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[3352, 2222, 3406, 2332, 1.0]], []),
     ('s042', (3557, 2071), 'meter_cupboard_common', 'GEM.', (3520, 2040, 3560, 2120), None, [], []),
     ('s043', (3618, 2107), 'lift_shaft', 'lift', (3600, 2040, 3625, 2085), None, [], []),
@@ -84,7 +92,7 @@ SEEDS = [
     ('s046', (3757, 2104), 'stair', 'trap', (3735, 2040, 3765, 2090), None, [], []),
     ('s047', (3785, 2039), 'unlabeled_space', None, None, 'Smalle strook (~0,45 m) naast trap; wand of schacht niet bewezen', [], []),
     ('s048', (3802, 2191), 'wall_band', None, None, None, [], []),
-    ('s049', (298, 2545), 'entrance_hall', 'entree', (300, 2490, 330, 2570), None, [], []),
+    ('s049', (298, 2545), 'entrance_hall', 'entree', (300, 2490, 330, 2570), 'Gestippelde schuine lijn linksboven (betekenis niet in legenda; overstek/luifel?) is sinds v0.4 GEEN grens; vlak loopt tot de doorgetrokken lijn', [], []),
     ('s050', (422, 2499), 'stair', 'trap', (400, 2530, 430, 2580), None, [], []),
     ('s052', (582, 2523), 'unlabeled_space', None, None, 'Vak met omcirkeld 180, boven de gestippelde lijn (CUT bgB); functie niet gelabeld', [], []),
     ('s054', (3952, 2577), 'commercial_large_region_unresolved', 'bedrijfs-ruimte', None, None, [[3356, 2666, 3410, 2776, 0.727]], []),
@@ -93,7 +101,8 @@ SEEDS = [
     ('s057', (999, 2661), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[995, 2831, 1049, 2941, 0.662]], []),
     ('s058', (1295, 2647), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[1289, 2831, 1343, 2941, 0.675]], []),
     ('s059', (1611, 2613), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[1659, 2830, 1713, 2940, 0.718]], []),
-    ('s060', (2162, 2717), 'commercial_multi_unresolved', 'bedrijfs-ruimte', None, None, [[2131, 2829, 2185, 2939, 0.753], [2130, 2378, 2184, 2488, 0.638]], []),
+    ('s060', (2162, 2717), 'commercial_unit', 'bedrijfs-ruimte', None, 'Tot v0.3 samen met s060n één vlak door scanuitval in scheidingslijn (zie CUT bgD_s060)', [[2131, 2829, 2185, 2939, 0.753]], []),
+    ('s060n', (2050, 2450), 'commercial_unit', 'bedrijfs-ruimte', None, 'Noordelijke helft van voormalig s060 (zie CUT bgD_s060)', [[2130, 2378, 2184, 2488, 0.638]], []),
     ('s061', (4462, 2666), 'container_room', 'container-ruimte', (4440, 2700, 4510, 2810), 'Omcirkeld 180 in dit vak', [], []),
     ('s062', (261, 2855), 'wall_band', None, None, None, [], []),
     ('s063', (261, 2916), 'wall_band', None, None, None, [], []),
@@ -134,7 +143,7 @@ SEEDS = [
     ('s106', (3909, 5161), 'wall_band', None, None, None, [], []),
     ('s108', (325, 5347), 'unlabeled_space', None, None, 'Klein vak naast pilotkern; niet in pilottrace', [], []),
     ('s112', (417, 5377), 'unlabeled_space', None, None, 'Klein vak naast pilotkern; niet in pilottrace', [], []),
-    ('s115', (1933, 5389), 'service_corridor', 'expeditie gang', (1440, 5385, 1620, 5420), 'L-vormige gang (horizontaal + verticaal tussen blokken)', [], []),
+    ('s115', (1933, 5389), 'service_corridor', 'expeditie gang', (1440, 5378, 1612, 5407), 'L-vormige gang (horizontaal + verticaal tussen blokken)', [], []),
     ('s116', (2337, 5308), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[2199, 5204, 2253, 5314, 0.705]], []),
     ('s118', (1303, 5516), 'technical_room', 'trafo ruimte', (1250, 5440, 1300, 5510), None, [], []),
     ('s119', (1304, 5596), 'technical_room', 'LS-ruimte', (1250, 5540, 1300, 5610), None, [], []),
@@ -144,7 +153,7 @@ SEEDS = [
     ('s123', (2083, 5500), 'unlabeled_space', None, None, 'Vak binnen blok; geen label', [], []),
     ('s124', (2353, 5567), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[2206, 5801, 2260, 5911, 0.66]], []),
     ('s125', (681, 5797), 'wall_band', None, None, None, [], []),
-    ('s126', (916, 5644), 'commercial_multi_unresolved', 'bedrijfs-ruimte', None, None, [[735, 5577, 789, 5687, 0.647], [452, 5450, 506, 5560, 0.616]], []),
+    ('s126', (916, 5644), 'service_space', 'expeditie', (735, 5577, 789, 5687), "Label 'expeditie' (v0.3 template-hits waren vals-positief: 'expeditie' en 'hydrofoor'). Teksten 'hydrofoor' en 'E-kast' staan met verwijsstreep langs de noordwand; toewijzing aan de kleine ruimten erboven niet bewezen", [], []),
     ('s127', (3915, 5773), 'wall_band', None, None, None, [], []),
     ('s128', (1620, 5872), 'commercial_large_region_unresolved', 'bedrijfs-ruimte', None, None, [[1326, 6699, 1380, 6809, 0.899]], []),
     ('s129', (3394, 5855), 'commercial_unit', 'bedrijfs-ruimte', None, None, [[3164, 5643, 3218, 5753, 0.631]], []),

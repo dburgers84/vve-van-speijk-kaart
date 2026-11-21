@@ -20,6 +20,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 from traces import bg_core, bg_kiel, bg_segments as S  # noqa: E402
+from linework import bridged_mask, simplify, add_columns  # noqa: E402
 
 OUT = os.path.join(ROOT, "data", "inventory", "bg_segments_p81.json")
 
@@ -69,13 +70,16 @@ def polygon_of(mask, allowed, inr):
     c = max(cs, key=cv2.contourArea)
     for eps in ((S.EPS_LARGE if inr >= 40 else S.EPS_SMALL), 1.0, 0.7, 0.5):
         ap = [[int(x), int(y)] for x, y in cv2.approxPolyDP(c, eps, True)[:, 0, :]]
+        ap = simplify(ap, S.MIN_JOG_AREA_PX2)
         if _simple(ap):
             return ap, int(filled.sum())
     return None, 0
 
 
-def hatch_polys(g):
+def hatch_polys(g):  # gebruikt ruwe inkt (arcering), zonder indexcirkels (dichte inkt naast arcering, geen arcering)
     ink = (g < S.INK_THRESHOLD).astype(np.float32)
+    for x0, y0, x1, y1 in S.IDX180.values():
+        ink[y0 - 3:y1 + 4, x0 - 3:x1 + 4] = 0
     dens = cv2.boxFilter(ink, -1, (S.HATCH_WIN, S.HATCH_WIN))
     coarse = cv2.morphologyEx((dens > S.HATCH_DENSITY).astype(np.uint8), cv2.MORPH_OPEN, np.ones((41, 41), np.uint8))
     region = cv2.dilate(coarse, np.ones((45, 45), np.uint8))
@@ -95,13 +99,27 @@ def hatch_polys(g):
     return out
 
 
+def text_boxes(pad=4):
+    """Bekende tekst-/indexposities (omcirkelde 180, handmatig gelezen labels, template-hits 'bedrijfs-ruimte')."""
+    out = [tuple(b) for b in S.IDX180.values()]
+    for _k, _seed, _kind, _lit, lbox, _note, bhits, _h179 in S.SEEDS:
+        if lbox:
+            out.append(tuple(lbox))
+        out += [tuple(h[:4]) for h in bhits]
+    return [(x0 - pad, y0 - pad, x1 + pad, y1 + pad) for x0, y0, x1, y1 in out]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--scan", default="/workspace/vve-source-audit/page-81.png")
     a = ap.parse_args()
     g = cv2.imread(a.scan, cv2.IMREAD_GRAYSCALE)
     assert g is not None and g.shape == (10099, 7118), "lokale bronscan p81 vereist"
-    ink = (g < S.INK_THRESHOLD).astype(np.uint8)
+    raw_ink = (g < S.INK_THRESHOLD).astype(np.uint8)
+    colrev = json.load(open(os.path.join(ROOT, "data", "inventory", "columns_review_p81.json")))["verdicts"]
+    cols = [(c["x"], c["y"], c["size_px"]) for c in colrev if c["verdict"] in ("column_symbol", "uncertain")]
+    ink, _arch = bridged_mask(raw_ink, S.LINE_MIN_PX, 5, cols=cols, text_boxes=text_boxes(), gap=S.LINE_GAP_PX,
+                            symbol_boxes=[tuple(b) for b in S.IDX180.values()])   # tekst, indexcirkels, kolomsymbolen, stippels eruit
     for key, p, q, why in S.CUTS:
         cv2.line(ink, tuple(p), tuple(q), 1, 3)
     man = manual_mask(g.shape)
@@ -109,7 +127,7 @@ def main():
     hm = np.zeros_like(ink)
     for h in hatch.values():
         cv2.fillPoly(hm, [np.array(h["polygon"], np.int32)], 1)
-    wall = cv2.dilate(ink, np.ones((3, 3), np.uint8)) | man | cv2.dilate(hm, np.ones((5, 5), np.uint8))
+    wall = cv2.dilate(ink, np.ones((3, 3), np.uint8)) | man | cv2.erode(hm, np.ones((S.HATCH_BARRIER_ERODE, S.HATCH_BARRIER_ERODE), np.uint8))
     n, lab = cv2.connectedComponents((1 - wall).astype(np.uint8), connectivity=4)
     used, segs, problems = {}, {}, []
     for key, (sx, sy), *_ in S.SEEDS:
@@ -155,7 +173,8 @@ def main():
                 break
         h["polygon"], h["area_px"] = ap, int(hmask.sum())
     out = {"generated_by": "tools/segment_bg.py", "source_page": 81,
-           "params": {"ink_threshold": S.INK_THRESHOLD, "dilate_px": 1, "close_px": [S.CLOSE_PX_SMALL, S.CLOSE_PX_LARGE],
+           "params": {"ink_threshold": S.INK_THRESHOLD, "dilate_px": 1, "line_min_px": S.LINE_MIN_PX, "min_jog_area_px2": S.MIN_JOG_AREA_PX2,
+                      "linework": "architectural_mask (rechte lijnen >= line_min_px); tekst/symbolen/stippels gemaskeerd", "close_px": [S.CLOSE_PX_SMALL, S.CLOSE_PX_LARGE],
                       "approx_eps_px": [S.EPS_SMALL, S.EPS_LARGE], "hatch": [S.HATCH_WIN, S.HATCH_DENSITY]},
            "boundary_reference": "inner_face_of_drawn_line",
            "segments": segs, "hatch": hatch, "problems": problems}

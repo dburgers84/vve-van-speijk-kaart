@@ -52,7 +52,8 @@
     "dimension": {"type": "object", "required": ["status", "length_m", "uncertainty_m", "uncertainty_status", "method", "calibration_ref", "source_text", "source_ref"], "properties": {
       "status": {"enum": ["source", "derived", "unknown"]}, "length_m": {"type": ["number", "null"], "minimum": 0},
       "uncertainty_m": {"type": ["number", "null"], "minimum": 0}, "uncertainty_status": {"enum": ["unknown", "estimated", "measured", "stated"]},
-      "method": {"type": ["string", "null"]}, "calibration_ref": {"type": ["string", "null"]}, "source_text": {"type": ["string", "null"]}, "source_ref": {"type": ["object", "string", "null"]}}},
+      "method": {"type": ["string", "null"]}, "calibration_ref": {"type": ["string", "null"]}, "source_text": {"type": ["string", "null"]}, "source_ref": {"type": ["object", "string", "null"]},
+      "display": {"type": "object", "required": ["length_m", "margin_m", "step_m", "text"], "properties": {"length_m": {"type": "number"}, "margin_m": {"type": "number"}, "step_m": {"enum": [0.01, 0.1, 0.5]}, "text": {"type": "string"}}}}},
     "edge": {"type": "object", "required": ["id", "frame_id", "floor_id", "v", "role", "dimension"], "properties": {
       "id": {"$ref": "#/$defs/id"}, "v": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2},
       "role": {"enum": ["wall_drawn", "wall_drawn_thin", "wall_inner_face", "facade", "virtual_opening", "virtual_boundary", "railing", "roof_edge", "element_outline"]},
