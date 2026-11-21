@@ -90,16 +90,29 @@ class TestCoverageP82(unittest.TestCase):
         o = O["obj_f1_seg_s108"]
         self.assertGreater(len(o["geometry"]["rings"]), 10, "bergingenblok binnen s108 moet als gaten staan (geen overlap)")
 
-    def test_labels_marked_approximate(self):
+    def test_labels_measured_or_marked_approximate(self):
+        V = {v["id"]: (v["x_px"], v["y_px"]) for v in D["vertices"]}
+        n_meas = 0
         for lbl in D["labels"]:
-            if lbl["id"].endswith("_n"):
-                self.assertIn("BENADERD", lbl["note"])
-                self.assertNotEqual(lbl["certainty"], "source")
+            if lbl["id"].endswith("legend_hatch"):
+                continue
+            self.assertNotEqual(lbl["certainty"], "source")
+            note = lbl["note"]
+            self.assertTrue("GEMETEN" in note or "BENADERD" in note, lbl["id"])
+            if "GEMETEN" in note:
+                n_meas += 1
+                ring = [V[v] for v in O[lbl["assigned_object_ids"][0]]["geometry"]["rings"][0]]
+                x0, y0, x1, y1 = lbl["bbox_px"]
+                self.assertTrue(min(p[0] for p in ring) <= x0 and x1 <= max(p[0] for p in ring)
+                                and min(p[1] for p in ring) <= y0 and y1 <= max(p[1] for p in ring), lbl["id"])
+        self.assertGreaterEqual(n_meas, 150, "fase 5: minstens 150 labelposities op de 1e gemeten")
+        self.assertEqual(n_meas, D["coverage"]["counts"]["labels_position_measured"])
 
 
 class TestStableIdsP82(unittest.TestCase):
     def test_keys_fixture(self):
-        fx = json.load(open(os.path.join(HERE, "fixtures", "f1_seg_keys_v0.1.0.json")))["keys"]
+        with open(os.path.join(HERE, "fixtures", "f1_seg_keys_v0.1.0.json")) as f:
+            fx = json.load(f)["keys"]
         now = {k: [kind, idx] for k, _s, kind, _l, idx, _h, _n in F.SEEDS}
         self.assertEqual(set(now), set(fx), "sleutels f1_seg gewijzigd: alleen via bewuste migratie")
         for k, v in fx.items():
@@ -137,12 +150,14 @@ class TestLegalP82(unittest.TestCase):
 
 class TestViewerFloors(unittest.TestCase):
     def test_floor_switch(self):
-        html = open(os.path.join(ROOT, "pilot", "index.html"), encoding="utf-8").read()
+        with open(os.path.join(ROOT, "pilot", "index.html"), encoding="utf-8") as f:
+            html = f.read()
         self.assertIn("floor=1e", html)
         self.assertIn("pilot_data_f1.js", html)
         self.assertIn("PILOT_DATA_F1", html)
         self.assertIn("fill-rule", html, "gaten (binnenringen) moeten als gat getekend worden")
-        js = open(os.path.join(ROOT, "pilot", "pilot_data_f1.js"), encoding="utf-8").read(200)
+        with open(os.path.join(ROOT, "pilot", "pilot_data_f1.js"), encoding="utf-8") as f:
+            js = f.read(200)
         self.assertIn("window.PILOT_DATA_F1 =", js)
 
     def test_overlay_public_only_published_jpg(self):

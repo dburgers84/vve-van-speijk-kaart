@@ -1,0 +1,16 @@
+{
+ "page": 83,
+ "measured": "2026-11-21, Grok Bot (executor), op lokale scan page-83.png (7120x10055)",
+ "finding": "Blad 83 = '2e Verdieping / Schaal 1 a 200'. Schaalbalk 0-10 m linksboven onder de titel (langs native y), cm-liniaal 'IN CM' ernaast. Eigen reproductieschaal: balk 397,3 px per 10 m (p81 387,0; p82 393,2).",
+ "scale_bar": {"axis": "native y", "x_px": 76, "edge_0m_y_px": 408.3, "edge_10m_y_px": 805.6, "length_px": 397.3,
+               "edge_method": "50%-overgang van het gemiddelde inktprofiel over x 69-83 (zelfde methode reproduceert p82: 335,6 / 728,5)",
+               "segment_boundaries_y_px": [408.3, 490.0, 568.0, 649.0, 729.5, 805.6], "segments_px_per_2m": [81.7, 78.0, 81.0, 80.5, 76.1],
+               "m_per_px": 0.025170, "reading_tolerance_px_per_end": 1.5},
+ "cm_ruler": {"label": "IN CM", "axis": "native y", "x_px": 434, "ticks_y_px": {"0": 419.07, "1": 498.0, "2": 576.0, "3": 655.0, "4": 734.0, "5": 812.14},
+              "px_per_cm": 78.61, "m_per_px_at_1to200": 0.025441,
+              "note": "Tickcentra = inkt-gewogen gemiddelde van de korte dwarsstreepjes; de lijn op y 353,9 is de kaderlijn, geen tick."},
+ "spread": {"bar_vs_ruler_pct": -1.06, "half_spread_rel": 0.0054, "reading_tolerance_rel": 0.0053,
+            "note": "Op p83 wijken balk en liniaal meer af dan op p82 (0,24 %): de balk is 1 % langer dan de liniaal voorspelt. Oorzaak onbekend (plot van de balk of vervorming van de scan langs y). Daarom marge = halve spreiding."},
+ "adopted": {"m_per_px": 0.0253053, "rel_uncertainty_y": 0.0054, "rel_uncertainty_x": 0.0142,
+             "x_axis": "NIET onafhankelijk gecontroleerd; marge x = marge y + 0,88 % (anisotropie kolomstramien p81)."}
+}
