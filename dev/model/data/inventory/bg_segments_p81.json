@@ -1,5 +1,5 @@
 {
-"generated_by": "tools/segment_bg.py",
+"generated_by": "tools/segment_bg.py --floor BG",
 "source_page": 81,
 "params": {
 "ink_threshold": 200,

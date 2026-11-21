@@ -137,8 +137,8 @@ def _interior_pt(P):
     return (best[1], y)
 
 
-def _poly_overlap_area(P, Q, step=2.0):
-    """Ruwe overlap-schatting via raster-sampling op de doorsnede van bboxen (px)."""
+def _poly_overlap_area(P, Q, step=2.0, holes_p=(), holes_q=()):
+    """Ruwe overlap-schatting via raster-sampling op de doorsnede van bboxen (px); gaten (binnenringen) tellen niet mee."""
     minx = max(min(p[0] for p in P), min(q[0] for q in Q))
     maxx = min(max(p[0] for p in P), max(q[0] for q in Q))
     miny = max(min(p[1] for p in P), min(q[1] for q in Q))
@@ -150,7 +150,8 @@ def _poly_overlap_area(P, Q, step=2.0):
     while y < maxy:
         x = minx + step / 2
         while x < maxx:
-            if _point_in_poly((x, y), P) and _point_in_poly((x, y), Q):
+            if (_point_in_poly((x, y), P) and _point_in_poly((x, y), Q)
+                    and not any(_point_in_poly((x, y), h) for h in holes_p) and not any(_point_in_poly((x, y), h) for h in holes_q)):
                 n += 1
             x += step
         y += step
@@ -371,7 +372,8 @@ def validate(d):
             if set(o.get("edge_ids", [])) != used:
                 r.err(f"object {o['id']}: edge_ids komt niet overeen met ringranden")
             if o["class"] == "space":
-                space_polys[o["id"]] = (o["floor_id"], [P[v] for v in rings[0] if v in P])
+                space_polys[o["id"]] = (o["floor_id"], [P[v] for v in rings[0] if v in P],
+                                        [[P[v] for v in hr if v in P] for hr in rings[1:]])
         elif g["type"] == "LineString":
             if any(v not in V for v in g["vertices"]):
                 r.err(f"object {o['id']}: onbekende vertex in LineString")
@@ -401,15 +403,15 @@ def validate(d):
     ids = list(space_polys)
     for i in range(len(ids)):
         for j in range(i + 1, len(ids)):
-            fa, pa = space_polys[ids[i]]
-            fb, pb = space_polys[ids[j]]
+            fa, pa, ha = space_polys[ids[i]]
+            fb, pb, hb = space_polys[ids[j]]
             if fa != fb or len(pa) < 3 or len(pb) < 3:
                 continue
             if not _bbox_hit(pa, pb):
                 continue
             if not (_edges_cross(pa, pb) or _point_in_poly(_interior_pt(pa), pb) or _point_in_poly(_interior_pt(pb), pa)):
                 continue
-            ov = _poly_overlap_area(pa, pb)
+            ov = _poly_overlap_area(pa, pb, holes_p=ha, holes_q=hb)
             if ov > 16:  # >16 px² ~ 0.01 m² nominaal
                 r.err(f"overlap ~{ov:.0f} px² tussen {ids[i]} en {ids[j]}")
     # ---- labels
